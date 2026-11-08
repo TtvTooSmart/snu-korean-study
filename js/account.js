@@ -1,9 +1,10 @@
 import {accountError} from './account-errors.js';
+import {createSyncQueue} from './sync-queue.js';
 import {verifyAdmin} from './admin-access.js';
 import {accountConfig} from './account-config.js';
 import {get,save,switchProfile,guestProgress} from './storage.js';
 import {syncSnapshot,sameProgress,validStats,reconcileInFlight} from './cloud-progress.js';
-let client, user=null, syncing=false, timer, conflict=null, message='', suppress=false;
+let client, user=null, syncing=false, syncInterval, conflict=null, message='', suppress=false;
 let onChange=()=>{}, signedIn=false, verifiedAdmin=false;
 export const canManageData=()=>verifiedAdmin;
 async function refreshAdmin(){
@@ -47,21 +48,26 @@ export async function initAccounts(changed){
   onChange();
  }catch(e){status(e.message||'Sign-in is temporarily unavailable.');}
  document.addEventListener('study-saved',()=>{
-  if(!user||suppress)return;
-  clearTimeout(timer);timer=setTimeout(sync,800);
+  if(!user||suppress||sameProgress(get().stats,get().cloud?.base||{}))return;
+  if(!syncing&&!conflict)status('Saved on this device. Auto-sync runs every 30 seconds.');
  });
- window.addEventListener('online',()=>sync());
- window.addEventListener('focus',()=>sync());
+ // Answers stay durable in localStorage until the next batch. Login also
+ // reconciles the cached snapshot, including pending work from a closed tab.
+ clearInterval(syncInterval);
+ syncInterval=setInterval(()=>{
+  if(user&&!conflict&&!sameProgress(get().stats,get().cloud?.base||{}))sync();
+ },30000);
 }
 async function activate(next){
  if((next?.id||null)===(user?.id||null)){const before=verifiedAdmin;await refreshAdmin();if(before!==verifiedAdmin)onChange();return;}
- clearTimeout(timer);suppress=true;user=next;verifiedAdmin=false;conflict=null;
+ suppress=true;user=next;verifiedAdmin=false;conflict=null;
  switchProfile(user?.id);signedIn=!!user;suppress=false;
  await refreshAdmin();
  onChange();status(user?'Syncing progress…':'Signed out. Your guest progress is available.');
  if(user)await sync();
 }
-export async function sync(){
+export const sync=createSyncQueue(syncOnce);
+async function syncOnce(){
  if(!client||!user||syncing||conflict)return;
  const owner=user.id, state=get(), snapshot=clone(state.stats);
  const meta=state.cloud||{base:{},revision:0};
@@ -75,9 +81,10 @@ export async function sync(){
   state.cloud={base:clone(result.stats),revision:result.revision};
   // Avoid dropping an answer given while the network request was running.
   if(sameProgress(state.stats,snapshot))state.stats=clone(result.stats);
-  save();suppress=false;onChange(false);status('Progress saved to your account.');
-  if(!sameProgress(state.stats,state.cloud.base))timer=setTimeout(sync,100);
- }catch(e){status('Progress is saved on this device. Cloud sync failed; try Sync now when connected.');}
+  save();suppress=false;onChange(false);
+  if(!sameProgress(state.stats,state.cloud.base))status('Saved on this device. Auto-sync runs every 30 seconds.');
+  else status('Progress saved to your account.');
+ }catch(e){if(user?.id===owner)status('Progress is saved on this device. Cloud sync will retry every 30 seconds.');}
  finally{syncing=false;suppress=false;}
 }
 const guestButton='<button id="continue-guest" class="secondary">Continue as guest</button><p><small>Guest progress is saved only in this browser, not to an account.</small></p>';

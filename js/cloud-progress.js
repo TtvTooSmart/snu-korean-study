@@ -22,7 +22,14 @@ export async function syncSnapshot(client, userId, stats, base, revision) {
   const {data:result,error:writeError} = await client.rpc('save_study_progress',{expected_revision:revision,new_stats:stats});
   if(writeError)throw writeError;
   if(!result.saved)return {kind:'conflict',stats:result.stats,revision:result.revision};
-  return {kind:'saved',stats,revision:result.revision};
+  // Read back the committed batch before marking the local cache as synced.
+  // Failed verification leaves the old base/revision intact for a safe retry.
+  const {data:verified,error:verifyError}=await client.from('study_progress').select('stats, revision').eq('user_id',userId).maybeSingle();
+  if(verifyError)throw verifyError;
+  if(!verified||verified.revision<result.revision)throw Error('Could not verify saved progress.');
+  validStats(verified.stats);
+  if(!sameProgress(verified.stats,stats))return {kind:'conflict',...verified};
+  return {kind:'saved',...verified};
 }
 
 // An answer made while downloading a changed cloud snapshot must also trigger

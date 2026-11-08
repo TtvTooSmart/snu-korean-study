@@ -1,5 +1,7 @@
 // Interface-only translations. Korean exercises and glossary definitions remain original.
 const rows = [
+["Saved on this device. Auto-sync runs every 30 seconds.", "Đã lưu trên thiết bị này. Tự động đồng bộ mỗi 30 giây.", "已保存在此设备上。每30秒自动同步一次。", "Сохранено на этом устройстве. Автосинхронизация каждые 30 секунд."],
+["Progress is saved on this device. Cloud sync will retry every 30 seconds.", "Tiến độ đã lưu trên thiết bị này. Sẽ thử đồng bộ lại mỗi 30 giây.", "进度已保存在此设备上。每30秒重试云同步。", "Прогресс сохранён на этом устройстве. Повторная попытка синхронизации каждые 30 секунд."],
 ["Could not sign in with this email. If you are new, choose Sign up first.", "Không thể đăng nhập bằng email này. Nếu bạn là người dùng mới, hãy chọn Đăng ký trước.", "无法使用此邮箱登录。如果你是新用户，请先选择注册。", "Не удалось войти с этим адресом. Если вы новый пользователь, сначала выберите регистрацию."],
 ["Sign-up is unavailable. Please contact the administrator or continue as a guest.", "Hiện không thể đăng ký. Vui lòng liên hệ quản trị viên hoặc tiếp tục với tư cách khách.", "暂时无法注册。请联系管理员或以访客身份继续。", "Регистрация недоступна. Свяжитесь с администратором или продолжите как гость."],
 ["We could not send your email link. The administrator needs to check email delivery. You can continue as a guest.", "Không thể gửi liên kết qua email. Quản trị viên cần kiểm tra dịch vụ gửi email. Bạn có thể tiếp tục với tư cách khách.", "无法发送邮件链接。管理员需要检查邮件发送服务。你可以以访客身份继续。", "Не удалось отправить ссылку. Администратору нужно проверить отправку почты. Можно продолжить как гость."],

@@ -4,7 +4,7 @@ import {syncSnapshot,validStats,reconcileInFlight} from '../js/cloud-progress.js
 const stats=n=>({word:{seen:n,missed:0,streak:n,flagged:false,lastResult:true}});
 function fakeClient(remote,writeResult){
  const calls=[];
- return {calls,from:()=>({select:()=>({eq:(_key,user)=>{calls.push(['read',user]);return {maybeSingle:async()=>({data:remote,error:null})};}})}),rpc:async(name,args)=>{calls.push([name,args]);return {data:writeResult,error:null};}};
+ return {calls,from:()=>({select:()=>({eq:(_key,user)=>{calls.push(['read',user]);return {maybeSingle:async()=>({data:remote,error:null})};}})}),rpc:async(name,args)=>{calls.push([name,args]);if(writeResult?.saved)remote={stats:args.new_stats,revision:writeResult.revision};return {data:writeResult,error:null};}};
 }
 test('clean new device downloads cloud progress without a write',async()=>{
  const client=fakeClient({stats:stats(4),revision:2});
@@ -33,7 +33,7 @@ test('retry after a lost response recognizes already-saved progress without dupl
 test('reset can sync an empty progress object',async()=>{
  const client=fakeClient({stats:stats(2),revision:2},{saved:true,revision:3});
  assert.deepEqual((await syncSnapshot(client,'one',{},stats(2),2)).stats,{});
- assert.equal(client.calls.length,2);
+ assert.equal(client.calls.length,3);
 });
 test('invalid remote/local data is rejected before being used',()=>{
  assert.throws(()=>validStats({x:{seen:0,missed:2,streak:0}}),/Invalid/);
@@ -47,4 +47,22 @@ test('answer during a cloud download preserves both copies as a conflict',()=>{
  assert.equal(reconcileInFlight(stats(2),stats(2),remote).kind,'saved');
  const uploaded={kind:'saved',stats:stats(2),revision:3};
  assert.equal(reconcileInFlight(stats(3),stats(2),uploaded).kind,'saved');
+});
+
+function verificationClient(verified,error=null){
+ let reads=0;
+ return {from:()=>({select:()=>({eq:()=>({maybeSingle:async()=>++reads===1?{data:null,error:null}:{data:verified,error}})})}),
+  rpc:async()=>({data:{saved:true,revision:1},error:null})};
+}
+test('an acknowledged upload must also pass server read-back verification',async()=>{
+ const verified={stats:stats(2),revision:1};
+ assert.deepEqual(await syncSnapshot(verificationClient(verified),'one',stats(2),{},0),{kind:'saved',...verified});
+});
+test('missing or failed verification leaves the batch eligible for retry',async()=>{
+ await assert.rejects(syncSnapshot(verificationClient(null),'one',stats(2),{},0),/verify/);
+ await assert.rejects(syncSnapshot(verificationClient(null,Error('Offline')),'one',stats(2),{},0),/Offline/);
+});
+test('another device changing progress before verification is a conflict',async()=>{
+ const newer={stats:stats(5),revision:2};
+ assert.deepEqual(await syncSnapshot(verificationClient(newer),'one',stats(2),{},0),{kind:'conflict',...newer});
 });

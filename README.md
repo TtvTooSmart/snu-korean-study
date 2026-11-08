@@ -122,11 +122,11 @@ Green is the default palette and always uses the original forest-green backgroun
 
 Account integration is configured with optional email-link sign-in. See ACCOUNT_SETUP.md for the private database schema, email-link authentication, progress sync, account separation and deployment requirements.
 
-The current update passes 51 Node tests. Browser checks covered chapter shortcuts, live progress updates, all four theme choices, the Korean → English default, disabled unavailable books, and phone layout at a 375 px content width in English and Russian. Database policies have since passed live transactional isolation checks; real email-link sign-in and cross-device sync remain to be verified.
+The current update passes 63 Node tests. Browser checks covered chapter shortcuts, live progress updates, all four theme choices, the Korean → English default, disabled unavailable books, and phone layout at a 375 px content width in English and Russian. Database policies have since passed live transactional isolation checks; real email-link sign-in is verified; cross-device sync remains to be verified.
 
 ## Account rollout status
 
-Sign in, Sign up and Continue as guest are available. Supabase progress storage and account isolation have passed transactional database tests; no test accounts were retained. Production redirects are configured, and Gmail custom SMTP has been saved in Supabase. This development update removes the outdated team-member-only email notice. Email delivery and complete sign-in still need testing with a real mailbox before merging into main.
+Sign in, Sign up and Continue as guest are available. Supabase progress storage and account isolation have passed transactional database tests; no test accounts were retained. Production redirects are configured, and Gmail custom SMTP has been saved in Supabase. This development update removes the outdated team-member-only email notice. Email delivery and complete sign-in have been verified with the owner’s real account.
 
 Guest access displays an alert that browser-local progress is not saved to an account or synced across devices. Development previews currently share the Supabase project and need their exact callback URL allowlisted before email-link testing; see ACCOUNT_SETUP.md. Gmail credentials stay in Supabase and are never committed to this repository.
 
@@ -135,3 +135,5 @@ Guest access displays an alert that browser-local progress is not saved to an ac
 The Import & backup link, direct route, JSON/CSV imports, backup restore and export require a server-verified, email-confirmed Supabase account matching `shivamj8866@gmail.com`. Guests and other accounts see an access-denied page at `#import`. Each import/export action rechecks the account through `auth.getUser()` and fails closed when verification is unavailable. Local user metadata cannot grant admin access.
 
 These tools manage browser-local data; they do not publish book changes to every student. Since this is a static app, users still control their own browser storage and can inspect public textbook JSON. This UI restriction is not a server-side content security boundary. Cloud progress remains protected separately by database RLS. This change is staged on `development` only.
+
+Progress saves locally after every answer. Signed-in accounts upload changed statistics every 30 seconds and verify the upload with a server read-back. Unsynced work remains in account-specific localStorage if the tab closes and reconciles when that account signs in again. Offline or unverified batches remain pending and retry on the next interval. Background browser throttling may delay a tick; Sync now remains available. Guests continue saving only on their device. Closing a tab does not require a last-second network request. Clearing browser storage or unavailable storage prevents this recovery, and the app displays a storage warning when it cannot save locally.
