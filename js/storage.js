@@ -1,5 +1,5 @@
 import {upgradePreferences} from './preferences.js';
-export const defaults={streak:1,min:3,max:8,direction:'ko',mode:'mcq',theme:'autumn'};
+export const defaults={streak:1,min:3,max:8,direction:'ko',mode:'mcq',theme:'seoul'};
 let warning='';
 let profileKey='snu-study';
 const memoryProfiles=new Map();

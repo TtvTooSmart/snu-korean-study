@@ -118,7 +118,7 @@ Choose chapters is optional and closed initially. No checked chapters means all 
 
 Three bars at the top track Grammar, Easy vocabulary and Hard vocabulary. They use the selected chapters, or all chapters if none are checked; during a quiz they retain that quiz's book/chapter scope. Grammar counts mastered questions, vocabulary counts mastered words, and each denominator counts unique IDs. Mastery uses the configured consecutive-correct target. A miss resets mastery until that target is reached again. The selected chapter(s) appear above the bars. Existing per-book grammar accuracy still measures all attempts.
 
-Autumn is the default for new users; saved theme choices remain unchanged. Green still uses the original forest-green background, dark green panels and mint accents, independent of system light/dark preference. Black and White are fixed neutral palettes; Autumn uses warm colors with system light/dark adaptation. The header and Settings theme controls stay in sync and persist. Legacy auto/light/dark backups map to Green/White/Black. Korean → English is applied once for existing learners as the new default, without changing a paused quiz; later explicit direction preferences remain respected.
+Seoul is the default for new users; saved theme choices remain unchanged. Green still uses the original forest-green background, dark green panels and mint accents, independent of system light/dark preference. Black and White are fixed neutral palettes; Autumn uses warm colors with system light/dark adaptation. The header and Settings theme controls stay in sync and persist. Legacy auto/light/dark backups map to Green/White/Black. Korean → English is applied once for existing learners as the new default, without changing a paused quiz; later explicit direction preferences remain respected.
 
 Account integration is configured with optional email-link sign-in. See ACCOUNT_SETUP.md for the private database schema, email-link authentication, progress sync, account separation and deployment requirements.
 
@@ -132,7 +132,7 @@ Development previews currently share the Supabase project and need their exact c
 
 ## Admin import and backup
 
-The Import & backup link, direct route, JSON/CSV imports, backup restore and export require a server-verified, email-confirmed Supabase account matching `shivamj8866@gmail.com`. Guests and other accounts see an access-denied page at `#import`. Each import/export action rechecks the account through `auth.getUser()` and fails closed when verification is unavailable. Local user metadata cannot grant admin access.
+The Import & backup link, direct route, JSON/CSV imports, backup restore and export require a server-verified, email-confirmed Supabase account matching the configured administrator identity. Guests and other accounts see an access-denied page at `#import`. Each import/export action rechecks the account through `auth.getUser()` and fails closed when verification is unavailable. Local user metadata cannot grant admin access.
 
 These tools manage browser-local data; they do not publish book changes to every student. Since this is a static app, users still control their own browser storage and can inspect public textbook JSON. This UI restriction is not a server-side content security boundary. Cloud progress remains protected separately by database RLS. Admin-only import access is already released to production.
 
@@ -141,7 +141,7 @@ Progress saves locally after every answer. Signed-in accounts upload changed sta
 
 ## Admin student dashboard
 
-The Students navigation link and `#students` route are available only to the verified, confirmed owner account `shivamj8866@gmail.com`. The database independently checks that exact current account record on every request. Other authenticated users and guests cannot call the reporting endpoint, even by bypassing the UI or spoofing user metadata. The dashboard is read-only and does not expand any student table-write permissions.
+The Students navigation link and `#students` route are available only to the verified, confirmed owner account. The database independently checks that exact current account record on every request. Other authenticated users and guests cannot call the reporting endpoint, even by bypassing the UI or spoofing user metadata. The dashboard is read-only and does not expand any student table-write permissions.
 
 Run `supabase/admin-dashboard.sql` after `supabase/schema.sql` when setting up a new project. The migration is already applied to the shared Supabase project. Its guarded implementation lives in the private `study_admin` schema, with a narrow invoker RPC in `public`. Do not add `study_admin` to the exposed API schemas. `tests/admin-dashboard.sql` verifies admin reads, blocked student/anonymous access, spoofed metadata, pagination and owner-only updates, then rolls back its test users.
 
@@ -195,3 +195,18 @@ PostgreSQL may reorder card IDs and fields; this does not create a conflict.
 Real competing edits still require explicit resolution. The site title, book
 labels and exported backup filename use Korean Study branding. Legacy browser
 storage keys remain compatible so existing progress and preferences are retained.
+
+
+## Extra themes and page icon
+
+The theme selector also offers **Purple–Yellow**, **Pink–Purple**, and **Seoul**.
+Seoul uses an original pixel-art winter city background, gentle pixel snowfall,
+holiday lights, and small festive decorations. **Pause Seoul animation** stops
+snow and twinkling and remembers the choice on this device. Reduced-motion
+preferences keep the scene static; hidden tabs and other themes stop the animation.
+Snow is capped at 28 particles on phones and 55 on desktop. Theme selection
+persists locally and is included in backups; Seoul is the fresh-user default.
+
+The browser uses a real 한 image favicon (PNG with ICO fallback), plus a 180px
+Apple touch icon. The icon and Seoul backdrop are generated app artwork. Assets
+are served locally from `assets/`; no image or animation service is needed at runtime.

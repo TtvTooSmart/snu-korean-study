@@ -1,0 +1,83 @@
+/* Distinct palettes share the existing layout and accessible feedback tokens. */
+:root[data-theme="purple-yellow"] {
+ color-scheme:dark;
+ --bg:#20172d;--panel:#2b203e;--ink:#fff8e5;--muted:#cabddf;--line:#59456f;
+ --accent:#f3d56b;--soft:#3b2b52;--button-ink:#2e2240;
+ --red:#ff9dba;--amber:#f6c853;--success:#a8d8bd;
+}
+:root[data-theme="pink-purple"] {
+ color-scheme:light;
+ --bg:#fff0f7;--panel:#fffafd;--ink:#402544;--muted:#79576f;--line:#e8cddd;
+ --accent:#793eb1;--soft:#f2e4fa;--button-ink:#fff;
+ --red:#a42e55;--amber:#8a5b00;--success:#286c52;
+}
+@media(prefers-color-scheme:dark) {
+ :root[data-theme="pink-purple"] {
+  color-scheme:dark;
+  --bg:#25192d;--panel:#33213c;--ink:#fff0fa;--muted:#d5b6d1;--line:#67466c;
+  --accent:#e5a8e9;--soft:#472c52;--button-ink:#2d1a35;
+  --red:#ffa3c0;--amber:#efc77b;--success:#a6d9bd;
+ }
+}
+:root[data-theme="seoul"] {
+ color-scheme:dark;
+ --bg:#0a152b;--panel:#12223bf5;--ink:#f2f7ff;--muted:#bdcde3;--line:#385371;
+ --accent:#ffd98e;--soft:#233c59;--button-ink:#172235;
+ --red:#ffb0b6;--amber:#ffd98e;--success:#a6dfbf;
+}
+/* Body already isolates decoration beneath the interactive content at z-index 1. */
+:root[data-theme="seoul"] body::before {
+ content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+ background-image:linear-gradient(180deg,#08142885 0%,#08142840 55%,#08142875 100%),url("/assets/seoul-winter.webp");
+ background-size:cover;background-position:center bottom;background-repeat:no-repeat;
+ image-rendering:pixelated;
+}
+:root[data-theme="seoul"] .site-header {
+ background:#0b182ce8;border-color:#385371b3;
+ border-radius:0 0 20px 20px;box-shadow:0 12px 36px #030b1740;
+}
+:root[data-theme="seoul"] .study-progress {
+ border-radius:18px;background:#0b182cc7;
+ padding-top:16px;padding-bottom:18px;
+}
+:root[data-theme="seoul"] .panel {
+ box-shadow:0 12px 32px #030b1733;
+}
+:root[data-theme="seoul"] main>h1,
+:root[data-theme="seoul"] main>p,
+:root[data-theme="seoul"] main>a,
+:root[data-theme="seoul"] main>small,
+:root[data-theme="seoul"] footer {
+ text-shadow:0 2px 5px #020914;
+}
+:root[data-theme="seoul"] footer {
+ background:linear-gradient(transparent,#081428d9);
+}
+:root[data-theme="purple-yellow"] :focus-visible,
+:root[data-theme="pink-purple"] :focus-visible,
+:root[data-theme="seoul"] :focus-visible {
+ outline-color:var(--accent);
+}
+@media(max-width:560px) {
+ :root[data-theme="seoul"] body::before {background-position:18% bottom}
+ :root[data-theme="seoul"] .site-header {border-radius:0 0 14px 14px}
+}
+
+/* Reserve room for the longer theme names instead of clipping native selects. */
+.header-controls {
+ grid-template-columns:minmax(110px,1fr) minmax(150px,1.35fr) 64px;
+}
+@media(max-width:560px) {
+ .header-controls {
+  grid-template-columns:minmax(0,1fr) minmax(140px,1.25fr) 52px;
+  gap:10px;
+ }
+ .header-controls select {padding-inline:8px}
+}
+@media(max-width:360px) {
+ .header-controls {
+  grid-template-columns:minmax(0,1fr) minmax(124px,1.25fr) 44px;
+  gap:8px;
+ }
+ .header-controls select {font-size:.75rem;padding-inline:5px}
+}

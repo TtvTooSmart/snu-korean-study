@@ -1,5 +1,10 @@
 // Interface translations. Vocabulary meanings are localized separately from book data.
 const rows = [
+ ['Purple–Yellow','Tím–Vàng','紫黄','Фиолетово-жёлтая'],
+ ['Pink–Purple','Hồng–Tím','粉紫','Розово-фиолетовая'],
+ ['Seoul','Seoul','首尔','Сеул'],
+ ['Pause Seoul animation','Tạm dừng hiệu ứng Seoul','暂停首尔动画','Приостановить анимацию Сеула'],
+ ['Resume Seoul animation','Tiếp tục hiệu ứng Seoul','继续首尔动画','Продолжить анимацию Сеула'],
 ['For SNU students','Dành cho sinh viên SNU','面向 SNU 学生','Для студентов SNU'],
 ['Your administrator can view your synced study progress.','Quản trị viên có thể xem tiến độ học tập đã đồng bộ của bạn.','管理员可以查看你已同步的学习进度。','Администратор может просматривать ваш синхронизированный учебный прогресс.'],
 ['Saved progress could not be read.','Không thể đọc tiến độ đã lưu.','无法读取已保存的进度。','Не удалось прочитать сохранённый прогресс.'],

@@ -31,8 +31,8 @@ test('Korean default migrates once while preserving a paused session',()=>{
  assert.deepEqual(upgraded.session,state.session);assert.equal(state.settings.direction,'mixed');
  upgraded.settings.direction='en';assert.equal(upgradePreferences(upgraded).settings.direction,'en');
 });
-test('all four themes and older theme settings restore without resetting direction',()=>{
- for(const theme of ['green','black','white','autumn','auto','light','dark']){
+test('all seven themes and older theme settings restore without resetting direction',()=>{
+ for(const theme of ['green','black','white','autumn','purple-yellow','pink-purple','seoul','auto','light','dark']){
   backup({version:1,imports:[],stats:{},settings:{streak:1,min:3,max:8,direction:'en',mode:'typed',theme}});
   assert.equal(get().settings.theme,normalizeTheme(theme));
   assert.equal(upgradePreferences(get()).settings.direction,'en');
@@ -40,16 +40,16 @@ test('all four themes and older theme settings restore without resetting directi
  }
  assert.throws(()=>backup({version:1,imports:[],stats:{},settings:{streak:1,min:3,max:8,direction:'ko',mode:'mcq',theme:'invalid'}}),/Invalid backup settings/);
 });
-test('Autumn is the fresh or missing-theme default while explicit saved themes stay unchanged',()=>{
- assert.equal(defaults.theme,'autumn');
+test('Seoul is the fresh or missing-theme default while explicit saved themes stay unchanged',()=>{
+ assert.equal(defaults.theme,'seoul');
  for(const theme of [undefined,null,'invalid']){
   const state={settings:{theme,direction:'en'},koreanDirectionDefault:true,stats:{word:{seen:2,missed:0,streak:2}}};
   const upgraded=upgradePreferences(state);
-  assert.equal(upgraded.settings.theme,'autumn');
+  assert.equal(upgraded.settings.theme,'seoul');
   assert.equal(upgraded.settings.direction,'en');
   assert.deepEqual(upgraded.stats,state.stats);
  }
- for(const theme of ['green','black','white','autumn']){
+ for(const theme of ['green','black','white','autumn','purple-yellow','pink-purple','seoul']){
   assert.equal(upgradePreferences({settings:{theme}}).settings.theme,theme);
  }
 });

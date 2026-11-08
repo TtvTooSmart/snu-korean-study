@@ -1,7 +1,7 @@
-// Keep older backups compatible while exposing four simple color choices.
-export const themes = ['green', 'black', 'white', 'autumn'];
+// Keep older backups compatible while exposing the available study themes.
+export const themes = ['green', 'black', 'white', 'autumn', 'purple-yellow', 'pink-purple', 'seoul'];
 export function normalizeTheme(value) {
-  return ({auto:'green', light:'white', dark:'black'})[value] || (themes.includes(value) ? value : 'autumn');
+  return ({auto:'green', light:'white', dark:'black'})[value] || (themes.includes(value) ? value : 'seoul');
 }
 export function upgradePreferences(state) {
   const settings = {...state.settings, theme:normalizeTheme(state.settings?.theme)};
