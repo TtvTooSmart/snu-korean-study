@@ -1,8 +1,19 @@
+import {verifyAdmin} from './admin-access.js';
 import {accountConfig} from './account-config.js';
 import {get,save,switchProfile,guestProgress} from './storage.js';
 import {syncSnapshot,sameProgress,validStats,reconcileInFlight} from './cloud-progress.js';
 let client, user=null, syncing=false, timer, conflict=null, message='', suppress=false;
-let onChange=()=>{}, signedIn=false;
+let onChange=()=>{}, signedIn=false, verifiedAdmin=false;
+export const canManageData=()=>verifiedAdmin;
+async function refreshAdmin(){
+ const id=user?.id;
+ const allowed=await verifyAdmin(client,id);
+ if(user?.id!==id)return false;
+ verifiedAdmin=allowed;emit();return allowed;
+}
+export async function requireAdmin(){
+ if(!await refreshAdmin()){onChange();throw Error('Import and backup are available only to the administrator.');}
+}
 const clone=x=>structuredClone(x);
 export const accountsEnabled=()=>!!(accountConfig.enabled&&accountConfig.url&&accountConfig.publishableKey);
 const emit=()=>document.dispatchEvent(new Event('account-status'));
@@ -42,9 +53,10 @@ export async function initAccounts(changed){
  window.addEventListener('focus',()=>sync());
 }
 async function activate(next){
- if((next?.id||null)===(user?.id||null))return;
- clearTimeout(timer);suppress=true;user=next;conflict=null;
+ if((next?.id||null)===(user?.id||null)){const before=verifiedAdmin;await refreshAdmin();if(before!==verifiedAdmin)onChange();return;}
+ clearTimeout(timer);suppress=true;user=next;verifiedAdmin=false;conflict=null;
  switchProfile(user?.id);signedIn=!!user;suppress=false;
+ await refreshAdmin();
  onChange();status(user?'Syncing progress…':'Signed out. Your guest progress is available.');
  if(user)await sync();
 }
@@ -75,7 +87,7 @@ export function accountView(app,esc){
   app.innerHTML=`<h1>${signingUp?'Sign up':'Sign in'}</h1><div class="panel"><p>Account sign-in is being set up. You can study as a guest now.</p>${guestButton}</div>`;wireGuest(app);return;
  }
  if(user){
-  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>Your progress, wherever you study.</h1><section class="panel"><p>${esc(user.email)}</p><p id="account-status" role="status">${esc(message)}</p><div class="actions"><button id="sync-now">Sync now</button><button id="sign-out" class="secondary">Sign out</button></div><div id="sync-conflict" ${conflict?'':'hidden'}><p>Both copies are kept on this device before resolving a conflict.</p><div class="actions"><button id="use-cloud">Use cloud progress</button><button id="use-device" class="secondary">Use this device’s progress</button></div></div><details><summary>Bring your guest progress into this account</summary><p>This replaces this account’s current progress with the guest progress saved in this browser. A local recovery copy is kept.</p><button id="copy-guest" class="secondary">Copy guest progress</button></details><p><small>Word and grammar statistics and flags sync. Imported books, settings and unfinished sessions stay on each device; use Export for a full backup.</small></p></section>`;
+  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>Your progress, wherever you study.</h1><section class="panel"><p>${esc(user.email)}</p><p id="account-status" role="status">${esc(message)}</p><div class="actions"><button id="sync-now">Sync now</button><button id="sign-out" class="secondary">Sign out</button></div><div id="sync-conflict" ${conflict?'':'hidden'}><p>Both copies are kept on this device before resolving a conflict.</p><div class="actions"><button id="use-cloud">Use cloud progress</button><button id="use-device" class="secondary">Use this device’s progress</button></div></div><details><summary>Bring your guest progress into this account</summary><p>This replaces this account’s current progress with the guest progress saved in this browser. A local recovery copy is kept.</p><button id="copy-guest" class="secondary">Copy guest progress</button></details><p><small>Word and grammar statistics and flags sync. Imported books, settings and unfinished sessions stay on each device. Import and backup tools are available to the administrator.</small></p></section>`;
   app.querySelector('#sync-now').onclick=()=>sync();
   app.querySelector('#sign-out').onclick=async()=>{
    try{await sync();const {error}=await client.auth.signOut({scope:'local'});if(error)throw error;await activate(null);accountView(app,esc);}catch(e){status(e.message);}
@@ -104,6 +116,7 @@ export function accountView(app,esc){
  }
 }
 document.addEventListener('account-status',()=>{
+ const adminLink=document.querySelector('#admin-import-link');if(adminLink)adminLink.hidden=!verifiedAdmin;
  const node=document.querySelector('#account-status');if(node)node.textContent=message;
  const box=document.querySelector('#sync-conflict');if(box)box.hidden=!conflict;
  const link=document.querySelector('#account-link');if(link){link.textContent=signedIn?(conflict?'Account · sync needed':'Account'):'Sign in';link.href=signedIn?'#account':'#signin';}

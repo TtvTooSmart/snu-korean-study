@@ -15,7 +15,9 @@ The official Supabase browser SDK is loaded only when accounts are configured. I
 
 Sync runs after progress changes and on focus/reconnect. Revision checks prevent one device silently overwriting another. If both devices studied offline, Account lets the learner select which snapshot to keep; it does **not** add attempt totals, which could double-count shared history. Before resolving, both copies are retained in the browser's `cloudRecovery` field and included in full exports. An interrupted save is safely recognized on retry.
 
-Current status: project configured and private progress database installed and verified. Production Site URL and allowed redirect are configured for https://koreanstudyshivamj.dpdns.org/. Sign in / Sign up and Continue as guest are enabled. Default Supabase email delivery is restricted to organization team members; custom SMTP is still required for public student sign-ups. `emailLimited: true` displays this limitation; set it to false after configuring and verifying custom SMTP.
+Current status: the private progress database and production redirect are configured. Gmail custom SMTP is enabled and its password is stored only in Supabase. The development branch removes the earlier team-member-only email notice (`emailLimited: false`). Actual email delivery, clicking a sign-in link and cloud sync with a real account remain unverified. Production code is intentionally unchanged until this development update is approved for release.
+
+Development previews currently share the configured Supabase project. Before testing email links on a Vercel preview, add its exact URL to Supabase's redirect allowlist; do not assume the preview is an isolated database. The current allowlist contains only the production domain.
 
 References:
 - https://supabase.com/docs/reference/javascript/installing

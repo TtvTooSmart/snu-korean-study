@@ -8,6 +8,8 @@
 @media(prefers-color-scheme:dark) {
   :root {color-scheme:dark;--bg:#14221e;--panel:#1d2f28;--ink:#eef5ed;--muted:#acbcb1;--line:#3a5044;--accent:#88c5a2;--soft:#294438;--button-ink:#14221e;--red:#ff9b99;--amber:#e9bb67;--success:#88c5a2}
 }
+/* Green preserves the original forest-green palette regardless of device theme. */
+:root[data-theme=green] {color-scheme:dark;--bg:#14221e;--panel:#1d2f28;--ink:#eef5ed;--muted:#acbcb1;--line:#3a5044;--accent:#88c5a2;--soft:#294438;--button-ink:#14221e;--red:#ff9b99;--amber:#e9bb67;--success:#88c5a2}
 :root[data-theme=white] {color-scheme:light;--bg:#f6f7f8;--panel:#fff;--ink:#202328;--muted:#626870;--line:#dce0e4;--accent:#333b44;--soft:#edf0f3;--button-ink:#fff;--red:#ad3038;--amber:#805710;--success:#227448}
 :root[data-theme=black] {color-scheme:dark;--bg:#101112;--panel:#1b1d20;--ink:#f1f2f3;--muted:#b0b5bc;--line:#393d43;--accent:#e1e5e9;--soft:#2b2e33;--button-ink:#17191b;--red:#ff9b99;--amber:#e9bb67;--success:#88d4a5}
 :root[data-theme=autumn] {color-scheme:light;--bg:#f8f1e7;--panel:#fffaf2;--ink:#4b3027;--muted:#806252;--line:#e6d4c2;--accent:#a14728;--soft:#f5e4d3;--button-ink:#fff;--red:#a12f37;--amber:#895909;--success:#396a3f}
