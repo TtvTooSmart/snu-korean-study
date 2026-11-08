@@ -1,6 +1,6 @@
 # SNU Study
 
-A framework-free Korean vocabulary and grammar study app. All data stays in this browser; no account, backend, tracking, external fonts, or build step.
+A framework-free Korean vocabulary and grammar study app. Guest study stores data in this browser. Optional managed accounts can sync progress after the setup in ACCOUNT_SETUP.md. No tracking, external fonts, framework or build step.
 
 ## Run
 
@@ -22,7 +22,7 @@ Select one or more available books and optionally units (no checked units means 
 
 After revealing a flashcard, mark Got it or Missed. A miss resets its streak to zero and inserts it later in the remaining queue; even a single missed card stays available. Correct answers repeat until the selected streak (1–3) is reached. The repeat range is the number of other cards ahead; it is clamped to the remaining queue size. Correct/Missed counts are attempts; Remaining counts unique unfinished cards. First-try accuracy counts each original card once. Session state is saved after every action; use Resume on the home screen.
 
-A star marks a word for future practice. Stars stay set until you explicitly unstar them. Flagged words in selected books are included in the next vocabulary round even when outside the selected units. Weak words includes all previously missed or flagged words in the selected books, ordered by lifetime miss rate. Vocabulary mastery means the saved consecutive correct count meets the current streak setting. Grammar accuracy uses all recorded attempts.
+A star marks a word for future practice. Stars stay set until you explicitly unstar them. Flagged words are included in the next vocabulary round within the selected books, difficulty and chapters. Weak words includes all previously missed or flagged words in the selected books, ordered by lifetime miss rate. Vocabulary mastery means the saved consecutive correct count meets the current streak setting. Grammar accuracy uses all recorded attempts.
 
 Grammar offers 10, 20 or all questions and a pattern filter. Fewer questions are used if fewer match. Both quiz summaries can retry missed/flagged items or the complete original session deck.
 
@@ -93,7 +93,7 @@ Progress stays in each browser's localStorage; it does not sync between devices 
 
 Multiple choice is now the default vocabulary mode, including a one-time upgrade for existing saved settings. Each card has one correct option and three shuffled distractors from the same book. Duplicate choices, identical prompts, and overlapping accepted alternatives are excluded. Choose using tap/click or 1–4, then Check answer/Enter. The correct option is shown after submission, and wrong answers use the same retry queue. Choices and direction remain stable when pausing/resuming. Flashcards and typed answers remain available in the mode selector. If a custom book has too few distinct choices, that card explicitly falls back to typed mode.
 
-13 automated tests pass, including checking all 440 cards in both directions for exactly four unique options with one matching answer. Browser verification covered four-choice rendering and incorrect-answer feedback.
+Automated tests cover four-choice generation, retry queues, textbook classifications, progress, preference migration and optional cloud sync. Run `npm test` for the current suite.
 
 ## Standard / Hard vocabulary and grammar hints
 
@@ -108,3 +108,18 @@ The target grammar pattern and meaning are hidden in a native, keyboard-accessib
 The top-right selector supports English, Vietnamese, Simplified Chinese and Russian. The interface preference persists in this browser independently of quiz settings. Main navigation and controls are translated; Korean exercises, English vocabulary meanings and grammar explanations retain their source language. Some detailed validation messages remain English. The language setting is device-local and is not part of exported study backups.
 
 After updating the site, start a new Hard session to include workbook additions. Resuming an unfinished session keeps its original deck and your progress.
+
+
+## Chapter practice, progress and appearance
+
+Level is in the top-right corner next to Language and Theme. Choose A and/or B below it; unavailable books remain disabled. You can keep selections from multiple levels. The selected-book chips show the active books and can remove a selection.
+
+Choose chapters is optional and closed initially. No checked chapters means all chapters. Check one or more to scope the main quizzes, or use each chapter's Vocabulary / Grammar shortcuts. The vocabulary shortcut uses the current Easy/Hard, direction and mode choices; the grammar shortcut uses every pattern in that chapter, subject to the selected quiz length. A direct chapter vocabulary round does not include flagged words outside that chapter. Workbook review words still appear in each of the chapters they cover.
+
+Three bars at the top track Grammar, Easy vocabulary and Hard vocabulary. They use the selected chapters, or all chapters if none are checked; during a quiz they retain that quiz's book/chapter scope. Grammar counts mastered questions, vocabulary counts mastered words, and each denominator counts unique IDs. Mastery uses the configured consecutive-correct target. A miss resets mastery until that target is reached again. The selected chapter(s) appear above the bars. Existing per-book grammar accuracy still measures all attempts.
+
+Green is the default palette and follows system light/dark preference. Black and White are fixed neutral palettes; Autumn uses warm colors with system light/dark adaptation. The header and Settings theme controls stay in sync and persist. Legacy auto/light/dark backups map to Green/White/Black. Korean → English is applied once for existing learners as the new default, without changing a paused quiz; later explicit direction preferences remain respected.
+
+Account integration is prepared but disabled until configured. See ACCOUNT_SETUP.md for the private database schema, email-link authentication, progress sync, account separation and deployment requirements.
+
+The current update passes 49 Node tests. Browser checks covered chapter shortcuts, live progress updates, all four theme choices, the Korean → English default, disabled unavailable books, and phone layout at a 375 px content width in English and Russian. Real account authentication, email delivery and database policies require the Supabase setup and have not been tested against a live service.

@@ -1,1 +1,26 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>SNU Study — Korean, a little every day</title><link rel="stylesheet" href="css/styles.css"></head><body><header><a href="#home" class="brand">한 <span>SNU Study</span></a><nav aria-label="Main navigation"><a href="#home">Study</a><a href="#import">Import & backup</a><a href="#settings">Settings</a></nav></header><div id="warning" role="status"></div><main id="app" tabindex="-1"><p>Loading your books…</p></main><footer>작은 연습, 큰 변화 · A little practice, every day.<br>Unofficial personal study companion<br><span>Made with boredom, By Shivam J</span></footer><script type="module" src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>SNU Study — Korean, a little every day</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="brand"><span class="brand-mark" lang="ko">한</span><span>SNU Study</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Study</a><a href="#import">Import & backup</a><a href="#settings">Settings</a>
+    </nav>
+    <div class="header-controls">
+      <label class="theme-switch"><span>Theme</span><select id="theme-select"><option value="green">Green</option><option value="black">Black</option><option value="white">White</option><option value="autumn">Autumn</option></select></label>
+    </div>
+  </header>
+  <div id="warning" role="status"></div>
+  <section id="study-progress" class="study-progress" aria-label="Study progress"></section>
+  <main id="app" tabindex="-1"><p>Loading your books…</p></main>
+  <footer>작은 연습, 큰 변화 · A little practice, every day.<br>Unofficial personal study companion<br><span>Made with boredom, By Shivam J</span></footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
