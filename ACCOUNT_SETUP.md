@@ -6,7 +6,7 @@ The UI and sync modules are included, but accounts remain disabled until a real 
 2. Run `supabase/schema.sql` in its SQL editor. It creates the private progress table and the revision-checked write function. Anonymous clients have no table access. Signed-in users can read only their own row; the write function takes the user identity from the authenticated request, never from a browser parameter.
 3. In Authentication → URL Configuration, set the Site URL to `https://koreanstudyshivamj.dpdns.org/`. Allow this exact URL as a redirect. Add localhost or a specific preview URL only when needed for testing.
 4. Enable email sign-in. Configure an email provider/SMTP for delivery to real students; verify the provider's current sending restrictions before launch. The default email template sends a sign-in link, so no password is stored by this app.
-5. Copy the project's URL and **publishable** key into `js/account-config.js`. This key is public browser configuration. Never use the secret or service-role key. Push to the same GitHub repository; the existing Vercel project deploys it.
+5. Copy the project's URL and **publishable** key into `js/account-config.js`, then set `enabled: true` after the database and redirect setup is complete. This key is public browser configuration. Never use the secret or service-role key. Push to the same GitHub repository; the existing Vercel project deploys it.
 6. Test two email accounts and two devices before announcing accounts. Verify sign-in, sign-out, email links, cloud saves, guest import, reconnect after offline study, conflict resolution, progress reset, and that user A cannot read user B's row. The Node tests verify sync logic; they cannot replace live authentication and database-policy checks.
 
 Accounts sync word/grammar stats, mastery streaks and flags. Settings, custom book imports and paused sessions stay on each device. Use Export for a complete portable backup. Guests retain their existing `snu-study` storage. Each account gets its own browser cache. Guest progress is copied only when explicitly requested in Account.
@@ -15,7 +15,7 @@ The official Supabase browser SDK is loaded only when accounts are configured. I
 
 Sync runs after progress changes and on focus/reconnect. Revision checks prevent one device silently overwriting another. If both devices studied offline, Account lets the learner select which snapshot to keep; it does **not** add attempt totals, which could double-count shared history. Before resolving, both copies are retained in the browser's `cloudRecovery` field and included in full exports. An interrupted save is safely recognized on retry.
 
-Current status: **not connected**. A Supabase project URL, publishable key, executed SQL schema and working email delivery are still required before real users can sign in.
+Current status: project `cbxojkechgzzvmexonuq` and its publishable key are configured. The public Auth endpoint responds and email sign-in is enabled. The `study_progress` table is not present yet, so accounts remain explicitly disabled pending the SQL schema, production redirect URL and email-delivery verification.
 
 References:
 - https://supabase.com/docs/reference/javascript/installing

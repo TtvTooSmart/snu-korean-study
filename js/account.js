@@ -4,7 +4,7 @@ import {syncSnapshot,sameProgress,validStats,reconcileInFlight} from './cloud-pr
 let client, user=null, syncing=false, timer, conflict=null, message='', suppress=false;
 let onChange=()=>{}, signedIn=false;
 const clone=x=>structuredClone(x);
-export const accountsEnabled=()=>!!(accountConfig.url&&accountConfig.publishableKey);
+export const accountsEnabled=()=>!!(accountConfig.enabled&&accountConfig.url&&accountConfig.publishableKey);
 const emit=()=>document.dispatchEvent(new Event('account-status'));
 const status=text=>{message=text;emit();};
 
