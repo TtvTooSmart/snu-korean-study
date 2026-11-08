@@ -2,10 +2,10 @@
   "book": "3b",
   "placeholder": false,
   "source": {
-    "title": "서울대 한국어 플러스 3B Student’s Book & 문법",
+    "title": "서울대 한국어 플러스 3B Student’s Book & 문법 + Workbook",
     "vocabulary": "Entries from opening-page vocabulary boxes (standard) and bottom-of-page Korean–English notes on other pages (hard). Original glossary IDs retained. Opposites joined with a slash in the book are separate cards.",
     "grammar": "All 33 patterns in the grammar booklet contents. Quiz sentences and explanations are original, not textbook exercises.",
-    "coverage": "Units 10–18. Unit 18 has only subchapter 18-1. Printed page numbers are retained in sourcePage. Classification uses vocabulary location, not word difficulty.",
+    "coverage": "Units10–18: student-book opening vocabulary boxes (Standard), student-book other-page notes plus workbook lesson/review footnotes (Hard), and33 indexed grammar patterns with66 original practice questions.",
     "sourceFile": "3B SB & 문법.pdf",
     "subchapterOpeningPages": {
       "10-1": 24,
@@ -26,7 +26,69 @@
       "17-2": 142,
       "18-1": 152
     },
-    "verification": "Opening-page boxes and bottom vocabulary notes on printed pages 24–161 visually checked against the supplied scan. Added 그녀 and 반대하다 from page 81, which were absent from the previous glossary-based data. Cultural-page bottom notes are included in hard mode under the preceding subchapter. No running-text vocabulary added."
+    "verification": "Opening-page boxes and bottom vocabulary notes on printed pages 24–161 visually checked against the supplied scan. Added 그녀 and 반대하다 from page 81, which were absent from the previous glossary-based data. Cultural-page bottom notes are included in hard mode under the preceding subchapter. No running-text vocabulary added.",
+    "workbook": {
+      "sourceFile": "3B WB.pdf",
+      "vocabulary": "Korean–English vocabulary footnotes on printed lesson and review pages14–175; all entries are Hard. Exercise word banks are excluded.",
+      "subchapterOpeningPages": {
+        "10-1": 14,
+        "10-2": 20,
+        "11-1": 30,
+        "11-2": 36,
+        "12-1": 44,
+        "12-2": 50,
+        "13-1": 72,
+        "13-2": 78,
+        "14-1": 86,
+        "14-2": 92,
+        "15-1": 100,
+        "15-2": 106,
+        "16-1": 128,
+        "16-2": 134,
+        "17-1": 142,
+        "17-2": 148,
+        "18-1": 156
+      },
+      "reviews": {
+        "Review 4": {
+          "pages": [
+            56,
+            69
+          ],
+          "units": [
+            10,
+            11,
+            12
+          ]
+        },
+        "Review 5": {
+          "pages": [
+            112,
+            125
+          ],
+          "units": [
+            13,
+            14,
+            15
+          ]
+        },
+        "Review 6": {
+          "pages": [
+            162,
+            175
+          ],
+          "units": [
+            16,
+            17,
+            18
+          ]
+        }
+      },
+      "footerEntries": 130,
+      "newCards": 122,
+      "mergedWithStudentBook": 8,
+      "verification": "All workbook footers visually checked. Front matter, unit dividers, listening scripts and answer-key pages contain no additional vocabulary footnotes."
+    }
   },
   "units": [
     {
@@ -39,7 +101,8 @@
           "en": "cabin",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v2",
@@ -47,7 +110,8 @@
           "en": "fix",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v3",
@@ -55,7 +119,8 @@
           "en": "lower",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v4",
@@ -63,7 +128,8 @@
           "en": "freezer compartment",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v5",
@@ -71,7 +137,8 @@
           "en": "refrigerator compartment",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v6",
@@ -79,7 +146,8 @@
           "en": "raise",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v7",
@@ -87,7 +155,8 @@
           "en": "postpone;delay",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v8",
@@ -95,7 +164,8 @@
           "en": "wear out",
           "sourcePage": 35,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v9",
@@ -103,7 +173,8 @@
           "en": "run;turn",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v10",
@@ -111,7 +182,8 @@
           "en": "drop on the ground",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v11",
@@ -119,7 +191,8 @@
           "en": "entrust;leave in someone's care",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v12",
@@ -127,7 +200,8 @@
           "en": "be covered in dust",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v13",
@@ -135,7 +209,8 @@
           "en": "dust bin",
           "sourcePage": 33,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v14",
@@ -143,7 +218,8 @@
           "en": "wireless",
           "sourcePage": 33,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v15",
@@ -151,7 +227,8 @@
           "en": "drop in water",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v16",
@@ -159,7 +236,8 @@
           "en": "air circulates",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v17",
@@ -167,7 +245,8 @@
           "en": "visit",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v18",
@@ -175,7 +254,8 @@
           "en": "put in batteries",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v19",
@@ -183,7 +263,8 @@
           "en": "remove batteries",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v20",
@@ -191,7 +272,8 @@
           "en": "part",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v21",
@@ -199,7 +281,8 @@
           "en": "replace a part",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v22",
@@ -207,7 +290,8 @@
           "en": "apply the brakes",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v23",
@@ -215,7 +299,8 @@
           "en": "empty",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v24",
@@ -223,7 +308,8 @@
           "en": "temperature setting",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v25",
@@ -231,7 +317,8 @@
           "en": "be useless",
           "sourcePage": 26,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v26",
@@ -239,7 +326,8 @@
           "en": "speed",
           "sourcePage": 26,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v27",
@@ -247,7 +335,8 @@
           "en": "repair cost",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v28",
@@ -255,7 +344,8 @@
           "en": "repair center",
           "sourcePage": 26,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v29",
@@ -263,7 +353,8 @@
           "en": "repair",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v30",
@@ -271,7 +362,8 @@
           "en": "clockwise",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v31",
@@ -279,7 +371,8 @@
           "en": "period;time",
           "sourcePage": 36,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v32",
@@ -287,7 +380,8 @@
           "en": "feel reassured",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v33",
@@ -295,7 +389,8 @@
           "en": "inform",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v34",
@@ -303,7 +398,8 @@
           "en": "screen is cracked",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v35",
@@ -311,7 +407,8 @@
           "en": "screen stops working",
           "sourcePage": 29,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v36",
@@ -319,7 +416,8 @@
           "en": "engine",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v37",
@@ -327,7 +425,8 @@
           "en": "train",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v38",
@@ -335,7 +434,8 @@
           "en": "side surface",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v39",
@@ -343,7 +443,8 @@
           "en": "temperature control does not work",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v40",
@@ -351,7 +452,8 @@
           "en": "move;transfer",
           "sourcePage": 29,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v41",
@@ -359,7 +461,8 @@
           "en": "request",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v42",
@@ -367,7 +470,8 @@
           "en": "operate a vehicle",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v43",
@@ -375,7 +479,8 @@
           "en": "cause",
           "sourcePage": 36,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v44",
@@ -383,7 +488,8 @@
           "en": "buzz",
           "sourcePage": 25,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v45",
@@ -391,7 +497,8 @@
           "en": "maintain",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v46",
@@ -399,7 +506,8 @@
           "en": "spill a drink",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v47",
@@ -407,7 +515,8 @@
           "en": "turn off the power",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v48",
@@ -415,7 +524,8 @@
           "en": "turn on the power",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v49",
@@ -423,7 +533,8 @@
           "en": "receive an application",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v50",
@@ -431,7 +542,8 @@
           "en": "provide",
           "sourcePage": 31,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v51",
@@ -439,7 +551,8 @@
           "en": "adjustment;control",
           "sourcePage": 32,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v52",
@@ -447,7 +560,8 @@
           "en": "paper is jammed",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v53",
@@ -455,7 +569,8 @@
           "en": "vegetables freeze",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v54",
@@ -463,7 +578,8 @@
           "en": "fill",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v55",
@@ -471,7 +587,8 @@
           "en": "as much as possible",
           "sourcePage": 33,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v56",
@@ -479,7 +596,8 @@
           "en": "charging",
           "sourcePage": 33,
           "difficulty": "hard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v57",
@@ -487,7 +605,8 @@
           "en": "tire",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v58",
@@ -495,7 +614,8 @@
           "en": "touch",
           "sourcePage": 27,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v59",
@@ -503,7 +623,8 @@
           "en": "phone call disconnects",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v60",
@@ -511,7 +632,8 @@
           "en": "have a flat tire",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v61",
@@ -519,7 +641,8 @@
           "en": "plug in",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v62",
@@ -527,7 +650,8 @@
           "en": "unplug",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v63",
@@ -535,7 +659,8 @@
           "en": "screen does not display",
           "sourcePage": 24,
           "difficulty": "standard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v64",
@@ -543,7 +668,8 @@
           "en": "check;confirm",
           "sourcePage": 30,
           "difficulty": "standard",
-          "subchapter": "10-2"
+          "subchapter": "10-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u10-v65",
@@ -551,7 +677,348 @@
           "en": "shake",
           "sourcePage": 28,
           "difficulty": "hard",
-          "subchapter": "10-1"
+          "subchapter": "10-1",
+          "sourceType": "student-book"
+        },
+        {
+          "id": "3b-wb-p14-v1",
+          "ko": "말리다",
+          "en": "to dry",
+          "sourcePage": 14,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 14,
+              "subchapter": "10-1",
+              "units": [
+                10
+              ],
+              "gloss": "to dry"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p14-v2",
+          "ko": "스피커",
+          "en": "speaker",
+          "sourcePage": 14,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 14,
+              "subchapter": "10-1",
+              "units": [
+                10
+              ],
+              "gloss": "speaker"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p15-v1",
+          "ko": "배터리가 다 되다",
+          "en": "battery is dead",
+          "sourcePage": 15,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 15,
+              "subchapter": "10-1",
+              "units": [
+                10
+              ],
+              "gloss": "battery is dead"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p15-v2",
+          "ko": "복사기",
+          "en": "copy machine",
+          "sourcePage": 15,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 15,
+              "subchapter": "10-1",
+              "units": [
+                10
+              ],
+              "gloss": "copy machine"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p15-v3",
+          "ko": "키보드",
+          "en": "keyboard",
+          "sourcePage": 15,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 15,
+              "subchapter": "10-1",
+              "units": [
+                10
+              ],
+              "gloss": "keyboard"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p16-v1",
+          "ko": "과학자",
+          "en": "scientist",
+          "sourcePage": 16,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 16,
+              "subchapter": "10-1",
+              "units": [
+                10
+              ],
+              "gloss": "scientist"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p17-v1",
+          "ko": "조금씩",
+          "en": "gradually",
+          "sourcePage": 17,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 17,
+              "subchapter": "10-1",
+              "units": [
+                10
+              ],
+              "gloss": "gradually"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p17-v2",
+          "ko": "느리다",
+          "en": "to be slow",
+          "sourcePage": 17,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 17,
+              "subchapter": "10-1",
+              "units": [
+                10
+              ],
+              "gloss": "to be slow"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p17-v3",
+          "ko": "완전히",
+          "en": "completely",
+          "sourcePage": 17,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 17,
+              "subchapter": "10-1",
+              "units": [
+                10
+              ],
+              "gloss": "completely"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p20-v1",
+          "ko": "시험 범위",
+          "en": "test range",
+          "sourcePage": 20,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 20,
+              "subchapter": "10-2",
+              "units": [
+                10
+              ],
+              "gloss": "test range"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p21-v1",
+          "ko": "시동을 걸다",
+          "en": "to start (a car)",
+          "sourcePage": 21,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 21,
+              "subchapter": "10-2",
+              "units": [
+                10
+              ],
+              "gloss": "to start (a car)"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p21-v2",
+          "ko": "볼륨",
+          "en": "volume",
+          "sourcePage": 21,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 21,
+              "subchapter": "10-2",
+              "units": [
+                10
+              ],
+              "gloss": "volume"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p21-v3",
+          "ko": "엉망이다",
+          "en": "to be messy",
+          "sourcePage": 21,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 21,
+              "subchapter": "10-2",
+              "units": [
+                10
+              ],
+              "gloss": "to be messy"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p23-v1",
+          "ko": "죽어 가다",
+          "en": "to be dying",
+          "sourcePage": 23,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 23,
+              "subchapter": "10-2",
+              "units": [
+                10
+              ],
+              "gloss": "to be dying"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p27-v1",
+          "ko": "길고양이",
+          "en": "stray cat",
+          "sourcePage": 27,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 27,
+              "subchapter": "10-2",
+              "units": [
+                10
+              ],
+              "gloss": "stray cat"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p27-v2",
+          "ko": "놀이터",
+          "en": "playground",
+          "sourcePage": 27,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 27,
+              "subchapter": "10-2",
+              "units": [
+                10
+              ],
+              "gloss": "playground"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p27-v3",
+          "ko": "그네",
+          "en": "swing",
+          "sourcePage": 27,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "10-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 27,
+              "subchapter": "10-2",
+              "units": [
+                10
+              ],
+              "gloss": "swing"
+            }
+          ]
         }
       ],
       "grammar": [
@@ -648,7 +1115,8 @@
           "en": "between;among",
           "sourcePage": 49,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v2",
@@ -656,7 +1124,8 @@
           "en": "season food",
           "sourcePage": 45,
           "difficulty": "hard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v3",
@@ -664,7 +1133,8 @@
           "en": "hide",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v4",
@@ -672,7 +1142,8 @@
           "en": "be scared",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v5",
@@ -680,7 +1151,8 @@
           "en": "ancient times",
           "sourcePage": 48,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v6",
@@ -688,7 +1160,8 @@
           "en": "have a concern",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v7",
@@ -696,7 +1169,8 @@
           "en": "overcome",
           "sourcePage": 48,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v8",
@@ -704,7 +1178,8 @@
           "en": "forget momentarily",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v9",
@@ -712,7 +1187,8 @@
           "en": "consistently",
           "sourcePage": 49,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v10",
@@ -720,7 +1196,8 @@
           "en": "be a relief",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v11",
@@ -728,7 +1205,8 @@
           "en": "be flustered",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v12",
@@ -736,7 +1214,8 @@
           "en": "be helpful",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v13",
@@ -744,7 +1223,8 @@
           "en": "get caught",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v14",
@@ -752,7 +1232,8 @@
           "en": "ruin",
           "sourcePage": 41,
           "difficulty": "hard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v15",
@@ -760,7 +1241,8 @@
           "en": "solve a problem",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v16",
@@ -768,7 +1250,8 @@
           "en": "be rewarding",
           "sourcePage": 49,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v17",
@@ -776,7 +1259,8 @@
           "en": "be dissatisfied",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v18",
@@ -784,7 +1268,8 @@
           "en": "complain",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v19",
@@ -792,7 +1277,8 @@
           "en": "private life",
           "sourcePage": 47,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v20",
@@ -800,7 +1286,8 @@
           "en": "circumstances;reason",
           "sourcePage": 41,
           "difficulty": "hard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v21",
@@ -808,7 +1295,8 @@
           "en": "the other person",
           "sourcePage": 48,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v22",
@@ -816,7 +1304,8 @@
           "en": "generation gap",
           "sourcePage": 48,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v23",
@@ -824,7 +1313,8 @@
           "en": "inner feelings",
           "sourcePage": 44,
           "difficulty": "hard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v24",
@@ -832,7 +1322,8 @@
           "en": "Sumerian clay tablet",
           "sourcePage": 48,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v25",
@@ -840,7 +1331,8 @@
           "en": "make a mistake",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v26",
@@ -848,7 +1340,8 @@
           "en": "serious",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v27",
@@ -856,7 +1349,8 @@
           "en": "be scolded",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v28",
@@ -864,7 +1358,8 @@
           "en": "scold",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v29",
@@ -872,7 +1367,8 @@
           "en": "someday",
           "sourcePage": 49,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v30",
@@ -880,7 +1376,8 @@
           "en": "nag",
           "sourcePage": 49,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v31",
@@ -888,7 +1385,8 @@
           "en": "do something wrong",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v32",
@@ -896,7 +1394,8 @@
           "en": "be careful",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v33",
@@ -904,7 +1403,8 @@
           "en": "advise",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v34",
@@ -912,7 +1412,8 @@
           "en": "concentrate",
           "sourcePage": 49,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v35",
@@ -920,7 +1421,8 @@
           "en": "feel irritated",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v36",
@@ -928,7 +1430,8 @@
           "en": "act irritated",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v37",
@@ -936,7 +1439,8 @@
           "en": "listener",
           "sourcePage": 44,
           "difficulty": "hard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v38",
@@ -944,7 +1448,8 @@
           "en": "cover",
           "sourcePage": 49,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v39",
@@ -952,7 +1457,8 @@
           "en": "express",
           "sourcePage": 48,
           "difficulty": "hard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v40",
@@ -960,7 +1466,8 @@
           "en": "spicy seafood soup",
           "sourcePage": 45,
           "difficulty": "hard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v41",
@@ -968,7 +1475,8 @@
           "en": "anger subsides",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v42",
@@ -976,7 +1484,8 @@
           "en": "let out one's anger",
           "sourcePage": 46,
           "difficulty": "standard",
-          "subchapter": "11-2"
+          "subchapter": "11-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u11-v43",
@@ -984,7 +1493,288 @@
           "en": "regret",
           "sourcePage": 40,
           "difficulty": "standard",
-          "subchapter": "11-1"
+          "subchapter": "11-1",
+          "sourceType": "student-book"
+        },
+        {
+          "id": "3b-wb-p30-v1",
+          "ko": "할 수 없이",
+          "en": "to have no choice but to",
+          "sourcePage": 30,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 30,
+              "subchapter": "11-1",
+              "units": [
+                11
+              ],
+              "gloss": "to have no choice but to"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p31-v1",
+          "ko": "선풍기",
+          "en": "fan",
+          "sourcePage": 31,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 31,
+              "subchapter": "11-1",
+              "units": [
+                11
+              ],
+              "gloss": "fan"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p31-v2",
+          "ko": "플라스틱",
+          "en": "plastic",
+          "sourcePage": 31,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 31,
+              "subchapter": "11-1",
+              "units": [
+                11
+              ],
+              "gloss": "plastic"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p32-v1",
+          "ko": "지퍼",
+          "en": "zipper",
+          "sourcePage": 32,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 32,
+              "subchapter": "11-1",
+              "units": [
+                11
+              ],
+              "gloss": "zipper"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p33-v1",
+          "ko": "단추를 달다",
+          "en": "to sew a button on",
+          "sourcePage": 33,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 33,
+              "subchapter": "11-1",
+              "units": [
+                11
+              ],
+              "gloss": "to sew a button on"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p33-v2",
+          "ko": "반대 방향",
+          "en": "opposite direction",
+          "sourcePage": 33,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 33,
+              "subchapter": "11-1",
+              "units": [
+                11
+              ],
+              "gloss": "opposite direction"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p33-v3",
+          "ko": "인연",
+          "en": "fate",
+          "sourcePage": 33,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 33,
+              "subchapter": "11-1",
+              "units": [
+                11
+              ],
+              "gloss": "fate"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p34-v1",
+          "ko": "퉁퉁 붓다",
+          "en": "to be swollen",
+          "sourcePage": 34,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 34,
+              "subchapter": "11-1",
+              "units": [
+                11
+              ],
+              "gloss": "to be swollen"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p37-v1",
+          "ko": "가만히",
+          "en": "motionlessly",
+          "sourcePage": 37,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 37,
+              "subchapter": "11-2",
+              "units": [
+                11
+              ],
+              "gloss": "motionlessly"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p39-v1",
+          "ko": "돌잔치",
+          "en": "1st birthday party",
+          "sourcePage": 39,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 39,
+              "subchapter": "11-2",
+              "units": [
+                11
+              ],
+              "gloss": "1st birthday party"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p40-v1",
+          "ko": "이별",
+          "en": "breakup",
+          "sourcePage": 40,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 40,
+              "subchapter": "11-2",
+              "units": [
+                11
+              ],
+              "gloss": "breakup"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p40-v2",
+          "ko": "가사",
+          "en": "lyrics",
+          "sourcePage": 40,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 40,
+              "subchapter": "11-2",
+              "units": [
+                11
+              ],
+              "gloss": "lyrics"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p41-v1",
+          "ko": "별",
+          "en": "star",
+          "sourcePage": 41,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 41,
+              "subchapter": "11-2",
+              "units": [
+                11
+              ],
+              "gloss": "star"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p41-v2",
+          "ko": "감동적이다",
+          "en": "to be moving",
+          "sourcePage": 41,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "11-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 41,
+              "subchapter": "11-2",
+              "units": [
+                11
+              ],
+              "gloss": "to be moving"
+            }
+          ]
         }
       ],
       "grammar": [
@@ -1108,7 +1898,8 @@
           "en": "take care of one's health",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v2",
@@ -1116,7 +1907,8 @@
           "en": "decide;resolve",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v3",
@@ -1124,7 +1916,8 @@
           "en": "think positively",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v4",
@@ -1132,7 +1925,8 @@
           "en": "shake one's leg",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v5",
@@ -1140,7 +1934,8 @@
           "en": "roughly;carelessly",
           "sourcePage": 63,
           "difficulty": "hard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v6",
@@ -1148,7 +1943,8 @@
           "en": "challenge oneself",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v7",
@@ -1156,7 +1952,8 @@
           "en": "marathon",
           "sourcePage": 63,
           "difficulty": "hard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v8",
@@ -1164,7 +1961,8 @@
           "en": "make up one's mind",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v9",
@@ -1172,7 +1970,8 @@
           "en": "nail polish",
           "sourcePage": 58,
           "difficulty": "hard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v10",
@@ -1180,7 +1979,8 @@
           "en": "scratch one's head",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v11",
@@ -1188,7 +1988,8 @@
           "en": "interviewer",
           "sourcePage": 61,
           "difficulty": "hard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v12",
@@ -1196,7 +1997,8 @@
           "en": "list",
           "sourcePage": 67,
           "difficulty": "hard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v13",
@@ -1204,7 +2006,8 @@
           "en": "achieve a goal",
           "sourcePage": 65,
           "difficulty": "hard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v14",
@@ -1212,7 +2015,8 @@
           "en": "set a goal",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v15",
@@ -1220,7 +2024,8 @@
           "en": "break a habit",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v16",
@@ -1228,7 +2033,8 @@
           "en": "lose one's good fortune",
           "sourcePage": 60,
           "difficulty": "hard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v17",
@@ -1236,7 +2042,8 @@
           "en": "minor;trivial",
           "sourcePage": 61,
           "difficulty": "hard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v18",
@@ -1244,7 +2051,8 @@
           "en": "succeed",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v19",
@@ -1252,7 +2060,8 @@
           "en": "bite one's nails",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v20",
@@ -1260,7 +2069,8 @@
           "en": "develop a habit",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v21",
@@ -1268,7 +2078,8 @@
           "en": "eating habits",
           "sourcePage": 64,
           "difficulty": "hard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v22",
@@ -1276,7 +2087,8 @@
           "en": "improve one's ability",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v23",
@@ -1284,7 +2096,8 @@
           "en": "put into practice",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v24",
@@ -1292,7 +2105,8 @@
           "en": "fail",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v25",
@@ -1300,7 +2114,8 @@
           "en": "have trouble waking up in the morning",
           "sourcePage": 57,
           "difficulty": "hard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v26",
@@ -1308,7 +2123,8 @@
           "en": "lip",
           "sourcePage": 61,
           "difficulty": "hard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v27",
@@ -1316,7 +2132,8 @@
           "en": "get enough sleep",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v28",
@@ -1324,7 +2141,8 @@
           "en": "tidy up well",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v29",
@@ -1332,7 +2150,8 @@
           "en": "get a good result",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v30",
@@ -1340,7 +2159,8 @@
           "en": "decrease",
           "sourcePage": 65,
           "difficulty": "hard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v31",
@@ -1348,7 +2168,8 @@
           "en": "applicant",
           "sourcePage": 61,
           "difficulty": "hard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v32",
@@ -1356,7 +2177,8 @@
           "en": "give up",
           "sourcePage": 62,
           "difficulty": "standard",
-          "subchapter": "12-2"
+          "subchapter": "12-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u12-v33",
@@ -1364,7 +2186,439 @@
           "en": "sigh",
           "sourcePage": 56,
           "difficulty": "standard",
-          "subchapter": "12-1"
+          "subchapter": "12-1",
+          "sourceType": "student-book"
+        },
+        {
+          "id": "3b-wb-p45-v1",
+          "ko": "도시락을 싸다",
+          "en": "to pack a lunch",
+          "sourcePage": 45,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "12-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 45,
+              "subchapter": "12-1",
+              "units": [
+                12
+              ],
+              "gloss": "to pack a lunch"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p48-v1",
+          "ko": "질리다",
+          "en": "to be sick of",
+          "sourcePage": 48,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "12-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 48,
+              "subchapter": "12-1",
+              "units": [
+                12
+              ],
+              "gloss": "to be sick of"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p50-v1",
+          "ko": "금메달을 따다",
+          "en": "to win a gold medal",
+          "sourcePage": 50,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "12-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 50,
+              "subchapter": "12-2",
+              "units": [
+                12
+              ],
+              "gloss": "to win a gold medal"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p51-v1",
+          "ko": "운전면허증",
+          "en": "driver's license",
+          "sourcePage": 51,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "12-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 51,
+              "subchapter": "12-2",
+              "units": [
+                12
+              ],
+              "gloss": "driver's license"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p60-v1",
+          "ko": "야식",
+          "en": "late-night snack",
+          "sourcePage": 60,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 60,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "late-night snack"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p61-v1",
+          "ko": "탈수하다",
+          "en": "to dry",
+          "sourcePage": 61,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 61,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "to dry"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p61-v2",
+          "ko": "필터",
+          "en": "filter",
+          "sourcePage": 61,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 61,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "filter"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p63-v1",
+          "ko": "과식",
+          "en": "overeating",
+          "sourcePage": 63,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 63,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "overeating"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p63-v2",
+          "ko": "씹다",
+          "en": "to chew",
+          "sourcePage": 63,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 63,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "to chew"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p63-v3",
+          "ko": "다이얼",
+          "en": "dial",
+          "sourcePage": 63,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 63,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "dial"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p63-v4",
+          "ko": "표준",
+          "en": "standard",
+          "sourcePage": 63,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 63,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "standard"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p63-v5",
+          "ko": "일시 정지",
+          "en": "pause",
+          "sourcePage": 63,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 63,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "pause"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p64-v1",
+          "ko": "상처받다",
+          "en": "to feel hurt",
+          "sourcePage": 64,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 64,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "to feel hurt"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p64-v2",
+          "ko": "저절로",
+          "en": "by itself",
+          "sourcePage": 64,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 64,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "by itself"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p64-v3",
+          "ko": "무시하다",
+          "en": "to ignore",
+          "sourcePage": 64,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 64,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "to ignore"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p66-v1",
+          "ko": "일기장",
+          "en": "diary",
+          "sourcePage": 66,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 66,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "diary"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "3b-wb-p66-v2",
+          "ko": "리모컨",
+          "en": "remote control",
+          "sourcePage": 66,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 4",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 66,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "remote control"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12
+          ]
         }
       ],
       "grammar": [
@@ -1488,7 +2742,8 @@
           "en": "heart pounds",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v2",
@@ -1496,7 +2751,8 @@
           "en": "marriage matchmaking company",
           "sourcePage": 76,
           "difficulty": "hard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v3",
@@ -1504,7 +2760,8 @@
           "en": "economic",
           "sourcePage": 76,
           "difficulty": "hard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v4",
@@ -1512,7 +2769,8 @@
           "en": "motive;occasion",
           "sourcePage": 74,
           "difficulty": "hard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v5",
@@ -1520,7 +2778,8 @@
           "en": "confess",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v6",
@@ -1528,7 +2787,8 @@
           "en": "sit side by side",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v7",
@@ -1536,7 +2796,8 @@
           "en": "boyfriend",
           "sourcePage": 79,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v8",
@@ -1544,7 +2805,8 @@
           "en": "capable",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v9",
@@ -1552,7 +2814,8 @@
           "en": "jujube",
           "sourcePage": 85,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v10",
@@ -1560,7 +2823,8 @@
           "en": "reassuring;reliable",
           "sourcePage": 81,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v11",
@@ -1568,7 +2832,30 @@
           "en": "romance",
           "sourcePage": 79,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book",
+          "sources": [
+            {
+              "sourceType": "student-book",
+              "sourcePage": 79,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ]
+            },
+            {
+              "sourceType": "workbook",
+              "sourcePage": 79,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ],
+              "gloss": "romance"
+            }
+          ],
+          "relatedUnits": [
+            13
+          ]
         },
         {
           "id": "3b-u13-v12",
@@ -1576,7 +2863,8 @@
           "en": "kind-hearted",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v13",
@@ -1584,7 +2872,8 @@
           "en": "understand each other well",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v14",
@@ -1592,7 +2881,8 @@
           "en": "charming",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v15",
@@ -1600,7 +2890,8 @@
           "en": "blunt;unfriendly",
           "sourcePage": 74,
           "difficulty": "hard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v16",
@@ -1608,7 +2899,8 @@
           "en": "spouse",
           "sourcePage": 76,
           "difficulty": "hard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v17",
@@ -1616,7 +2908,8 @@
           "en": "the mood is ruined",
           "sourcePage": 80,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v18",
@@ -1624,7 +2917,8 @@
           "en": "love fades",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v19",
@@ -1632,7 +2926,8 @@
           "en": "meet a potential spouse on a blind date",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v20",
@@ -1640,7 +2935,8 @@
           "en": "personalities match well",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v21",
@@ -1648,7 +2944,8 @@
           "en": "go on a blind date",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v22",
@@ -1656,7 +2953,8 @@
           "en": "hold hands",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v23",
@@ -1664,7 +2962,8 @@
           "en": "honest",
           "sourcePage": 80,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v24",
@@ -1672,7 +2971,8 @@
           "en": "hide",
           "sourcePage": 80,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v25",
@@ -1680,7 +2980,8 @@
           "en": "husband's family",
           "sourcePage": 85,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v26",
@@ -1688,7 +2989,8 @@
           "en": "load",
           "sourcePage": 76,
           "difficulty": "hard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v27",
@@ -1696,7 +2998,8 @@
           "en": "actual;real",
           "sourcePage": 80,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v28",
@@ -1704,7 +3007,8 @@
           "en": "lean on someone's shoulder",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v29",
@@ -1712,7 +3016,8 @@
           "en": "awkward",
           "sourcePage": 79,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v30",
@@ -1720,7 +3025,8 @@
           "en": "face turns red",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v31",
@@ -1728,7 +3034,8 @@
           "en": "girlfriend",
           "sourcePage": 80,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v32",
@@ -1736,7 +3043,8 @@
           "en": "love marriage",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v33",
@@ -1744,15 +3052,39 @@
           "en": "rude",
           "sourcePage": 74,
           "difficulty": "hard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v34",
           "ko": "용기를 내다",
-          "en": "gather courage",
+          "en": "gather courage;to muster up the courage",
           "sourcePage": 81,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book",
+          "sources": [
+            {
+              "sourceType": "student-book",
+              "sourcePage": 81,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ]
+            },
+            {
+              "sourceType": "workbook",
+              "sourcePage": 79,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ],
+              "gloss": "to muster up the courage"
+            }
+          ],
+          "relatedUnits": [
+            13
+          ]
         },
         {
           "id": "3b-u13-v35",
@@ -1760,7 +3092,8 @@
           "en": "as it is",
           "sourcePage": 80,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v36",
@@ -1768,7 +3101,8 @@
           "en": "break up",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v37",
@@ -1776,7 +3110,8 @@
           "en": "make a good impression",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v38",
@@ -1784,7 +3119,8 @@
           "en": "have a cold impression",
           "sourcePage": 73,
           "difficulty": "hard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v39",
@@ -1792,7 +3128,8 @@
           "en": "long-distance relationship",
           "sourcePage": 81,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v40",
@@ -1800,7 +3137,8 @@
           "en": "prank",
           "sourcePage": 74,
           "difficulty": "hard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v41",
@@ -1808,7 +3146,30 @@
           "en": "genre",
           "sourcePage": 79,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book",
+          "sources": [
+            {
+              "sourceType": "student-book",
+              "sourcePage": 79,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ]
+            },
+            {
+              "sourceType": "workbook",
+              "sourcePage": 79,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ],
+              "gloss": "genre"
+            }
+          ],
+          "relatedUnits": [
+            13
+          ]
         },
         {
           "id": "3b-u13-v42",
@@ -1816,7 +3177,8 @@
           "en": "traditional bow",
           "sourcePage": 85,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v43",
@@ -1824,7 +3186,8 @@
           "en": "properly",
           "sourcePage": 81,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v44",
@@ -1832,7 +3195,8 @@
           "en": "meet the conditions",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v45",
@@ -1840,7 +3204,8 @@
           "en": "occasionally",
           "sourcePage": 80,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v46",
@@ -1848,7 +3213,8 @@
           "en": "arranged marriage",
           "sourcePage": 72,
           "difficulty": "standard",
-          "subchapter": "13-1"
+          "subchapter": "13-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v47",
@@ -1856,7 +3222,8 @@
           "en": "real",
           "sourcePage": 80,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v48",
@@ -1864,7 +3231,8 @@
           "en": "fall in love at first sight",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v49",
@@ -1872,7 +3240,8 @@
           "en": "propose marriage",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v50",
@@ -1880,7 +3249,8 @@
           "en": "link arms",
           "sourcePage": 78,
           "difficulty": "standard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v51",
@@ -1888,7 +3258,8 @@
           "en": "traditional wedding greeting ceremony",
           "sourcePage": 85,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v52",
@@ -1896,7 +3267,8 @@
           "en": "wedding gift chest",
           "sourcePage": 85,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v53",
@@ -1904,7 +3276,8 @@
           "en": "wedding clothes",
           "sourcePage": 85,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v54",
@@ -1912,7 +3285,8 @@
           "en": "she",
           "sourcePage": 81,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u13-v55",
@@ -1920,7 +3294,248 @@
           "en": "to oppose",
           "sourcePage": 81,
           "difficulty": "hard",
-          "subchapter": "13-2"
+          "subchapter": "13-2",
+          "sourceType": "student-book"
+        },
+        {
+          "id": "3b-wb-p73-v1",
+          "ko": "청첩장",
+          "en": "wedding invitation",
+          "sourcePage": 73,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 73,
+              "subchapter": "13-1",
+              "units": [
+                13
+              ],
+              "gloss": "wedding invitation"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p73-v2",
+          "ko": "모바일",
+          "en": "mobile",
+          "sourcePage": 73,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 73,
+              "subchapter": "13-1",
+              "units": [
+                13
+              ],
+              "gloss": "mobile"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p73-v3",
+          "ko": "종교",
+          "en": "religion",
+          "sourcePage": 73,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 73,
+              "subchapter": "13-1",
+              "units": [
+                13
+              ],
+              "gloss": "religion"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p74-v1",
+          "ko": "오븐",
+          "en": "oven",
+          "sourcePage": 74,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 74,
+              "subchapter": "13-1",
+              "units": [
+                13
+              ],
+              "gloss": "oven"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p75-v1",
+          "ko": "제대하다",
+          "en": "to be discharged from military service",
+          "sourcePage": 75,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 75,
+              "subchapter": "13-1",
+              "units": [
+                13
+              ],
+              "gloss": "to be discharged from military service"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p77-v1",
+          "ko": "디저트",
+          "en": "dessert",
+          "sourcePage": 77,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 77,
+              "subchapter": "13-1",
+              "units": [
+                13
+              ],
+              "gloss": "dessert"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p78-v1",
+          "ko": "벤치",
+          "en": "bench",
+          "sourcePage": 78,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 78,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ],
+              "gloss": "bench"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p78-v2",
+          "ko": "연못",
+          "en": "pond",
+          "sourcePage": 78,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 78,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ],
+              "gloss": "pond"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p79-v1",
+          "ko": "결국",
+          "en": "in the end",
+          "sourcePage": 79,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 79,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ],
+              "gloss": "in the end"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p81-v1",
+          "ko": "어린아이",
+          "en": "young child",
+          "sourcePage": 81,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 81,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ],
+              "gloss": "young child"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p81-v2",
+          "ko": "장난을 치다",
+          "en": "to play a prank on",
+          "sourcePage": 81,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 81,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ],
+              "gloss": "to play a prank on"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p81-v3",
+          "ko": "예의를 지키다",
+          "en": "to be well mannered",
+          "sourcePage": 81,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "13-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 81,
+              "subchapter": "13-2",
+              "units": [
+                13
+              ],
+              "gloss": "to be well mannered"
+            }
+          ]
         }
       ],
       "grammar": [
@@ -2044,7 +3659,8 @@
           "en": "air is fresh",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v2",
@@ -2052,7 +3668,8 @@
           "en": "contest",
           "sourcePage": 97,
           "difficulty": "hard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v3",
@@ -2060,7 +3677,8 @@
           "en": "pollution is severe",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v4",
@@ -2068,7 +3686,8 @@
           "en": "take the wrong way",
           "sourcePage": 93,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v5",
@@ -2076,7 +3695,8 @@
           "en": "appear",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v6",
@@ -2084,7 +3704,8 @@
           "en": "old;worn out",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v7",
@@ -2092,7 +3713,8 @@
           "en": "route;transit line",
           "sourcePage": 97,
           "difficulty": "hard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v8",
@@ -2100,7 +3722,8 @@
           "en": "sunset glow",
           "sourcePage": 89,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v9",
@@ -2108,7 +3731,8 @@
           "en": "farming village",
           "sourcePage": 92,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v10",
@@ -2116,7 +3740,8 @@
           "en": "stone",
           "sourcePage": 96,
           "difficulty": "hard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v11",
@@ -2124,7 +3749,8 @@
           "en": "bored;boring",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v12",
@@ -2132,7 +3758,8 @@
           "en": "things to eat",
           "sourcePage": 101,
           "difficulty": "hard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v13",
@@ -2140,7 +3767,8 @@
           "en": "fail to recognize",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v14",
@@ -2148,7 +3776,8 @@
           "en": "develop",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v15",
@@ -2156,7 +3785,8 @@
           "en": "change",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v16",
@@ -2164,7 +3794,8 @@
           "en": "have various sights to see",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v17",
@@ -2172,7 +3803,8 @@
           "en": "disappear",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v18",
@@ -2180,7 +3812,8 @@
           "en": "be imaginable",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v19",
@@ -2188,7 +3821,8 @@
           "en": "be unimaginable",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v20",
@@ -2196,7 +3830,8 @@
           "en": "new",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v21",
@@ -2204,7 +3839,8 @@
           "en": "appear;be formed",
           "sourcePage": 94,
           "difficulty": "standard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v22",
@@ -2212,7 +3848,8 @@
           "en": "Western-style",
           "sourcePage": 96,
           "difficulty": "hard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v23",
@@ -2220,7 +3857,8 @@
           "en": "surfing",
           "sourcePage": 93,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v24",
@@ -2228,7 +3866,8 @@
           "en": "preciousness",
           "sourcePage": 101,
           "difficulty": "hard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v25",
@@ -2236,7 +3875,8 @@
           "en": "lose track of time",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v26",
@@ -2244,7 +3884,8 @@
           "en": "have no time to spare",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v27",
@@ -2252,7 +3893,8 @@
           "en": "have time to spare",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v28",
@@ -2260,7 +3902,8 @@
           "en": "originally",
           "sourcePage": 96,
           "difficulty": "hard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v29",
@@ -2268,7 +3911,8 @@
           "en": "movement",
           "sourcePage": 97,
           "difficulty": "hard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v30",
@@ -2276,7 +3920,8 @@
           "en": "job",
           "sourcePage": 93,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v31",
@@ -2284,7 +3929,8 @@
           "en": "nature",
           "sourcePage": 90,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v32",
@@ -2292,7 +3938,8 @@
           "en": "observation deck",
           "sourcePage": 93,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v33",
@@ -2300,7 +3947,8 @@
           "en": "school transfer",
           "sourcePage": 92,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v34",
@@ -2308,7 +3956,8 @@
           "en": "things to enjoy",
           "sourcePage": 93,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v35",
@@ -2316,7 +3965,8 @@
           "en": "exhausted",
           "sourcePage": 93,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v36",
@@ -2324,7 +3974,8 @@
           "en": "serious;earnest",
           "sourcePage": 93,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v37",
@@ -2332,7 +3983,8 @@
           "en": "vegetable garden",
           "sourcePage": 92,
           "difficulty": "hard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v38",
@@ -2340,7 +3992,8 @@
           "en": "have good amenities",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v39",
@@ -2348,7 +4001,8 @@
           "en": "peaceful",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v40",
@@ -2356,7 +4010,8 @@
           "en": "form;shape",
           "sourcePage": 96,
           "difficulty": "hard",
-          "subchapter": "14-2"
+          "subchapter": "14-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u14-v41",
@@ -2364,7 +4019,268 @@
           "en": "lively",
           "sourcePage": 88,
           "difficulty": "standard",
-          "subchapter": "14-1"
+          "subchapter": "14-1",
+          "sourceType": "student-book"
+        },
+        {
+          "id": "3b-wb-p86-v1",
+          "ko": "공장",
+          "en": "factory",
+          "sourcePage": 86,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 86,
+              "subchapter": "14-1",
+              "units": [
+                14
+              ],
+              "gloss": "factory"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p86-v2",
+          "ko": "매연",
+          "en": "fume",
+          "sourcePage": 86,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 86,
+              "subchapter": "14-1",
+              "units": [
+                14
+              ],
+              "gloss": "fume"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p86-v3",
+          "ko": "예술가",
+          "en": "artist",
+          "sourcePage": 86,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 86,
+              "subchapter": "14-1",
+              "units": [
+                14
+              ],
+              "gloss": "artist"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p86-v4",
+          "ko": "놀거리",
+          "en": "fun things to do",
+          "sourcePage": 86,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 86,
+              "subchapter": "14-1",
+              "units": [
+                14
+              ],
+              "gloss": "fun things to do"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p91-v1",
+          "ko": "가축",
+          "en": "livestock",
+          "sourcePage": 91,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 91,
+              "subchapter": "14-1",
+              "units": [
+                14
+              ],
+              "gloss": "livestock"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p91-v2",
+          "ko": "장마철",
+          "en": "rainy season",
+          "sourcePage": 91,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 91,
+              "subchapter": "14-1",
+              "units": [
+                14
+              ],
+              "gloss": "rainy season"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p91-v3",
+          "ko": "불빛",
+          "en": "light",
+          "sourcePage": 91,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 91,
+              "subchapter": "14-1",
+              "units": [
+                14
+              ],
+              "gloss": "light"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p92-v1",
+          "ko": "기술",
+          "en": "technology",
+          "sourcePage": 92,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 92,
+              "subchapter": "14-2",
+              "units": [
+                14
+              ],
+              "gloss": "technology"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p92-v2",
+          "ko": "우주여행",
+          "en": "space travel",
+          "sourcePage": 92,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 92,
+              "subchapter": "14-2",
+              "units": [
+                14
+              ],
+              "gloss": "space travel"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p94-v1",
+          "ko": "대궐",
+          "en": "king’s palace",
+          "sourcePage": 94,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 94,
+              "subchapter": "14-2",
+              "units": [
+                14
+              ],
+              "gloss": "king’s palace"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p94-v2",
+          "ko": "눈곱",
+          "en": "rheum",
+          "sourcePage": 94,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 94,
+              "subchapter": "14-2",
+              "units": [
+                14
+              ],
+              "gloss": "rheum"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p95-v1",
+          "ko": "덕수궁",
+          "en": "Deoksugung Palace",
+          "sourcePage": 95,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 95,
+              "subchapter": "14-2",
+              "units": [
+                14
+              ],
+              "gloss": "Deoksugung Palace"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p95-v2",
+          "ko": "궁궐",
+          "en": "palace",
+          "sourcePage": 95,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "14-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 95,
+              "subchapter": "14-2",
+              "units": [
+                14
+              ],
+              "gloss": "palace"
+            }
+          ]
         }
       ],
       "grammar": [
@@ -2488,15 +4404,40 @@
           "en": "health food",
           "sourcePage": 108,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v2",
           "ko": "검사를 받다",
-          "en": "get a medical examination",
+          "en": "get a medical examination;to get an exam",
           "sourcePage": 108,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book",
+          "sources": [
+            {
+              "sourceType": "student-book",
+              "sourcePage": 108,
+              "subchapter": "15-1",
+              "units": [
+                15
+              ]
+            },
+            {
+              "sourceType": "workbook",
+              "sourcePage": 96,
+              "subchapter": "14-2",
+              "units": [
+                14
+              ],
+              "gloss": "to get an exam"
+            }
+          ],
+          "relatedUnits": [
+            14,
+            15
+          ]
         },
         {
           "id": "3b-u15-v3",
@@ -2504,7 +4445,8 @@
           "en": "evenly;in a balanced way",
           "sourcePage": 109,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v4",
@@ -2512,7 +4454,8 @@
           "en": "have a high interest",
           "sourcePage": 108,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v5",
@@ -2520,7 +4463,8 @@
           "en": "moral;lesson",
           "sourcePage": 113,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v6",
@@ -2528,7 +4472,8 @@
           "en": "regular",
           "sourcePage": 108,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v7",
@@ -2536,7 +4481,8 @@
           "en": "each time;as needed",
           "sourcePage": 113,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v8",
@@ -2544,7 +4490,8 @@
           "en": "develop muscles",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v9",
@@ -2552,7 +4499,8 @@
           "en": "feel energetic",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v10",
@@ -2560,7 +4508,8 @@
           "en": "protein",
           "sourcePage": 109,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v11",
@@ -2568,7 +4517,8 @@
           "en": "heat",
           "sourcePage": 114,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v12",
@@ -2576,7 +4526,8 @@
           "en": "winter solstice",
           "sourcePage": 117,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v13",
@@ -2584,7 +4535,8 @@
           "en": "sweat",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v14",
@@ -2592,7 +4544,8 @@
           "en": "peanut",
           "sourcePage": 117,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v15",
@@ -2600,7 +4553,8 @@
           "en": "feel at ease",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v16",
@@ -2608,7 +4562,8 @@
           "en": "feel relaxed",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v17",
@@ -2616,7 +4571,8 @@
           "en": "body feels light",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v18",
@@ -2624,7 +4580,8 @@
           "en": "body feels heavy",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v19",
@@ -2632,7 +4589,8 @@
           "en": "immediately",
           "sourcePage": 113,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v20",
@@ -2640,7 +4598,8 @@
           "en": "chestnut",
           "sourcePage": 117,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v21",
@@ -2648,7 +4607,8 @@
           "en": "escape;get out of",
           "sourcePage": 113,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v22",
@@ -2656,7 +4616,8 @@
           "en": "step",
           "sourcePage": 109,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v23",
@@ -2664,7 +4625,8 @@
           "en": "be a burden",
           "sourcePage": 106,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v24",
@@ -2672,7 +4634,8 @@
           "en": "nuts eaten at the first full moon",
           "sourcePage": 117,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v25",
@@ -2680,7 +4643,8 @@
           "en": "impossible",
           "sourcePage": 113,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v26",
@@ -2688,7 +4652,8 @@
           "en": "secret method",
           "sourcePage": 114,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v27",
@@ -2696,7 +4661,8 @@
           "en": "hottest days of summer",
           "sourcePage": 117,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v28",
@@ -2704,7 +4670,8 @@
           "en": "feel hurt",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v29",
@@ -2712,7 +4679,8 @@
           "en": "out of breath",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v30",
@@ -2720,7 +4688,8 @@
           "en": "stress builds up",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v31",
@@ -2728,7 +4697,8 @@
           "en": "stress is relieved",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v32",
@@ -2736,7 +4706,8 @@
           "en": "pay attention to",
           "sourcePage": 112,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v33",
@@ -2744,7 +4715,8 @@
           "en": "app",
           "sourcePage": 109,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v34",
@@ -2752,7 +4724,8 @@
           "en": "experience difficulty",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v35",
@@ -2760,7 +4733,8 @@
           "en": "dizzy",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v36",
@@ -2768,7 +4742,8 @@
           "en": "dietary supplement",
           "sourcePage": 109,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v37",
@@ -2776,7 +4751,8 @@
           "en": "five-grain rice",
           "sourcePage": 117,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v38",
@@ -2784,7 +4760,8 @@
           "en": "depressed",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v39",
@@ -2792,7 +4769,8 @@
           "en": "lucky",
           "sourcePage": 113,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v40",
@@ -2800,7 +4778,8 @@
           "en": "respond",
           "sourcePage": 112,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v41",
@@ -2808,7 +4787,8 @@
           "en": "human relationships",
           "sourcePage": 112,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v42",
@@ -2816,7 +4796,8 @@
           "en": "first full moon of the lunar year",
           "sourcePage": 117,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v43",
@@ -2824,7 +4805,8 @@
           "en": "jump rope",
           "sourcePage": 106,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v44",
@@ -2832,7 +4814,8 @@
           "en": "have a muscle cramp",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v45",
@@ -2840,7 +4823,8 @@
           "en": "cannot concentrate",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v46",
@@ -2848,7 +4832,8 @@
           "en": "physical fitness improves",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v47",
@@ -2856,7 +4841,8 @@
           "en": "cold",
           "sourcePage": 114,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v48",
@@ -2864,7 +4850,8 @@
           "en": "red bean porridge",
           "sourcePage": 117,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v49",
@@ -2872,7 +4859,8 @@
           "en": "usually;ordinary times",
           "sourcePage": 108,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v50",
@@ -2880,7 +4868,8 @@
           "en": "walnut",
           "sourcePage": 117,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v51",
@@ -2888,7 +4877,8 @@
           "en": "red ginseng",
           "sourcePage": 108,
           "difficulty": "hard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v52",
@@ -2896,7 +4886,8 @@
           "en": "company dinner",
           "sourcePage": 112,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v53",
@@ -2904,7 +4895,8 @@
           "en": "strong",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v54",
@@ -2912,7 +4904,8 @@
           "en": "have no strength",
           "sourcePage": 104,
           "difficulty": "standard",
-          "subchapter": "15-1"
+          "subchapter": "15-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v55",
@@ -2920,7 +4913,8 @@
           "en": "exhausted",
           "sourcePage": 110,
           "difficulty": "standard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u15-v56",
@@ -2928,7 +4922,263 @@
           "en": "work;duties",
           "sourcePage": 112,
           "difficulty": "hard",
-          "subchapter": "15-2"
+          "subchapter": "15-2",
+          "sourceType": "student-book"
+        },
+        {
+          "id": "3b-wb-p100-v1",
+          "ko": "상쾌하다",
+          "en": "to be refreshing",
+          "sourcePage": 100,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "15-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 100,
+              "subchapter": "15-1",
+              "units": [
+                15
+              ],
+              "gloss": "to be refreshing"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p101-v1",
+          "ko": "인스턴트식품",
+          "en": "instant food",
+          "sourcePage": 101,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "15-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 101,
+              "subchapter": "15-1",
+              "units": [
+                15
+              ],
+              "gloss": "instant food"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p104-v1",
+          "ko": "떨어지다",
+          "en": "to run out",
+          "sourcePage": 104,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "15-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 104,
+              "subchapter": "15-1",
+              "units": [
+                15
+              ],
+              "gloss": "to run out"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p104-v2",
+          "ko": "비옷",
+          "en": "raincoat",
+          "sourcePage": 104,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "15-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 104,
+              "subchapter": "15-1",
+              "units": [
+                15
+              ],
+              "gloss": "raincoat"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p108-v1",
+          "ko": "초인종",
+          "en": "doorbell",
+          "sourcePage": 108,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "15-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 108,
+              "subchapter": "15-2",
+              "units": [
+                15
+              ],
+              "gloss": "doorbell"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p109-v1",
+          "ko": "송년회",
+          "en": "year-end party",
+          "sourcePage": 109,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "15-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 109,
+              "subchapter": "15-2",
+              "units": [
+                15
+              ],
+              "gloss": "year-end party"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p119-v1",
+          "ko": "전자 기기",
+          "en": "electronic device",
+          "sourcePage": 119,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 5",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 119,
+              "subchapter": "Review 5",
+              "units": [
+                13,
+                14,
+                15
+              ],
+              "gloss": "electronic device"
+            }
+          ],
+          "relatedUnits": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "3b-wb-p119-v2",
+          "ko": "무리가 가다",
+          "en": "to be straining",
+          "sourcePage": 119,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 5",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 119,
+              "subchapter": "Review 5",
+              "units": [
+                13,
+                14,
+                15
+              ],
+              "gloss": "to be straining"
+            }
+          ],
+          "relatedUnits": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "3b-wb-p119-v3",
+          "ko": "마사지",
+          "en": "massage",
+          "sourcePage": 119,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 5",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 119,
+              "subchapter": "Review 5",
+              "units": [
+                13,
+                14,
+                15
+              ],
+              "gloss": "massage"
+            }
+          ],
+          "relatedUnits": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "3b-wb-p120-v1",
+          "ko": "겹",
+          "en": "layer",
+          "sourcePage": 120,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 5",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 120,
+              "subchapter": "Review 5",
+              "units": [
+                13,
+                14,
+                15
+              ],
+              "gloss": "layer"
+            }
+          ],
+          "relatedUnits": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "3b-wb-p120-v2",
+          "ko": "유산소 운동",
+          "en": "cardio exercise",
+          "sourcePage": 120,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 5",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 120,
+              "subchapter": "Review 5",
+              "units": [
+                13,
+                14,
+                15
+              ],
+              "gloss": "cardio exercise"
+            }
+          ],
+          "relatedUnits": [
+            13,
+            14,
+            15
+          ]
         }
       ],
       "grammar": [
@@ -3052,7 +5302,8 @@
           "en": "development",
           "sourcePage": 127,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v2",
@@ -3060,7 +5311,8 @@
           "en": "have a lot of experience",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v3",
@@ -3068,7 +5320,8 @@
           "en": "training opportunities are provided",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v4",
@@ -3076,7 +5329,8 @@
           "en": "job seeking",
           "sourcePage": 129,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v5",
@@ -3084,7 +5338,8 @@
           "en": "working hours",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v6",
@@ -3092,7 +5347,8 @@
           "en": "have a good working environment",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v7",
@@ -3100,7 +5356,8 @@
           "en": "meticulous",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v8",
@@ -3108,7 +5365,8 @@
           "en": "large company",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v9",
@@ -3116,7 +5374,8 @@
           "en": "book purchase allowance",
           "sourcePage": 129,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v10",
@@ -3124,7 +5383,8 @@
           "en": "coworker",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v11",
@@ -3132,7 +5392,8 @@
           "en": "trade",
           "sourcePage": 125,
           "difficulty": "hard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v12",
@@ -3140,7 +5401,8 @@
           "en": "cultural activity allowance",
           "sourcePage": 123,
           "difficulty": "hard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v13",
@@ -3148,7 +5410,8 @@
           "en": "receive a bonus",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v14",
@@ -3156,7 +5419,8 @@
           "en": "have a flexible dress code",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v15",
@@ -3164,7 +5428,8 @@
           "en": "burdensome",
           "sourcePage": 133,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v16",
@@ -3172,7 +5437,8 @@
           "en": "office assistant",
           "sourcePage": 123,
           "difficulty": "hard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v17",
@@ -3180,7 +5446,8 @@
           "en": "movie theater",
           "sourcePage": 122,
           "difficulty": "hard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v18",
@@ -3188,7 +5455,8 @@
           "en": "diligent",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v19",
@@ -3196,7 +5464,8 @@
           "en": "on one's own",
           "sourcePage": 125,
           "difficulty": "hard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v20",
@@ -3204,7 +5473,8 @@
           "en": "have many promotion opportunities",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v21",
@@ -3212,7 +5482,8 @@
           "en": "hourly wage",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v22",
@@ -3220,7 +5491,8 @@
           "en": "new employee",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v23",
@@ -3228,7 +5500,8 @@
           "en": "work;duties",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v24",
@@ -3236,7 +5509,8 @@
           "en": "have excellent work skills",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v25",
@@ -3244,7 +5518,8 @@
           "en": "research",
           "sourcePage": 127,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v26",
@@ -3252,7 +5527,8 @@
           "en": "age",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v27",
@@ -3260,7 +5536,8 @@
           "en": "have a high annual salary",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v28",
@@ -3268,7 +5545,8 @@
           "en": "passion",
           "sourcePage": 127,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v29",
@@ -3276,7 +5554,8 @@
           "en": "submit a resume",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v30",
@@ -3284,7 +5563,8 @@
           "en": "job change",
           "sourcePage": 128,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v31",
@@ -3292,7 +5572,8 @@
           "en": "quick to understand",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v32",
@@ -3300,7 +5581,8 @@
           "en": "look for a job",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v33",
@@ -3308,7 +5590,8 @@
           "en": "fill out;write",
           "sourcePage": 127,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v34",
@@ -3316,7 +5599,8 @@
           "en": "working from home",
           "sourcePage": 129,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v35",
@@ -3324,7 +5608,8 @@
           "en": "electronics",
           "sourcePage": 127,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v36",
@@ -3332,7 +5617,8 @@
           "en": "submit",
           "sourcePage": 124,
           "difficulty": "hard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v37",
@@ -3340,7 +5626,8 @@
           "en": "small or medium-sized company",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v38",
@@ -3348,7 +5635,8 @@
           "en": "payment",
           "sourcePage": 123,
           "difficulty": "hard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v39",
@@ -3356,7 +5644,8 @@
           "en": "application form",
           "sourcePage": 127,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v40",
@@ -3364,7 +5653,8 @@
           "en": "supervisor at work",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v41",
@@ -3372,7 +5662,8 @@
           "en": "round;stage",
           "sourcePage": 127,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v42",
@@ -3380,7 +5671,8 @@
           "en": "do one's best",
           "sourcePage": 120,
           "difficulty": "standard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v43",
@@ -3388,7 +5680,8 @@
           "en": "have flexible working hours",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v44",
@@ -3396,7 +5689,8 @@
           "en": "click",
           "sourcePage": 124,
           "difficulty": "hard",
-          "subchapter": "16-1"
+          "subchapter": "16-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v45",
@@ -3404,7 +5698,8 @@
           "en": "have long vacations",
           "sourcePage": 126,
           "difficulty": "standard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u16-v46",
@@ -3412,7 +5707,228 @@
           "en": "take vacation leave",
           "sourcePage": 127,
           "difficulty": "hard",
-          "subchapter": "16-2"
+          "subchapter": "16-2",
+          "sourceType": "student-book"
+        },
+        {
+          "id": "3b-wb-p128-v1",
+          "ko": "자기소개서",
+          "en": "cover letter",
+          "sourcePage": 128,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 128,
+              "subchapter": "16-1",
+              "units": [
+                16
+              ],
+              "gloss": "cover letter"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p129-v1",
+          "ko": "보고서",
+          "en": "report",
+          "sourcePage": 129,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 129,
+              "subchapter": "16-1",
+              "units": [
+                16
+              ],
+              "gloss": "report"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p129-v2",
+          "ko": "팀장",
+          "en": "team leader",
+          "sourcePage": 129,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 129,
+              "subchapter": "16-1",
+              "units": [
+                16
+              ],
+              "gloss": "team leader"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p130-v1",
+          "ko": "대리",
+          "en": "assistant manager",
+          "sourcePage": 130,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 130,
+              "subchapter": "16-1",
+              "units": [
+                16
+              ],
+              "gloss": "assistant manager"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p130-v2",
+          "ko": "경쟁률",
+          "en": "competition rate",
+          "sourcePage": 130,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 130,
+              "subchapter": "16-1",
+              "units": [
+                16
+              ],
+              "gloss": "competition rate"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p131-v1",
+          "ko": "부장",
+          "en": "department head",
+          "sourcePage": 131,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 131,
+              "subchapter": "16-1",
+              "units": [
+                16
+              ],
+              "gloss": "department head"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p134-v1",
+          "ko": "운영하다",
+          "en": "to operate",
+          "sourcePage": 134,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 134,
+              "subchapter": "16-2",
+              "units": [
+                16
+              ],
+              "gloss": "to operate"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p136-v1",
+          "ko": "지구",
+          "en": "earth",
+          "sourcePage": 136,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 136,
+              "subchapter": "16-2",
+              "units": [
+                16
+              ],
+              "gloss": "earth"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p136-v2",
+          "ko": "타임머신",
+          "en": "time machine",
+          "sourcePage": 136,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 136,
+              "subchapter": "16-2",
+              "units": [
+                16
+              ],
+              "gloss": "time machine"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p137-v1",
+          "ko": "투명 인간",
+          "en": "invisible person",
+          "sourcePage": 137,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 137,
+              "subchapter": "16-2",
+              "units": [
+                16
+              ],
+              "gloss": "invisible person"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p139-v1",
+          "ko": "인턴",
+          "en": "intern",
+          "sourcePage": 139,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "16-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 139,
+              "subchapter": "16-2",
+              "units": [
+                16
+              ],
+              "gloss": "intern"
+            }
+          ]
         }
       ],
       "grammar": [
@@ -3536,7 +6052,8 @@
           "en": "National Foundation Day",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v2",
@@ -3544,7 +6061,8 @@
           "en": "compete",
           "sourcePage": 149,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v3",
@@ -3552,7 +6070,8 @@
           "en": "encourage",
           "sourcePage": 142,
           "difficulty": "standard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v4",
@@ -3560,7 +6079,8 @@
           "en": "public holiday",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v5",
@@ -3568,7 +6088,8 @@
           "en": "National Liberation Day",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v6",
@@ -3576,7 +6097,8 @@
           "en": "on campus",
           "sourcePage": 140,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v7",
@@ -3584,7 +6106,8 @@
           "en": "hang the national flag",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v8",
@@ -3592,7 +6115,8 @@
           "en": "home and abroad",
           "sourcePage": 149,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v9",
@@ -3600,7 +6124,8 @@
           "en": "writing;composition",
           "sourcePage": 141,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v10",
@@ -3608,7 +6133,8 @@
           "en": "anniversary",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v11",
@@ -3616,7 +6142,8 @@
           "en": "commemorate",
           "sourcePage": 142,
           "difficulty": "standard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v12",
@@ -3624,7 +6151,8 @@
           "en": "pin a flower on someone",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v13",
@@ -3632,7 +6160,8 @@
           "en": "plant a tree",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v14",
@@ -3640,7 +6169,8 @@
           "en": "thanks to",
           "sourcePage": 145,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v15",
@@ -3648,7 +6178,8 @@
           "en": "express one's feelings",
           "sourcePage": 142,
           "difficulty": "standard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v16",
@@ -3656,15 +6187,39 @@
           "en": "Memorial Day",
           "sourcePage": 141,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v17",
           "ko": "묵념을 하다",
-          "en": "observe a moment of silence",
+          "en": "observe a moment of silence;to have a moment of silence",
           "sourcePage": 141,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book",
+          "sources": [
+            {
+              "sourceType": "student-book",
+              "sourcePage": 141,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ]
+            },
+            {
+              "sourceType": "workbook",
+              "sourcePage": 142,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ],
+              "gloss": "to have a moment of silence"
+            }
+          ],
+          "relatedUnits": [
+            17
+          ]
         },
         {
           "id": "3b-u17-v18",
@@ -3672,7 +6227,8 @@
           "en": "wish;hope",
           "sourcePage": 142,
           "difficulty": "standard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v19",
@@ -3680,7 +6236,8 @@
           "en": "be considerate",
           "sourcePage": 144,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v20",
@@ -3688,7 +6245,8 @@
           "en": "a plane takes off",
           "sourcePage": 144,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v21",
@@ -3696,7 +6254,8 @@
           "en": "vivid",
           "sourcePage": 143,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v22",
@@ -3704,7 +6263,8 @@
           "en": "share one's impressions",
           "sourcePage": 142,
           "difficulty": "standard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v23",
@@ -3712,7 +6272,8 @@
           "en": "congratulate someone on an award",
           "sourcePage": 142,
           "difficulty": "standard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v24",
@@ -3720,7 +6281,8 @@
           "en": "examinee",
           "sourcePage": 144,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v25",
@@ -3728,7 +6290,8 @@
           "en": "Teachers' Day",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v26",
@@ -3736,7 +6299,8 @@
           "en": "pass an exam",
           "sourcePage": 144,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v27",
@@ -3744,7 +6308,8 @@
           "en": "Arbor Day",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v28",
@@ -3752,7 +6317,8 @@
           "en": "Children's Day",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v29",
@@ -3760,7 +6326,8 @@
           "en": "Parents' Day",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v30",
@@ -3768,7 +6335,8 @@
           "en": "someone's face comes to mind",
           "sourcePage": 145,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v31",
@@ -3776,7 +6344,8 @@
           "en": "a few days ago",
           "sourcePage": 143,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v32",
@@ -3784,7 +6353,8 @@
           "en": "Korean taffy",
           "sourcePage": 144,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v33",
@@ -3792,7 +6362,8 @@
           "en": "forever",
           "sourcePage": 145,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v34",
@@ -3800,7 +6371,8 @@
           "en": "excellence",
           "sourcePage": 141,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v35",
@@ -3808,7 +6380,8 @@
           "en": "flight operation",
           "sourcePage": 144,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v36",
@@ -3816,7 +6389,8 @@
           "en": "comfort;console",
           "sourcePage": 142,
           "difficulty": "standard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v37",
@@ -3824,7 +6398,8 @@
           "en": "return a favor",
           "sourcePage": 145,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v38",
@@ -3832,7 +6407,8 @@
           "en": "cheer;support",
           "sourcePage": 142,
           "difficulty": "standard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v39",
@@ -3840,7 +6416,8 @@
           "en": "everyday life",
           "sourcePage": 144,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v40",
@@ -3848,7 +6425,8 @@
           "en": "guess the correct answer",
           "sourcePage": 144,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v41",
@@ -3856,7 +6434,8 @@
           "en": "remain a good memory",
           "sourcePage": 142,
           "difficulty": "standard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v42",
@@ -3864,15 +6443,66 @@
           "en": "theme;topic",
           "sourcePage": 141,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book",
+          "sources": [
+            {
+              "sourceType": "student-book",
+              "sourcePage": 141,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ]
+            },
+            {
+              "sourceType": "workbook",
+              "sourcePage": 59,
+              "subchapter": "Review 4",
+              "units": [
+                10,
+                11,
+                12
+              ],
+              "gloss": "theme"
+            }
+          ],
+          "relatedUnits": [
+            10,
+            11,
+            12,
+            17
+          ]
         },
         {
           "id": "3b-u17-v43",
           "ko": "집집마다",
-          "en": "every household",
+          "en": "every household;every house",
           "sourcePage": 141,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book",
+          "sources": [
+            {
+              "sourceType": "student-book",
+              "sourcePage": 141,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ]
+            },
+            {
+              "sourceType": "workbook",
+              "sourcePage": 143,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ],
+              "gloss": "every house"
+            }
+          ],
+          "relatedUnits": [
+            17
+          ]
         },
         {
           "id": "3b-u17-v44",
@@ -3880,7 +6510,8 @@
           "en": "prepare;set out",
           "sourcePage": 138,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v45",
@@ -3888,7 +6519,8 @@
           "en": "glutinous rice cake",
           "sourcePage": 144,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v46",
@@ -3896,7 +6528,8 @@
           "en": "visit someone respectfully",
           "sourcePage": 138,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v47",
@@ -3904,7 +6537,8 @@
           "en": "carnation",
           "sourcePage": 138,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v48",
@@ -3912,7 +6546,8 @@
           "en": "special lecture",
           "sourcePage": 140,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v49",
@@ -3920,7 +6555,8 @@
           "en": "parade",
           "sourcePage": 141,
           "difficulty": "hard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v50",
@@ -3928,7 +6564,8 @@
           "en": "Hangeul Day",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v51",
@@ -3936,7 +6573,8 @@
           "en": "hold an event",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v52",
@@ -3944,7 +6582,8 @@
           "en": "Memorial Day in Korea",
           "sourcePage": 136,
           "difficulty": "standard",
-          "subchapter": "17-1"
+          "subchapter": "17-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u17-v53",
@@ -3952,7 +6591,188 @@
           "en": "Hunminjeongeum",
           "sourcePage": 149,
           "difficulty": "hard",
-          "subchapter": "17-2"
+          "subchapter": "17-2",
+          "sourceType": "student-book"
+        },
+        {
+          "id": "3b-wb-p142-v1",
+          "ko": "독립 기념일",
+          "en": "National Liberation Day",
+          "sourcePage": 142,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "17-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 142,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ],
+              "gloss": "National Liberation Day"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p142-v2",
+          "ko": "단군",
+          "en": "founder of Gojoseon",
+          "sourcePage": 142,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "17-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 142,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ],
+              "gloss": "founder of Gojoseon"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p146-v1",
+          "ko": "빈자리",
+          "en": "vacancy",
+          "sourcePage": 146,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "17-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 146,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ],
+              "gloss": "vacancy"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p146-v2",
+          "ko": "이가 썩다",
+          "en": "tooth (teeth) is rotting",
+          "sourcePage": 146,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "17-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 146,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ],
+              "gloss": "tooth (teeth) is rotting"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p146-v3",
+          "ko": "높이",
+          "en": "height",
+          "sourcePage": 146,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "17-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 146,
+              "subchapter": "17-1",
+              "units": [
+                17
+              ],
+              "gloss": "height"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p148-v1",
+          "ko": "시상식",
+          "en": "awards ceremony",
+          "sourcePage": 148,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "17-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 148,
+              "subchapter": "17-2",
+              "units": [
+                17
+              ],
+              "gloss": "awards ceremony"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p149-v1",
+          "ko": "컴퓨터 공학",
+          "en": "computer engineering",
+          "sourcePage": 149,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "17-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 149,
+              "subchapter": "17-2",
+              "units": [
+                17
+              ],
+              "gloss": "computer engineering"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p150-v1",
+          "ko": "당연히",
+          "en": "naturally",
+          "sourcePage": 150,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "17-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 150,
+              "subchapter": "17-2",
+              "units": [
+                17
+              ],
+              "gloss": "naturally"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p153-v1",
+          "ko": "두유",
+          "en": "soy milk",
+          "sourcePage": 153,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "17-2",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 153,
+              "subchapter": "17-2",
+              "units": [
+                17
+              ],
+              "gloss": "soy milk"
+            }
+          ]
         }
       ],
       "grammar": [
@@ -4073,10 +6893,34 @@
         {
           "id": "3b-u18-v1",
           "ko": "가난하다",
-          "en": "poor",
+          "en": "poor;to be poor",
           "sourcePage": 155,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book",
+          "sources": [
+            {
+              "sourceType": "student-book",
+              "sourcePage": 155,
+              "subchapter": "18-1",
+              "units": [
+                18
+              ]
+            },
+            {
+              "sourceType": "workbook",
+              "sourcePage": 136,
+              "subchapter": "16-2",
+              "units": [
+                16
+              ],
+              "gloss": "to be poor"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            18
+          ]
         },
         {
           "id": "3b-u18-v2",
@@ -4084,7 +6928,8 @@
           "en": "breadwinner",
           "sourcePage": 158,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v3",
@@ -4092,7 +6937,8 @@
           "en": "regain health",
           "sourcePage": 157,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v4",
@@ -4100,7 +6946,8 @@
           "en": "audience",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v5",
@@ -4108,7 +6955,8 @@
           "en": "tile-roofed house",
           "sourcePage": 158,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v6",
@@ -4116,7 +6964,8 @@
           "en": "endlessly",
           "sourcePage": 158,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v7",
@@ -4124,7 +6973,8 @@
           "en": "urgent",
           "sourcePage": 156,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v8",
@@ -4132,7 +6982,8 @@
           "en": "break a leg",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v9",
@@ -4140,7 +6991,8 @@
           "en": "fortunately",
           "sourcePage": 156,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v10",
@@ -4148,7 +7000,8 @@
           "en": "script",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v11",
@@ -4156,7 +7009,8 @@
           "en": "line of dialogue",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v12",
@@ -4164,7 +7018,8 @@
           "en": "goblin",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v13",
@@ -4172,7 +7027,8 @@
           "en": "stealing",
           "sourcePage": 154,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v14",
@@ -4180,7 +7036,8 @@
           "en": "kick out one's younger sibling",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v15",
@@ -4188,7 +7045,8 @@
           "en": "hit",
           "sourcePage": 155,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v16",
@@ -4196,7 +7054,8 @@
           "en": "last bus;last train",
           "sourcePage": 153,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v17",
@@ -4204,7 +7063,8 @@
           "en": "argument",
           "sourcePage": 153,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v18",
@@ -4212,7 +7072,8 @@
           "en": "mosquito",
           "sourcePage": 161,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v19",
@@ -4220,7 +7081,8 @@
           "en": "stage",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v20",
@@ -4228,7 +7090,8 @@
           "en": "gourd",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v21",
@@ -4236,7 +7099,8 @@
           "en": "gourd flesh",
           "sourcePage": 157,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v22",
@@ -4244,7 +7108,8 @@
           "en": "gourd seed",
           "sourcePage": 157,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v23",
@@ -4252,7 +7117,8 @@
           "en": "gourds grow",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v24",
@@ -4260,7 +7126,8 @@
           "en": "grain of cooked rice",
           "sourcePage": 155,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v25",
@@ -4268,7 +7135,8 @@
           "en": "snake",
           "sourcePage": 156,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v26",
@@ -4276,7 +7144,8 @@
           "en": "treasure",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v27",
@@ -4284,7 +7153,8 @@
           "en": "treasure pours out",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v28",
@@ -4292,7 +7162,8 @@
           "en": "receive good fortune",
           "sourcePage": 158,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v29",
@@ -4300,7 +7171,8 @@
           "en": "silk",
           "sourcePage": 158,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v30",
@@ -4308,7 +7180,8 @@
           "en": "cheek",
           "sourcePage": 155,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v31",
@@ -4316,7 +7189,8 @@
           "en": "gently;slowly",
           "sourcePage": 154,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v32",
@@ -4324,7 +7198,8 @@
           "en": "to one's heart's content",
           "sourcePage": 158,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v33",
@@ -4332,7 +7207,8 @@
           "en": "hut",
           "sourcePage": 155,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v34",
@@ -4340,7 +7216,8 @@
           "en": "greedy",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v35",
@@ -4348,7 +7225,8 @@
           "en": "repay a kindness",
           "sourcePage": 158,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v36",
@@ -4356,7 +7234,8 @@
           "en": "catch and eat",
           "sourcePage": 161,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v37",
@@ -4364,7 +7243,8 @@
           "en": "ingredients for dinner",
           "sourcePage": 155,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v38",
@@ -4372,7 +7252,8 @@
           "en": "wholeheartedly",
           "sourcePage": 156,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v39",
@@ -4380,7 +7261,8 @@
           "en": "swallow",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v40",
@@ -4388,7 +7270,8 @@
           "en": "chirp",
           "sourcePage": 154,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v41",
@@ -4396,7 +7279,8 @@
           "en": "saw",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v42",
@@ -4404,7 +7288,8 @@
           "en": "saw wood",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v43",
@@ -4412,7 +7297,8 @@
           "en": "fly",
           "sourcePage": 161,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v44",
@@ -4420,7 +7306,8 @@
           "en": "pop;bang",
           "sourcePage": 154,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v45",
@@ -4428,7 +7315,8 @@
           "en": "overnight",
           "sourcePage": 158,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v46",
@@ -4436,7 +7324,8 @@
           "en": "pest",
           "sourcePage": 161,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v47",
@@ -4444,7 +7333,8 @@
           "en": "head toward",
           "sourcePage": 155,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v48",
@@ -4452,7 +7342,8 @@
           "en": "tie with a cloth",
           "sourcePage": 152,
           "difficulty": "standard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v49",
@@ -4460,7 +7351,8 @@
           "en": "older brother (respectful)",
           "sourcePage": 155,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
         },
         {
           "id": "3b-u18-v50",
@@ -4468,7 +7360,459 @@
           "en": "older brother's wife",
           "sourcePage": 155,
           "difficulty": "hard",
-          "subchapter": "18-1"
+          "subchapter": "18-1",
+          "sourceType": "student-book"
+        },
+        {
+          "id": "3b-wb-p156-v1",
+          "ko": "입소문이 퍼지다",
+          "en": "word-of-mouth spreads",
+          "sourcePage": 156,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "18-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 156,
+              "subchapter": "18-1",
+              "units": [
+                18
+              ],
+              "gloss": "word-of-mouth spreads"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p156-v2",
+          "ko": "열매",
+          "en": "fruit",
+          "sourcePage": 156,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "18-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 156,
+              "subchapter": "18-1",
+              "units": [
+                18
+              ],
+              "gloss": "fruit"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p157-v1",
+          "ko": "단단하다",
+          "en": "to be firm",
+          "sourcePage": 157,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "18-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 157,
+              "subchapter": "18-1",
+              "units": [
+                18
+              ],
+              "gloss": "to be firm"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p158-v1",
+          "ko": "월드컵",
+          "en": "World Cup",
+          "sourcePage": 158,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "18-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 158,
+              "subchapter": "18-1",
+              "units": [
+                18
+              ],
+              "gloss": "World Cup"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p159-v1",
+          "ko": "체중을 유지하다",
+          "en": "to maintain one's weight",
+          "sourcePage": 159,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "18-1",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 159,
+              "subchapter": "18-1",
+              "units": [
+                18
+              ],
+              "gloss": "to maintain one's weight"
+            }
+          ]
+        },
+        {
+          "id": "3b-wb-p167-v1",
+          "ko": "농가",
+          "en": "farmer's household",
+          "sourcePage": 167,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 167,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "farmer's household"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p167-v2",
+          "ko": "나물",
+          "en": "seasoned vegetables",
+          "sourcePage": 167,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 167,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "seasoned vegetables"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p167-v3",
+          "ko": "정전",
+          "en": "blackout",
+          "sourcePage": 167,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 167,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "blackout"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p167-v4",
+          "ko": "그루",
+          "en": "counter for trees",
+          "sourcePage": 167,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 167,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "counter for trees"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p167-v5",
+          "ko": "재산",
+          "en": "asset",
+          "sourcePage": 167,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 167,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "asset"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p167-v6",
+          "ko": "용서하다",
+          "en": "to forgive",
+          "sourcePage": 167,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 167,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "to forgive"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p167-v7",
+          "ko": "본받다",
+          "en": "to emulate",
+          "sourcePage": 167,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 167,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "to emulate"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p168-v1",
+          "ko": "지원하다",
+          "en": "to support",
+          "sourcePage": 168,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 168,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "to support"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p169-v1",
+          "ko": "푸짐하다",
+          "en": "to be plentiful",
+          "sourcePage": 169,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 169,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "to be plentiful"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p175-v1",
+          "ko": "임금님",
+          "en": "king",
+          "sourcePage": 175,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 175,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "king"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p175-v2",
+          "ko": "동굴",
+          "en": "cave",
+          "sourcePage": 175,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 175,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "cave"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p175-v3",
+          "ko": "쑥",
+          "en": "mugwort",
+          "sourcePage": 175,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 175,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "mugwort"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "id": "3b-wb-p175-v4",
+          "ko": "마늘",
+          "en": "garlic",
+          "sourcePage": 175,
+          "sourceType": "workbook",
+          "difficulty": "hard",
+          "subchapter": "Review 6",
+          "sources": [
+            {
+              "sourceType": "workbook",
+              "sourcePage": 175,
+              "subchapter": "Review 6",
+              "units": [
+                16,
+                17,
+                18
+              ],
+              "gloss": "garlic"
+            }
+          ],
+          "relatedUnits": [
+            16,
+            17,
+            18
+          ]
         }
       ],
       "grammar": [

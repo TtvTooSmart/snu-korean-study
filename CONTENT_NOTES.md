@@ -22,4 +22,14 @@ Browser smoke checks covered loading the book selector, starting vocabulary prac
 
 All opening-page vocabulary boxes and all bottom notes on printed pages 24–161 were visually checked. There are 198 Standard and 244 Hard cards (442 total). Two page-81 footer entries absent from the glossary-based import were added: 그녀 and 반대하다. Standard openings are 24/30, 40/46, 56/62, 72/78, 88/94, 104/110, 120/126, 136/142, and 152. Unit18 contains only 18-1; p158 is reading vocabulary and belongs to Hard. Culture-page bottom notes belong to Hard under their preceding subchapter. No running-text vocabulary was added.
 
-Current validation: 27 automated tests, plus browser checks for Standard/Hard selection, closed/open grammar hints, and Vietnamese interface rendering. Earlier counts above describe the previous glossary-only release.
+Previous release validation: 27 automated tests, plus browser checks for Standard/Hard selection, closed/open grammar hints, and Vietnamese interface rendering. Earlier counts above describe the previous glossary-only release.
+
+## Workbook footnotes
+
+Visually checked all footers in the supplied 3B workbook, including lesson/review pages 14–175. Imported 130 Korean–English footnote entries: 122 new cards and 8 same-meaning repeats linked to existing Hard cards. Current totals: 198 Standard, 366 Hard, 564 vocabulary cards; grammar remains 33 patterns / 66 questions. PDFs and exercise word banks are not bundled.
+
+Every workbook occurrence retains its printed page, subchapter/review name and source gloss. Review 4 words apply to units 10–12, Review 5 to 13–15, and Review 6 to 16–18; they are stored under the last unit in that group but included by any covered unit filter. Repeated entries preserve existing IDs, add accepted English alternatives where needed, and show both source references. Distinct meanings remain separate. Workbook opening-page footnotes are also Hard.
+
+Workbook source glosses are retained, including literal or awkward wording: 탈수하다 (“to dry”, p61; spin-drying context), 독립 기념일 (“National Liberation Day”, p142), and 이가 썩다 (“tooth (teeth) is rotting”, p146).
+
+Current validation: 34 automated tests passed. Browser checks confirmed 198 Standard / 366 Hard counts, a workbook card with four options, correct-answer grading, and translated workbook page labels.
