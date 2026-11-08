@@ -154,6 +154,11 @@ td,th {text-align:left;padding:10px;border-bottom:1px solid var(--line)}
  .practice-grid,.grid {grid-template-columns:1fr;gap:18px}
  .pattern-field,.practice-grid label:last-child {grid-column:auto}
  .actions button {flex:1 1 100%}
+ /* Keep quiz actions aligned on phones; labels can wrap without shrinking. */
+ .quiz-actions {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:10px}
+ .quiz-actions>button,.quiz-actions #mark button {width:100%;min-width:0;min-height:48px;padding:10px;white-space:normal;overflow-wrap:anywhere}
+ .quiz-actions #flag {grid-column:2;margin-inline-start:0}
+ .quiz-actions #mark {grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
  .study-progress {padding:0 16px;margin-top:18px}
  .progress-grid {gap:8px}
  .progress-card {padding:12px 9px}
