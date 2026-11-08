@@ -1,6 +1,6 @@
 # Korean Study
 
-A framework-free Korean vocabulary and grammar study app. Sign-in is required to study. Account progress saves locally and syncs to Supabase; see ACCOUNT_SETUP.md. No tracking, external fonts, framework or build step.
+**For SNU students.** A framework-free Korean vocabulary and grammar study app. Sign-in is required to study. Account progress saves locally and syncs to Supabase; see ACCOUNT_SETUP.md. No tracking, external fonts, framework or build step.
 
 ## Run
 
