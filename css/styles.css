@@ -64,6 +64,10 @@ button.book-chip {padding:3px 10px;font-size:.8rem;min-height:32px}
 .chapter-actions {display:flex;gap:8px;flex-shrink:0}
 .chapter-actions button {padding:8px 12px;font-size:.85rem}
 .actions {display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}
+/* Keep the answer action on the left and the optional practice flag on the right. */
+.quiz-actions {display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:24px}
+.quiz-actions #flag {margin-inline-start:auto;max-width:100%}
+.quiz-actions #mark {margin:0}
 button,.button {border:1px solid var(--accent);background:var(--accent);color:var(--button-ink);padding:12px 20px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none;line-height:1.5;min-height:44px}
 button.secondary {background:var(--panel);color:var(--accent)}
 button:disabled {opacity:.45;cursor:not-allowed}
