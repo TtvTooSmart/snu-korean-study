@@ -1,6 +1,6 @@
 import {canManageData,fetchStudentProgress} from './account.js';
 import {load} from './data-loader.js';
-import {studentProgress} from './admin-progress.js';
+import {renderStudentBooks} from './admin-progress.js';
 
 // Student records stay only in this page's closure, never localStorage/exports.
 export function adminDashboard(app,esc) {
@@ -11,15 +11,14 @@ export function adminDashboard(app,esc) {
   root.innerHTML='<h1>Admin access only</h1><p>This page is available only to the administrator.</p>';
   return;
  }
- let data,students=[],total=0,offset=0,search='',bookId='3b',sequence=0;
+ let data,students=[],total=0,offset=0,search='',sequence=0;
  root.innerHTML='<h1>Student progress</h1><p role="status">Loading students…</p>';
  const date=value=>value?new Date(value).toLocaleString(document.documentElement.lang||'en'):'No synced progress yet';
- const bars=rows=>`<div class="student-metrics">${rows.map(r=>`<div class="student-metric"><div><span>${r.label}</span><strong>${r.percent}%</strong></div><progress aria-label="${esc(r.label)}" value="${r.mastered}" max="${r.total||1}"></progress><small>${r.mastered} / ${r.total} · <span>Accuracy</span>: ${r.accuracy===null?'—':r.accuracy+'%'}</small></div>`).join('')}</div>`;
+
  function render(error='') {
   if(!active())return;
-  root.innerHTML=`<p class="eyebrow">Administrator</p><h1>Student progress</h1><p>Latest synced progress only. Unsynced answers and guest activity are not shown.</p><p><small>Progress uses published books and one correct answer after the last miss. Student device settings may use a different streak target.</small></p><form class="admin-filters"><label><span>Search student email</span><input id="student-search" type="search" maxlength="100" value="${esc(search)}"></label><label><span>Book</span><select id="student-book">${Object.keys(data.books).map(id=>`<option value="${esc(id)}" ${id===bookId?'selected':''}>${esc(id.toUpperCase())}</option>`).join('')}</select></label><button>Search</button><button type="button" id="student-refresh" class="secondary">Refresh</button></form><p role="status" class="${error?'error':''}">${error?esc(error):`<span>Students</span>: ${total}`}</p><div id="student-results">${students.length?students.map(student=>`<article class="panel student-card"><h2>${esc(student.email)}</h2><p><small><span>Last synced</span>: ${esc(date(student.synced_at))}</small></p>${student.progressUnavailable?'<p>Saved progress could not be read.</p>':bars(studentProgress(data.books,student.stats,bookId))}<details ${student.progressUnavailable?'hidden':''}><summary>Chapter details</summary><div class="student-chapters">${data.books[bookId].units.map(unit=>`<section><h3><span>Chapter</span> ${unit.unit} · <span lang="ko">${esc(unit.title)}</span></h3>${bars(studentProgress(data.books,student.stats,bookId,unit.unit))}</section>`).join('')}</div></details></article>`).join(''):'<div class="panel"><p>No students match this search.</p></div>'}</div><div class="actions"><button id="students-prev" class="secondary" ${offset===0?'disabled':''}>Previous</button><span>${total?offset+1:0}–${Math.min(offset+25,total)} / ${total}</span><button id="students-next" class="secondary" ${offset+25>=total?'disabled':''}>Next</button></div>`;
+  root.innerHTML=`<p class="eyebrow">Administrator</p><h1>Student progress</h1><p>Latest synced progress only. Unsynced answers and guest activity are not shown.</p><p>Each student shows only books they have practised.</p><p><small>Progress uses published books and one correct answer after the last miss. Student device settings may use a different streak target.</small></p><form class="admin-filters"><label><span>Search student email</span><input id="student-search" type="search" maxlength="100" value="${esc(search)}"></label><button>Search</button><button type="button" id="student-refresh" class="secondary">Refresh</button></form><p role="status" class="${error?'error':''}">${error?esc(error):`<span>Students</span>: ${total}`}</p><div id="student-results">${students.length?students.map(student=>`<article class="panel student-card"><h2>${esc(student.email)}</h2><p><small><span>Last synced</span>: ${esc(date(student.synced_at))}</small></p>${renderStudentBooks(data.books,student,esc)}</article>`).join(''):'<div class="panel"><p>No students match this search.</p></div>'}</div><div class="actions"><button id="students-prev" class="secondary" ${offset===0?'disabled':''}>Previous</button><span>${total?offset+1:0}–${Math.min(offset+25,total)} / ${total}</span><button id="students-next" class="secondary" ${offset+25>=total?'disabled':''}>Next</button></div>`;
   root.querySelector('form').onsubmit=e=>{e.preventDefault();search=root.querySelector('#student-search').value.trim();offset=0;refresh();};
-  root.querySelector('#student-book').onchange=e=>{bookId=e.target.value;render();};
   root.querySelector('#student-refresh').onclick=()=>refresh();
   root.querySelector('#students-prev').onclick=()=>{offset=Math.max(0,offset-25);refresh();};
   root.querySelector('#students-next').onclick=()=>{offset+=25;refresh();};
@@ -40,8 +39,8 @@ export function adminDashboard(app,esc) {
  }
  load({includeImports:false}).then(loaded=>{
   if(!active())return;
-  data=loaded;if(!data.books[bookId])bookId=Object.keys(data.books)[0];
-  if(!bookId){root.innerHTML='<h1>Student progress</h1><p>No published books are available.</p>';return;}
+  data=loaded;
+  if(!Object.keys(data.books).length){root.innerHTML='<h1>Student progress</h1><p>No published books are available.</p>';return;}
   render();refresh();
  }).catch(()=>{if(active())root.innerHTML='<h1>Student progress</h1><p>Could not load published books. Please reload this page.</p>';});
 }

@@ -17,10 +17,11 @@
 <body>
   <header class="site-header">
     <a href="#home" class="brand"><span class="brand-mark" lang="ko">한</span><span>Korean Study</span></a>
-    <nav aria-label="Main navigation">
+    <button id="mobile-menu-toggle" type="button" class="secondary" aria-expanded="false" aria-controls="site-navigation header-controls study-progress"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="menu-bars" d="M4 6h16M4 12h16M4 18h16"/><path class="menu-close" d="m6 6 12 12M18 6 6 18"/></svg><span>Menu</span></button>
+    <nav id="site-navigation" aria-label="Main navigation">
       <a href="#home" data-account-only hidden>Study</a><a href="#import" id="admin-import-link" hidden>Import & backup</a><a href="#students" id="admin-students-link" hidden>Students</a><a href="#settings" data-account-only hidden>Settings</a>
     </nav>
-    <div class="header-controls">
+    <div class="header-controls" id="header-controls">
       <label class="theme-switch"><span>Theme</span><select id="theme-select"><option value="green">Green</option><option value="black">Black</option><option value="white">White</option><option value="autumn">Autumn</option><option value="purple-yellow">Purple–Yellow</option><option value="pink-purple">Pink–Purple</option><option value="seoul" selected>Seoul</option></select></label>
     </div>
   </header>

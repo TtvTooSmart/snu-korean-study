@@ -145,7 +145,9 @@ The Students navigation link and `#students` route are available only to the ver
 
 Run `supabase/admin-dashboard.sql` after `supabase/schema.sql` when setting up a new project. The migration is already applied to the shared Supabase project. Its guarded implementation lives in the private `study_admin` schema, with a narrow invoker RPC in `public`. Do not add `study_admin` to the exposed API schemas. `tests/admin-dashboard.sql` verifies admin reads, blocked student/anonymous access, spoofed metadata, pagination and owner-only updates, then rolls back its test users.
 
-Search confirmed students by email, browse pages of 25, choose a published book, and expand chapter details. The dashboard shows latest cloud-synced progress, accuracy and last sync time. It does not include anonymous guests, unconfirmed users, local imports or answers awaiting upload. The admin account itself is excluded. Percentages use a consistent one-correct-answer-after-the-last-miss benchmark because each student's streak setting stays on their device. Student records are kept in page memory only, not localStorage or backups. Refresh retrieves the latest snapshot. Students are informed on the account page that the administrator can view synced progress.
+Search confirmed students by email and browse pages of 25. Each student card shows every published book they have practised, with separate grammar, easy vocabulary and hard vocabulary progress bars and expandable chapter details for each book. For example, a student with attempts in 2B and 3B sees both sections; a student who only practised 3B sees no empty 2B section. Any recorded answer counts as activity, including an incorrect answer with zero mastery; merely flagging a word does not. Students with no recorded attempts show “No study activity yet.”
+
+The dashboard shows latest cloud-synced progress, accuracy and last sync time. It does not include anonymous guests, unconfirmed users, local imports or answers awaiting upload. The admin account itself is excluded. Percentages use a consistent one-correct-answer-after-the-last-miss benchmark because each student's streak setting stays on their device. Student records are kept in page memory only, not localStorage or backups. Refresh retrieves the latest snapshot. Students are informed on the account page that the administrator can view synced progress.
 
 ## Autumn leaves
 
@@ -210,3 +212,14 @@ persists locally and is included in backups; Seoul is the fresh-user default.
 The browser uses a real 한 image favicon (PNG with ICO fallback), plus a 180px
 Apple touch icon. The icon and Seoul backdrop are generated app artwork. Assets
 are served locally from `assets/`; no image or animation service is needed at runtime.
+
+## Phone navigation and quiz controls
+
+On screens up to 560px, the header shows the brand and a Menu button. The menu
+opens navigation, language/theme/level controls and the book progress summary.
+It closes when following a navigation link or pressing Escape, and supports
+keyboard focus without trapping it. Desktop navigation stays visible.
+
+Phone quiz action buttons share equal-width columns with the practice flag on
+the right. Labels wrap at their normal font size. Continue has spacing above it
+and spans the same width as the feedback message on phone and desktop.

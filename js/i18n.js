@@ -1,5 +1,6 @@
 // Interface translations. Vocabulary meanings are localized separately from book data.
 const rows = [
+ ['Menu','Menu','菜单','Меню'],
  ['Purple–Yellow','Tím–Vàng','紫黄','Фиолетово-жёлтая'],
  ['Pink–Purple','Hồng–Tím','粉紫','Розово-фиолетовая'],
  ['Seoul','Seoul','首尔','Сеул'],
@@ -10,6 +11,8 @@ const rows = [
 ['Saved progress could not be read.','Không thể đọc tiến độ đã lưu.','无法读取已保存的进度。','Не удалось прочитать сохранённый прогресс.'],
 ["Students", "Học viên", "学生", "Студенты"],
 ["Student progress", "Tiến độ học viên", "学生进度", "Прогресс студентов"],
+['No study activity yet.','Chưa có hoạt động học tập.','尚无学习记录。','Пока нет учебной активности.'],
+['Each student shows only books they have practised.','Mỗi học viên chỉ hiển thị những sách đã luyện tập.','每位学生仅显示练习过的教材。','У каждого студента показаны только учебники, по которым он занимался.'],
 ["Administrator", "Quản trị viên", "管理员", "Администратор"],
 ["This page is available only to the administrator.", "Trang này chỉ dành cho quản trị viên.", "此页面仅供管理员使用。", "Эта страница доступна только администратору."],
 ["Latest synced progress only. Unsynced answers and guest activity are not shown.", "Chỉ hiển thị tiến độ đã đồng bộ. Không hiển thị câu trả lời chưa đồng bộ và hoạt động của khách.", "仅显示已同步进度，不包含未同步答案和访客活动。", "Показан только синхронизированный прогресс, без несохранённых в облаке ответов и активности гостей."],
