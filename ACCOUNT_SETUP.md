@@ -9,7 +9,7 @@ Accounts are enabled for the configured Supabase project. For a fresh installati
 5. Copy the project's URL and **publishable** key into `js/account-config.js`, then set `enabled: true` after the database and redirect setup is complete. This key is public browser configuration. Never use the secret or service-role key. Push to the same GitHub repository; the existing Vercel project deploys it.
 6. Test two email accounts and two devices before announcing accounts. Verify sign-in, sign-out, email links, cloud saves, reconnect after offline study, conflict resolution, progress reset, and that user A cannot read user B's row. The Node tests verify sync logic; they cannot replace live authentication and database-policy checks.
 
-Accounts sync word/grammar stats, mastery streaks and flags. Settings, custom book imports and paused sessions stay on each device. Use Export for a complete portable backup. Legacy `snu-study` storage is retained without exposing a guest study or copy workflow. Each account gets its own browser cache. Signed-out users cannot start or resume quizzes.
+Accounts sync word/grammar stats, mastery streaks and flags. Settings, custom book imports and paused sessions stay on each device. Use Export for a complete portable backup. Legacy browser storage is retained without exposing a guest study or copy workflow. Each account gets its own browser cache. Signed-out users cannot start or resume quizzes.
 
 The official Supabase browser SDK is loaded only when accounts are configured. It manages email authentication, session persistence and token renewal. The SDK is the sole optional external runtime dependency. There is still no framework, build step or app server.
 

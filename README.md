@@ -1,10 +1,10 @@
-# SNU Study
+# Korean Study
 
 A framework-free Korean vocabulary and grammar study app. Sign-in is required to study. Account progress saves locally and syncs to Supabase; see ACCOUNT_SETUP.md. No tracking, external fonts, framework or build step.
 
 ## Run
 
-Extract the ZIP, open a terminal in `snu-study`, then run:
+Extract the ZIP, open a terminal in the project folder, then run:
 
 ```sh
 python -m http.server 8000
@@ -188,3 +188,10 @@ bars, weak-word practice, backups and cloud sync use the existing book-independe
 code. Adding 2B does not rename any 3B cards or change existing progress.
 
 See `CONTENT_NOTES.md` for source verification and corrected glossary references.
+
+
+Cloud verification compares JSON values without depending on object key order.
+PostgreSQL may reorder card IDs and fields; this does not create a conflict.
+Real competing edits still require explicit resolution. The site title, book
+labels and exported backup filename use Korean Study branding. Legacy browser
+storage keys remain compatible so existing progress and preferences are retained.

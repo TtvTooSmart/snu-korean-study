@@ -2,7 +2,7 @@
 
 ## Book 3B
 
-Source: the user's SNU Korean Plus 3B Student's Book and grammar booklet PDF, from their SNU books folder.
+Source: the user's Korean Plus 3B Student's Book and grammar booklet PDF, from their textbook folder.
 
 - Units 10–18, preserving the textbook's unit numbering.
 - All 438 vocabulary index entries on printed pages 178–184.
@@ -56,7 +56,7 @@ conflict. Neither copy was selected or overwritten by the test.
 
 ## Book 2B — verified import
 
-Sources: the supplied **2B SB & 문법.pdf** and **2B WB.pdf** in the SNU books folder.
+Sources: the supplied **2B SB & 문법.pdf** and **2B WB.pdf** in the textbook folder.
 All vocabulary glossary entries, the 18 subchapter opening-page boxes and every
 other bottom vocabulary note on printed student-book pages 22–163 were visually
 checked. All workbook bottom notes on printed pages 14–185 were checked, including
@@ -92,3 +92,8 @@ counts, Easy/Hard boundaries, review chapter membership, translated four-option
 quizzes in both directions, separate progress totals, and cross-book translation
 collisions. Multiple-choice values retain saved-session compatibility; translation
 lookups now use the same book/difficulty scope as distractor selection.
+
+
+The subsequent sync repair replaces order-sensitive JSON equality with semantic
+comparison, preventing false conflicts after database serialization. All **102
+automated tests pass**, including real-conflict and in-flight answer safeguards.

@@ -1,42 +1,42 @@
 [
   {
     "id": "1a",
-    "title": "SNU Korean 1A",
+    "title": "Korean 1A",
     "available": false
   },
   {
     "id": "1b",
-    "title": "SNU Korean 1B",
+    "title": "Korean 1B",
     "available": false
   },
   {
     "id": "2a",
-    "title": "SNU Korean 2A",
+    "title": "Korean 2A",
     "available": false
   },
   {
     "id": "2b",
-    "title": "SNU Korean 2B",
+    "title": "Korean 2B",
     "available": true
   },
   {
     "id": "3a",
-    "title": "SNU Korean 3A",
+    "title": "Korean 3A",
     "available": false
   },
   {
     "id": "3b",
-    "title": "SNU Korean 3B",
+    "title": "Korean 3B",
     "available": true
   },
   {
     "id": "4a",
-    "title": "SNU Korean 4A",
+    "title": "Korean 4A",
     "available": false
   },
   {
     "id": "4b",
-    "title": "SNU Korean 4B",
+    "title": "Korean 4B",
     "available": false
   }
 ]
