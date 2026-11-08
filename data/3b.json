@@ -1,0 +1,3616 @@
+{
+  "book": "3b",
+  "placeholder": false,
+  "source": {
+    "title": "서울대 한국어 플러스 3B Student’s Book & 문법",
+    "vocabulary": "All entries in the printed glossary, pages 178–184; grouped by source-page unit. Entries appearing in two units are repeated in both. English glosses lightly normalized.",
+    "grammar": "All 33 patterns in the grammar booklet contents. Quiz sentences and explanations are original, not textbook exercises.",
+    "coverage": "Units 10–18. Glossary-based vocabulary coverage; does not include every incidental word appearing in running text.",
+    "sourceFile": "3B SB & 문법.pdf"
+  },
+  "units": [
+    {
+      "unit": 10,
+      "title": "고장과 수리",
+      "vocab": [
+        {
+          "id": "3b-u10-v1",
+          "ko": "객실",
+          "en": "cabin",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v2",
+          "ko": "고치다",
+          "en": "fix",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v3",
+          "ko": "낮추다",
+          "en": "lower",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v4",
+          "ko": "냉동실",
+          "en": "freezer compartment",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v5",
+          "ko": "냉장실",
+          "en": "refrigerator compartment",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v6",
+          "ko": "높이다",
+          "en": "raise",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v7",
+          "ko": "늦추다",
+          "en": "postpone;delay",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v8",
+          "ko": "닳다",
+          "en": "wear out",
+          "sourcePage": 35
+        },
+        {
+          "id": "3b-u10-v9",
+          "ko": "돌리다",
+          "en": "run;turn",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v10",
+          "ko": "땅에 떨어뜨리다",
+          "en": "drop on the ground",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v11",
+          "ko": "맡기다",
+          "en": "entrust;leave in someone's care",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v12",
+          "ko": "먼지가 끼다",
+          "en": "be covered in dust",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v13",
+          "ko": "먼지 통",
+          "en": "dust bin",
+          "sourcePage": 33
+        },
+        {
+          "id": "3b-u10-v14",
+          "ko": "무선",
+          "en": "wireless",
+          "sourcePage": 33
+        },
+        {
+          "id": "3b-u10-v15",
+          "ko": "물에 빠뜨리다",
+          "en": "drop in water",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v16",
+          "ko": "바람이 통하다",
+          "en": "air circulates",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v17",
+          "ko": "방문하다",
+          "en": "visit",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v18",
+          "ko": "배터리를 넣다",
+          "en": "put in batteries",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v19",
+          "ko": "배터리를 빼다",
+          "en": "remove batteries",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v20",
+          "ko": "부분",
+          "en": "part",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v21",
+          "ko": "부품을 교체하다",
+          "en": "replace a part",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v22",
+          "ko": "브레이크를 잡다",
+          "en": "apply the brakes",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v23",
+          "ko": "비우다",
+          "en": "empty",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v24",
+          "ko": "설정 온도",
+          "en": "temperature setting",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v25",
+          "ko": "소용이 없다",
+          "en": "be useless",
+          "sourcePage": 26
+        },
+        {
+          "id": "3b-u10-v26",
+          "ko": "속도",
+          "en": "speed",
+          "sourcePage": 26
+        },
+        {
+          "id": "3b-u10-v27",
+          "ko": "수리비",
+          "en": "repair cost",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v28",
+          "ko": "수리 센터",
+          "en": "repair center",
+          "sourcePage": 26
+        },
+        {
+          "id": "3b-u10-v29",
+          "ko": "수리하다",
+          "en": "repair",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v30",
+          "ko": "시계 방향",
+          "en": "clockwise",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v31",
+          "ko": "시기",
+          "en": "period;time",
+          "sourcePage": 36
+        },
+        {
+          "id": "3b-u10-v32",
+          "ko": "안심하다",
+          "en": "feel reassured",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v33",
+          "ko": "알리다",
+          "en": "inform",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v34",
+          "ko": "액정이 깨지다",
+          "en": "screen is cracked",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v35",
+          "ko": "액정이 나가다",
+          "en": "screen stops working",
+          "sourcePage": 29
+        },
+        {
+          "id": "3b-u10-v36",
+          "ko": "엔진",
+          "en": "engine",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v37",
+          "ko": "열차",
+          "en": "train",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v38",
+          "ko": "옆면",
+          "en": "side surface",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v39",
+          "ko": "온도 조절이 안 되다",
+          "en": "temperature control does not work",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v40",
+          "ko": "옮기다",
+          "en": "move;transfer",
+          "sourcePage": 29
+        },
+        {
+          "id": "3b-u10-v41",
+          "ko": "요청하다",
+          "en": "request",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v42",
+          "ko": "운행하다",
+          "en": "operate a vehicle",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v43",
+          "ko": "원인",
+          "en": "cause",
+          "sourcePage": 36
+        },
+        {
+          "id": "3b-u10-v44",
+          "ko": "윙",
+          "en": "buzz",
+          "sourcePage": 25
+        },
+        {
+          "id": "3b-u10-v45",
+          "ko": "유지하다",
+          "en": "maintain",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v46",
+          "ko": "음료수를 쏟다",
+          "en": "spill a drink",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v47",
+          "ko": "전원을 끄다",
+          "en": "turn off the power",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v48",
+          "ko": "전원을 켜다",
+          "en": "turn on the power",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v49",
+          "ko": "접수하다",
+          "en": "receive an application",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v50",
+          "ko": "제공하다",
+          "en": "provide",
+          "sourcePage": 31
+        },
+        {
+          "id": "3b-u10-v51",
+          "ko": "조절",
+          "en": "adjustment;control",
+          "sourcePage": 32
+        },
+        {
+          "id": "3b-u10-v52",
+          "ko": "종이가 걸리다",
+          "en": "paper is jammed",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v53",
+          "ko": "채소가 얼다",
+          "en": "vegetables freeze",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v54",
+          "ko": "채우다",
+          "en": "fill",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v55",
+          "ko": "최대한",
+          "en": "as much as possible",
+          "sourcePage": 33
+        },
+        {
+          "id": "3b-u10-v56",
+          "ko": "충전",
+          "en": "charging",
+          "sourcePage": 33
+        },
+        {
+          "id": "3b-u10-v57",
+          "ko": "타이어",
+          "en": "tire",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v58",
+          "ko": "터치",
+          "en": "touch",
+          "sourcePage": 27
+        },
+        {
+          "id": "3b-u10-v59",
+          "ko": "통화가 끊기다",
+          "en": "phone call disconnects",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v60",
+          "ko": "펑크가 나다",
+          "en": "have a flat tire",
+          "sourcePage": 28
+        },
+        {
+          "id": "3b-u10-v61",
+          "ko": "플러그를 꽂다",
+          "en": "plug in",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v62",
+          "ko": "플러그를 뽑다",
+          "en": "unplug",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v63",
+          "ko": "화면이 안 나오다",
+          "en": "screen does not display",
+          "sourcePage": 24
+        },
+        {
+          "id": "3b-u10-v64",
+          "ko": "확인하다",
+          "en": "check;confirm",
+          "sourcePage": 30
+        },
+        {
+          "id": "3b-u10-v65",
+          "ko": "흔들리다",
+          "en": "shake",
+          "sourcePage": 28
+        }
+      ],
+      "grammar": [
+        {
+          "id": "3b-u10-g1",
+          "pattern": "-더니",
+          "meaning": "observed change or result",
+          "questions": [
+            {
+              "id": "3b-u10-g1-q1",
+              "type": "mcq",
+              "prompt": "어제는 춥___ 오늘은 따뜻하네요.\nTarget grammar: -더니 — observed change or result.",
+              "choices": [
+                "지만",
+                "려고",
+                "거나",
+                "더니"
+              ],
+              "answer": "더니",
+              "explanation": "Yesterday was cold, but today is warm: contrast with a personally observed earlier state."
+            },
+            {
+              "id": "3b-u10-g1-q2",
+              "type": "fill",
+              "prompt": "어제는 바람이 불___ 오늘은 조용해요.\nTarget grammar: -더니 — observed change or result.",
+              "answer": "더니",
+              "explanation": "Use -더니: observed change or result."
+            }
+          ]
+        },
+        {
+          "id": "3b-u10-g2",
+          "pattern": "-지 그래요?",
+          "meaning": "suggest doing something",
+          "questions": [
+            {
+              "id": "3b-u10-g2-q1",
+              "type": "mcq",
+              "prompt": "컴퓨터가 느리면 다시 시작하___?\nTarget grammar: -지 그래요? — suggest doing something.",
+              "choices": [
+                "는 중이에요",
+                "ㄴ 적이 있어요",
+                "지 그래요",
+                "고 있어요"
+              ],
+              "answer": "지 그래요",
+              "explanation": "Use this ending to suggest an action."
+            },
+            {
+              "id": "3b-u10-g2-q2",
+              "type": "fill",
+              "prompt": "목이 아프면 따뜻한 물을 마시___?\nTarget grammar: -지 그래요? — suggest doing something.",
+              "answer": "지 그래요",
+              "explanation": "Use -지 그래요?: suggest doing something."
+            }
+          ]
+        },
+        {
+          "id": "3b-u10-g3",
+          "pattern": "사동 (-이/히/리/기/우/추-)",
+          "meaning": "make or let someone do something",
+          "questions": [
+            {
+              "id": "3b-u10-g3-q1",
+              "type": "mcq",
+              "prompt": "아이가 잘 볼 수 있게 의자를 ___. (높다 → causative)\nTarget grammar: 사동 (-이/히/리/기/우/추-) — make or let someone do something.",
+              "choices": [
+                "높네요",
+                "높였어요",
+                "높았어요",
+                "높겠어요"
+              ],
+              "answer": "높였어요",
+              "explanation": "높이다 is the causative of 높다: raise something."
+            },
+            {
+              "id": "3b-u10-g3-q2",
+              "type": "fill",
+              "prompt": "아기에게 우유를 ___. (먹다 → causative, past polite)\nTarget grammar: 사동 (-이/히/리/기/우/추-) — make or let someone do something.",
+              "answer": "먹였어요",
+              "explanation": "Use 사동 (-이/히/리/기/우/추-): make or let someone do something."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 11,
+      "title": "실수와 고민",
+      "vocab": [
+        {
+          "id": "3b-u11-v1",
+          "ko": "간",
+          "en": "between;among",
+          "sourcePage": 49
+        },
+        {
+          "id": "3b-u11-v2",
+          "ko": "간을 맞추다",
+          "en": "season food",
+          "sourcePage": 45
+        },
+        {
+          "id": "3b-u11-v3",
+          "ko": "감추다",
+          "en": "hide",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v4",
+          "ko": "겁이 나다",
+          "en": "be scared",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v5",
+          "ko": "고대",
+          "en": "ancient times",
+          "sourcePage": 48
+        },
+        {
+          "id": "3b-u11-v6",
+          "ko": "고민이 있다",
+          "en": "have a concern",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v7",
+          "ko": "극복하다",
+          "en": "overcome",
+          "sourcePage": 48
+        },
+        {
+          "id": "3b-u11-v8",
+          "ko": "깜빡하다",
+          "en": "forget momentarily",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v9",
+          "ko": "꾸준히",
+          "en": "consistently",
+          "sourcePage": 49
+        },
+        {
+          "id": "3b-u11-v10",
+          "ko": "다행이다",
+          "en": "be a relief",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v11",
+          "ko": "당황하다",
+          "en": "be flustered",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v12",
+          "ko": "도움이 되다",
+          "en": "be helpful",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v13",
+          "ko": "들키다",
+          "en": "get caught",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v14",
+          "ko": "망치다",
+          "en": "ruin",
+          "sourcePage": 41
+        },
+        {
+          "id": "3b-u11-v15",
+          "ko": "문제를 해결하다",
+          "en": "solve a problem",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v16",
+          "ko": "보람이 크다",
+          "en": "be rewarding",
+          "sourcePage": 49
+        },
+        {
+          "id": "3b-u11-v17",
+          "ko": "불만이 있다",
+          "en": "be dissatisfied",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v18",
+          "ko": "불평하다",
+          "en": "complain",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v19",
+          "ko": "사생활",
+          "en": "private life",
+          "sourcePage": 47
+        },
+        {
+          "id": "3b-u11-v20",
+          "ko": "사정",
+          "en": "circumstances;reason",
+          "sourcePage": 41
+        },
+        {
+          "id": "3b-u11-v21",
+          "ko": "상대방",
+          "en": "the other person",
+          "sourcePage": 48
+        },
+        {
+          "id": "3b-u11-v22",
+          "ko": "세대 차이",
+          "en": "generation gap",
+          "sourcePage": 48
+        },
+        {
+          "id": "3b-u11-v23",
+          "ko": "속마음",
+          "en": "inner feelings",
+          "sourcePage": 44
+        },
+        {
+          "id": "3b-u11-v24",
+          "ko": "수메르 점토판",
+          "en": "Sumerian clay tablet",
+          "sourcePage": 48
+        },
+        {
+          "id": "3b-u11-v25",
+          "ko": "실수하다",
+          "en": "make a mistake",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v26",
+          "ko": "심각하다",
+          "en": "serious",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v27",
+          "ko": "야단맞다",
+          "en": "be scolded",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v28",
+          "ko": "야단치다",
+          "en": "scold",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v29",
+          "ko": "언젠가",
+          "en": "someday",
+          "sourcePage": 49
+        },
+        {
+          "id": "3b-u11-v30",
+          "ko": "잔소리를 하다",
+          "en": "nag",
+          "sourcePage": 49
+        },
+        {
+          "id": "3b-u11-v31",
+          "ko": "잘못하다",
+          "en": "do something wrong",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v32",
+          "ko": "조심하다",
+          "en": "be careful",
+          "sourcePage": 40
+        },
+        {
+          "id": "3b-u11-v33",
+          "ko": "조언하다",
+          "en": "advise",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v34",
+          "ko": "집중하다",
+          "en": "concentrate",
+          "sourcePage": 49
+        },
+        {
+          "id": "3b-u11-v35",
+          "ko": "짜증이 나다",
+          "en": "feel irritated",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v36",
+          "ko": "짜증을 내다",
+          "en": "act irritated",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v37",
+          "ko": "청취자",
+          "en": "listener",
+          "sourcePage": 44
+        },
+        {
+          "id": "3b-u11-v38",
+          "ko": "표지",
+          "en": "cover",
+          "sourcePage": 49
+        },
+        {
+          "id": "3b-u11-v39",
+          "ko": "표현하다",
+          "en": "express",
+          "sourcePage": 48
+        },
+        {
+          "id": "3b-u11-v40",
+          "ko": "해물탕",
+          "en": "spicy seafood soup",
+          "sourcePage": 45
+        },
+        {
+          "id": "3b-u11-v41",
+          "ko": "화가 풀리다",
+          "en": "anger subsides",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v42",
+          "ko": "화를 풀다",
+          "en": "let out one's anger",
+          "sourcePage": 46
+        },
+        {
+          "id": "3b-u11-v43",
+          "ko": "후회하다",
+          "en": "regret",
+          "sourcePage": 40
+        }
+      ],
+      "grammar": [
+        {
+          "id": "3b-u11-g1",
+          "pattern": "-고 보니",
+          "meaning": "realize after doing",
+          "questions": [
+            {
+              "id": "3b-u11-g1-q1",
+              "type": "mcq",
+              "prompt": "집에 도착하___ 열쇠가 없었어요.\nTarget grammar: -고 보니 — realize after doing.",
+              "choices": [
+                "기 위해",
+                "려고",
+                "기 전에",
+                "고 보니"
+              ],
+              "answer": "고 보니",
+              "explanation": "The realization occurs after arriving."
+            },
+            {
+              "id": "3b-u11-g1-q2",
+              "type": "fill",
+              "prompt": "사진을 찍___ 뒤에 친구가 있었어요.\nTarget grammar: -고 보니 — realize after doing.",
+              "answer": "고 보니",
+              "explanation": "Use -고 보니: realize after doing."
+            }
+          ]
+        },
+        {
+          "id": "3b-u11-g2",
+          "pattern": "-(으)ㄹ 걸 (그랬다)",
+          "meaning": "regret not doing something",
+          "questions": [
+            {
+              "id": "3b-u11-g2-q1",
+              "type": "mcq",
+              "prompt": "비가 오네요. 우산을 ___ 그랬어요. (가져오다)\nTarget grammar: -(으)ㄹ 걸 (그랬다) — regret not doing something.",
+              "choices": [
+                "가져오고 보니",
+                "가져오기 위해",
+                "가져올 걸",
+                "가져오는 중"
+              ],
+              "answer": "가져올 걸",
+              "explanation": "The speaker regrets not bringing an umbrella."
+            },
+            {
+              "id": "3b-u11-g2-q2",
+              "type": "fill",
+              "prompt": "길이 막혀요. 지하철을 ___ 그랬어요. (타다)\nTarget grammar: -(으)ㄹ 걸 (그랬다) — regret not doing something.",
+              "answer": "탈 걸",
+              "explanation": "Use -(으)ㄹ 걸 (그랬다): regret not doing something."
+            }
+          ]
+        },
+        {
+          "id": "3b-u11-g3",
+          "pattern": "-는데도 / -(으)ㄴ데도 / 인데도",
+          "meaning": "even though",
+          "questions": [
+            {
+              "id": "3b-u11-g3-q1",
+              "type": "mcq",
+              "prompt": "많이 잤___ 아직 졸려요.\nTarget grammar: -는데도 / -(으)ㄴ데도 / 인데도 — even though.",
+              "choices": [
+                "는 동안",
+                "는데도",
+                "으려고",
+                "기 위해"
+              ],
+              "answer": "는데도",
+              "explanation": "Still sleepy despite sleeping a lot."
+            },
+            {
+              "id": "3b-u11-g3-q2",
+              "type": "fill",
+              "prompt": "이 가방은 ___ 인기가 많아요. (비싸다: even though)\nTarget grammar: -는데도 / -(으)ㄴ데도 / 인데도 — even though.",
+              "answer": "비싼데도",
+              "explanation": "Use -는데도 / -(으)ㄴ데도 / 인데도: even though."
+            }
+          ]
+        },
+        {
+          "id": "3b-u11-g4",
+          "pattern": "에 대해(서) / 에 대한",
+          "meaning": "about;regarding",
+          "questions": [
+            {
+              "id": "3b-u11-g4-q1",
+              "type": "mcq",
+              "prompt": "한국 역사___ 발표할 거예요.\nTarget grammar: 에 대해(서) / 에 대한 — about;regarding.",
+              "choices": [
+                "에 대해",
+                "까지",
+                "보다",
+                "처럼"
+              ],
+              "answer": "에 대해",
+              "explanation": "에 대해 marks the topic of the presentation."
+            },
+            {
+              "id": "3b-u11-g4-q2",
+              "type": "fill",
+              "prompt": "환경___ 책을 읽었어요. (before a noun)\nTarget grammar: 에 대해(서) / 에 대한 — about;regarding.",
+              "answer": "에 대한",
+              "explanation": "Use 에 대해(서) / 에 대한: about;regarding."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 12,
+      "title": "습관의 중요성",
+      "vocab": [
+        {
+          "id": "3b-u12-v1",
+          "ko": "건강을 돌보다",
+          "en": "take care of one's health",
+          "sourcePage": 56
+        },
+        {
+          "id": "3b-u12-v2",
+          "ko": "결심하다",
+          "en": "decide;resolve",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v3",
+          "ko": "긍정적으로 생각하다",
+          "en": "think positively",
+          "sourcePage": 56
+        },
+        {
+          "id": "3b-u12-v4",
+          "ko": "다리를 떨다",
+          "en": "shake one's leg",
+          "sourcePage": 56
+        },
+        {
+          "id": "3b-u12-v5",
+          "ko": "대충",
+          "en": "roughly;carelessly",
+          "sourcePage": 63
+        },
+        {
+          "id": "3b-u12-v6",
+          "ko": "도전하다",
+          "en": "challenge oneself",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v7",
+          "ko": "마라톤",
+          "en": "marathon",
+          "sourcePage": 63
+        },
+        {
+          "id": "3b-u12-v8",
+          "ko": "마음을 먹다",
+          "en": "make up one's mind",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v9",
+          "ko": "매니큐어",
+          "en": "nail polish",
+          "sourcePage": 58
+        },
+        {
+          "id": "3b-u12-v10",
+          "ko": "머리를 긁다",
+          "en": "scratch one's head",
+          "sourcePage": 56
+        },
+        {
+          "id": "3b-u12-v11",
+          "ko": "면접관",
+          "en": "interviewer",
+          "sourcePage": 61
+        },
+        {
+          "id": "3b-u12-v12",
+          "ko": "목록",
+          "en": "list",
+          "sourcePage": 67
+        },
+        {
+          "id": "3b-u12-v13",
+          "ko": "목표를 이루다",
+          "en": "achieve a goal",
+          "sourcePage": 65
+        },
+        {
+          "id": "3b-u12-v14",
+          "ko": "목표를 정하다",
+          "en": "set a goal",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v15",
+          "ko": "버릇을 고치다",
+          "en": "break a habit",
+          "sourcePage": 56
+        },
+        {
+          "id": "3b-u12-v16",
+          "ko": "복이 나가다",
+          "en": "lose one's good fortune",
+          "sourcePage": 60
+        },
+        {
+          "id": "3b-u12-v17",
+          "ko": "사소하다",
+          "en": "minor;trivial",
+          "sourcePage": 61
+        },
+        {
+          "id": "3b-u12-v18",
+          "ko": "성공하다",
+          "en": "succeed",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v19",
+          "ko": "손톱을 깨물다",
+          "en": "bite one's nails",
+          "sourcePage": 56
+        },
+        {
+          "id": "3b-u12-v20",
+          "ko": "습관을 기르다",
+          "en": "develop a habit",
+          "sourcePage": 56
+        },
+        {
+          "id": "3b-u12-v21",
+          "ko": "식습관",
+          "en": "eating habits",
+          "sourcePage": 64
+        },
+        {
+          "id": "3b-u12-v22",
+          "ko": "실력을 기르다",
+          "en": "improve one's ability",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v23",
+          "ko": "실천하다",
+          "en": "put into practice",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v24",
+          "ko": "실패하다",
+          "en": "fail",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v25",
+          "ko": "아침잠이 많다",
+          "en": "have trouble waking up in the morning",
+          "sourcePage": 57
+        },
+        {
+          "id": "3b-u12-v26",
+          "ko": "입술",
+          "en": "lip",
+          "sourcePage": 61
+        },
+        {
+          "id": "3b-u12-v27",
+          "ko": "잠을 충분히 자다",
+          "en": "get enough sleep",
+          "sourcePage": 56
+        },
+        {
+          "id": "3b-u12-v28",
+          "ko": "정리를 잘하다",
+          "en": "tidy up well",
+          "sourcePage": 56
+        },
+        {
+          "id": "3b-u12-v29",
+          "ko": "좋은 결과를 얻다",
+          "en": "get a good result",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v30",
+          "ko": "줄어들다",
+          "en": "decrease",
+          "sourcePage": 65
+        },
+        {
+          "id": "3b-u12-v31",
+          "ko": "지원자",
+          "en": "applicant",
+          "sourcePage": 61
+        },
+        {
+          "id": "3b-u12-v32",
+          "ko": "포기하다",
+          "en": "give up",
+          "sourcePage": 62
+        },
+        {
+          "id": "3b-u12-v33",
+          "ko": "한숨을 쉬다",
+          "en": "sigh",
+          "sourcePage": 56
+        }
+      ],
+      "grammar": [
+        {
+          "id": "3b-u12-g1",
+          "pattern": "-게 하다",
+          "meaning": "make or let someone do something",
+          "questions": [
+            {
+              "id": "3b-u12-g1-q1",
+              "type": "mcq",
+              "prompt": "선생님은 학생들이 직접 발표하___.\nTarget grammar: -게 하다 — make or let someone do something.",
+              "choices": [
+                "기로 했어요",
+                "고 있어요",
+                "러 갔어요",
+                "게 했어요"
+              ],
+              "answer": "게 했어요",
+              "explanation": "The teacher had the students present."
+            },
+            {
+              "id": "3b-u12-g1-q2",
+              "type": "fill",
+              "prompt": "엄마가 아이를 일찍 자___. (past polite)\nTarget grammar: -게 하다 — make or let someone do something.",
+              "answer": "게 했어요",
+              "explanation": "Use -게 하다: make or let someone do something."
+            }
+          ]
+        },
+        {
+          "id": "3b-u12-g2",
+          "pattern": "아무리 -아/어도",
+          "meaning": "no matter how much",
+          "questions": [
+            {
+              "id": "3b-u12-g2-q1",
+              "type": "mcq",
+              "prompt": "아무리 찾아___ 지갑이 안 보여요.\nTarget grammar: 아무리 -아/어도 — no matter how much.",
+              "choices": [
+                "야",
+                "야지",
+                "도",
+                "서"
+              ],
+              "answer": "도",
+              "explanation": "The result remains unchanged despite repeated effort."
+            },
+            {
+              "id": "3b-u12-g2-q2",
+              "type": "fill",
+              "prompt": "아무리 바빠___ 아침은 먹어요.\nTarget grammar: 아무리 -아/어도 — no matter how much.",
+              "answer": "도",
+              "explanation": "Use 아무리 -아/어도: no matter how much."
+            }
+          ]
+        },
+        {
+          "id": "3b-u12-g3",
+          "pattern": "-(으)ㄹ 생각도 못 하다",
+          "meaning": "cannot even think of doing",
+          "questions": [
+            {
+              "id": "3b-u12-g3-q1",
+              "type": "mcq",
+              "prompt": "일이 많아서 ___ 생각도 못 했어요. (쉬다)\nTarget grammar: -(으)ㄹ 생각도 못 하다 — cannot even think of doing.",
+              "choices": [
+                "쉬게",
+                "쉴",
+                "쉬는",
+                "쉬던"
+              ],
+              "answer": "쉴",
+              "explanation": "This pattern expresses having no chance to consider an action."
+            },
+            {
+              "id": "3b-u12-g3-q2",
+              "type": "fill",
+              "prompt": "너무 놀라서 ___ 생각도 못 했어요. (말하다)\nTarget grammar: -(으)ㄹ 생각도 못 하다 — cannot even think of doing.",
+              "answer": "말할",
+              "explanation": "Use -(으)ㄹ 생각도 못 하다: cannot even think of doing."
+            }
+          ]
+        },
+        {
+          "id": "3b-u12-g4",
+          "pattern": "-아/어 버리다",
+          "meaning": "finish completely, often with regret or relief",
+          "questions": [
+            {
+              "id": "3b-u12-g4-q1",
+              "type": "mcq",
+              "prompt": "중요한 메일을 지워 ___.\nTarget grammar: -아/어 버리다 — finish completely, often with regret or relief.",
+              "choices": [
+                "버렸어요",
+                "있어요",
+                "보세요",
+                "야 해요"
+              ],
+              "answer": "버렸어요",
+              "explanation": "The deletion is completed and regrettable."
+            },
+            {
+              "id": "3b-u12-g4-q2",
+              "type": "fill",
+              "prompt": "숙제를 다 해 ___. (past polite)\nTarget grammar: -아/어 버리다 — finish completely, often with regret or relief.",
+              "answer": "버렸어요",
+              "explanation": "Use -아/어 버리다: finish completely, often with regret or relief."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 13,
+      "title": "연애와 결혼",
+      "vocab": [
+        {
+          "id": "3b-u13-v1",
+          "ko": "가슴이 두근거리다",
+          "en": "heart pounds",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v2",
+          "ko": "결혼 정보 회사",
+          "en": "marriage matchmaking company",
+          "sourcePage": 76
+        },
+        {
+          "id": "3b-u13-v3",
+          "ko": "경제적",
+          "en": "economic",
+          "sourcePage": 76
+        },
+        {
+          "id": "3b-u13-v4",
+          "ko": "계기",
+          "en": "motive;occasion",
+          "sourcePage": 74
+        },
+        {
+          "id": "3b-u13-v5",
+          "ko": "고백하다",
+          "en": "confess",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v6",
+          "ko": "나란히 앉다",
+          "en": "sit side by side",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v7",
+          "ko": "남자 친구",
+          "en": "boyfriend",
+          "sourcePage": 79
+        },
+        {
+          "id": "3b-u13-v8",
+          "ko": "능력이 있다",
+          "en": "capable",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v9",
+          "ko": "대추",
+          "en": "jujube",
+          "sourcePage": 85
+        },
+        {
+          "id": "3b-u13-v10",
+          "ko": "든든하다",
+          "en": "reassuring;reliable",
+          "sourcePage": 81
+        },
+        {
+          "id": "3b-u13-v11",
+          "ko": "로맨스",
+          "en": "romance",
+          "sourcePage": 79
+        },
+        {
+          "id": "3b-u13-v12",
+          "ko": "마음씨가 착하다",
+          "en": "kind-hearted",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v13",
+          "ko": "말이 잘 통하다",
+          "en": "understand each other well",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v14",
+          "ko": "매력이 있다",
+          "en": "charming",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v15",
+          "ko": "무뚝뚝하다",
+          "en": "blunt;unfriendly",
+          "sourcePage": 74
+        },
+        {
+          "id": "3b-u13-v16",
+          "ko": "배우자",
+          "en": "spouse",
+          "sourcePage": 76
+        },
+        {
+          "id": "3b-u13-v17",
+          "ko": "분위기가 깨지다",
+          "en": "the mood is ruined",
+          "sourcePage": 80
+        },
+        {
+          "id": "3b-u13-v18",
+          "ko": "사랑이 식다",
+          "en": "love fades",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v19",
+          "ko": "선보다",
+          "en": "meet a potential spouse on a blind date",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v20",
+          "ko": "성격이 잘 맞다",
+          "en": "personalities match well",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v21",
+          "ko": "소개팅하다",
+          "en": "go on a blind date",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v22",
+          "ko": "손을 잡다",
+          "en": "hold hands",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v23",
+          "ko": "솔직하다",
+          "en": "honest",
+          "sourcePage": 80
+        },
+        {
+          "id": "3b-u13-v24",
+          "ko": "숨기다",
+          "en": "hide",
+          "sourcePage": 80
+        },
+        {
+          "id": "3b-u13-v25",
+          "ko": "시댁",
+          "en": "husband's family",
+          "sourcePage": 85
+        },
+        {
+          "id": "3b-u13-v26",
+          "ko": "싣다",
+          "en": "load",
+          "sourcePage": 76
+        },
+        {
+          "id": "3b-u13-v27",
+          "ko": "실제",
+          "en": "actual;real",
+          "sourcePage": 80
+        },
+        {
+          "id": "3b-u13-v28",
+          "ko": "어깨에 기대다",
+          "en": "lean on someone's shoulder",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v29",
+          "ko": "어색하다",
+          "en": "awkward",
+          "sourcePage": 79
+        },
+        {
+          "id": "3b-u13-v30",
+          "ko": "얼굴이 빨개지다",
+          "en": "face turns red",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v31",
+          "ko": "여자 친구",
+          "en": "girlfriend",
+          "sourcePage": 80
+        },
+        {
+          "id": "3b-u13-v32",
+          "ko": "연애결혼",
+          "en": "love marriage",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v33",
+          "ko": "예의가 없다",
+          "en": "rude",
+          "sourcePage": 74
+        },
+        {
+          "id": "3b-u13-v34",
+          "ko": "용기를 내다",
+          "en": "gather courage",
+          "sourcePage": 81
+        },
+        {
+          "id": "3b-u13-v35",
+          "ko": "이대로",
+          "en": "as it is",
+          "sourcePage": 80
+        },
+        {
+          "id": "3b-u13-v36",
+          "ko": "이별하다",
+          "en": "break up",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v37",
+          "ko": "인상이 좋다",
+          "en": "make a good impression",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v38",
+          "ko": "인상이 차갑다",
+          "en": "have a cold impression",
+          "sourcePage": 73
+        },
+        {
+          "id": "3b-u13-v39",
+          "ko": "장거리 연애",
+          "en": "long-distance relationship",
+          "sourcePage": 81
+        },
+        {
+          "id": "3b-u13-v40",
+          "ko": "장난",
+          "en": "prank",
+          "sourcePage": 74
+        },
+        {
+          "id": "3b-u13-v41",
+          "ko": "장르",
+          "en": "genre",
+          "sourcePage": 79
+        },
+        {
+          "id": "3b-u13-v42",
+          "ko": "절",
+          "en": "traditional bow",
+          "sourcePage": 85
+        },
+        {
+          "id": "3b-u13-v43",
+          "ko": "제대로",
+          "en": "properly",
+          "sourcePage": 81
+        },
+        {
+          "id": "3b-u13-v44",
+          "ko": "조건이 맞다",
+          "en": "meet the conditions",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v45",
+          "ko": "종종",
+          "en": "occasionally",
+          "sourcePage": 80
+        },
+        {
+          "id": "3b-u13-v46",
+          "ko": "중매결혼",
+          "en": "arranged marriage",
+          "sourcePage": 72
+        },
+        {
+          "id": "3b-u13-v47",
+          "ko": "진짜",
+          "en": "real",
+          "sourcePage": 80
+        },
+        {
+          "id": "3b-u13-v48",
+          "ko": "첫눈에 반하다",
+          "en": "fall in love at first sight",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v49",
+          "ko": "청혼하다",
+          "en": "propose marriage",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v50",
+          "ko": "팔짱을 끼다",
+          "en": "link arms",
+          "sourcePage": 78
+        },
+        {
+          "id": "3b-u13-v51",
+          "ko": "폐백",
+          "en": "traditional wedding greeting ceremony",
+          "sourcePage": 85
+        },
+        {
+          "id": "3b-u13-v52",
+          "ko": "함",
+          "en": "wedding gift chest",
+          "sourcePage": 85
+        },
+        {
+          "id": "3b-u13-v53",
+          "ko": "혼례복",
+          "en": "wedding clothes",
+          "sourcePage": 85
+        }
+      ],
+      "grammar": [
+        {
+          "id": "3b-u13-g1",
+          "pattern": "-(으)려면 멀었다",
+          "meaning": "still have a long way to go before",
+          "questions": [
+            {
+              "id": "3b-u13-g1-q1",
+              "type": "mcq",
+              "prompt": "한국어를 잘하___ 멀었어요.\nTarget grammar: -(으)려면 멀었다 — still have a long way to go before.",
+              "choices": [
+                "더니",
+                "지만",
+                "고 보니",
+                "려면"
+              ],
+              "answer": "려면",
+              "explanation": "The goal of speaking well is still far away."
+            },
+            {
+              "id": "3b-u13-g1-q2",
+              "type": "fill",
+              "prompt": "집을 사___ 멀었어요.\nTarget grammar: -(으)려면 멀었다 — still have a long way to go before.",
+              "answer": "려면",
+              "explanation": "Use -(으)려면 멀었다: still have a long way to go before."
+            }
+          ]
+        },
+        {
+          "id": "3b-u13-g2",
+          "pattern": "-잖아요 / 이잖아요",
+          "meaning": "remind someone of a known fact",
+          "questions": [
+            {
+              "id": "3b-u13-g2-q1",
+              "type": "mcq",
+              "prompt": "오늘은 일요일이___. 은행이 쉬어요.\nTarget grammar: -잖아요 / 이잖아요 — remind someone of a known fact.",
+              "choices": [
+                "더니요",
+                "느라고요",
+                "잖아요",
+                "려고요"
+              ],
+              "answer": "잖아요",
+              "explanation": "Reminds the listener that it is Sunday."
+            },
+            {
+              "id": "3b-u13-g2-q2",
+              "type": "fill",
+              "prompt": "이 식당은 맛있___. 여기서 먹어요.\nTarget grammar: -잖아요 / 이잖아요 — remind someone of a known fact.",
+              "answer": "잖아요",
+              "explanation": "Use -잖아요 / 이잖아요: remind someone of a known fact."
+            }
+          ]
+        },
+        {
+          "id": "3b-u13-g3",
+          "pattern": "-(으)면 -(으)ㄹ수록",
+          "meaning": "the more…the more",
+          "questions": [
+            {
+              "id": "3b-u13-g3-q1",
+              "type": "mcq",
+              "prompt": "한국어는 배우면 배울___ 재미있어요.\nTarget grammar: -(으)면 -(으)ㄹ수록 — the more…the more.",
+              "choices": [
+                "래",
+                "수록",
+                "까",
+                "게"
+              ],
+              "answer": "수록",
+              "explanation": "Repeated comparative structure expresses an increasing result."
+            },
+            {
+              "id": "3b-u13-g3-q2",
+              "type": "fill",
+              "prompt": "이 노래는 들으면 들을___ 좋아요.\nTarget grammar: -(으)면 -(으)ㄹ수록 — the more…the more.",
+              "answer": "수록",
+              "explanation": "Use -(으)면 -(으)ㄹ수록: the more…the more."
+            }
+          ]
+        },
+        {
+          "id": "3b-u13-g4",
+          "pattern": "-는 척하다 / -(으)ㄴ 척하다 / 인 척하다",
+          "meaning": "pretend to be or do",
+          "questions": [
+            {
+              "id": "3b-u13-g4-q1",
+              "type": "mcq",
+              "prompt": "내용을 모르지만 아는 ___ 했어요.\nTarget grammar: -는 척하다 / -(으)ㄴ 척하다 / 인 척하다 — pretend to be or do.",
+              "choices": [
+                "척",
+                "동안",
+                "데다가",
+                "만큼"
+              ],
+              "answer": "척",
+              "explanation": "아는 척하다 means pretend to know."
+            },
+            {
+              "id": "3b-u13-g4-q2",
+              "type": "fill",
+              "prompt": "피곤해서 자는 ___ 했어요.\nTarget grammar: -는 척하다 / -(으)ㄴ 척하다 / 인 척하다 — pretend to be or do.",
+              "answer": "척",
+              "explanation": "Use -는 척하다 / -(으)ㄴ 척하다 / 인 척하다: pretend to be or do."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 14,
+      "title": "고향의 어제와 오늘",
+      "vocab": [
+        {
+          "id": "3b-u14-v1",
+          "ko": "공기가 좋다",
+          "en": "air is fresh",
+          "sourcePage": 88
+        },
+        {
+          "id": "3b-u14-v2",
+          "ko": "공모전",
+          "en": "contest",
+          "sourcePage": 97
+        },
+        {
+          "id": "3b-u14-v3",
+          "ko": "공해가 심하다",
+          "en": "pollution is severe",
+          "sourcePage": 88
+        },
+        {
+          "id": "3b-u14-v4",
+          "ko": "길을 잘못 들다",
+          "en": "take the wrong way",
+          "sourcePage": 93
+        },
+        {
+          "id": "3b-u14-v5",
+          "ko": "나타나다",
+          "en": "appear",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v6",
+          "ko": "낡다",
+          "en": "old;worn out",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v7",
+          "ko": "노선",
+          "en": "route;transit line",
+          "sourcePage": 97
+        },
+        {
+          "id": "3b-u14-v8",
+          "ko": "노을",
+          "en": "sunset glow",
+          "sourcePage": 89
+        },
+        {
+          "id": "3b-u14-v9",
+          "ko": "농촌",
+          "en": "farming village",
+          "sourcePage": 92
+        },
+        {
+          "id": "3b-u14-v10",
+          "ko": "돌",
+          "en": "stone",
+          "sourcePage": 96
+        },
+        {
+          "id": "3b-u14-v11",
+          "ko": "따분하다",
+          "en": "bored;boring",
+          "sourcePage": 88
+        },
+        {
+          "id": "3b-u14-v12",
+          "ko": "먹거리",
+          "en": "things to eat",
+          "sourcePage": 101
+        },
+        {
+          "id": "3b-u14-v13",
+          "ko": "몰라보다",
+          "en": "fail to recognize",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v14",
+          "ko": "발전하다",
+          "en": "develop",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v15",
+          "ko": "변하다",
+          "en": "change",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v16",
+          "ko": "볼거리가 다양하다",
+          "en": "have various sights to see",
+          "sourcePage": 88
+        },
+        {
+          "id": "3b-u14-v17",
+          "ko": "사라지다",
+          "en": "disappear",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v18",
+          "ko": "상상이 되다",
+          "en": "be imaginable",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v19",
+          "ko": "상상이 안 되다",
+          "en": "be unimaginable",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v20",
+          "ko": "새롭다",
+          "en": "new",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v21",
+          "ko": "생기다",
+          "en": "appear;be formed",
+          "sourcePage": 94
+        },
+        {
+          "id": "3b-u14-v22",
+          "ko": "서양식",
+          "en": "Western-style",
+          "sourcePage": 96
+        },
+        {
+          "id": "3b-u14-v23",
+          "ko": "서핑",
+          "en": "surfing",
+          "sourcePage": 93
+        },
+        {
+          "id": "3b-u14-v24",
+          "ko": "소중함",
+          "en": "preciousness",
+          "sourcePage": 101
+        },
+        {
+          "id": "3b-u14-v25",
+          "ko": "시간 가는 줄 모르다",
+          "en": "lose track of time",
+          "sourcePage": 88
+        },
+        {
+          "id": "3b-u14-v26",
+          "ko": "여유가 없다",
+          "en": "have no time to spare",
+          "sourcePage": 88
+        },
+        {
+          "id": "3b-u14-v27",
+          "ko": "여유가 있다",
+          "en": "have time to spare",
+          "sourcePage": 88
+        },
+        {
+          "id": "3b-u14-v28",
+          "ko": "원래",
+          "en": "originally",
+          "sourcePage": 96
+        },
+        {
+          "id": "3b-u14-v29",
+          "ko": "이동",
+          "en": "movement",
+          "sourcePage": 97
+        },
+        {
+          "id": "3b-u14-v30",
+          "ko": "일자리",
+          "en": "job",
+          "sourcePage": 93
+        },
+        {
+          "id": "3b-u14-v31",
+          "ko": "자연",
+          "en": "nature",
+          "sourcePage": 90
+        },
+        {
+          "id": "3b-u14-v32",
+          "ko": "전망대",
+          "en": "observation deck",
+          "sourcePage": 93
+        },
+        {
+          "id": "3b-u14-v33",
+          "ko": "전학",
+          "en": "school transfer",
+          "sourcePage": 92
+        },
+        {
+          "id": "3b-u14-v34",
+          "ko": "즐길 거리",
+          "en": "things to enjoy",
+          "sourcePage": 93
+        },
+        {
+          "id": "3b-u14-v35",
+          "ko": "지치다",
+          "en": "exhausted",
+          "sourcePage": 93
+        },
+        {
+          "id": "3b-u14-v36",
+          "ko": "진지하다",
+          "en": "serious;earnest",
+          "sourcePage": 93
+        },
+        {
+          "id": "3b-u14-v37",
+          "ko": "텃밭",
+          "en": "vegetable garden",
+          "sourcePage": 92
+        },
+        {
+          "id": "3b-u14-v38",
+          "ko": "편의 시설이 잘되어 있다",
+          "en": "have good amenities",
+          "sourcePage": 88
+        },
+        {
+          "id": "3b-u14-v39",
+          "ko": "평화롭다",
+          "en": "peaceful",
+          "sourcePage": 88
+        },
+        {
+          "id": "3b-u14-v40",
+          "ko": "형태",
+          "en": "form;shape",
+          "sourcePage": 96
+        },
+        {
+          "id": "3b-u14-v41",
+          "ko": "활기차다",
+          "en": "lively",
+          "sourcePage": 88
+        }
+      ],
+      "grammar": [
+        {
+          "id": "3b-u14-g1",
+          "pattern": "-았/었던 / 이었던",
+          "meaning": "past recollection or former state",
+          "questions": [
+            {
+              "id": "3b-u14-g1-q1",
+              "type": "mcq",
+              "prompt": "전에 살___ 집에 가 봤어요.\nTarget grammar: -았/었던 / 이었던 — past recollection or former state.",
+              "choices": [
+                "려고",
+                "느라고",
+                "아야",
+                "았던"
+              ],
+              "answer": "았던",
+              "explanation": "Recalls a house the speaker formerly lived in."
+            },
+            {
+              "id": "3b-u14-g1-q2",
+              "type": "fill",
+              "prompt": "어릴 때 자주 갔___ 공원이 없어졌어요.\nTarget grammar: -았/었던 / 이었던 — past recollection or former state.",
+              "answer": "던",
+              "explanation": "Use -았/었던 / 이었던: past recollection or former state."
+            }
+          ]
+        },
+        {
+          "id": "3b-u14-g2",
+          "pattern": "-(으)ㄹ걸요 / 일걸요",
+          "meaning": "tentative assumption",
+          "questions": [
+            {
+              "id": "3b-u14-g2-q1",
+              "type": "mcq",
+              "prompt": "지금은 가게가 문을 닫았___ .\nTarget grammar: -(으)ㄹ걸요 / 일걸요 — tentative assumption.",
+              "choices": [
+                "느라고",
+                "으려고",
+                "을걸요",
+                "더니"
+              ],
+              "answer": "을걸요",
+              "explanation": "Expresses the speaker’s tentative guess."
+            },
+            {
+              "id": "3b-u14-g2-q2",
+              "type": "fill",
+              "prompt": "민수 씨는 지금 집에 있___.\nTarget grammar: -(으)ㄹ걸요 / 일걸요 — tentative assumption.",
+              "answer": "을걸요",
+              "explanation": "Use -(으)ㄹ걸요 / 일걸요: tentative assumption."
+            }
+          ]
+        },
+        {
+          "id": "3b-u14-g3",
+          "pattern": "만큼",
+          "meaning": "as much as;as…as",
+          "questions": [
+            {
+              "id": "3b-u14-g3-q1",
+              "type": "mcq",
+              "prompt": "동생도 저___ 키가 커요.\nTarget grammar: 만큼 — as much as;as…as.",
+              "choices": [
+                "에게",
+                "만큼",
+                "부터",
+                "까지"
+              ],
+              "answer": "만큼",
+              "explanation": "Compares height to the speaker’s height."
+            },
+            {
+              "id": "3b-u14-g3-q2",
+              "type": "fill",
+              "prompt": "오늘은 어제___ 춥지 않아요.\nTarget grammar: 만큼 — as much as;as…as.",
+              "answer": "만큼",
+              "explanation": "Use 만큼: as much as;as…as."
+            }
+          ]
+        },
+        {
+          "id": "3b-u14-g4",
+          "pattern": "-지 않으면 안 되다",
+          "meaning": "must;cannot do without",
+          "questions": [
+            {
+              "id": "3b-u14-g4-q1",
+              "type": "mcq",
+              "prompt": "내일 시험이 있어서 공부하___ 안 돼요.\nTarget grammar: -지 않으면 안 되다 — must;cannot do without.",
+              "choices": [
+                "지 않으면",
+                "려고 하면",
+                "고 나면",
+                "는 동안"
+              ],
+              "answer": "지 않으면",
+              "explanation": "Double negative expresses necessity."
+            },
+            {
+              "id": "3b-u14-g4-q2",
+              "type": "fill",
+              "prompt": "약속을 지키___ 안 돼요.\nTarget grammar: -지 않으면 안 되다 — must;cannot do without.",
+              "answer": "지 않으면",
+              "explanation": "Use -지 않으면 안 되다: must;cannot do without."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 15,
+      "title": "건강한 몸과 마음",
+      "vocab": [
+        {
+          "id": "3b-u15-v1",
+          "ko": "건강식품",
+          "en": "health food",
+          "sourcePage": 108
+        },
+        {
+          "id": "3b-u15-v2",
+          "ko": "검사를 받다",
+          "en": "get a medical examination",
+          "sourcePage": 108
+        },
+        {
+          "id": "3b-u15-v3",
+          "ko": "골고루",
+          "en": "evenly;in a balanced way",
+          "sourcePage": 109
+        },
+        {
+          "id": "3b-u15-v4",
+          "ko": "관심이 높다",
+          "en": "have a high interest",
+          "sourcePage": 108
+        },
+        {
+          "id": "3b-u15-v5",
+          "ko": "교훈",
+          "en": "moral;lesson",
+          "sourcePage": 113
+        },
+        {
+          "id": "3b-u15-v6",
+          "ko": "규칙적",
+          "en": "regular",
+          "sourcePage": 108
+        },
+        {
+          "id": "3b-u15-v7",
+          "ko": "그때그때",
+          "en": "each time;as needed",
+          "sourcePage": 113
+        },
+        {
+          "id": "3b-u15-v8",
+          "ko": "근육이 생기다",
+          "en": "develop muscles",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v9",
+          "ko": "기운이 나다",
+          "en": "feel energetic",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v10",
+          "ko": "단백질",
+          "en": "protein",
+          "sourcePage": 109
+        },
+        {
+          "id": "3b-u15-v11",
+          "ko": "더위",
+          "en": "heat",
+          "sourcePage": 114
+        },
+        {
+          "id": "3b-u15-v12",
+          "ko": "동지",
+          "en": "winter solstice",
+          "sourcePage": 117
+        },
+        {
+          "id": "3b-u15-v13",
+          "ko": "땀이 나다",
+          "en": "sweat",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v14",
+          "ko": "땅콩",
+          "en": "peanut",
+          "sourcePage": 117
+        },
+        {
+          "id": "3b-u15-v15",
+          "ko": "마음에 여유가 생기다",
+          "en": "feel at ease",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v16",
+          "ko": "마음이 편안해지다",
+          "en": "feel relaxed",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v17",
+          "ko": "몸이 가볍다",
+          "en": "body feels light",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v18",
+          "ko": "몸이 무겁다",
+          "en": "body feels heavy",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v19",
+          "ko": "바로바로",
+          "en": "immediately",
+          "sourcePage": 113
+        },
+        {
+          "id": "3b-u15-v20",
+          "ko": "밤",
+          "en": "chestnut",
+          "sourcePage": 117
+        },
+        {
+          "id": "3b-u15-v21",
+          "ko": "벗어나다",
+          "en": "escape;get out of",
+          "sourcePage": 113
+        },
+        {
+          "id": "3b-u15-v22",
+          "ko": "보",
+          "en": "step",
+          "sourcePage": 109
+        },
+        {
+          "id": "3b-u15-v23",
+          "ko": "부담이 되다",
+          "en": "be a burden",
+          "sourcePage": 106
+        },
+        {
+          "id": "3b-u15-v24",
+          "ko": "부럼",
+          "en": "nuts eaten at the first full moon",
+          "sourcePage": 117
+        },
+        {
+          "id": "3b-u15-v25",
+          "ko": "불가능하다",
+          "en": "impossible",
+          "sourcePage": 113
+        },
+        {
+          "id": "3b-u15-v26",
+          "ko": "비법",
+          "en": "secret method",
+          "sourcePage": 114
+        },
+        {
+          "id": "3b-u15-v27",
+          "ko": "삼복",
+          "en": "hottest days of summer",
+          "sourcePage": 117
+        },
+        {
+          "id": "3b-u15-v28",
+          "ko": "상처를 받다",
+          "en": "feel hurt",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v29",
+          "ko": "숨이 차다",
+          "en": "out of breath",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v30",
+          "ko": "스트레스가 쌓이다",
+          "en": "stress builds up",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v31",
+          "ko": "스트레스가 풀리다",
+          "en": "stress is relieved",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v32",
+          "ko": "신경을 쓰다",
+          "en": "pay attention to",
+          "sourcePage": 112
+        },
+        {
+          "id": "3b-u15-v33",
+          "ko": "앱",
+          "en": "app",
+          "sourcePage": 109
+        },
+        {
+          "id": "3b-u15-v34",
+          "ko": "어려움을 느끼다",
+          "en": "experience difficulty",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v35",
+          "ko": "어지럽다",
+          "en": "dizzy",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v36",
+          "ko": "영양제",
+          "en": "dietary supplement",
+          "sourcePage": 109
+        },
+        {
+          "id": "3b-u15-v37",
+          "ko": "오곡밥",
+          "en": "five-grain rice",
+          "sourcePage": 117
+        },
+        {
+          "id": "3b-u15-v38",
+          "ko": "우울하다",
+          "en": "depressed",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v39",
+          "ko": "운이 좋다",
+          "en": "lucky",
+          "sourcePage": 113
+        },
+        {
+          "id": "3b-u15-v40",
+          "ko": "응답하다",
+          "en": "respond",
+          "sourcePage": 112
+        },
+        {
+          "id": "3b-u15-v41",
+          "ko": "인간관계",
+          "en": "human relationships",
+          "sourcePage": 112
+        },
+        {
+          "id": "3b-u15-v42",
+          "ko": "정월대보름",
+          "en": "first full moon of the lunar year",
+          "sourcePage": 117
+        },
+        {
+          "id": "3b-u15-v43",
+          "ko": "줄넘기",
+          "en": "jump rope",
+          "sourcePage": 106
+        },
+        {
+          "id": "3b-u15-v44",
+          "ko": "쥐가 나다",
+          "en": "have a muscle cramp",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v45",
+          "ko": "집중이 안 되다",
+          "en": "cannot concentrate",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v46",
+          "ko": "체력이 좋아지다",
+          "en": "physical fitness improves",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v47",
+          "ko": "추위",
+          "en": "cold",
+          "sourcePage": 114
+        },
+        {
+          "id": "3b-u15-v48",
+          "ko": "팥죽",
+          "en": "red bean porridge",
+          "sourcePage": 117
+        },
+        {
+          "id": "3b-u15-v49",
+          "ko": "평소",
+          "en": "usually;ordinary times",
+          "sourcePage": 108
+        },
+        {
+          "id": "3b-u15-v50",
+          "ko": "호두",
+          "en": "walnut",
+          "sourcePage": 117
+        },
+        {
+          "id": "3b-u15-v51",
+          "ko": "홍삼",
+          "en": "red ginseng",
+          "sourcePage": 108
+        },
+        {
+          "id": "3b-u15-v52",
+          "ko": "회식",
+          "en": "company dinner",
+          "sourcePage": 112
+        },
+        {
+          "id": "3b-u15-v53",
+          "ko": "힘이 세다",
+          "en": "strong",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v54",
+          "ko": "힘이 없다",
+          "en": "have no strength",
+          "sourcePage": 104
+        },
+        {
+          "id": "3b-u15-v55",
+          "ko": "지치다",
+          "en": "exhausted",
+          "sourcePage": 110
+        },
+        {
+          "id": "3b-u15-v56",
+          "ko": "업무",
+          "en": "work;duties",
+          "sourcePage": 112
+        }
+      ],
+      "grammar": [
+        {
+          "id": "3b-u15-g1",
+          "pattern": "-았/었더니",
+          "meaning": "result discovered after doing",
+          "questions": [
+            {
+              "id": "3b-u15-g1-q1",
+              "type": "mcq",
+              "prompt": "어제 일찍 잤___ 오늘 기분이 좋아요.\nTarget grammar: -았/었더니 — result discovered after doing.",
+              "choices": [
+                "으려고",
+                "느라고",
+                "기 전에",
+                "더니"
+              ],
+              "answer": "더니",
+              "explanation": "The earlier action led to the observed result."
+            },
+            {
+              "id": "3b-u15-g1-q2",
+              "type": "fill",
+              "prompt": "매일 걸었___ 체력이 좋아졌어요.\nTarget grammar: -았/었더니 — result discovered after doing.",
+              "answer": "더니",
+              "explanation": "Use -았/었더니: result discovered after doing."
+            }
+          ]
+        },
+        {
+          "id": "3b-u15-g2",
+          "pattern": "(이)라도",
+          "meaning": "at least;something as an alternative",
+          "questions": [
+            {
+              "id": "3b-u15-g2-q1",
+              "type": "mcq",
+              "prompt": "시간이 없으면 빵___ 먹어요.\nTarget grammar: (이)라도 — at least;something as an alternative.",
+              "choices": [
+                "까지",
+                "에게",
+                "이라도",
+                "부터"
+              ],
+              "answer": "이라도",
+              "explanation": "Suggests bread as a readily available alternative."
+            },
+            {
+              "id": "3b-u15-g2-q2",
+              "type": "fill",
+              "prompt": "피곤하면 잠깐 산책___ 해 보세요.\nTarget grammar: (이)라도 — at least;something as an alternative.",
+              "answer": "이라도",
+              "explanation": "Use (이)라도: at least;something as an alternative."
+            }
+          ]
+        },
+        {
+          "id": "3b-u15-g3",
+          "pattern": "-느라(고)",
+          "meaning": "because of doing an activity",
+          "questions": [
+            {
+              "id": "3b-u15-g3-q1",
+              "type": "mcq",
+              "prompt": "숙제를 하___ 친구를 못 만났어요.\nTarget grammar: -느라(고) — because of doing an activity.",
+              "choices": [
+                "고 나서",
+                "느라고",
+                "더라도",
+                "기 위해"
+              ],
+              "answer": "느라고",
+              "explanation": "The activity prevents another action."
+            },
+            {
+              "id": "3b-u15-g3-q2",
+              "type": "fill",
+              "prompt": "영화를 보___ 전화를 못 받았어요.\nTarget grammar: -느라(고) — because of doing an activity.",
+              "answer": "느라고",
+              "explanation": "Use -느라(고): because of doing an activity."
+            }
+          ]
+        },
+        {
+          "id": "3b-u15-g4",
+          "pattern": "-았/었어야 하다 / 이었어야 하다",
+          "meaning": "should have done",
+          "questions": [
+            {
+              "id": "3b-u15-g4-q1",
+              "type": "mcq",
+              "prompt": "시험을 못 봤어요. 더 공부했___ 했는데요.\nTarget grammar: -았/었어야 하다 / 이었어야 하다 — should have done.",
+              "choices": [
+                "어야",
+                "더니",
+                "지만",
+                "다고"
+              ],
+              "answer": "어야",
+              "explanation": "Expresses regret about an unmet past obligation."
+            },
+            {
+              "id": "3b-u15-g4-q2",
+              "type": "fill",
+              "prompt": "늦었어요. 일찍 출발했___ 했어요.\nTarget grammar: -았/었어야 하다 / 이었어야 하다 — should have done.",
+              "answer": "어야",
+              "explanation": "Use -았/었어야 하다 / 이었어야 하다: should have done."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 16,
+      "title": "일과 직업",
+      "vocab": [
+        {
+          "id": "3b-u16-v1",
+          "ko": "개발",
+          "en": "development",
+          "sourcePage": 127
+        },
+        {
+          "id": "3b-u16-v2",
+          "ko": "경험이 많다",
+          "en": "have a lot of experience",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v3",
+          "ko": "교육 기회가 제공되다",
+          "en": "training opportunities are provided",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v4",
+          "ko": "구직",
+          "en": "job seeking",
+          "sourcePage": 129
+        },
+        {
+          "id": "3b-u16-v5",
+          "ko": "근무 시간",
+          "en": "working hours",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v6",
+          "ko": "근무 환경이 좋다",
+          "en": "have a good working environment",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v7",
+          "ko": "꼼꼼하다",
+          "en": "meticulous",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v8",
+          "ko": "대기업",
+          "en": "large company",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v9",
+          "ko": "도서 구입비",
+          "en": "book purchase allowance",
+          "sourcePage": 129
+        },
+        {
+          "id": "3b-u16-v10",
+          "ko": "동료",
+          "en": "coworker",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v11",
+          "ko": "무역",
+          "en": "trade",
+          "sourcePage": 125
+        },
+        {
+          "id": "3b-u16-v12",
+          "ko": "문화비",
+          "en": "cultural activity allowance",
+          "sourcePage": 123
+        },
+        {
+          "id": "3b-u16-v13",
+          "ko": "보너스를 받다",
+          "en": "receive a bonus",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v14",
+          "ko": "복장이 자유롭다",
+          "en": "have a flexible dress code",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v15",
+          "ko": "부담스럽다",
+          "en": "burdensome",
+          "sourcePage": 133
+        },
+        {
+          "id": "3b-u16-v16",
+          "ko": "사무 보조",
+          "en": "office assistant",
+          "sourcePage": 123
+        },
+        {
+          "id": "3b-u16-v17",
+          "ko": "상영관",
+          "en": "movie theater",
+          "sourcePage": 122
+        },
+        {
+          "id": "3b-u16-v18",
+          "ko": "성실하다",
+          "en": "diligent",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v19",
+          "ko": "스스로",
+          "en": "on one's own",
+          "sourcePage": 125
+        },
+        {
+          "id": "3b-u16-v20",
+          "ko": "승진 기회가 많다",
+          "en": "have many promotion opportunities",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v21",
+          "ko": "시급",
+          "en": "hourly wage",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v22",
+          "ko": "신입 사원",
+          "en": "new employee",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v23",
+          "ko": "업무",
+          "en": "work;duties",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v24",
+          "ko": "업무 능력이 뛰어나다",
+          "en": "have excellent work skills",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v25",
+          "ko": "연구",
+          "en": "research",
+          "sourcePage": 127
+        },
+        {
+          "id": "3b-u16-v26",
+          "ko": "연령",
+          "en": "age",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v27",
+          "ko": "연봉이 높다",
+          "en": "have a high annual salary",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v28",
+          "ko": "열정",
+          "en": "passion",
+          "sourcePage": 127
+        },
+        {
+          "id": "3b-u16-v29",
+          "ko": "이력서를 내다",
+          "en": "submit a resume",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v30",
+          "ko": "이직",
+          "en": "job change",
+          "sourcePage": 128
+        },
+        {
+          "id": "3b-u16-v31",
+          "ko": "이해가 빠르다",
+          "en": "quick to understand",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v32",
+          "ko": "일자리를 구하다",
+          "en": "look for a job",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v33",
+          "ko": "작성하다",
+          "en": "fill out;write",
+          "sourcePage": 127
+        },
+        {
+          "id": "3b-u16-v34",
+          "ko": "재택근무",
+          "en": "working from home",
+          "sourcePage": 129
+        },
+        {
+          "id": "3b-u16-v35",
+          "ko": "전자",
+          "en": "electronics",
+          "sourcePage": 127
+        },
+        {
+          "id": "3b-u16-v36",
+          "ko": "제출하다",
+          "en": "submit",
+          "sourcePage": 124
+        },
+        {
+          "id": "3b-u16-v37",
+          "ko": "중소기업",
+          "en": "small or medium-sized company",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v38",
+          "ko": "지급",
+          "en": "payment",
+          "sourcePage": 123
+        },
+        {
+          "id": "3b-u16-v39",
+          "ko": "지원서",
+          "en": "application form",
+          "sourcePage": 127
+        },
+        {
+          "id": "3b-u16-v40",
+          "ko": "직장 상사",
+          "en": "supervisor at work",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v41",
+          "ko": "차",
+          "en": "round;stage",
+          "sourcePage": 127
+        },
+        {
+          "id": "3b-u16-v42",
+          "ko": "최선을 다하다",
+          "en": "do one's best",
+          "sourcePage": 120
+        },
+        {
+          "id": "3b-u16-v43",
+          "ko": "출퇴근 시간이 자유롭다",
+          "en": "have flexible working hours",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v44",
+          "ko": "클릭",
+          "en": "click",
+          "sourcePage": 124
+        },
+        {
+          "id": "3b-u16-v45",
+          "ko": "휴가가 길다",
+          "en": "have long vacations",
+          "sourcePage": 126
+        },
+        {
+          "id": "3b-u16-v46",
+          "ko": "휴가를 쓰다",
+          "en": "take vacation leave",
+          "sourcePage": 127
+        }
+      ],
+      "grammar": [
+        {
+          "id": "3b-u16-g1",
+          "pattern": "-는 모양이다 / -(으)ㄴ 모양이다 / 인 모양이다",
+          "meaning": "it seems based on evidence",
+          "questions": [
+            {
+              "id": "3b-u16-g1-q1",
+              "type": "mcq",
+              "prompt": "우산을 쓰고 있어요. 비가 오는 ___이에요.\nTarget grammar: -는 모양이다 / -(으)ㄴ 모양이다 / 인 모양이다 — it seems based on evidence.",
+              "choices": [
+                "척",
+                "동안",
+                "수록",
+                "모양"
+              ],
+              "answer": "모양",
+              "explanation": "Visible evidence supports the inference."
+            },
+            {
+              "id": "3b-u16-g1-q2",
+              "type": "fill",
+              "prompt": "불이 꺼져 있어요. 집에 사람이 없는 ___이에요.\nTarget grammar: -는 모양이다 / -(으)ㄴ 모양이다 / 인 모양이다 — it seems based on evidence.",
+              "answer": "모양",
+              "explanation": "Use -는 모양이다 / -(으)ㄴ 모양이다 / 인 모양이다: it seems based on evidence."
+            }
+          ]
+        },
+        {
+          "id": "3b-u16-g2",
+          "pattern": "-아/어야 할 텐데 / 이어야 할 텐데",
+          "meaning": "hope or worry that something needs to happen",
+          "questions": [
+            {
+              "id": "3b-u16-g2-q1",
+              "type": "mcq",
+              "prompt": "내일 면접을 잘 봐야 ___ 걱정이에요.\nTarget grammar: -아/어야 할 텐데 / 이어야 할 텐데 — hope or worry that something needs to happen.",
+              "choices": [
+                "하는 동안",
+                "하느라고",
+                "할 텐데",
+                "한 척"
+              ],
+              "answer": "할 텐데",
+              "explanation": "Expresses concern about an outcome that needs to go well."
+            },
+            {
+              "id": "3b-u16-g2-q2",
+              "type": "fill",
+              "prompt": "버스가 빨리 와야 ___ 늦겠어요.\nTarget grammar: -아/어야 할 텐데 / 이어야 할 텐데 — hope or worry that something needs to happen.",
+              "answer": "할 텐데",
+              "explanation": "Use -아/어야 할 텐데 / 이어야 할 텐데: hope or worry that something needs to happen."
+            }
+          ]
+        },
+        {
+          "id": "3b-u16-g3",
+          "pattern": "-는다면 / -다면 / (이)라면",
+          "meaning": "if (hypothetical)",
+          "questions": [
+            {
+              "id": "3b-u16-g3-q1",
+              "type": "mcq",
+              "prompt": "시간이 있___ 같이 여행하고 싶어요.\nTarget grammar: -는다면 / -다면 / (이)라면 — if (hypothetical).",
+              "choices": [
+                "지만",
+                "다면",
+                "더니",
+                "느라고"
+              ],
+              "answer": "다면",
+              "explanation": "Introduces an imagined condition."
+            },
+            {
+              "id": "3b-u16-g3-q2",
+              "type": "fill",
+              "prompt": "제가 선생님이___ 학생들을 많이 도와줄 거예요.\nTarget grammar: -는다면 / -다면 / (이)라면 — if (hypothetical).",
+              "answer": "라면",
+              "explanation": "Use -는다면 / -다면 / (이)라면: if (hypothetical)."
+            }
+          ]
+        },
+        {
+          "id": "3b-u16-g4",
+          "pattern": "누구든(지), 언제든(지), 어디든(지), 무엇이든(지)",
+          "meaning": "anyone;anytime;anywhere;anything",
+          "questions": [
+            {
+              "id": "3b-u16-g4-q1",
+              "type": "mcq",
+              "prompt": "시간이 날 때 ___ 전화하세요.\nTarget grammar: 누구든(지), 언제든(지), 어디든(지), 무엇이든(지) — anyone;anytime;anywhere;anything.",
+              "choices": [
+                "언제든지",
+                "누구든지",
+                "어디든지",
+                "무엇이든지"
+              ],
+              "answer": "언제든지",
+              "explanation": "언제든지 refers to any time."
+            },
+            {
+              "id": "3b-u16-g4-q2",
+              "type": "fill",
+              "prompt": "사람은 ___ 이 행사에 올 수 있어요.\nTarget grammar: 누구든(지), 언제든(지), 어디든(지), 무엇이든(지) — anyone;anytime;anywhere;anything.",
+              "answer": "누구든지;누구든",
+              "explanation": "Use 누구든(지), 언제든(지), 어디든(지), 무엇이든(지): anyone;anytime;anywhere;anything."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 17,
+      "title": "특별한 날",
+      "vocab": [
+        {
+          "id": "3b-u17-v1",
+          "ko": "개천절",
+          "en": "National Foundation Day",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v2",
+          "ko": "겨루다",
+          "en": "compete",
+          "sourcePage": 149
+        },
+        {
+          "id": "3b-u17-v3",
+          "ko": "격려하다",
+          "en": "encourage",
+          "sourcePage": 142
+        },
+        {
+          "id": "3b-u17-v4",
+          "ko": "공휴일",
+          "en": "public holiday",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v5",
+          "ko": "광복절",
+          "en": "National Liberation Day",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v6",
+          "ko": "교내",
+          "en": "on campus",
+          "sourcePage": 140
+        },
+        {
+          "id": "3b-u17-v7",
+          "ko": "국기를 달다",
+          "en": "hang the national flag",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v8",
+          "ko": "국내외",
+          "en": "home and abroad",
+          "sourcePage": 149
+        },
+        {
+          "id": "3b-u17-v9",
+          "ko": "글짓기",
+          "en": "writing;composition",
+          "sourcePage": 141
+        },
+        {
+          "id": "3b-u17-v10",
+          "ko": "기념일",
+          "en": "anniversary",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v11",
+          "ko": "기념하다",
+          "en": "commemorate",
+          "sourcePage": 142
+        },
+        {
+          "id": "3b-u17-v12",
+          "ko": "꽃을 달아 드리다",
+          "en": "pin a flower on someone",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v13",
+          "ko": "나무를 심다",
+          "en": "plant a tree",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v14",
+          "ko": "덕분에",
+          "en": "thanks to",
+          "sourcePage": 145
+        },
+        {
+          "id": "3b-u17-v15",
+          "ko": "마음을 표현하다",
+          "en": "express one's feelings",
+          "sourcePage": 142
+        },
+        {
+          "id": "3b-u17-v16",
+          "ko": "메모리얼 데이",
+          "en": "Memorial Day",
+          "sourcePage": 141
+        },
+        {
+          "id": "3b-u17-v17",
+          "ko": "묵념을 하다",
+          "en": "observe a moment of silence",
+          "sourcePage": 141
+        },
+        {
+          "id": "3b-u17-v18",
+          "ko": "바라다",
+          "en": "wish;hope",
+          "sourcePage": 142
+        },
+        {
+          "id": "3b-u17-v19",
+          "ko": "배려하다",
+          "en": "be considerate",
+          "sourcePage": 144
+        },
+        {
+          "id": "3b-u17-v20",
+          "ko": "비행기가 뜨다",
+          "en": "a plane takes off",
+          "sourcePage": 144
+        },
+        {
+          "id": "3b-u17-v21",
+          "ko": "생생하다",
+          "en": "vivid",
+          "sourcePage": 143
+        },
+        {
+          "id": "3b-u17-v22",
+          "ko": "소감을 말하다",
+          "en": "share one's impressions",
+          "sourcePage": 142
+        },
+        {
+          "id": "3b-u17-v23",
+          "ko": "수상을 축하하다",
+          "en": "congratulate someone on an award",
+          "sourcePage": 142
+        },
+        {
+          "id": "3b-u17-v24",
+          "ko": "수험생",
+          "en": "examinee",
+          "sourcePage": 144
+        },
+        {
+          "id": "3b-u17-v25",
+          "ko": "스승의 날",
+          "en": "Teachers' Day",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v26",
+          "ko": "시험에 붙다",
+          "en": "pass an exam",
+          "sourcePage": 144
+        },
+        {
+          "id": "3b-u17-v27",
+          "ko": "식목일",
+          "en": "Arbor Day",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v28",
+          "ko": "어린이날",
+          "en": "Children's Day",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v29",
+          "ko": "어버이날",
+          "en": "Parents' Day",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v30",
+          "ko": "얼굴이 떠오르다",
+          "en": "someone's face comes to mind",
+          "sourcePage": 145
+        },
+        {
+          "id": "3b-u17-v31",
+          "ko": "엊그제",
+          "en": "a few days ago",
+          "sourcePage": 143
+        },
+        {
+          "id": "3b-u17-v32",
+          "ko": "엿",
+          "en": "Korean taffy",
+          "sourcePage": 144
+        },
+        {
+          "id": "3b-u17-v33",
+          "ko": "영원히",
+          "en": "forever",
+          "sourcePage": 145
+        },
+        {
+          "id": "3b-u17-v34",
+          "ko": "우수성",
+          "en": "excellence",
+          "sourcePage": 141
+        },
+        {
+          "id": "3b-u17-v35",
+          "ko": "운항",
+          "en": "flight operation",
+          "sourcePage": 144
+        },
+        {
+          "id": "3b-u17-v36",
+          "ko": "위로하다",
+          "en": "comfort;console",
+          "sourcePage": 142
+        },
+        {
+          "id": "3b-u17-v37",
+          "ko": "은혜에 보답하다",
+          "en": "return a favor",
+          "sourcePage": 145
+        },
+        {
+          "id": "3b-u17-v38",
+          "ko": "응원하다",
+          "en": "cheer;support",
+          "sourcePage": 142
+        },
+        {
+          "id": "3b-u17-v39",
+          "ko": "일상",
+          "en": "everyday life",
+          "sourcePage": 144
+        },
+        {
+          "id": "3b-u17-v40",
+          "ko": "정답을 찍다",
+          "en": "guess the correct answer",
+          "sourcePage": 144
+        },
+        {
+          "id": "3b-u17-v41",
+          "ko": "좋은 추억으로 남다",
+          "en": "remain a good memory",
+          "sourcePage": 142
+        },
+        {
+          "id": "3b-u17-v42",
+          "ko": "주제",
+          "en": "theme;topic",
+          "sourcePage": 141
+        },
+        {
+          "id": "3b-u17-v43",
+          "ko": "집집마다",
+          "en": "every household",
+          "sourcePage": 141
+        },
+        {
+          "id": "3b-u17-v44",
+          "ko": "차리다",
+          "en": "prepare;set out",
+          "sourcePage": 138
+        },
+        {
+          "id": "3b-u17-v45",
+          "ko": "찹쌀떡",
+          "en": "glutinous rice cake",
+          "sourcePage": 144
+        },
+        {
+          "id": "3b-u17-v46",
+          "ko": "찾아뵙다",
+          "en": "visit someone respectfully",
+          "sourcePage": 138
+        },
+        {
+          "id": "3b-u17-v47",
+          "ko": "카네이션",
+          "en": "carnation",
+          "sourcePage": 138
+        },
+        {
+          "id": "3b-u17-v48",
+          "ko": "특강",
+          "en": "special lecture",
+          "sourcePage": 140
+        },
+        {
+          "id": "3b-u17-v49",
+          "ko": "퍼레이드",
+          "en": "parade",
+          "sourcePage": 141
+        },
+        {
+          "id": "3b-u17-v50",
+          "ko": "한글날",
+          "en": "Hangeul Day",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v51",
+          "ko": "행사를 하다",
+          "en": "hold an event",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v52",
+          "ko": "현충일",
+          "en": "Memorial Day in Korea",
+          "sourcePage": 136
+        },
+        {
+          "id": "3b-u17-v53",
+          "ko": "훈민정음",
+          "en": "Hunminjeongeum",
+          "sourcePage": 149
+        }
+      ],
+      "grammar": [
+        {
+          "id": "3b-u17-g1",
+          "pattern": "-(으)려던 참이다",
+          "meaning": "was just about to",
+          "questions": [
+            {
+              "id": "3b-u17-g1-q1",
+              "type": "mcq",
+              "prompt": "지금 막 점심을 먹으려던 ___이에요.\nTarget grammar: -(으)려던 참이다 — was just about to.",
+              "choices": [
+                "척",
+                "모양",
+                "수록",
+                "참"
+              ],
+              "answer": "참",
+              "explanation": "Describes an action one was just about to do."
+            },
+            {
+              "id": "3b-u17-g1-q2",
+              "type": "fill",
+              "prompt": "저도 친구에게 전화하려던 ___이에요.\nTarget grammar: -(으)려던 참이다 — was just about to.",
+              "answer": "참",
+              "explanation": "Use -(으)려던 참이다: was just about to."
+            }
+          ]
+        },
+        {
+          "id": "3b-u17-g2",
+          "pattern": "얼마나 -는지/-(으)ㄴ지 모르다",
+          "meaning": "extremely;cannot say how much",
+          "questions": [
+            {
+              "id": "3b-u17-g2-q1",
+              "type": "mcq",
+              "prompt": "선물이 얼마나 좋은지 ___.\nTarget grammar: 얼마나 -는지/-(으)ㄴ지 모르다 — extremely;cannot say how much.",
+              "choices": [
+                "싶어요",
+                "해요",
+                "몰라요",
+                "않아요"
+              ],
+              "answer": "몰라요",
+              "explanation": "This expression emphasizes a high degree."
+            },
+            {
+              "id": "3b-u17-g2-q2",
+              "type": "fill",
+              "prompt": "그 소식을 듣고 얼마나 기뻤는지 ___.\nTarget grammar: 얼마나 -는지/-(으)ㄴ지 모르다 — extremely;cannot say how much.",
+              "answer": "몰라요",
+              "explanation": "Use 얼마나 -는지/-(으)ㄴ지 모르다: extremely;cannot say how much."
+            }
+          ]
+        },
+        {
+          "id": "3b-u17-g3",
+          "pattern": "-다니(요) / (이)라니(요)",
+          "meaning": "surprise at something heard",
+          "questions": [
+            {
+              "id": "3b-u17-g3-q1",
+              "type": "mcq",
+              "prompt": "내일 떠난___? 정말이에요?\nTarget grammar: -다니(요) / (이)라니(요) — surprise at something heard.",
+              "choices": [
+                "으려고요",
+                "다니요",
+                "느라고요",
+                "더니요"
+              ],
+              "answer": "다니요",
+              "explanation": "Expresses surprise at hearing that someone is leaving."
+            },
+            {
+              "id": "3b-u17-g3-q2",
+              "type": "fill",
+              "prompt": "벌써 졸업이___? 시간이 빠르네요.\nTarget grammar: -다니(요) / (이)라니(요) — surprise at something heard.",
+              "answer": "라니요",
+              "explanation": "Use -다니(요) / (이)라니(요): surprise at something heard."
+            }
+          ]
+        },
+        {
+          "id": "3b-u17-g4",
+          "pattern": "-는 대신(에) / -(으)ㄴ 대신(에)",
+          "meaning": "instead of;in return for",
+          "questions": [
+            {
+              "id": "3b-u17-g4-q1",
+              "type": "mcq",
+              "prompt": "밖에서 먹는 ___ 집에서 요리했어요.\nTarget grammar: -는 대신(에) / -(으)ㄴ 대신(에) — instead of;in return for.",
+              "choices": [
+                "대신",
+                "수록",
+                "척",
+                "참"
+              ],
+              "answer": "대신",
+              "explanation": "One action replaces another."
+            },
+            {
+              "id": "3b-u17-g4-q2",
+              "type": "fill",
+              "prompt": "이 방은 작은 ___ 월세가 싸요.\nTarget grammar: -는 대신(에) / -(으)ㄴ 대신(에) — instead of;in return for.",
+              "answer": "대신",
+              "explanation": "Use -는 대신(에) / -(으)ㄴ 대신(에): instead of;in return for."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 18,
+      "title": "연극",
+      "vocab": [
+        {
+          "id": "3b-u18-v1",
+          "ko": "가난하다",
+          "en": "poor",
+          "sourcePage": 155
+        },
+        {
+          "id": "3b-u18-v2",
+          "ko": "가장",
+          "en": "breadwinner",
+          "sourcePage": 158
+        },
+        {
+          "id": "3b-u18-v3",
+          "ko": "건강을 되찾다",
+          "en": "regain health",
+          "sourcePage": 157
+        },
+        {
+          "id": "3b-u18-v4",
+          "ko": "관객",
+          "en": "audience",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v5",
+          "ko": "기와집",
+          "en": "tile-roofed house",
+          "sourcePage": 158
+        },
+        {
+          "id": "3b-u18-v6",
+          "ko": "끊임없이",
+          "en": "endlessly",
+          "sourcePage": 158
+        },
+        {
+          "id": "3b-u18-v7",
+          "ko": "다급하다",
+          "en": "urgent",
+          "sourcePage": 156
+        },
+        {
+          "id": "3b-u18-v8",
+          "ko": "다리를 부러뜨리다",
+          "en": "break a leg",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v9",
+          "ko": "다행히",
+          "en": "fortunately",
+          "sourcePage": 156
+        },
+        {
+          "id": "3b-u18-v10",
+          "ko": "대본",
+          "en": "script",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v11",
+          "ko": "대사",
+          "en": "line of dialogue",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v12",
+          "ko": "도깨비",
+          "en": "goblin",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v13",
+          "ko": "도둑질",
+          "en": "stealing",
+          "sourcePage": 154
+        },
+        {
+          "id": "3b-u18-v14",
+          "ko": "동생을 내쫓다",
+          "en": "kick out one's younger sibling",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v15",
+          "ko": "때리다",
+          "en": "hit",
+          "sourcePage": 155
+        },
+        {
+          "id": "3b-u18-v16",
+          "ko": "막차",
+          "en": "last bus;last train",
+          "sourcePage": 153
+        },
+        {
+          "id": "3b-u18-v17",
+          "ko": "말다툼",
+          "en": "argument",
+          "sourcePage": 153
+        },
+        {
+          "id": "3b-u18-v18",
+          "ko": "모기",
+          "en": "mosquito",
+          "sourcePage": 161
+        },
+        {
+          "id": "3b-u18-v19",
+          "ko": "무대",
+          "en": "stage",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v20",
+          "ko": "박",
+          "en": "gourd",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v21",
+          "ko": "박속",
+          "en": "gourd flesh",
+          "sourcePage": 157
+        },
+        {
+          "id": "3b-u18-v22",
+          "ko": "박씨",
+          "en": "gourd seed",
+          "sourcePage": 157
+        },
+        {
+          "id": "3b-u18-v23",
+          "ko": "박이 열리다",
+          "en": "gourds grow",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v24",
+          "ko": "밥풀",
+          "en": "grain of cooked rice",
+          "sourcePage": 155
+        },
+        {
+          "id": "3b-u18-v25",
+          "ko": "뱀",
+          "en": "snake",
+          "sourcePage": 156
+        },
+        {
+          "id": "3b-u18-v26",
+          "ko": "보물",
+          "en": "treasure",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v27",
+          "ko": "보물이 쏟아지다",
+          "en": "treasure pours out",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v28",
+          "ko": "복을 받다",
+          "en": "receive good fortune",
+          "sourcePage": 158
+        },
+        {
+          "id": "3b-u18-v29",
+          "ko": "비단",
+          "en": "silk",
+          "sourcePage": 158
+        },
+        {
+          "id": "3b-u18-v30",
+          "ko": "뺨",
+          "en": "cheek",
+          "sourcePage": 155
+        },
+        {
+          "id": "3b-u18-v31",
+          "ko": "슬근슬근",
+          "en": "gently;slowly",
+          "sourcePage": 154
+        },
+        {
+          "id": "3b-u18-v32",
+          "ko": "실컷",
+          "en": "to one's heart's content",
+          "sourcePage": 158
+        },
+        {
+          "id": "3b-u18-v33",
+          "ko": "오두막집",
+          "en": "hut",
+          "sourcePage": 155
+        },
+        {
+          "id": "3b-u18-v34",
+          "ko": "욕심이 많다",
+          "en": "greedy",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v35",
+          "ko": "은혜를 갚다",
+          "en": "repay a kindness",
+          "sourcePage": 158
+        },
+        {
+          "id": "3b-u18-v36",
+          "ko": "잡아먹다",
+          "en": "catch and eat",
+          "sourcePage": 161
+        },
+        {
+          "id": "3b-u18-v37",
+          "ko": "저녁거리",
+          "en": "ingredients for dinner",
+          "sourcePage": 155
+        },
+        {
+          "id": "3b-u18-v38",
+          "ko": "정성껏",
+          "en": "wholeheartedly",
+          "sourcePage": 156
+        },
+        {
+          "id": "3b-u18-v39",
+          "ko": "제비",
+          "en": "swallow",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v40",
+          "ko": "지지배배",
+          "en": "chirp",
+          "sourcePage": 154
+        },
+        {
+          "id": "3b-u18-v41",
+          "ko": "톱",
+          "en": "saw",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v42",
+          "ko": "톱질을 하다",
+          "en": "saw wood",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v43",
+          "ko": "파리",
+          "en": "fly",
+          "sourcePage": 161
+        },
+        {
+          "id": "3b-u18-v44",
+          "ko": "펑",
+          "en": "pop;bang",
+          "sourcePage": 154
+        },
+        {
+          "id": "3b-u18-v45",
+          "ko": "하루아침",
+          "en": "overnight",
+          "sourcePage": 158
+        },
+        {
+          "id": "3b-u18-v46",
+          "ko": "해충",
+          "en": "pest",
+          "sourcePage": 161
+        },
+        {
+          "id": "3b-u18-v47",
+          "ko": "향하다",
+          "en": "head toward",
+          "sourcePage": 155
+        },
+        {
+          "id": "3b-u18-v48",
+          "ko": "헝겊으로 묶다",
+          "en": "tie with a cloth",
+          "sourcePage": 152
+        },
+        {
+          "id": "3b-u18-v49",
+          "ko": "형님",
+          "en": "older brother (respectful)",
+          "sourcePage": 155
+        },
+        {
+          "id": "3b-u18-v50",
+          "ko": "형수",
+          "en": "older brother's wife",
+          "sourcePage": 155
+        }
+      ],
+      "grammar": [
+        {
+          "id": "3b-u18-g1",
+          "pattern": "-는다니까(요) / -다니까(요) / (이)라니까(요)",
+          "meaning": "insist or repeat emphatically",
+          "questions": [
+            {
+              "id": "3b-u18-g1-q1",
+              "type": "mcq",
+              "prompt": "걱정하지 마세요. 제가 한다___!\nTarget grammar: -는다니까(요) / -다니까(요) / (이)라니까(요) — insist or repeat emphatically.",
+              "choices": [
+                "더니요",
+                "느라고요",
+                "려고요",
+                "니까요"
+              ],
+              "answer": "니까요",
+              "explanation": "Reiterates the speaker’s statement emphatically."
+            },
+            {
+              "id": "3b-u18-g1-q2",
+              "type": "fill",
+              "prompt": "이건 제 책이___!\nTarget grammar: -는다니까(요) / -다니까(요) / (이)라니까(요) — insist or repeat emphatically.",
+              "answer": "라니까요",
+              "explanation": "Use -는다니까(요) / -다니까(요) / (이)라니까(요): insist or repeat emphatically."
+            }
+          ]
+        },
+        {
+          "id": "3b-u18-g2",
+          "pattern": "-고 말다",
+          "meaning": "end up doing, often unintentionally",
+          "questions": [
+            {
+              "id": "3b-u18-g2-q1",
+              "type": "mcq",
+              "prompt": "조심했지만 컵을 깨뜨리고 ___.\nTarget grammar: -고 말다 — end up doing, often unintentionally.",
+              "choices": [
+                "있었어요",
+                "나서요",
+                "말았어요",
+                "싶었어요"
+              ],
+              "answer": "말았어요",
+              "explanation": "The undesirable action happened despite efforts."
+            },
+            {
+              "id": "3b-u18-g2-q2",
+              "type": "fill",
+              "prompt": "늦게 일어나서 버스를 놓치고 ___.\nTarget grammar: -고 말다 — end up doing, often unintentionally.",
+              "answer": "말았어요",
+              "explanation": "Use -고 말다: end up doing, often unintentionally."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

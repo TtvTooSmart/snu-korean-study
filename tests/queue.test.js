@@ -1,0 +1,12 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {advance,again,matches} from '../js/queue.js';
+import {validateBook,csv,backup} from '../js/data-loader.js';
+test('miss requeues without mutating input',()=>{const q=['a','b','c','d'];const r=advance(q,{},false,1,2,2,()=>0);assert.deepEqual(r.queue,['b','c','a','d']);assert.deepEqual(q,['a','b','c','d']);});
+test('correct streak removes card only at target',()=>{let r=advance(['a'],{},true,3);assert.deepEqual(r.queue,['a']);r=advance(r.queue,r.streaks,true,3);assert.deepEqual(r.queue,['a']);r=advance(r.queue,r.streaks,true,3);assert.deepEqual(r.queue,[]);});
+test('miss resets streak',()=>assert.equal(advance(['a'],{a:2},false,3).streaks.a,0));
+test('single missed card remains available',()=>assert.deepEqual(advance(['a'],{},false).queue,['a']));
+test('missed only includes flags and excludes correct',()=>assert.deepEqual(again([{id:'a'},{id:'b'},{id:'c'}],{a:2},{b:true},true,()=>.99).map(c=>c.id),['a','b']));
+test('all again keeps full deck',()=>assert.equal(again([{id:'a'},{id:'b'}],{a:1},{},false).length,2));
+test('alternatives, trim, case, unicode',()=>{assert.ok(matches('  HAPPY ','happy; glad'));assert.ok(matches('glad','happy / glad'));assert.ok(!matches('','happy'));});
+test('quoted CSV handles commas and newlines',()=>{const b=csv('book,unit,ko,en,example\r\n3b,15,기분,"mood, feeling","오늘\n좋아요"','3b');assert.equal(b.units[0].vocab[0].en,'mood, feeling');});
+test('reject malformed input and unsafe IDs',()=>{assert.throws(()=>csv('book,ko\n3b,말','3b'));assert.throws(()=>validateBook({book:'3b',units:[{unit:1,title:'a',vocab:[{id:'__proto__',ko:'a',en:'a'}],grammar:[]}]}));assert.throws(()=>backup({version:9}));});
