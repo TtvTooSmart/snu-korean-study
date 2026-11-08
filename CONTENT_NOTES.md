@@ -1,4 +1,6 @@
-# Book 3B content coverage
+# Book content coverage
+
+## Book 3B
 
 Source: the user's SNU Korean Plus 3B Student's Book and grammar booklet PDF, from their SNU books folder.
 
@@ -50,3 +52,43 @@ Quiz completion and book mastery now have separate labels. Regression tests cove
 an 18% active quiz staying intact during a sync batch. The live production timer
 was observed firing on 2026-11-08, but that account's upload paused at a cloud/device
 conflict. Neither copy was selected or overwritten by the test.
+
+
+## Book 2B — verified import
+
+Sources: the supplied **2B SB & 문법.pdf** and **2B WB.pdf** in the SNU books folder.
+All vocabulary glossary entries, the 18 subchapter opening-page boxes and every
+other bottom vocabulary note on printed student-book pages 22–163 were visually
+checked. All workbook bottom notes on printed pages 14–185 were checked, including
+reviews. No exercise word banks, running-text vocabulary or original PDFs ship.
+
+- 480 student glossary entries produce 486 cards: terms that occur in different
+  chapter/difficulty scopes get separate cards. No additional terms were missing
+  from the glossary after the page-by-page audit.
+- 160 workbook occurrences produce 142 additional Hard cards; 18 occurrences
+  merge into same-meaning Hard cards and preserve every source page.
+- Final vocabulary: **628 cards — 118 Easy, 510 Hard**.
+- Grammar: all **35 patterns, 70 original questions**. Source booklet pages and
+  subchapters are retained. These exercises are not official textbook questions.
+- English source glosses are preserved; all cards include manually authored
+  Vietnamese, Simplified Chinese and Russian study meanings, with independent
+  proofreading. Korean polysemy is translated for the source sense.
+
+Easy openings (printed student-book pages): 22/28, 38/44, 54/60, 70/76, 86/92,
+102/108, 118/124, 134/140, 150/156. Some boxes span two pages; only the first page
+is Easy under the requested rule. All workbook notes are Hard, even on workbook
+opening pages. Review terms match every chapter covered by that review.
+
+Lesson-page verification corrected two glossary page references: **면접 → p59**
+(the index says p61) and **악기 → p138** (the index says p140). The latter is a
+17-1 listening-page note and remains Hard; 17-2 starts p140. The autumn phrase
+on p151 is **나뭇잎이 떨어지다**. 빌라 keeps the source English “villa”; additional
+languages explain its Korean low-rise apartment meaning.
+
+2B IDs use their own book prefix, so existing 3B statistics are unchanged.
+
+Release validation: **95 plain-Node tests passed**, including complete 2B source
+counts, Easy/Hard boundaries, review chapter membership, translated four-option
+quizzes in both directions, separate progress totals, and cross-book translation
+collisions. Multiple-choice values retain saved-session compatibility; translation
+lookups now use the same book/difficulty scope as distractor selection.

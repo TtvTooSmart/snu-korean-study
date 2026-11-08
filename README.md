@@ -34,7 +34,7 @@ Keyboard: Enter submits/advances; 1–4 select MCQ options; Space flips; J/Left 
 2. Set the corresponding entry in `data/books.json` to `available: true`.
 3. Reload. No JavaScript changes are needed.
 
-Registry entries contain `id`, `title`, `available`. IDs must match filenames. 1A through 4B are listed; only 3B ships with content. Imported content can also activate a listed unavailable book.
+Registry entries contain `id`, `title`, `available`. IDs must match filenames. 1A through 4B are listed; 2B and 3B ship with content. Imported content can also activate a listed unavailable book.
 
 ```json
 {
@@ -81,7 +81,7 @@ Calm green/cream palette, responsive book cards and a large central study card. 
 - `data-loader.js`: validation, registry loading, merging, CSV and backup parsing
 - `tests/queue.test.js`: plain Node tests
 
-The latest request superseded placeholder sample content: 3B uses the supplied book's indexes, with original practice questions. See data source metadata and CONTENT_NOTES.md for coverage and limitations. The source textbook PDF is not included.
+The latest request superseded placeholder sample content: 2B and 3B use the supplied books’ vocabulary boxes, footnotes and grammar indexes, with original practice questions. See data source metadata and CONTENT_NOTES.md for coverage and limitations. The source textbook PDF is not included.
 
 ## Deploy on Vercel
 
@@ -97,7 +97,7 @@ Automated tests cover four-choice generation, retry queues, textbook classificat
 
 ## Standard / Hard vocabulary and grammar hints
 
-Standard is now the default: only the bottom vocabulary boxes on each subchapter's first page (198 cards). Hard contains Korean–English bottom notes from the other student-book pages plus workbook lesson and review footnotes (366 cards). Student-book cultural-page notes stay under the preceding subchapter. Student-book examples: 10-1 Standard=p24, Hard=p25–29; 10-2 begins p30. The source page and subchapter are displayed on each card. Word location determines the category, not perceived difficulty. Standard and Hard decks are separate, including flagged cards, weak-word practice and distractor choices. The deck now has 564 cards: 198 Standard and 366 Hard. Existing IDs and progress remain valid. The workbook contributes 130 footnote entries: 122 new cards and 8 repeated entries merged with matching Hard cards. Multiple source references and accepted English alternatives are preserved. Workbook review notes are included when any unit covered by that review is selected.
+For 3B, Standard (Easy) is the default: only the bottom vocabulary boxes on each subchapter's first page (198 cards). Hard contains Korean–English bottom notes from the other student-book pages plus workbook lesson and review footnotes (366 cards). Student-book cultural-page notes stay under the preceding subchapter. Student-book examples: 10-1 Standard=p24, Hard=p25–29; 10-2 begins p30. The source page and subchapter are displayed on each card. Word location determines the category, not perceived difficulty. Standard and Hard decks are separate, including flagged cards, weak-word practice and distractor choices. The deck now has 564 cards: 198 Standard and 366 Hard. Existing IDs and progress remain valid. The workbook contributes 130 footnote entries: 122 new cards and 8 repeated entries merged with matching Hard cards. Multiple source references and accepted English alternatives are preserved. Workbook review notes are included when any unit covered by that review is selected.
 
 Vocabulary JSON can add `difficulty` (`standard` or `hard`), `subchapter` (e.g. `10-1`), `sourcePage` (printed page number), and `sourceType` (`student-book` or `workbook`). Optional `sources` stores every occurrence as `{sourceType, sourcePage, subchapter, units, gloss}`; `relatedUnits` lists additional unit filters that include review/shared words. All workbook footnotes are Hard, including those on workbook opening pages. Custom entries without difficulty default to Standard. Old full backups preserve the classification of matching packaged IDs. Saved sessions from before this split are cleared once so their old decks cannot mix categories; card statistics remain.
 
@@ -105,7 +105,7 @@ The target grammar pattern and meaning are hidden in a native, keyboard-accessib
 
 ## Interface language
 
-The top-right selector supports English, Vietnamese, Simplified Chinese and Russian. The interface preference persists in this browser independently of quiz settings. Main navigation and controls are translated. All 564 published 3B vocabulary cards include Vietnamese, Simplified Chinese and Russian meanings in `translations: {vi, zh, ru}` alongside the original `en` field. The selector changes answer choices, reverse-direction prompts, flashcards and review-list meanings immediately. Korean answer choices and grammar exercises remain Korean; grammar explanations retain their existing language. Typed answers accept the selected translation or English. Multiple-choice values remain canonical so switching language preserves answer order, selection and grading, even after a reload. Distractors are checked for overlapping alternatives in every supported language. Imported cards without translations use a clearly labelled English fallback for the whole question. Changing an imported meaning removes outdated translations unless replacements are supplied. Some detailed validation messages remain English. The language setting is device-local and is not part of exported study backups.
+The top-right selector supports English, Vietnamese, Simplified Chinese and Russian. The interface preference persists in this browser independently of quiz settings. Main navigation and controls are translated. All published 2B and 3B vocabulary cards include Vietnamese, Simplified Chinese and Russian meanings in `translations: {vi, zh, ru}` alongside the original `en` field. The selector changes answer choices, reverse-direction prompts, flashcards and review-list meanings immediately. Korean answer choices and grammar exercises remain Korean; grammar explanations retain their existing language. Typed answers accept the selected translation or English. Multiple-choice values remain canonical so switching language preserves answer order, selection and grading, even after a reload. Distractors are checked for overlapping alternatives in every supported language. Imported cards without translations use a clearly labelled English fallback for the whole question. Changing an imported meaning removes outdated translations unless replacements are supplied. Some detailed validation messages remain English. The language setting is device-local and is not part of exported study backups.
 
 After updating the site, start a new Hard session to include workbook additions. Resuming an unfinished session keeps its original deck and your progress.
 
@@ -170,3 +170,21 @@ The footer's Pause/Resume autumn animation button controls both leaves and cat.
 Both respect reduced motion, disappear outside Autumn and never capture clicks.
 No new packages or external images are required. The effects test harness is local
 only and excluded from Git and deployment artifacts.
+
+
+## Book 2B
+
+Choose **Level 2 → B** in the top-right book selector. 2A remains Coming soon.
+The 2B data covers chapters 10–18 with **628 vocabulary cards**: 118 Easy and
+510 Hard. Easy uses only each subchapter’s first-page vocabulary box; when a
+vocabulary spread continues on the next page, that second page belongs to Hard.
+Hard also includes all 160 workbook footer occurrences, including reviews 4–6.
+Repeated Hard meanings share source references and chapter memberships.
+
+All 35 indexed grammar patterns have one original multiple-choice question and
+one fill-in question (70 total), with click-to-open hints. Every word has English,
+Vietnamese, Simplified Chinese and Russian meanings. Chapter buttons, progress
+bars, weak-word practice, backups and cloud sync use the existing book-independent
+code. Adding 2B does not rename any 3B cards or change existing progress.
+
+See `CONTENT_NOTES.md` for source verification and corrected glossary references.
