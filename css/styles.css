@@ -185,3 +185,18 @@ html[lang="ru"] .choices span.answer-correct::after{content:' ✓ Верно'}
 html[lang="vi"] .choices span.answer-wrong::after{content:' ✗ Câu trả lời của bạn'}
 html[lang="zh"] .choices span.answer-wrong::after{content:' ✗ 你的答案'}
 html[lang="ru"] .choices span.answer-wrong::after{content:' ✗ Ваш ответ'}
+
+/* Celebrations never steal focus or cover the page with a blocking overlay. */
+.streak-confetti{position:fixed;inset:0;width:100%;height:100%;z-index:20;pointer-events:none}
+.streak-cheer{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:21;max-width:calc(100vw - 24px);width:max-content;padding:12px 22px;border:1px solid var(--accent);border-radius:16px;background:var(--panel);color:var(--ink);font-size:1rem;font-weight:800;text-align:center;box-shadow:0 8px 32px #0002;pointer-events:none}
+.autumn-cat{--cat-outline:#463028;--cat-facing:1;position:fixed;bottom:7px;width:78px;height:60px;z-index:0;pointer-events:none;user-select:none;contain:layout style;image-rendering:pixelated}
+.autumn-cat svg{display:block;width:100%;height:100%;transform:scaleX(var(--cat-facing));overflow:visible}
+.cat-nap{display:none;position:absolute;top:-15px;right:8px;font-family:monospace;font-size:12px;color:var(--ink)}
+.autumn-cat.napping .cat-nap{display:block}
+.autumn-cat.napping .cat-eyes{transform:scaleY(.5);transform-origin:19px 11px}
+.autumn-cat.walking .cat-paws{animation:pixel-step .28s steps(2,end) infinite}
+.autumn-cat.walking .cat-tail{animation:pixel-tail .56s steps(2,end) infinite;transform-origin:5px 11px}
+@keyframes pixel-step{50%{transform:translateX(1px) translateY(-1px)}}
+@keyframes pixel-tail{50%{transform:rotate(12deg)}}
+@media(max-width:650px){.autumn-cat{width:58px;height:45px}.streak-cheer{top:8px;font-size:.88rem;padding:10px 14px}}
+@media(prefers-reduced-motion:reduce){.streak-confetti,.autumn-cat{display:none!important}.cat-paws,.cat-tail{animation:none!important}}

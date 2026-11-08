@@ -58,6 +58,8 @@ rows.push(...[["Choose chapters", "Chọn chương", "选择章节", "Выбра
 rows.push(['Sign in','Đăng nhập','登录','Войти'],['Sign up','Đăng ký','注册','Регистрация']);
 rows.push(...[["Admin access only", "Chỉ dành cho quản trị viên", "仅限管理员", "Только для администратора"], ["Import and backup are available only to the administrator.", "Chỉ quản trị viên có thể nhập và sao lưu dữ liệu.", "导入和备份仅限管理员使用。", "Импорт и резервное копирование доступны только администратору."]]);
 rows.push(
+ ['Pause autumn animation','Tạm dừng hiệu ứng mùa thu','暂停秋日动画','Приостановить осеннюю анимацию'],
+ ['Resume autumn animation','Tiếp tục hiệu ứng mùa thu','继续秋日动画','Продолжить осеннюю анимацию'],
  ['Sign in or create an account to study. Your progress saves to your account.','Đăng nhập hoặc tạo tài khoản để học. Tiến độ được lưu vào tài khoản của bạn.','登录或创建账户后即可学习，进度会保存到你的账户。','Войдите или создайте аккаунт для учёбы. Прогресс сохраняется в аккаунте.'],
  ['Sign-in is temporarily unavailable. Please try again later.','Tạm thời không thể đăng nhập. Vui lòng thử lại sau.','暂时无法登录，请稍后重试。','Вход временно недоступен. Повторите попытку позже.'],
  ['Sign-up is unavailable. Please contact the administrator.','Hiện không thể đăng ký. Vui lòng liên hệ quản trị viên.','暂时无法注册，请联系管理员。','Регистрация недоступна. Свяжитесь с администратором.'],

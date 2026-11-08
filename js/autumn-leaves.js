@@ -1,10 +1,12 @@
+import {updateAutumnCat} from './autumn-cat.js';
 import {FallingLeaves} from './vendor/falling-leaves/index.js';
 
 let effect=null,theme='',paused=false,initialized=false,motion;
 function refresh(){
  const button=document.querySelector('#toggle-leaves');
- if(button){button.hidden=theme!=='autumn'||motion.matches;button.textContent=paused?'Resume leaves':'Pause leaves';}
+ if(button){button.hidden=theme!=='autumn'||motion.matches;button.textContent=paused?'Resume autumn animation':'Pause autumn animation';}
  const enabled=theme==='autumn'&&!paused&&!motion.matches&&!document.hidden;
+ updateAutumnCat(enabled);
  if(!enabled){effect?.destroy();effect=null;return;}
  if(!effect)effect=new FallingLeaves({
   count:window.innerWidth<650?10:20,size:[18,32],speed:[0.5,1.15],

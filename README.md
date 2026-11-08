@@ -154,3 +154,19 @@ Autumn mode uses `falling-leaves@0.1.0`, installed with npm and pinned in packag
 These dashboard and Autumn animation changes are staged on `development`; the database addition is shared by development and production. The production website remains on the previously released version until the next release.
 
 The progress bars are labelled **Book mastery** and **This quiz**. A round completion percentage is not the percentage mastered across the book. Sync regression tests explicitly preserve an active quiz at 18%, including its queue and choices. A live timer check on 2026-11-08 reached a progress conflict: the timer fired, but upload paused pending a choice of saved copy. No copy was overwritten during that check.
+
+## Streak celebrations and Autumn cat
+
+Correct answers build a session streak for both grammar and vocabulary. Milestones
+are 3, 5, 10, then every 5 correct answers. A miss resets it; a new round starts at
+zero. Paused rounds retain the streak. Reloading or cloud-syncing never replays a
+celebration. Confetti increases with milestones, capped at 200 particles on desktop
+and 110 on phones. Cheering text follows the language selector; reduced-motion
+users get text only, and there is no sound. Effects clean up when the tab is hidden.
+
+Autumn includes an original pixel-art cat with a randomly chosen coat. It walks,
+pauses and sometimes naps along the bottom edge, underneath the study panels.
+The footer's Pause/Resume autumn animation button controls both leaves and cat.
+Both respect reduced motion, disappear outside Autumn and never capture clicks.
+No new packages or external images are required. The effects test harness is local
+only and excluded from Git and deployment artifacts.
