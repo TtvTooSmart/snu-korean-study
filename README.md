@@ -223,3 +223,30 @@ keyboard focus without trapping it. Desktop navigation stays visible.
 Phone quiz action buttons share equal-width columns with the practice flag on
 the right. Labels wrap at their normal font size. Continue has spacing above it
 and spans the same width as the feedback message on phone and desktop.
+
+## Chapter learning and saved vocabulary
+
+Choose **Learn vocabulary** on the home page, then choose one chapter, or use
+the **Learn** shortcut beside a chapter. Learning uses the selected Easy/Hard
+vocabulary for that chapter only. It shows three Korean words with their English
+meanings together, plus a translated meaning when another interface language is
+selected. Practice questions and answer choices stay within the current set.
+Sets with one word or overlapping meanings use typed recall instead of an
+ambiguous or one-choice question. Every word must meet the configured correct
+streak before the next set unlocks. The final set can contain one or two words;
+the number of sets depends on the chapter's actual word count.
+
+Reading cards never changes mastery. Practice answers use the same statistics
+and 30-second account sync as ordinary quizzes. The current learning set and
+submitted feedback are saved in the account's local cache, so reloading does not
+record an answer twice. Chapter completion and set progress are shown separately
+from lifetime book mastery. Enter submits/continues; 1–3 chooses set answers.
+
+**Saved vocabulary** is a reusable folder backed by the existing per-word
+`flagged` statistic. **Practise this again** in a normal quiz and **Save this vocab
+for review** in Learn mode both add words to it. Existing flags appear without a
+migration. **Practise saved words** makes a quiz whose questions are only the
+saved words, across books and difficulties; normal four-choice distractors remain
+from each word's own book and difficulty. Correct answers never remove saved
+words. **Remove from review** clears only the flag, preserving attempt history.
+Saved words also retain their existing inclusion in normal and weak-word practice.

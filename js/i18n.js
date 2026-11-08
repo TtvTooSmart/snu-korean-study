@@ -84,6 +84,52 @@ rows.push(
  ['Translation unavailable for this card or its choices. English is shown.','Thẻ này hoặc các lựa chọn chưa có bản dịch. Hiển thị tiếng Anh.','此卡片或选项暂无翻译，显示英语。','Для этой карточки или вариантов нет перевода. Показан английский.'],
  ['KO → EN','KO → VI','KO → ZH','KO → RU'],['EN → KO','VI → KO','ZH → KO','RU → KO']
 );
+// Learn mode uses small word sets; study content stays in its source language.
+rows.push(
+ ["Learn", "Học", "学习", "Изучать"],
+ ["Learn vocabulary", "Học từ vựng", "学习词汇", "Изучение слов"],
+ ["Choose a chapter to learn", "Chọn chương để học", "选择要学习的章节", "Выберите главу для изучения"],
+ ["Learn three words together, then practise only those words.", "Học ba từ cùng nhau, sau đó chỉ luyện tập những từ đó.", "每次学习三个词，然后只练习这些词。", "Изучите три слова вместе, затем потренируйтесь только с ними."],
+ ["Each chapter uses as many sets as its word count needs.", "Số nhóm trong mỗi chương tùy thuộc vào số lượng từ.", "每章根据词汇数量划分学习组。", "Количество групп в главе зависит от количества слов."],
+ ["No words match this selection. Choose another chapter or difficulty.", "Không có từ phù hợp. Hãy chọn chương hoặc độ khó khác.", "此选择下没有词汇，请选择其他章节或难度。", "Нет слов для выбранных параметров. Выберите другую главу или сложность."],
+ ["words", "từ", "个词", "слов"],
+ ["sets", "nhóm", "组", "групп"],
+ ["Set", "Nhóm", "组", "Группа"],
+ ["of", "trên", "/", "из"],
+ ["words practised", "từ đã luyện tập", "个词已练习", "слов отработано"],
+ ["Learn this set", "Học nhóm từ này", "学习这组词", "Изучить эту группу"],
+ ["Study these words together, then practise only this set.", "Học những từ này cùng nhau, sau đó chỉ luyện tập nhóm này.", "一起学习这些词，然后只练习这一组。", "Изучите эти слова вместе, затем потренируйтесь только с этой группой."],
+ ["Practise these words", "Luyện tập những từ này", "练习这些词", "Тренировать эти слова"],
+ ["Practise this set", "Luyện tập nhóm từ này", "练习这组词", "Тренировать эту группу"],
+ ["Words remaining in this set", "Số từ còn lại trong nhóm này", "本组剩余词汇", "Осталось слов в группе"],
+ ["Set complete ✓", "Đã hoàn thành nhóm ✓", "本组已完成 ✓", "Группа завершена ✓"],
+ ["You practised every word in this set.", "Bạn đã luyện tập tất cả từ trong nhóm này.", "你已练习本组的每个词。", "Вы отработали каждое слово в этой группе."],
+ ["Learn next set", "Học nhóm tiếp theo", "学习下一组", "Изучить следующую группу"],
+ ["Pause & return home", "Tạm dừng và về trang chủ", "暂停并返回首页", "Пауза и на главную"],
+ ["Chapter complete ✓", "Đã hoàn thành chương ✓", "本章已完成 ✓", "Глава завершена ✓"],
+ ["You practised every word in this chapter.", "Bạn đã luyện tập tất cả từ trong chương này.", "你已练习本章的每个词。", "Вы отработали каждое слово в этой главе."],
+ ["sets completed", "nhóm đã hoàn thành", "组已完成", "групп завершено"],
+ ["Learn this chapter again", "Học lại chương này", "重新学习本章", "Изучить эту главу снова"],
+ ["Choose another chapter", "Chọn chương khác", "选择其他章节", "Выбрать другую главу"],
+ ["← Back to home", "← Về trang chủ", "← 返回首页", "← На главную"],
+ ["Type your answer.", "Nhập câu trả lời của bạn.", "请输入答案。", "Введите ответ."],
+ ["Answer", "Đáp án", "答案", "Ответ"],
+ ["Chapter learning progress", "Tiến độ học chương", "章节学习进度", "Прогресс изучения главы"]
+);
+// Saved vocabulary review folder.
+rows.push(
+ ["saved words","từ đã lưu","个已保存词汇","сохранённых слов"],
+ ["Your saved words also remain in normal vocabulary practice.","Các từ đã lưu vẫn xuất hiện trong phần luyện tập từ vựng thông thường.","已保存的词汇也会继续出现在普通词汇练习中。","Сохранённые слова также остаются в обычной тренировке словаря."],
+ ["Saved vocabulary", "Từ vựng đã lưu", "已保存词汇", "Сохранённые слова"],
+ ["Save this vocab for review", "Lưu từ này để ôn tập", "保存此词以便复习", "Сохранить слово для повторения"],
+ ["★ Save this vocab for review", "★ Lưu từ này để ôn tập", "★ 保存此词以便复习", "★ Сохранить слово для повторения"],
+ ["★ Saved for review", "★ Đã lưu để ôn tập", "★ 已保存以便复习", "★ Сохранено для повторения"],
+ ["Remove from review", "Xóa khỏi danh sách ôn tập", "从复习列表中移除", "Убрать из списка повторения"],
+ ["Practise saved words", "Luyện tập từ đã lưu", "练习已保存词汇", "Тренировать сохранённые слова"],
+ ["No saved vocabulary yet.", "Chưa có từ vựng đã lưu.", "尚未保存任何词汇。", "Пока нет сохранённых слов."],
+ ["Save words with “Practise this again” or the save button in Learn mode.", "Lưu từ bằng nút “Ôn lại từ này” hoặc nút lưu trong chế độ Học.", "使用“再练一次”或学习模式中的保存按钮来保存词汇。", "Сохраняйте слова кнопкой «Повторить ещё» или кнопкой сохранения в режиме изучения."],
+ ["Saved words stay here until you remove them.", "Các từ đã lưu sẽ ở đây cho đến khi bạn xóa chúng.", "已保存的词汇会保留在这里，直到你将其移除。", "Сохранённые слова остаются здесь, пока вы их не удалите."]
+);
 const dictionaries=Object.fromEntries(['en','vi','zh','ru'].map((lang,i)=>[lang,Object.fromEntries(rows.map(r=>[r[0],r[i]]))]));
 export function translateText(text,lang='en'){
  const trimmed=text.trim(),dict=dictionaries[lang]||dictionaries.en;
