@@ -33,3 +33,20 @@ Every workbook occurrence retains its printed page, subchapter/review name and s
 Workbook source glosses are retained, including literal or awkward wording: 탈수하다 (“to dry”, p61; spin-drying context), 독립 기념일 (“National Liberation Day”, p142), and 이가 썩다 (“tooth (teeth) is rotting”, p146).
 
 Current validation: 34 automated tests passed. Browser checks confirmed 198 Standard / 366 Hard counts, a workbook card with four options, correct-answer grading, and translated workbook page labels.
+
+## Vocabulary languages and account access (2026-11-08)
+
+All 564 published 3B vocabulary records now include manually authored Vietnamese,
+Simplified Chinese and Russian study glosses. The original Korean and English,
+source pages, difficulty labels and card IDs are unchanged. These are study-app
+translations, not an official translated textbook edition. Canonical answer values
+keep old sessions and progress compatible. Missing translations in user imports
+produce an explicit English fallback. Korean grammar options remain Korean.
+
+Guest study and guest-copy controls are removed. Sign-in gates all study routes;
+legacy local progress is retained. Public static book files are still public.
+
+Quiz completion and book mastery now have separate labels. Regression tests cover
+an 18% active quiz staying intact during a sync batch. The live production timer
+was observed firing on 2026-11-08, but that account's upload paused at a cloud/device
+conflict. Neither copy was selected or overwritten by the test.

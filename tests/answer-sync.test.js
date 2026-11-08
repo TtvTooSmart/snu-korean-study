@@ -31,12 +31,13 @@ const client={
 };
 globalThis.window=Object.assign(new EventTarget(),{supabase:{createClient:()=>client}});
 const {record,get,save}=await import('../js/storage.js');
-const {initAccounts,sync}=await import('../js/account.js');
+const {initAccounts,sync,isSignedIn}=await import('../js/account.js');
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
 
 test('progress batches every 30 seconds and survives interrupted sessions',async t=>{
- await initAccounts(()=>{});
- assert.equal(intervalMs,30000);
+ const changes=[];
+ await initAccounts(profileChanged=>changes.push(profileChanged));
+ assert.equal(intervalMs,30000);assert.equal(isSignedIn(),true);
  await t.test('answers save locally without an upload until the batch timer fires',async()=>{
   record('3b-vocab-test',true);record('3b-grammar-test',false);
   await tick();assert.equal(writes,0);assert.equal(remote,null);
@@ -71,6 +72,20 @@ test('progress batches every 30 seconds and survives interrupted sessions',async
   offline=false;intervalCallback();await tick();
   assert.equal(remote.stats['3b-offline-test'].seen,1);
  });
+ await t.test('a batch preserves the active quiz, queue, answers and 18% completion',async()=>{
+  const session={type:'vocab',deck:Array.from({length:50},(_,i)=>({id:`card-${i}`})),
+   queue:Array.from({length:41},(_,i)=>`card-${i+9}`),correct:9,wrong:0,
+   first:{'card-8':true},streaks:{'card-8':1},misses:{},answered:false,
+   choices:['one','two','three','four'],cardDirection:'ko',answer:'one'};
+  get().session=structuredClone(session);save();
+  record('3b-session-sync-test',true);
+  changes.length=0;intervalCallback();await tick();
+  assert.deepEqual(get().session,session);
+  assert.equal((session.deck.length-get().session.queue.length)/session.deck.length,0.18);
+  assert.deepEqual(changes,[false], 'sync updates mastery without resetting the route');
+  assert.deepEqual(JSON.parse(values.get('snu-study-account:sync-test-user')).session,session);
+  assert.equal(remote.stats['3b-session-sync-test'].seen,1);
+ });
  await t.test('reopening restores pending answers and login reconciles them',async()=>{
   record('3b-pending-test',false);await tick();
   assert.equal(remote.stats['3b-pending-test'],undefined);
@@ -86,6 +101,7 @@ test('progress batches every 30 seconds and survives interrupted sessions',async
  await t.test('guest answers stay local and unchanged settings do not upload',async()=>{
   const before=writes;save();intervalCallback();await tick();assert.equal(writes,before);
   authChanged('SIGNED_OUT',null);await new Promise(r=>setTimeout(r,10));
+  assert.equal(isSignedIn(),false);
   record('guest-only',true);intervalCallback();await sync();
   assert.equal(writes,before);assert.equal(remote.stats['guest-only'],undefined);
  });

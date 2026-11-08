@@ -2,11 +2,12 @@ import {accountError} from './account-errors.js';
 import {createSyncQueue} from './sync-queue.js';
 import {verifyAdmin} from './admin-access.js';
 import {accountConfig} from './account-config.js';
-import {get,save,switchProfile,guestProgress} from './storage.js';
+import {get,save,switchProfile} from './storage.js';
 import {syncSnapshot,sameProgress,validStats,reconcileInFlight} from './cloud-progress.js';
 let client, user=null, syncing=false, syncInterval, conflict=null, message='', suppress=false;
 let onChange=()=>{}, signedIn=false, verifiedAdmin=false;
 export const canManageData=()=>verifiedAdmin;
+export const isSignedIn=()=>signedIn;
 async function refreshAdmin(){
  const id=user?.id;
  const allowed=await verifyAdmin(client,id);
@@ -75,7 +76,7 @@ async function activate(next){
  suppress=true;user=next;verifiedAdmin=false;conflict=null;
  switchProfile(user?.id);signedIn=!!user;suppress=false;
  await refreshAdmin();
- onChange();status(user?'Syncing progress…':'Signed out. Your guest progress is available.');
+ onChange();status(user?'Syncing progress…':'Signed out. Sign in to continue studying.');
  if(user)await sync();
 }
 export const sync=createSyncQueue(syncOnce);
@@ -99,15 +100,13 @@ async function syncOnce(){
  }catch(e){if(user?.id===owner)status('Progress is saved on this device. Cloud sync will retry every 30 seconds.');}
  finally{syncing=false;suppress=false;}
 }
-const guestButton='<button id="continue-guest" class="secondary">Continue as guest</button><p><small>Guest progress is saved only in this browser, not to an account.</small></p>';
-function wireGuest(app){app.querySelector('#continue-guest')?.addEventListener('click',()=>{alert('Guest mode: your progress is saved only in this browser. It will not sync across devices and may be lost if browser data is cleared. Sign in to save progress to an account.');location.hash='home';});}
 export function accountView(app,esc){
  const signingUp=location.hash==='#signup';
  if(!accountsEnabled()){
-  app.innerHTML=`<h1>${signingUp?'Sign up':'Sign in'}</h1><div class="panel"><p>Account sign-in is being set up. You can study as a guest now.</p>${guestButton}</div>`;wireGuest(app);return;
+  app.innerHTML=`<h1>${signingUp?'Sign up':'Sign in'}</h1><div class="panel"><p>Sign-in is temporarily unavailable. Please try again later.</p></div>`;return;
  }
  if(user){
-  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>Your progress, wherever you study.</h1><section class="panel"><p>${esc(user.email)}</p><p id="account-status" role="status">${esc(message)}</p><div class="actions"><button id="sync-now">Sync now</button><button id="sign-out" class="secondary">Sign out</button></div><div id="sync-conflict" ${conflict?'':'hidden'}><p>Both copies are kept on this device before resolving a conflict.</p><div class="actions"><button id="use-cloud">Use cloud progress</button><button id="use-device" class="secondary">Use this device’s progress</button></div></div><details><summary>Bring your guest progress into this account</summary><p>This replaces this account’s current progress with the guest progress saved in this browser. A local recovery copy is kept.</p><button id="copy-guest" class="secondary">Copy guest progress</button></details><p><small>Word and grammar statistics and flags sync. Imported books, settings and unfinished sessions stay on each device. Import and backup tools are available to the administrator. Your administrator can view your synced study progress.</small></p></section>`;
+  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>Your progress, wherever you study.</h1><section class="panel"><p>${esc(user.email)}</p><p id="account-status" role="status">${esc(message)}</p><div class="actions"><button id="sync-now">Sync now</button><button id="sign-out" class="secondary">Sign out</button></div><div id="sync-conflict" ${conflict?'':'hidden'}><p>Both copies are kept on this device before resolving a conflict.</p><div class="actions"><button id="use-cloud">Use cloud progress</button><button id="use-device" class="secondary">Use this device’s progress</button></div></div><p><small>Word and grammar statistics and flags sync. Imported books, settings and unfinished sessions stay on each device. Import and backup tools are available to the administrator. Your administrator can view your synced study progress.</small></p></section>`;
   app.querySelector('#sync-now').onclick=()=>sync();
   app.querySelector('#sign-out').onclick=async()=>{
    try{await sync();const {error}=await client.auth.signOut({scope:'local'});if(error)throw error;await activate(null);accountView(app,esc);}catch(e){status(e.message);}
@@ -121,14 +120,9 @@ export function accountView(app,esc){
   };
   app.querySelector('#use-cloud').onclick=()=>resolve(true);
   app.querySelector('#use-device').onclick=()=>resolve(false);
-  app.querySelector('#copy-guest').onclick=()=>{
-   if(!confirm('Replace this account’s progress with this browser’s guest progress? A recovery copy will be kept.'))return;
-   const guest=validStats(guestProgress());const state=get();state.cloudRecovery={local:clone(state.stats),savedAt:new Date().toISOString()};
-   state.stats=clone(guest);state.session=null;save();onChange();sync();
-  };
+
  }else{
-  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>${signingUp?'Create your study account.':'Welcome back.'}</h1><div class="actions"><a class="button" href="#signin">Sign in</a><a class="button" href="#signup">Sign up</a></div><div class="panel">${accountConfig.emailLimited?'<p class="banner">Email sign-in is currently limited to project team members while email delivery is being set up. Everyone can continue as a guest.</p>':''}<p>Sign in with an email link to save your progress across devices. You can also keep studying as a guest.</p><p><small>Your administrator can view your synced study progress.</small></p><form id="sign-in"><label>Email<input type="email" id="account-email" autocomplete="email" required></label><button ${client?'':'disabled'}>Email me a sign-in link</button></form><p id="account-status" role="status">${esc(message)}</p>${guestButton}</div>`;
-  wireGuest(app);
+  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>${signingUp?'Create your study account.':'Welcome back.'}</h1><div class="actions"><a class="button" href="#signin">Sign in</a><a class="button" href="#signup">Sign up</a></div><div class="panel">${accountConfig.emailLimited?'<p class="banner">Email sign-in is currently limited to project team members while email delivery is being set up.</p>':''}<p>Sign in or create an account to study. Your progress saves to your account.</p><p><small>Your administrator can view your synced study progress.</small></p><form id="sign-in"><label>Email<input type="email" id="account-email" autocomplete="email" required></label><button ${client?'':'disabled'}>Email me a sign-in link</button></form><p id="account-status" role="status">${esc(message)}</p></div>`;
   app.querySelector('#sign-in').onsubmit=async e=>{
    e.preventDefault();const button=e.target.querySelector('button');button.disabled=true;
    try{const {error}=await client.auth.signInWithOtp({email:app.querySelector('#account-email').value.trim(),options:{shouldCreateUser:signingUp,emailRedirectTo:location.origin+location.pathname}});if(error)throw error;status('Check your email for the sign-in link.');}catch(e){status(accountError(e,signingUp));}finally{button.disabled=false;}

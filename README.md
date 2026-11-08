@@ -1,6 +1,6 @@
 # SNU Study
 
-A framework-free Korean vocabulary and grammar study app. Guest study stores data in this browser. Optional managed accounts can sync progress after the setup in ACCOUNT_SETUP.md. No tracking, external fonts, framework or build step.
+A framework-free Korean vocabulary and grammar study app. Sign-in is required to study. Account progress saves locally and syncs to Supabase; see ACCOUNT_SETUP.md. No tracking, external fonts, framework or build step.
 
 ## Run
 
@@ -87,7 +87,7 @@ The latest request superseded placeholder sample content: 3B uses the supplied b
 
 Import this GitHub repository into Vercel. Keep the root directory at the repository root and Framework Preset at Other. `vercel.json` selects no build/install command and serves the static project directly. No environment variables are required. Hash routes work without catch-all rewrites.
 
-Progress stays in each browser's localStorage; it does not sync between devices or deployment domains. Export before moving from localhost or a preview URL to the production domain, then restore the backup there.
+Account statistics sync between devices through Supabase. Unfinished quizzes, settings and imported content stay on each device. Administrators can export a full backup before moving these device-local details between domains.
 
 ## Four-choice vocabulary update
 
@@ -105,7 +105,7 @@ The target grammar pattern and meaning are hidden in a native, keyboard-accessib
 
 ## Interface language
 
-The top-right selector supports English, Vietnamese, Simplified Chinese and Russian. The interface preference persists in this browser independently of quiz settings. Main navigation and controls are translated; Korean exercises, English vocabulary meanings and grammar explanations retain their source language. Some detailed validation messages remain English. The language setting is device-local and is not part of exported study backups.
+The top-right selector supports English, Vietnamese, Simplified Chinese and Russian. The interface preference persists in this browser independently of quiz settings. Main navigation and controls are translated. All 564 published 3B vocabulary cards include Vietnamese, Simplified Chinese and Russian meanings in `translations: {vi, zh, ru}` alongside the original `en` field. The selector changes answer choices, reverse-direction prompts, flashcards and review-list meanings immediately. Korean answer choices and grammar exercises remain Korean; grammar explanations retain their existing language. Typed answers accept the selected translation or English. Multiple-choice values remain canonical so switching language preserves answer order, selection and grading, even after a reload. Distractors are checked for overlapping alternatives in every supported language. Imported cards without translations use a clearly labelled English fallback for the whole question. Changing an imported meaning removes outdated translations unless replacements are supplied. Some detailed validation messages remain English. The language setting is device-local and is not part of exported study backups.
 
 After updating the site, start a new Hard session to include workbook additions. Resuming an unfinished session keeps its original deck and your progress.
 
@@ -122,13 +122,13 @@ Green is the default palette and always uses the original forest-green backgroun
 
 Account integration is configured with optional email-link sign-in. See ACCOUNT_SETUP.md for the private database schema, email-link authentication, progress sync, account separation and deployment requirements.
 
-The current update passes 66 Node tests. Browser checks covered chapter shortcuts, live progress updates, all four theme choices, the Korean → English default, disabled unavailable books, and phone layout at a 375 px content width in English and Russian. Database policies have since passed live transactional isolation checks; real email-link sign-in is verified; cross-device sync remains to be verified.
+Run `npm test` for the current test count. Browser checks covered chapter shortcuts, live progress updates, all four theme choices, the Korean → English default, disabled unavailable books, and phone layout at a 375 px content width in English and Russian. Database policies have since passed live transactional isolation checks; real email-link sign-in is verified; cross-device sync remains to be verified.
 
 ## Account rollout status
 
-Sign in, Sign up and Continue as guest are available. Supabase progress storage and account isolation have passed transactional database tests; no test accounts were retained. Production redirects are configured, and Gmail custom SMTP has been saved in Supabase. The outdated team-member-only email notice has been removed. Email delivery and complete sign-in have been verified with the owner’s real account.
+Sign in and Sign up are available. Guest access has been removed: home, quiz/resume, settings and direct study links require a signed-in account. An auth failure does not bypass this gate. Existing local caches are retained, but the guest-study and guest-copy controls are removed. This gates the static app UI; published textbook JSON files remain publicly served, and Supabase independently protects private progress. Supabase progress storage and account isolation have passed transactional database tests; no test accounts were retained. Production redirects are configured, and Gmail custom SMTP has been saved in Supabase. The outdated team-member-only email notice has been removed. Email delivery and complete sign-in have been verified with the owner’s real account.
 
-Guest access displays an alert that browser-local progress is not saved to an account or synced across devices. Development previews currently share the Supabase project and need their exact callback URL allowlisted before email-link testing; see ACCOUNT_SETUP.md. Gmail credentials stay in Supabase and are never committed to this repository.
+Development previews currently share the Supabase project and need their exact callback URL allowlisted before email-link testing; see ACCOUNT_SETUP.md. Gmail credentials stay in Supabase and are never committed to this repository.
 
 ## Admin import and backup
 
@@ -136,7 +136,7 @@ The Import & backup link, direct route, JSON/CSV imports, backup restore and exp
 
 These tools manage browser-local data; they do not publish book changes to every student. Since this is a static app, users still control their own browser storage and can inspect public textbook JSON. This UI restriction is not a server-side content security boundary. Cloud progress remains protected separately by database RLS. Admin-only import access is already released to production.
 
-Progress saves locally after every answer. Signed-in accounts upload changed statistics every 30 seconds and verify the upload with a server read-back. Unsynced work remains in account-specific localStorage if the tab closes and reconciles when that account signs in again. Offline or unverified batches remain pending and retry on the next interval. Background browser throttling may delay a tick; Sync now remains available. Guests continue saving only on their device. Closing a tab does not require a last-second network request. Clearing browser storage or unavailable storage prevents this recovery, and the app displays a storage warning when it cannot save locally.
+Progress saves locally after every answer. Signed-in accounts upload changed statistics every 30 seconds and verify the upload with a server read-back. Unsynced work remains in account-specific localStorage if the tab closes and reconciles when that account signs in again. Offline or unverified batches remain pending and retry on the next interval. Background browser throttling may delay a tick; Sync now remains available. Closing a tab does not require a last-second network request. Clearing browser storage or unavailable storage prevents this recovery, and the app displays a storage warning when it cannot save locally.
 
 
 ## Admin student dashboard
@@ -152,3 +152,5 @@ Search confirmed students by email, browse pages of 25, choose a published book,
 Autumn mode uses `falling-leaves@0.1.0`, installed with npm and pinned in package-lock.json. Its MIT-licensed vanilla ESM files are bundled in `js/vendor/falling-leaves`, so the site needs no build or npm install to run or deploy. Green, Black and White have no leaf animation. Leaves are decorative, behind the interface, and never intercept clicks. Reduced motion disables the animation; inactive tabs stop it. Pause/Resume leaves in the footer saves your preference locally.
 
 These dashboard and Autumn animation changes are staged on `development`; the database addition is shared by development and production. The production website remains on the previously released version until the next release.
+
+The progress bars are labelled **Book mastery** and **This quiz**. A round completion percentage is not the percentage mastered across the book. Sync regression tests explicitly preserve an active quiz at 18%, including its queue and choices. A live timer check on 2026-11-08 reached a progress conflict: the timer fired, but upload paused pending a choice of saved copy. No copy was overwritten during that check.

@@ -1,4 +1,4 @@
-// Interface-only translations. Korean exercises and glossary definitions remain original.
+// Interface translations. Vocabulary meanings are localized separately from book data.
 const rows = [
 ['Your administrator can view your synced study progress.','Quản trị viên có thể xem tiến độ học tập đã đồng bộ của bạn.','管理员可以查看你已同步的学习进度。','Администратор может просматривать ваш синхронизированный учебный прогресс.'],
 ['Saved progress could not be read.','Không thể đọc tiến độ đã lưu.','无法读取已保存的进度。','Не удалось прочитать сохранённый прогресс.'],
@@ -26,8 +26,6 @@ const rows = [
 ["Saved on this device. Auto-sync runs every 30 seconds.", "Đã lưu trên thiết bị này. Tự động đồng bộ mỗi 30 giây.", "已保存在此设备上。每30秒自动同步一次。", "Сохранено на этом устройстве. Автосинхронизация каждые 30 секунд."],
 ["Progress is saved on this device. Cloud sync will retry every 30 seconds.", "Tiến độ đã lưu trên thiết bị này. Sẽ thử đồng bộ lại mỗi 30 giây.", "进度已保存在此设备上。每30秒重试云同步。", "Прогресс сохранён на этом устройстве. Повторная попытка синхронизации каждые 30 секунд."],
 ["Could not sign in with this email. If you are new, choose Sign up first.", "Không thể đăng nhập bằng email này. Nếu bạn là người dùng mới, hãy chọn Đăng ký trước.", "无法使用此邮箱登录。如果你是新用户，请先选择注册。", "Не удалось войти с этим адресом. Если вы новый пользователь, сначала выберите регистрацию."],
-["Sign-up is unavailable. Please contact the administrator or continue as a guest.", "Hiện không thể đăng ký. Vui lòng liên hệ quản trị viên hoặc tiếp tục với tư cách khách.", "暂时无法注册。请联系管理员或以访客身份继续。", "Регистрация недоступна. Свяжитесь с администратором или продолжите как гость."],
-["We could not send your email link. The administrator needs to check email delivery. You can continue as a guest.", "Không thể gửi liên kết qua email. Quản trị viên cần kiểm tra dịch vụ gửi email. Bạn có thể tiếp tục với tư cách khách.", "无法发送邮件链接。管理员需要检查邮件发送服务。你可以以访客身份继续。", "Не удалось отправить ссылку. Администратору нужно проверить отправку почты. Можно продолжить как гость."],
 ["Too many email requests. Please wait a few minutes before trying again.", "Bạn đã yêu cầu gửi email quá nhiều lần. Vui lòng đợi vài phút rồi thử lại.", "邮件请求过多。请等待几分钟后重试。", "Слишком много запросов. Подождите несколько минут и попробуйте снова."],
 ['Study','Học tập','学习','Учиться'],['Import & backup','Nhập và sao lưu','导入与备份','Импорт и резервная копия'],['Settings','Cài đặt','设置','Настройки'],['Language','Ngôn ngữ','语言','Язык'],
 ['Your Korean study shelf','Tủ sách tiếng Hàn của bạn','你的韩语书架','Ваша полка корейского языка'],['A little practice.','Luyện tập một chút.','每天练习一点。','Немного практики.'],['A little more confidence.','Tự tin hơn một chút.','每天自信一点。','Больше уверенности.'],['Choose your books, find your focus, and keep going.','Chọn sách, chọn nội dung và tiếp tục học.','选择教材和重点，继续学习。','Выберите учебники и тему и продолжайте учиться.'],['Resume unfinished session','Tiếp tục buổi học','Продолжить занятие','Продолжить занятие'],
@@ -55,10 +53,26 @@ rows.push(
  ['작은 연습, 큰 변화 · A little practice, every day.','작은 연습, 큰 변화 · Luyện tập một chút mỗi ngày.','작은 연습, 큰 변화 · 每天练习一点。','작은 연습, 큰 변화 · Немного практики каждый день.'],
  ['Columns: book, unit, ko, en, example. Book must match your selection. Matching IDs replace existing entries.','Các cột: book, unit, ko, en, example. Sách phải khớp lựa chọn. ID trùng sẽ thay thế mục cũ.','列：book、unit、ko、en、example。教材须与选择一致。相同 ID 会替换原有条目。','Столбцы: book, unit, ko, en, example. Учебник должен совпадать с выбранным. Совпадающие ID заменяют записи.']
 );
-rows.push(...[["Green", "Xanh lá", "绿色", "Зелёная"], ["Black", "Đen", "黑色", "Чёрная"], ["White", "Trắng", "白色", "Белая"], ["Autumn", "Mùa thu", "秋色", "Осенняя"], ["Level", "Cấp độ", "级别", "Уровень"], ["Book", "Sách", "教材", "Учебник"], ["Selected books", "Sách đã chọn", "已选教材", "Выбранные учебники"], ["Choose units", "Chọn bài học", "选择单元", "Выбрать разделы"], ["Optional", "Tùy chọn", "可选", "Необязательно"], ["All units", "Tất cả bài", "全部单元", "Все разделы"], ["Use all units", "Dùng tất cả bài", "使用全部单元", "Все разделы"], ["Selected units", "Bài đã chọn", "已选单元", "Выбранные разделы"], ["Easy", "Cơ bản", "基础", "Лёгкий"], ["Hard", "Nâng cao", "进阶", "Сложный"], ["Korean → English", "Tiếng Hàn → Tiếng Anh", "韩语 → 英语", "Корейский → Английский"], ["English → Korean", "Tiếng Anh → Tiếng Hàn", "英语 → 韩语", "Английский → Корейский"], ["Grammar", "Ngữ pháp", "语法", "Грамматика"], ["Easy vocabulary", "Từ vựng cơ bản", "基础词汇", "Лёгкая лексика"], ["Hard vocabulary", "Từ vựng nâng cao", "进阶词汇", "Сложная лексика"], ["questions mastered", "câu đã nắm vững", "题已掌握", "вопросов освоено"], ["words mastered", "từ đã nắm vững", "词已掌握", "слов освоено"], ["Selected books · all units", "Sách đã chọn · tất cả bài", "已选教材 · 全部单元", "Выбранные учебники · все разделы"], ["No book selected", "Chưa chọn sách", "未选择教材", "Учебник не выбран"]]);
+rows.push(...[["Green", "Xanh lá", "绿色", "Зелёная"], ["Black", "Đen", "黑色", "Чёрная"], ["White", "Trắng", "白色", "Белая"], ["Autumn", "Mùa thu", "秋色", "Осенняя"], ["Level", "Cấp độ", "级别", "Уровень"], ["Book", "Sách", "教材", "Учебник"], ["Selected books", "Sách đã chọn", "已选教材", "Выбранные учебники"], ["Choose units", "Chọn bài học", "选择单元", "Выбрать разделы"], ["Optional", "Tùy chọn", "可选", "Необязательно"], ["All units", "Tất cả bài", "全部单元", "Все разделы"], ["Use all units", "Dùng tất cả bài", "使用全部单元", "Все разделы"], ["Selected units", "Bài đã chọn", "已选单元", "Выбранные разделы"], ["Easy", "Cơ bản", "基础", "Лёгкий"], ["Hard", "Nâng cao", "进阶", "Сложный"], ["Korean → English", "Tiếng Hàn → Tiếng Việt", "韩语 → 中文", "Корейский → Русский"], ["English → Korean", "Tiếng Việt → Tiếng Hàn", "中文 → 韩语", "Русский → Корейский"], ["Grammar", "Ngữ pháp", "语法", "Грамматика"], ["Easy vocabulary", "Từ vựng cơ bản", "基础词汇", "Лёгкая лексика"], ["Hard vocabulary", "Từ vựng nâng cao", "进阶词汇", "Сложная лексика"], ["questions mastered", "câu đã nắm vững", "题已掌握", "вопросов освоено"], ["words mastered", "từ đã nắm vững", "词已掌握", "слов освоено"], ["Selected books · all units", "Sách đã chọn · tất cả bài", "已选教材 · 全部单元", "Выбранные учебники · все разделы"], ["No book selected", "Chưa chọn sách", "未选择教材", "Учебник не выбран"]]);
 rows.push(...[["Choose chapters", "Chọn chương", "选择章节", "Выбрать главы"], ["Chapter", "Chương", "章", "Глава"], ["All chapters", "Tất cả chương", "全部章节", "Все главы"], ["Use all chapters", "Dùng tất cả chương", "使用全部章节", "Все главы"], ["Selected chapters", "Chương đã chọn", "已选章节", "Выбранные главы"], ["Vocabulary", "Từ vựng", "词汇", "Лексика"], ["Select chapters for the main quiz buttons, or start a chapter directly below. Vocabulary uses the difficulty and direction selected in your practice settings.", "Chọn chương cho các nút kiểm tra chính hoặc bắt đầu ngay bên dưới. Từ vựng dùng độ khó và chiều đã chọn.", "选择章节后使用主测验按钮，或直接开始下面的章节。词汇使用已选难度和翻译方向。", "Выберите главы для основных тестов или начните главу ниже. Лексика использует выбранные сложность и направление."]]);
-rows.push(...[["Sign in", "Đăng nhập", "登录", "Войти"], ["Sign up", "Đăng ký", "注册", "Регистрация"], ["Continue as guest", "Tiếp tục với tư cách khách", "以访客身份继续", "Продолжить как гость"], ["Guest progress is saved only in this browser, not to an account.", "Tiến độ của khách chỉ lưu trong trình duyệt này, không lưu vào tài khoản.", "访客进度仅保存在此浏览器中，不会保存到账户。", "Прогресс гостя сохраняется только в этом браузере, а не в аккаунте."], ["Account sign-in is being set up. You can study as a guest now.", "Đăng nhập đang được thiết lập. Bạn có thể học với tư cách khách.", "账户登录正在设置中。现在可以以访客身份学习。", "Вход в аккаунт настраивается. Пока можно учиться как гость."]]);
+rows.push(['Sign in','Đăng nhập','登录','Войти'],['Sign up','Đăng ký','注册','Регистрация']);
 rows.push(...[["Admin access only", "Chỉ dành cho quản trị viên", "仅限管理员", "Только для администратора"], ["Import and backup are available only to the administrator.", "Chỉ quản trị viên có thể nhập và sao lưu dữ liệu.", "导入和备份仅限管理员使用。", "Импорт и резервное копирование доступны только администратору."]]);
+rows.push(
+ ['Sign in or create an account to study. Your progress saves to your account.','Đăng nhập hoặc tạo tài khoản để học. Tiến độ được lưu vào tài khoản của bạn.','登录或创建账户后即可学习，进度会保存到你的账户。','Войдите или создайте аккаунт для учёбы. Прогресс сохраняется в аккаунте.'],
+ ['Sign-in is temporarily unavailable. Please try again later.','Tạm thời không thể đăng nhập. Vui lòng thử lại sau.','暂时无法登录，请稍后重试。','Вход временно недоступен. Повторите попытку позже.'],
+ ['Sign-up is unavailable. Please contact the administrator.','Hiện không thể đăng ký. Vui lòng liên hệ quản trị viên.','暂时无法注册，请联系管理员。','Регистрация недоступна. Свяжитесь с администратором.'],
+ ['We could not send your email link. The administrator needs to check email delivery.','Không thể gửi liên kết qua email. Quản trị viên cần kiểm tra dịch vụ gửi email.','无法发送邮件链接，管理员需要检查邮件服务。','Не удалось отправить ссылку. Администратору нужно проверить отправку почты.'],
+ ['Email me a sign-in link','Gửi liên kết đăng nhập qua email','向我发送登录链接','Отправить ссылку для входа'],
+ ['Welcome back.','Chào mừng trở lại.','欢迎回来。','С возвращением.'],
+ ['Create your study account.','Tạo tài khoản học tập.','创建学习账户。','Создайте учебный аккаунт.'],
+ ['Your study account','Tài khoản học tập của bạn','你的学习账户','Ваш учебный аккаунт'],
+ ['This quiz' ,'Bài kiểm tra này','本次测验','Этот тест'],
+ ['Book mastery','Mức nắm vững sách','教材掌握度','Освоение учебника'],
+ ['completed','đã hoàn thành','已完成','завершено'],
+ ['Quiz completion and book mastery measure different things.','Tiến độ bài kiểm tra và mức nắm vững sách đo hai điều khác nhau.','测验完成度与教材掌握度是不同的指标。','Завершение теста и освоение учебника — разные показатели.'],
+ ['Translation unavailable for this card or its choices. English is shown.','Thẻ này hoặc các lựa chọn chưa có bản dịch. Hiển thị tiếng Anh.','此卡片或选项暂无翻译，显示英语。','Для этой карточки или вариантов нет перевода. Показан английский.'],
+ ['KO → EN','KO → VI','KO → ZH','KO → RU'],['EN → KO','VI → KO','ZH → KO','RU → KO']
+);
 const dictionaries=Object.fromEntries(['en','vi','zh','ru'].map((lang,i)=>[lang,Object.fromEntries(rows.map(r=>[r[0],r[i]]))]));
 export function translateText(text,lang='en'){
  const trimmed=text.trim(),dict=dictionaries[lang]||dictionaries.en;
@@ -76,6 +90,7 @@ export function translateText(text,lang='en'){
  if(count){const hard=count[2].startsWith('Extra ');const labels={vi:[`${count[1]} từ · Chỉ từ vựng ở khung cuối trang đầu mỗi bài nhỏ.`,`${count[1]} từ · Chú thích từ vựng Hàn–Anh trong sách học và sách bài tập, gồm phần ôn tập.`],zh:[`${count[1]} 个词 · 仅每小节首页底部词汇框。`,`${count[1]} 个词 · 学生用书和练习册（含复习部分）底部的韩英词汇注释。`],ru:[`${count[1]} слов · Только нижний словарь начальной страницы подраздела.`,`${count[1]} слов · Корейско-английские сноски из учебника и рабочей тетради, включая повторение.`]};return labels[lang][hard?1:0];}
  return text;
 }
+export function currentLanguage(){return typeof document==='undefined'?'en':document.documentElement.lang||'en';}
 let initialized=false;
 export function initLanguage(){
  if(initialized)return;initialized=true;
@@ -83,7 +98,7 @@ export function initLanguage(){
  const label=document.createElement('label');label.className='language-switch';label.innerHTML='<span>Language</span><select id="interface-language" aria-label="Language"><option value="en">English</option><option value="vi">Tiếng Việt</option><option value="zh">中文</option><option value="ru">Русский</option></select>';
  document.querySelector('.header-controls').prepend(label);const select=label.querySelector('select');select.value=language;
  const originals=new WeakMap();
- const excluded='.choices,#reveal,.flashcard span,[lang="ko"],.grammar-hint > div,textarea,script,style,#interface-language,.feedback p';
+ const excluded='[data-vocab-localized],.choices,#reveal,.flashcard span,[lang="ko"],.grammar-hint > div,textarea,script,style,#interface-language,.feedback p';
  function apply(){
   observer.disconnect();document.documentElement.lang=language;
   const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let node;
@@ -96,6 +111,6 @@ export function initLanguage(){
   observer.observe(document.body,{subtree:true,childList:true,characterData:true});
  }
  const observer=new MutationObserver(apply);
- select.onchange=()=>{language=select.value;try{localStorage.setItem('snu-interface-language',language);}catch{}apply();};
+ select.onchange=()=>{language=select.value;try{localStorage.setItem('snu-interface-language',language);}catch{}apply();document.dispatchEvent(new Event('study-language-change'));};
  apply();
 }
