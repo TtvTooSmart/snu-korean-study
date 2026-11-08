@@ -1,3 +1,4 @@
+import {accountError} from './account-errors.js';
 import {verifyAdmin} from './admin-access.js';
 import {accountConfig} from './account-config.js';
 import {get,save,switchProfile,guestProgress} from './storage.js';
@@ -111,7 +112,7 @@ export function accountView(app,esc){
   wireGuest(app);
   app.querySelector('#sign-in').onsubmit=async e=>{
    e.preventDefault();const button=e.target.querySelector('button');button.disabled=true;
-   try{const {error}=await client.auth.signInWithOtp({email:app.querySelector('#account-email').value.trim(),options:{shouldCreateUser:signingUp,emailRedirectTo:location.origin+location.pathname}});if(error)throw error;status('Check your email for the sign-in link.');}catch(e){status(e.code==='email_address_not_authorized'?'Email sign-in is not available for this address yet. Please continue as a guest.':e.message||'Could not send the sign-in link.');}finally{button.disabled=false;}
+   try{const {error}=await client.auth.signInWithOtp({email:app.querySelector('#account-email').value.trim(),options:{shouldCreateUser:signingUp,emailRedirectTo:location.origin+location.pathname}});if(error)throw error;status('Check your email for the sign-in link.');}catch(e){status(accountError(e,signingUp));}finally{button.disabled=false;}
   };
  }
 }
