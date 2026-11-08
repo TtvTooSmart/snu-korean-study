@@ -123,3 +123,7 @@ Green is the default palette and follows system light/dark preference. Black and
 Account integration is prepared but disabled until configured. See ACCOUNT_SETUP.md for the private database schema, email-link authentication, progress sync, account separation and deployment requirements.
 
 The current update passes 49 Node tests. Browser checks covered chapter shortcuts, live progress updates, all four theme choices, the Korean → English default, disabled unavailable books, and phone layout at a 375 px content width in English and Russian. Real account authentication, email delivery and database policies require the Supabase setup and have not been tested against a live service.
+
+## Account rollout status
+
+Sign in, Sign up and Continue as guest are available. Supabase progress storage and account isolation have been verified with transactional database tests; no test accounts were retained. Production redirects are configured. The default email sender currently restricts authentication emails to organization team members. Public student registration requires custom SMTP, followed by real email-link testing. The app shows this restriction while `emailLimited` is true. Guest access displays an alert that browser-local progress is not saved to an account or synced across devices.

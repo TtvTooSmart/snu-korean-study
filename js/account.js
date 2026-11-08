@@ -12,17 +12,18 @@ async function loadSDK(){
  // Official browser SDK handles sessions, URL callbacks and token refresh.
  if(!window.supabase)await new Promise((resolve,reject)=>{
   const script=document.createElement('script');
-  script.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
+  script.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0';
   script.onload=resolve;script.onerror=()=>reject(Error('Could not load sign-in. Check your connection.'));
   document.head.append(script);
  });
  return window.supabase.createClient(accountConfig.url,accountConfig.publishableKey);
 }
 export async function initAccounts(changed){
- if(!accountsEnabled())return;
  onChange=changed;
- const link=document.createElement('a');link.href='#account';link.id='account-link';link.textContent='Account';
+ const link=document.createElement('a');link.href='#signin';link.id='account-link';link.textContent='Sign in';
  document.querySelector('nav').append(link);
+ const signup=document.createElement('a');signup.href='#signup';signup.id='signup-link';signup.textContent='Sign up';document.querySelector('nav').append(signup);
+ if(!accountsEnabled())return;
  try{
   client=await loadSDK();
   client.auth.onAuthStateChange((_event,session)=>{
@@ -66,9 +67,12 @@ export async function sync(){
  }catch(e){status('Progress is saved on this device. Cloud sync failed; try Sync now when connected.');}
  finally{syncing=false;suppress=false;}
 }
+const guestButton='<button id="continue-guest" class="secondary">Continue as guest</button><p><small>Guest progress is saved only in this browser, not to an account.</small></p>';
+function wireGuest(app){app.querySelector('#continue-guest')?.addEventListener('click',()=>{alert('Guest mode: your progress is saved only in this browser. It will not sync across devices and may be lost if browser data is cleared. Sign in to save progress to an account.');location.hash='home';});}
 export function accountView(app,esc){
+ const signingUp=location.hash==='#signup';
  if(!accountsEnabled()){
-  app.innerHTML='<h1>Accounts</h1><div class="panel"><p>Account sync is not enabled yet. Your progress is saved on this device. Use Import & backup to transfer it.</p></div>';return;
+  app.innerHTML=`<h1>${signingUp?'Sign up':'Sign in'}</h1><div class="panel"><p>Account sign-in is being set up. You can study as a guest now.</p>${guestButton}</div>`;wireGuest(app);return;
  }
  if(user){
   app.innerHTML=`<p class="eyebrow">Your study account</p><h1>Your progress, wherever you study.</h1><section class="panel"><p>${esc(user.email)}</p><p id="account-status" role="status">${esc(message)}</p><div class="actions"><button id="sync-now">Sync now</button><button id="sign-out" class="secondary">Sign out</button></div><div id="sync-conflict" ${conflict?'':'hidden'}><p>Both copies are kept on this device before resolving a conflict.</p><div class="actions"><button id="use-cloud">Use cloud progress</button><button id="use-device" class="secondary">Use this device’s progress</button></div></div><details><summary>Bring your guest progress into this account</summary><p>This replaces this account’s current progress with the guest progress saved in this browser. A local recovery copy is kept.</p><button id="copy-guest" class="secondary">Copy guest progress</button></details><p><small>Word and grammar statistics and flags sync. Imported books, settings and unfinished sessions stay on each device; use Export for a full backup.</small></p></section>`;
@@ -91,15 +95,17 @@ export function accountView(app,esc){
    state.stats=clone(guest);state.session=null;save();onChange();sync();
   };
  }else{
-  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>Keep your progress with you.</h1><div class="panel"><p>Sign in with an email link to save your progress across devices. You can also keep studying as a guest.</p><form id="sign-in"><label>Email<input type="email" id="account-email" autocomplete="email" required></label><button ${client?'':'disabled'}>Email me a sign-in link</button></form><p id="account-status" role="status">${esc(message)}</p></div>`;
+  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>${signingUp?'Create your study account.':'Welcome back.'}</h1><div class="actions"><a class="button" href="#signin">Sign in</a><a class="button" href="#signup">Sign up</a></div><div class="panel">${accountConfig.emailLimited?'<p class="banner">Email sign-in is currently limited to project team members while email delivery is being set up. Everyone can continue as a guest.</p>':''}<p>Sign in with an email link to save your progress across devices. You can also keep studying as a guest.</p><form id="sign-in"><label>Email<input type="email" id="account-email" autocomplete="email" required></label><button ${client?'':'disabled'}>Email me a sign-in link</button></form><p id="account-status" role="status">${esc(message)}</p>${guestButton}</div>`;
+  wireGuest(app);
   app.querySelector('#sign-in').onsubmit=async e=>{
    e.preventDefault();const button=e.target.querySelector('button');button.disabled=true;
-   try{const {error}=await client.auth.signInWithOtp({email:app.querySelector('#account-email').value.trim(),options:{emailRedirectTo:location.origin+location.pathname}});if(error)throw error;status('Check your email for the sign-in link.');}catch(e){status(e.message||'Could not send the sign-in link.');}finally{button.disabled=false;}
+   try{const {error}=await client.auth.signInWithOtp({email:app.querySelector('#account-email').value.trim(),options:{shouldCreateUser:signingUp,emailRedirectTo:location.origin+location.pathname}});if(error)throw error;status('Check your email for the sign-in link.');}catch(e){status(e.code==='email_address_not_authorized'?'Email sign-in is not available for this address yet. Please continue as a guest.':e.message||'Could not send the sign-in link.');}finally{button.disabled=false;}
   };
  }
 }
 document.addEventListener('account-status',()=>{
  const node=document.querySelector('#account-status');if(node)node.textContent=message;
  const box=document.querySelector('#sync-conflict');if(box)box.hidden=!conflict;
- const link=document.querySelector('#account-link');if(link)link.textContent=signedIn?(conflict?'Account · sync needed':'Account'):'Sign in';
+ const link=document.querySelector('#account-link');if(link){link.textContent=signedIn?(conflict?'Account · sync needed':'Account'):'Sign in';link.href=signedIn?'#account':'#signin';}
+ const signup=document.querySelector('#signup-link');if(signup)signup.hidden=signedIn;
 });

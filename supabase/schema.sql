@@ -9,17 +9,22 @@ alter table public.study_progress enable row level security;
 drop policy if exists "Read own progress" on public.study_progress;
 create policy "Read own progress" on public.study_progress
   for select to authenticated using ((select auth.uid()) = user_id);
--- Only the narrowly scoped RPC can write. The browser never supplies a user ID to it.
+-- The RPC uses the caller role; every read and write is also checked by RLS.
 revoke all on public.study_progress from anon, authenticated;
-grant select on public.study_progress to authenticated;
+grant select, insert, update on public.study_progress to authenticated;
+create policy "Insert own progress" on public.study_progress
+  for insert to authenticated with check ((select auth.uid()) = user_id);
+create policy "Update own progress" on public.study_progress
+  for update to authenticated using ((select auth.uid()) = user_id)
+  with check ((select auth.uid()) = user_id);
 create or replace function public.save_study_progress(expected_revision bigint, new_stats jsonb)
-returns jsonb language plpgsql security definer set search_path = '' as $$
+returns jsonb language plpgsql security invoker set search_path = '' as $$
 declare
   current_user_id uuid := auth.uid();
   current_row public.study_progress;
 begin
   if current_user_id is null then raise exception 'Sign in to save progress'; end if;
-  if jsonb_typeof(new_stats) <> 'object' or octet_length(new_stats::text) > 2000000 then
+  if new_stats is null or expected_revision is null or expected_revision < 0 or jsonb_typeof(new_stats) <> 'object' or octet_length(new_stats::text) > 2000000 then
     raise exception 'Invalid progress payload';
   end if;
   insert into public.study_progress(user_id) values(current_user_id) on conflict do nothing;
