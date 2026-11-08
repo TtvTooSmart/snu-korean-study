@@ -1,0 +1,4 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {translateText} from '../js/i18n.js';
+test('four interface languages and whitespace preservation',()=>{assert.equal(translateText(' Settings ','vi'),' Cài đặt ');assert.equal(translateText('Settings','zh'),'设置');assert.equal(translateText('Settings','ru'),'Настройки');assert.equal(translateText('Settings','en'),'Settings');});
+test('unknown study content is unchanged',()=>{assert.equal(translateText('몸이 무거워요','vi'),'몸이 무거워요');assert.equal(translateText('red bean porridge','ru'),'red bean porridge');});
+test('hard and standard descriptions translate',()=>{assert.match(translateText('198 words · Only the bottom vocabulary box on each subchapter’s opening page.','zh'),/198 个词/);assert.match(translateText('242 words · Extra Korean–English vocabulary notes on the remaining subchapter pages.','vi'),/242 từ/);});

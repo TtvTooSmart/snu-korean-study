@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {grammarView,questionText} from '../js/quiz-grammar.js';
+test('target grammar is removed from visible question',()=>assert.equal(questionText('비가 와요.\nTarget grammar: -더니 — observed change.'),'비가 와요.'));
+test('hint starts closed and contains pattern and meaning',()=>{const html=grammarView({unit:10,prompt:'Question\nTarget grammar: hidden',pattern:'-더니',meaning:'observed change',type:'fill'},String);assert.ok(html.includes('<details class="grammar-hint">'));assert.ok(!html.includes('<details open'));assert.ok(html.includes('<strong lang="ko">-더니</strong>'));assert.ok(html.includes('<p>observed change</p>'));assert.ok(!html.includes('Target grammar: hidden'));});

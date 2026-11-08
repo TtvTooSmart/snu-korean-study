@@ -88,3 +88,21 @@ The latest request superseded placeholder sample content: 3B uses the supplied b
 Import this GitHub repository into Vercel. Keep the root directory at the repository root and Framework Preset at Other. `vercel.json` selects no build/install command and serves the static project directly. No environment variables are required. Hash routes work without catch-all rewrites.
 
 Progress stays in each browser's localStorage; it does not sync between devices or deployment domains. Export before moving from localhost or a preview URL to the production domain, then restore the backup there.
+
+## Four-choice vocabulary update
+
+Multiple choice is now the default vocabulary mode, including a one-time upgrade for existing saved settings. Each card has one correct option and three shuffled distractors from the same book. Duplicate choices, identical prompts, and overlapping accepted alternatives are excluded. Choose using tap/click or 1–4, then Check answer/Enter. The correct option is shown after submission, and wrong answers use the same retry queue. Choices and direction remain stable when pausing/resuming. Flashcards and typed answers remain available in the mode selector. If a custom book has too few distinct choices, that card explicitly falls back to typed mode.
+
+13 automated tests pass, including checking all 440 cards in both directions for exactly four unique options with one matching answer. Browser verification covered four-choice rendering and incorrect-answer feedback.
+
+## Standard / Hard vocabulary and grammar hints
+
+Standard is now the default: only the bottom vocabulary boxes on each subchapter's first page (198 cards). Hard contains Korean–English bottom notes from the other pages (244 cards), including cultural-page notes under the preceding subchapter. Examples: 10-1 Standard=p24, Hard=p25–29; 10-2 begins p30. The source page and subchapter are displayed on each card. Word location determines the category, not perceived difficulty. Standard and Hard decks are separate, including flagged cards, weak-word practice and distractor choices. All 442 entries retain stable IDs where previously present.
+
+Vocabulary JSON can add `difficulty` (`standard` or `hard`), `subchapter` (e.g. `10-1`), and `sourcePage` (printed page number). Custom entries without difficulty default to Standard. Old full backups preserve the classification of matching packaged IDs. Saved sessions from before this split are cleared once so their old decks cannot mix categories; card statistics remain.
+
+The target grammar pattern and meaning are hidden in a native, keyboard-accessible Show hint box. Click or press Enter/Space on its heading to reveal it. Full answer feedback still shows the pattern and explanation.
+
+## Interface language
+
+The top-right selector supports English, Vietnamese, Simplified Chinese and Russian. The interface preference persists in this browser independently of quiz settings. Main navigation and controls are translated; Korean exercises, English vocabulary meanings and grammar explanations retain their source language. Some detailed validation messages remain English. The language setting is device-local and is not part of exported study backups.

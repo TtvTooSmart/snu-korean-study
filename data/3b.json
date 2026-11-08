@@ -3,10 +3,30 @@
   "placeholder": false,
   "source": {
     "title": "서울대 한국어 플러스 3B Student’s Book & 문법",
-    "vocabulary": "All entries in the printed glossary, pages 178–184; grouped by source-page unit. Entries appearing in two units are repeated in both. English glosses lightly normalized.",
+    "vocabulary": "Entries from opening-page vocabulary boxes (standard) and bottom-of-page Korean–English notes on other pages (hard). Original glossary IDs retained. Opposites joined with a slash in the book are separate cards.",
     "grammar": "All 33 patterns in the grammar booklet contents. Quiz sentences and explanations are original, not textbook exercises.",
-    "coverage": "Units 10–18. Glossary-based vocabulary coverage; does not include every incidental word appearing in running text.",
-    "sourceFile": "3B SB & 문법.pdf"
+    "coverage": "Units 10–18. Unit 18 has only subchapter 18-1. Printed page numbers are retained in sourcePage. Classification uses vocabulary location, not word difficulty.",
+    "sourceFile": "3B SB & 문법.pdf",
+    "subchapterOpeningPages": {
+      "10-1": 24,
+      "10-2": 30,
+      "11-1": 40,
+      "11-2": 46,
+      "12-1": 56,
+      "12-2": 62,
+      "13-1": 72,
+      "13-2": 78,
+      "14-1": 88,
+      "14-2": 94,
+      "15-1": 104,
+      "15-2": 110,
+      "16-1": 120,
+      "16-2": 126,
+      "17-1": 136,
+      "17-2": 142,
+      "18-1": 152
+    },
+    "verification": "Opening-page boxes and bottom vocabulary notes on printed pages 24–161 visually checked against the supplied scan. Added 그녀 and 반대하다 from page 81, which were absent from the previous glossary-based data. Cultural-page bottom notes are included in hard mode under the preceding subchapter. No running-text vocabulary added."
   },
   "units": [
     {
@@ -17,391 +37,521 @@
           "id": "3b-u10-v1",
           "ko": "객실",
           "en": "cabin",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v2",
           "ko": "고치다",
           "en": "fix",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v3",
           "ko": "낮추다",
           "en": "lower",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v4",
           "ko": "냉동실",
           "en": "freezer compartment",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v5",
           "ko": "냉장실",
           "en": "refrigerator compartment",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v6",
           "ko": "높이다",
           "en": "raise",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v7",
           "ko": "늦추다",
           "en": "postpone;delay",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v8",
           "ko": "닳다",
           "en": "wear out",
-          "sourcePage": 35
+          "sourcePage": 35,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v9",
           "ko": "돌리다",
           "en": "run;turn",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v10",
           "ko": "땅에 떨어뜨리다",
           "en": "drop on the ground",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v11",
           "ko": "맡기다",
           "en": "entrust;leave in someone's care",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v12",
           "ko": "먼지가 끼다",
           "en": "be covered in dust",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v13",
           "ko": "먼지 통",
           "en": "dust bin",
-          "sourcePage": 33
+          "sourcePage": 33,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v14",
           "ko": "무선",
           "en": "wireless",
-          "sourcePage": 33
+          "sourcePage": 33,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v15",
           "ko": "물에 빠뜨리다",
           "en": "drop in water",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v16",
           "ko": "바람이 통하다",
           "en": "air circulates",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v17",
           "ko": "방문하다",
           "en": "visit",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v18",
           "ko": "배터리를 넣다",
           "en": "put in batteries",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v19",
           "ko": "배터리를 빼다",
           "en": "remove batteries",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v20",
           "ko": "부분",
           "en": "part",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v21",
           "ko": "부품을 교체하다",
           "en": "replace a part",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v22",
           "ko": "브레이크를 잡다",
           "en": "apply the brakes",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v23",
           "ko": "비우다",
           "en": "empty",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v24",
           "ko": "설정 온도",
           "en": "temperature setting",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v25",
           "ko": "소용이 없다",
           "en": "be useless",
-          "sourcePage": 26
+          "sourcePage": 26,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v26",
           "ko": "속도",
           "en": "speed",
-          "sourcePage": 26
+          "sourcePage": 26,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v27",
           "ko": "수리비",
           "en": "repair cost",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v28",
           "ko": "수리 센터",
           "en": "repair center",
-          "sourcePage": 26
+          "sourcePage": 26,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v29",
           "ko": "수리하다",
           "en": "repair",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v30",
           "ko": "시계 방향",
           "en": "clockwise",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v31",
           "ko": "시기",
           "en": "period;time",
-          "sourcePage": 36
+          "sourcePage": 36,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v32",
           "ko": "안심하다",
           "en": "feel reassured",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v33",
           "ko": "알리다",
           "en": "inform",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v34",
           "ko": "액정이 깨지다",
           "en": "screen is cracked",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v35",
           "ko": "액정이 나가다",
           "en": "screen stops working",
-          "sourcePage": 29
+          "sourcePage": 29,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v36",
           "ko": "엔진",
           "en": "engine",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v37",
           "ko": "열차",
           "en": "train",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v38",
           "ko": "옆면",
           "en": "side surface",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v39",
           "ko": "온도 조절이 안 되다",
           "en": "temperature control does not work",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v40",
           "ko": "옮기다",
           "en": "move;transfer",
-          "sourcePage": 29
+          "sourcePage": 29,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v41",
           "ko": "요청하다",
           "en": "request",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v42",
           "ko": "운행하다",
           "en": "operate a vehicle",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v43",
           "ko": "원인",
           "en": "cause",
-          "sourcePage": 36
+          "sourcePage": 36,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v44",
           "ko": "윙",
           "en": "buzz",
-          "sourcePage": 25
+          "sourcePage": 25,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v45",
           "ko": "유지하다",
           "en": "maintain",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v46",
           "ko": "음료수를 쏟다",
           "en": "spill a drink",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v47",
           "ko": "전원을 끄다",
           "en": "turn off the power",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v48",
           "ko": "전원을 켜다",
           "en": "turn on the power",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v49",
           "ko": "접수하다",
           "en": "receive an application",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v50",
           "ko": "제공하다",
           "en": "provide",
-          "sourcePage": 31
+          "sourcePage": 31,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v51",
           "ko": "조절",
           "en": "adjustment;control",
-          "sourcePage": 32
+          "sourcePage": 32,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v52",
           "ko": "종이가 걸리다",
           "en": "paper is jammed",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v53",
           "ko": "채소가 얼다",
           "en": "vegetables freeze",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v54",
           "ko": "채우다",
           "en": "fill",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v55",
           "ko": "최대한",
           "en": "as much as possible",
-          "sourcePage": 33
+          "sourcePage": 33,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v56",
           "ko": "충전",
           "en": "charging",
-          "sourcePage": 33
+          "sourcePage": 33,
+          "difficulty": "hard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v57",
           "ko": "타이어",
           "en": "tire",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v58",
           "ko": "터치",
           "en": "touch",
-          "sourcePage": 27
+          "sourcePage": 27,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v59",
           "ko": "통화가 끊기다",
           "en": "phone call disconnects",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v60",
           "ko": "펑크가 나다",
           "en": "have a flat tire",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v61",
           "ko": "플러그를 꽂다",
           "en": "plug in",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v62",
           "ko": "플러그를 뽑다",
           "en": "unplug",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v63",
           "ko": "화면이 안 나오다",
           "en": "screen does not display",
-          "sourcePage": 24
+          "sourcePage": 24,
+          "difficulty": "standard",
+          "subchapter": "10-1"
         },
         {
           "id": "3b-u10-v64",
           "ko": "확인하다",
           "en": "check;confirm",
-          "sourcePage": 30
+          "sourcePage": 30,
+          "difficulty": "standard",
+          "subchapter": "10-2"
         },
         {
           "id": "3b-u10-v65",
           "ko": "흔들리다",
           "en": "shake",
-          "sourcePage": 28
+          "sourcePage": 28,
+          "difficulty": "hard",
+          "subchapter": "10-1"
         }
       ],
       "grammar": [
@@ -496,259 +646,345 @@
           "id": "3b-u11-v1",
           "ko": "간",
           "en": "between;among",
-          "sourcePage": 49
+          "sourcePage": 49,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v2",
           "ko": "간을 맞추다",
           "en": "season food",
-          "sourcePage": 45
+          "sourcePage": 45,
+          "difficulty": "hard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v3",
           "ko": "감추다",
           "en": "hide",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v4",
           "ko": "겁이 나다",
           "en": "be scared",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v5",
           "ko": "고대",
           "en": "ancient times",
-          "sourcePage": 48
+          "sourcePage": 48,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v6",
           "ko": "고민이 있다",
           "en": "have a concern",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v7",
           "ko": "극복하다",
           "en": "overcome",
-          "sourcePage": 48
+          "sourcePage": 48,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v8",
           "ko": "깜빡하다",
           "en": "forget momentarily",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v9",
           "ko": "꾸준히",
           "en": "consistently",
-          "sourcePage": 49
+          "sourcePage": 49,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v10",
           "ko": "다행이다",
           "en": "be a relief",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v11",
           "ko": "당황하다",
           "en": "be flustered",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v12",
           "ko": "도움이 되다",
           "en": "be helpful",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v13",
           "ko": "들키다",
           "en": "get caught",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v14",
           "ko": "망치다",
           "en": "ruin",
-          "sourcePage": 41
+          "sourcePage": 41,
+          "difficulty": "hard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v15",
           "ko": "문제를 해결하다",
           "en": "solve a problem",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v16",
           "ko": "보람이 크다",
           "en": "be rewarding",
-          "sourcePage": 49
+          "sourcePage": 49,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v17",
           "ko": "불만이 있다",
           "en": "be dissatisfied",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v18",
           "ko": "불평하다",
           "en": "complain",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v19",
           "ko": "사생활",
           "en": "private life",
-          "sourcePage": 47
+          "sourcePage": 47,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v20",
           "ko": "사정",
           "en": "circumstances;reason",
-          "sourcePage": 41
+          "sourcePage": 41,
+          "difficulty": "hard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v21",
           "ko": "상대방",
           "en": "the other person",
-          "sourcePage": 48
+          "sourcePage": 48,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v22",
           "ko": "세대 차이",
           "en": "generation gap",
-          "sourcePage": 48
+          "sourcePage": 48,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v23",
           "ko": "속마음",
           "en": "inner feelings",
-          "sourcePage": 44
+          "sourcePage": 44,
+          "difficulty": "hard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v24",
           "ko": "수메르 점토판",
           "en": "Sumerian clay tablet",
-          "sourcePage": 48
+          "sourcePage": 48,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v25",
           "ko": "실수하다",
           "en": "make a mistake",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v26",
           "ko": "심각하다",
           "en": "serious",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v27",
           "ko": "야단맞다",
           "en": "be scolded",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v28",
           "ko": "야단치다",
           "en": "scold",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v29",
           "ko": "언젠가",
           "en": "someday",
-          "sourcePage": 49
+          "sourcePage": 49,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v30",
           "ko": "잔소리를 하다",
           "en": "nag",
-          "sourcePage": 49
+          "sourcePage": 49,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v31",
           "ko": "잘못하다",
           "en": "do something wrong",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v32",
           "ko": "조심하다",
           "en": "be careful",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v33",
           "ko": "조언하다",
           "en": "advise",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v34",
           "ko": "집중하다",
           "en": "concentrate",
-          "sourcePage": 49
+          "sourcePage": 49,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v35",
           "ko": "짜증이 나다",
           "en": "feel irritated",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v36",
           "ko": "짜증을 내다",
           "en": "act irritated",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v37",
           "ko": "청취자",
           "en": "listener",
-          "sourcePage": 44
+          "sourcePage": 44,
+          "difficulty": "hard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v38",
           "ko": "표지",
           "en": "cover",
-          "sourcePage": 49
+          "sourcePage": 49,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v39",
           "ko": "표현하다",
           "en": "express",
-          "sourcePage": 48
+          "sourcePage": 48,
+          "difficulty": "hard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v40",
           "ko": "해물탕",
           "en": "spicy seafood soup",
-          "sourcePage": 45
+          "sourcePage": 45,
+          "difficulty": "hard",
+          "subchapter": "11-1"
         },
         {
           "id": "3b-u11-v41",
           "ko": "화가 풀리다",
           "en": "anger subsides",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v42",
           "ko": "화를 풀다",
           "en": "let out one's anger",
-          "sourcePage": 46
+          "sourcePage": 46,
+          "difficulty": "standard",
+          "subchapter": "11-2"
         },
         {
           "id": "3b-u11-v43",
           "ko": "후회하다",
           "en": "regret",
-          "sourcePage": 40
+          "sourcePage": 40,
+          "difficulty": "standard",
+          "subchapter": "11-1"
         }
       ],
       "grammar": [
@@ -870,199 +1106,265 @@
           "id": "3b-u12-v1",
           "ko": "건강을 돌보다",
           "en": "take care of one's health",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v2",
           "ko": "결심하다",
           "en": "decide;resolve",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v3",
           "ko": "긍정적으로 생각하다",
           "en": "think positively",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v4",
           "ko": "다리를 떨다",
           "en": "shake one's leg",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v5",
           "ko": "대충",
           "en": "roughly;carelessly",
-          "sourcePage": 63
+          "sourcePage": 63,
+          "difficulty": "hard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v6",
           "ko": "도전하다",
           "en": "challenge oneself",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v7",
           "ko": "마라톤",
           "en": "marathon",
-          "sourcePage": 63
+          "sourcePage": 63,
+          "difficulty": "hard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v8",
           "ko": "마음을 먹다",
           "en": "make up one's mind",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v9",
           "ko": "매니큐어",
           "en": "nail polish",
-          "sourcePage": 58
+          "sourcePage": 58,
+          "difficulty": "hard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v10",
           "ko": "머리를 긁다",
           "en": "scratch one's head",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v11",
           "ko": "면접관",
           "en": "interviewer",
-          "sourcePage": 61
+          "sourcePage": 61,
+          "difficulty": "hard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v12",
           "ko": "목록",
           "en": "list",
-          "sourcePage": 67
+          "sourcePage": 67,
+          "difficulty": "hard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v13",
           "ko": "목표를 이루다",
           "en": "achieve a goal",
-          "sourcePage": 65
+          "sourcePage": 65,
+          "difficulty": "hard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v14",
           "ko": "목표를 정하다",
           "en": "set a goal",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v15",
           "ko": "버릇을 고치다",
           "en": "break a habit",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v16",
           "ko": "복이 나가다",
           "en": "lose one's good fortune",
-          "sourcePage": 60
+          "sourcePage": 60,
+          "difficulty": "hard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v17",
           "ko": "사소하다",
           "en": "minor;trivial",
-          "sourcePage": 61
+          "sourcePage": 61,
+          "difficulty": "hard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v18",
           "ko": "성공하다",
           "en": "succeed",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v19",
           "ko": "손톱을 깨물다",
           "en": "bite one's nails",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v20",
           "ko": "습관을 기르다",
           "en": "develop a habit",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v21",
           "ko": "식습관",
           "en": "eating habits",
-          "sourcePage": 64
+          "sourcePage": 64,
+          "difficulty": "hard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v22",
           "ko": "실력을 기르다",
           "en": "improve one's ability",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v23",
           "ko": "실천하다",
           "en": "put into practice",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v24",
           "ko": "실패하다",
           "en": "fail",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v25",
           "ko": "아침잠이 많다",
           "en": "have trouble waking up in the morning",
-          "sourcePage": 57
+          "sourcePage": 57,
+          "difficulty": "hard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v26",
           "ko": "입술",
           "en": "lip",
-          "sourcePage": 61
+          "sourcePage": 61,
+          "difficulty": "hard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v27",
           "ko": "잠을 충분히 자다",
           "en": "get enough sleep",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v28",
           "ko": "정리를 잘하다",
           "en": "tidy up well",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v29",
           "ko": "좋은 결과를 얻다",
           "en": "get a good result",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v30",
           "ko": "줄어들다",
           "en": "decrease",
-          "sourcePage": 65
+          "sourcePage": 65,
+          "difficulty": "hard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v31",
           "ko": "지원자",
           "en": "applicant",
-          "sourcePage": 61
+          "sourcePage": 61,
+          "difficulty": "hard",
+          "subchapter": "12-1"
         },
         {
           "id": "3b-u12-v32",
           "ko": "포기하다",
           "en": "give up",
-          "sourcePage": 62
+          "sourcePage": 62,
+          "difficulty": "standard",
+          "subchapter": "12-2"
         },
         {
           "id": "3b-u12-v33",
           "ko": "한숨을 쉬다",
           "en": "sigh",
-          "sourcePage": 56
+          "sourcePage": 56,
+          "difficulty": "standard",
+          "subchapter": "12-1"
         }
       ],
       "grammar": [
@@ -1184,319 +1486,441 @@
           "id": "3b-u13-v1",
           "ko": "가슴이 두근거리다",
           "en": "heart pounds",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v2",
           "ko": "결혼 정보 회사",
           "en": "marriage matchmaking company",
-          "sourcePage": 76
+          "sourcePage": 76,
+          "difficulty": "hard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v3",
           "ko": "경제적",
           "en": "economic",
-          "sourcePage": 76
+          "sourcePage": 76,
+          "difficulty": "hard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v4",
           "ko": "계기",
           "en": "motive;occasion",
-          "sourcePage": 74
+          "sourcePage": 74,
+          "difficulty": "hard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v5",
           "ko": "고백하다",
           "en": "confess",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v6",
           "ko": "나란히 앉다",
           "en": "sit side by side",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v7",
           "ko": "남자 친구",
           "en": "boyfriend",
-          "sourcePage": 79
+          "sourcePage": 79,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v8",
           "ko": "능력이 있다",
           "en": "capable",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v9",
           "ko": "대추",
           "en": "jujube",
-          "sourcePage": 85
+          "sourcePage": 85,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v10",
           "ko": "든든하다",
           "en": "reassuring;reliable",
-          "sourcePage": 81
+          "sourcePage": 81,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v11",
           "ko": "로맨스",
           "en": "romance",
-          "sourcePage": 79
+          "sourcePage": 79,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v12",
           "ko": "마음씨가 착하다",
           "en": "kind-hearted",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v13",
           "ko": "말이 잘 통하다",
           "en": "understand each other well",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v14",
           "ko": "매력이 있다",
           "en": "charming",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v15",
           "ko": "무뚝뚝하다",
           "en": "blunt;unfriendly",
-          "sourcePage": 74
+          "sourcePage": 74,
+          "difficulty": "hard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v16",
           "ko": "배우자",
           "en": "spouse",
-          "sourcePage": 76
+          "sourcePage": 76,
+          "difficulty": "hard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v17",
           "ko": "분위기가 깨지다",
           "en": "the mood is ruined",
-          "sourcePage": 80
+          "sourcePage": 80,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v18",
           "ko": "사랑이 식다",
           "en": "love fades",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v19",
           "ko": "선보다",
           "en": "meet a potential spouse on a blind date",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v20",
           "ko": "성격이 잘 맞다",
           "en": "personalities match well",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v21",
           "ko": "소개팅하다",
           "en": "go on a blind date",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v22",
           "ko": "손을 잡다",
           "en": "hold hands",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v23",
           "ko": "솔직하다",
           "en": "honest",
-          "sourcePage": 80
+          "sourcePage": 80,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v24",
           "ko": "숨기다",
           "en": "hide",
-          "sourcePage": 80
+          "sourcePage": 80,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v25",
           "ko": "시댁",
           "en": "husband's family",
-          "sourcePage": 85
+          "sourcePage": 85,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v26",
           "ko": "싣다",
           "en": "load",
-          "sourcePage": 76
+          "sourcePage": 76,
+          "difficulty": "hard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v27",
           "ko": "실제",
           "en": "actual;real",
-          "sourcePage": 80
+          "sourcePage": 80,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v28",
           "ko": "어깨에 기대다",
           "en": "lean on someone's shoulder",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v29",
           "ko": "어색하다",
           "en": "awkward",
-          "sourcePage": 79
+          "sourcePage": 79,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v30",
           "ko": "얼굴이 빨개지다",
           "en": "face turns red",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v31",
           "ko": "여자 친구",
           "en": "girlfriend",
-          "sourcePage": 80
+          "sourcePage": 80,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v32",
           "ko": "연애결혼",
           "en": "love marriage",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v33",
           "ko": "예의가 없다",
           "en": "rude",
-          "sourcePage": 74
+          "sourcePage": 74,
+          "difficulty": "hard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v34",
           "ko": "용기를 내다",
           "en": "gather courage",
-          "sourcePage": 81
+          "sourcePage": 81,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v35",
           "ko": "이대로",
           "en": "as it is",
-          "sourcePage": 80
+          "sourcePage": 80,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v36",
           "ko": "이별하다",
           "en": "break up",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v37",
           "ko": "인상이 좋다",
           "en": "make a good impression",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v38",
           "ko": "인상이 차갑다",
           "en": "have a cold impression",
-          "sourcePage": 73
+          "sourcePage": 73,
+          "difficulty": "hard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v39",
           "ko": "장거리 연애",
           "en": "long-distance relationship",
-          "sourcePage": 81
+          "sourcePage": 81,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v40",
           "ko": "장난",
           "en": "prank",
-          "sourcePage": 74
+          "sourcePage": 74,
+          "difficulty": "hard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v41",
           "ko": "장르",
           "en": "genre",
-          "sourcePage": 79
+          "sourcePage": 79,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v42",
           "ko": "절",
           "en": "traditional bow",
-          "sourcePage": 85
+          "sourcePage": 85,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v43",
           "ko": "제대로",
           "en": "properly",
-          "sourcePage": 81
+          "sourcePage": 81,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v44",
           "ko": "조건이 맞다",
           "en": "meet the conditions",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v45",
           "ko": "종종",
           "en": "occasionally",
-          "sourcePage": 80
+          "sourcePage": 80,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v46",
           "ko": "중매결혼",
           "en": "arranged marriage",
-          "sourcePage": 72
+          "sourcePage": 72,
+          "difficulty": "standard",
+          "subchapter": "13-1"
         },
         {
           "id": "3b-u13-v47",
           "ko": "진짜",
           "en": "real",
-          "sourcePage": 80
+          "sourcePage": 80,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v48",
           "ko": "첫눈에 반하다",
           "en": "fall in love at first sight",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v49",
           "ko": "청혼하다",
           "en": "propose marriage",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v50",
           "ko": "팔짱을 끼다",
           "en": "link arms",
-          "sourcePage": 78
+          "sourcePage": 78,
+          "difficulty": "standard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v51",
           "ko": "폐백",
           "en": "traditional wedding greeting ceremony",
-          "sourcePage": 85
+          "sourcePage": 85,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v52",
           "ko": "함",
           "en": "wedding gift chest",
-          "sourcePage": 85
+          "sourcePage": 85,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         },
         {
           "id": "3b-u13-v53",
           "ko": "혼례복",
           "en": "wedding clothes",
-          "sourcePage": 85
+          "sourcePage": 85,
+          "difficulty": "hard",
+          "subchapter": "13-2"
+        },
+        {
+          "id": "3b-u13-v54",
+          "ko": "그녀",
+          "en": "she",
+          "sourcePage": 81,
+          "difficulty": "hard",
+          "subchapter": "13-2"
+        },
+        {
+          "id": "3b-u13-v55",
+          "ko": "반대하다",
+          "en": "to oppose",
+          "sourcePage": 81,
+          "difficulty": "hard",
+          "subchapter": "13-2"
         }
       ],
       "grammar": [
@@ -1618,247 +2042,329 @@
           "id": "3b-u14-v1",
           "ko": "공기가 좋다",
           "en": "air is fresh",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v2",
           "ko": "공모전",
           "en": "contest",
-          "sourcePage": 97
+          "sourcePage": 97,
+          "difficulty": "hard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v3",
           "ko": "공해가 심하다",
           "en": "pollution is severe",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v4",
           "ko": "길을 잘못 들다",
           "en": "take the wrong way",
-          "sourcePage": 93
+          "sourcePage": 93,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v5",
           "ko": "나타나다",
           "en": "appear",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v6",
           "ko": "낡다",
           "en": "old;worn out",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v7",
           "ko": "노선",
           "en": "route;transit line",
-          "sourcePage": 97
+          "sourcePage": 97,
+          "difficulty": "hard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v8",
           "ko": "노을",
           "en": "sunset glow",
-          "sourcePage": 89
+          "sourcePage": 89,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v9",
           "ko": "농촌",
           "en": "farming village",
-          "sourcePage": 92
+          "sourcePage": 92,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v10",
           "ko": "돌",
           "en": "stone",
-          "sourcePage": 96
+          "sourcePage": 96,
+          "difficulty": "hard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v11",
           "ko": "따분하다",
           "en": "bored;boring",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v12",
           "ko": "먹거리",
           "en": "things to eat",
-          "sourcePage": 101
+          "sourcePage": 101,
+          "difficulty": "hard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v13",
           "ko": "몰라보다",
           "en": "fail to recognize",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v14",
           "ko": "발전하다",
           "en": "develop",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v15",
           "ko": "변하다",
           "en": "change",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v16",
           "ko": "볼거리가 다양하다",
           "en": "have various sights to see",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v17",
           "ko": "사라지다",
           "en": "disappear",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v18",
           "ko": "상상이 되다",
           "en": "be imaginable",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v19",
           "ko": "상상이 안 되다",
           "en": "be unimaginable",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v20",
           "ko": "새롭다",
           "en": "new",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v21",
           "ko": "생기다",
           "en": "appear;be formed",
-          "sourcePage": 94
+          "sourcePage": 94,
+          "difficulty": "standard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v22",
           "ko": "서양식",
           "en": "Western-style",
-          "sourcePage": 96
+          "sourcePage": 96,
+          "difficulty": "hard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v23",
           "ko": "서핑",
           "en": "surfing",
-          "sourcePage": 93
+          "sourcePage": 93,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v24",
           "ko": "소중함",
           "en": "preciousness",
-          "sourcePage": 101
+          "sourcePage": 101,
+          "difficulty": "hard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v25",
           "ko": "시간 가는 줄 모르다",
           "en": "lose track of time",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v26",
           "ko": "여유가 없다",
           "en": "have no time to spare",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v27",
           "ko": "여유가 있다",
           "en": "have time to spare",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v28",
           "ko": "원래",
           "en": "originally",
-          "sourcePage": 96
+          "sourcePage": 96,
+          "difficulty": "hard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v29",
           "ko": "이동",
           "en": "movement",
-          "sourcePage": 97
+          "sourcePage": 97,
+          "difficulty": "hard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v30",
           "ko": "일자리",
           "en": "job",
-          "sourcePage": 93
+          "sourcePage": 93,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v31",
           "ko": "자연",
           "en": "nature",
-          "sourcePage": 90
+          "sourcePage": 90,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v32",
           "ko": "전망대",
           "en": "observation deck",
-          "sourcePage": 93
+          "sourcePage": 93,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v33",
           "ko": "전학",
           "en": "school transfer",
-          "sourcePage": 92
+          "sourcePage": 92,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v34",
           "ko": "즐길 거리",
           "en": "things to enjoy",
-          "sourcePage": 93
+          "sourcePage": 93,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v35",
           "ko": "지치다",
           "en": "exhausted",
-          "sourcePage": 93
+          "sourcePage": 93,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v36",
           "ko": "진지하다",
           "en": "serious;earnest",
-          "sourcePage": 93
+          "sourcePage": 93,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v37",
           "ko": "텃밭",
           "en": "vegetable garden",
-          "sourcePage": 92
+          "sourcePage": 92,
+          "difficulty": "hard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v38",
           "ko": "편의 시설이 잘되어 있다",
           "en": "have good amenities",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v39",
           "ko": "평화롭다",
           "en": "peaceful",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         },
         {
           "id": "3b-u14-v40",
           "ko": "형태",
           "en": "form;shape",
-          "sourcePage": 96
+          "sourcePage": 96,
+          "difficulty": "hard",
+          "subchapter": "14-2"
         },
         {
           "id": "3b-u14-v41",
           "ko": "활기차다",
           "en": "lively",
-          "sourcePage": 88
+          "sourcePage": 88,
+          "difficulty": "standard",
+          "subchapter": "14-1"
         }
       ],
       "grammar": [
@@ -1980,337 +2486,449 @@
           "id": "3b-u15-v1",
           "ko": "건강식품",
           "en": "health food",
-          "sourcePage": 108
+          "sourcePage": 108,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v2",
           "ko": "검사를 받다",
           "en": "get a medical examination",
-          "sourcePage": 108
+          "sourcePage": 108,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v3",
           "ko": "골고루",
           "en": "evenly;in a balanced way",
-          "sourcePage": 109
+          "sourcePage": 109,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v4",
           "ko": "관심이 높다",
           "en": "have a high interest",
-          "sourcePage": 108
+          "sourcePage": 108,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v5",
           "ko": "교훈",
           "en": "moral;lesson",
-          "sourcePage": 113
+          "sourcePage": 113,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v6",
           "ko": "규칙적",
           "en": "regular",
-          "sourcePage": 108
+          "sourcePage": 108,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v7",
           "ko": "그때그때",
           "en": "each time;as needed",
-          "sourcePage": 113
+          "sourcePage": 113,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v8",
           "ko": "근육이 생기다",
           "en": "develop muscles",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v9",
           "ko": "기운이 나다",
           "en": "feel energetic",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v10",
           "ko": "단백질",
           "en": "protein",
-          "sourcePage": 109
+          "sourcePage": 109,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v11",
           "ko": "더위",
           "en": "heat",
-          "sourcePage": 114
+          "sourcePage": 114,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v12",
           "ko": "동지",
           "en": "winter solstice",
-          "sourcePage": 117
+          "sourcePage": 117,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v13",
           "ko": "땀이 나다",
           "en": "sweat",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v14",
           "ko": "땅콩",
           "en": "peanut",
-          "sourcePage": 117
+          "sourcePage": 117,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v15",
           "ko": "마음에 여유가 생기다",
           "en": "feel at ease",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v16",
           "ko": "마음이 편안해지다",
           "en": "feel relaxed",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v17",
           "ko": "몸이 가볍다",
           "en": "body feels light",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v18",
           "ko": "몸이 무겁다",
           "en": "body feels heavy",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v19",
           "ko": "바로바로",
           "en": "immediately",
-          "sourcePage": 113
+          "sourcePage": 113,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v20",
           "ko": "밤",
           "en": "chestnut",
-          "sourcePage": 117
+          "sourcePage": 117,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v21",
           "ko": "벗어나다",
           "en": "escape;get out of",
-          "sourcePage": 113
+          "sourcePage": 113,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v22",
           "ko": "보",
           "en": "step",
-          "sourcePage": 109
+          "sourcePage": 109,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v23",
           "ko": "부담이 되다",
           "en": "be a burden",
-          "sourcePage": 106
+          "sourcePage": 106,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v24",
           "ko": "부럼",
           "en": "nuts eaten at the first full moon",
-          "sourcePage": 117
+          "sourcePage": 117,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v25",
           "ko": "불가능하다",
           "en": "impossible",
-          "sourcePage": 113
+          "sourcePage": 113,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v26",
           "ko": "비법",
           "en": "secret method",
-          "sourcePage": 114
+          "sourcePage": 114,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v27",
           "ko": "삼복",
           "en": "hottest days of summer",
-          "sourcePage": 117
+          "sourcePage": 117,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v28",
           "ko": "상처를 받다",
           "en": "feel hurt",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v29",
           "ko": "숨이 차다",
           "en": "out of breath",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v30",
           "ko": "스트레스가 쌓이다",
           "en": "stress builds up",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v31",
           "ko": "스트레스가 풀리다",
           "en": "stress is relieved",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v32",
           "ko": "신경을 쓰다",
           "en": "pay attention to",
-          "sourcePage": 112
+          "sourcePage": 112,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v33",
           "ko": "앱",
           "en": "app",
-          "sourcePage": 109
+          "sourcePage": 109,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v34",
           "ko": "어려움을 느끼다",
           "en": "experience difficulty",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v35",
           "ko": "어지럽다",
           "en": "dizzy",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v36",
           "ko": "영양제",
           "en": "dietary supplement",
-          "sourcePage": 109
+          "sourcePage": 109,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v37",
           "ko": "오곡밥",
           "en": "five-grain rice",
-          "sourcePage": 117
+          "sourcePage": 117,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v38",
           "ko": "우울하다",
           "en": "depressed",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v39",
           "ko": "운이 좋다",
           "en": "lucky",
-          "sourcePage": 113
+          "sourcePage": 113,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v40",
           "ko": "응답하다",
           "en": "respond",
-          "sourcePage": 112
+          "sourcePage": 112,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v41",
           "ko": "인간관계",
           "en": "human relationships",
-          "sourcePage": 112
+          "sourcePage": 112,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v42",
           "ko": "정월대보름",
           "en": "first full moon of the lunar year",
-          "sourcePage": 117
+          "sourcePage": 117,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v43",
           "ko": "줄넘기",
           "en": "jump rope",
-          "sourcePage": 106
+          "sourcePage": 106,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v44",
           "ko": "쥐가 나다",
           "en": "have a muscle cramp",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v45",
           "ko": "집중이 안 되다",
           "en": "cannot concentrate",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v46",
           "ko": "체력이 좋아지다",
           "en": "physical fitness improves",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v47",
           "ko": "추위",
           "en": "cold",
-          "sourcePage": 114
+          "sourcePage": 114,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v48",
           "ko": "팥죽",
           "en": "red bean porridge",
-          "sourcePage": 117
+          "sourcePage": 117,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v49",
           "ko": "평소",
           "en": "usually;ordinary times",
-          "sourcePage": 108
+          "sourcePage": 108,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v50",
           "ko": "호두",
           "en": "walnut",
-          "sourcePage": 117
+          "sourcePage": 117,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v51",
           "ko": "홍삼",
           "en": "red ginseng",
-          "sourcePage": 108
+          "sourcePage": 108,
+          "difficulty": "hard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v52",
           "ko": "회식",
           "en": "company dinner",
-          "sourcePage": 112
+          "sourcePage": 112,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v53",
           "ko": "힘이 세다",
           "en": "strong",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v54",
           "ko": "힘이 없다",
           "en": "have no strength",
-          "sourcePage": 104
+          "sourcePage": 104,
+          "difficulty": "standard",
+          "subchapter": "15-1"
         },
         {
           "id": "3b-u15-v55",
           "ko": "지치다",
           "en": "exhausted",
-          "sourcePage": 110
+          "sourcePage": 110,
+          "difficulty": "standard",
+          "subchapter": "15-2"
         },
         {
           "id": "3b-u15-v56",
           "ko": "업무",
           "en": "work;duties",
-          "sourcePage": 112
+          "sourcePage": 112,
+          "difficulty": "hard",
+          "subchapter": "15-2"
         }
       ],
       "grammar": [
@@ -2432,277 +3050,369 @@
           "id": "3b-u16-v1",
           "ko": "개발",
           "en": "development",
-          "sourcePage": 127
+          "sourcePage": 127,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v2",
           "ko": "경험이 많다",
           "en": "have a lot of experience",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v3",
           "ko": "교육 기회가 제공되다",
           "en": "training opportunities are provided",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v4",
           "ko": "구직",
           "en": "job seeking",
-          "sourcePage": 129
+          "sourcePage": 129,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v5",
           "ko": "근무 시간",
           "en": "working hours",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v6",
           "ko": "근무 환경이 좋다",
           "en": "have a good working environment",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v7",
           "ko": "꼼꼼하다",
           "en": "meticulous",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v8",
           "ko": "대기업",
           "en": "large company",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v9",
           "ko": "도서 구입비",
           "en": "book purchase allowance",
-          "sourcePage": 129
+          "sourcePage": 129,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v10",
           "ko": "동료",
           "en": "coworker",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v11",
           "ko": "무역",
           "en": "trade",
-          "sourcePage": 125
+          "sourcePage": 125,
+          "difficulty": "hard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v12",
           "ko": "문화비",
           "en": "cultural activity allowance",
-          "sourcePage": 123
+          "sourcePage": 123,
+          "difficulty": "hard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v13",
           "ko": "보너스를 받다",
           "en": "receive a bonus",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v14",
           "ko": "복장이 자유롭다",
           "en": "have a flexible dress code",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v15",
           "ko": "부담스럽다",
           "en": "burdensome",
-          "sourcePage": 133
+          "sourcePage": 133,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v16",
           "ko": "사무 보조",
           "en": "office assistant",
-          "sourcePage": 123
+          "sourcePage": 123,
+          "difficulty": "hard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v17",
           "ko": "상영관",
           "en": "movie theater",
-          "sourcePage": 122
+          "sourcePage": 122,
+          "difficulty": "hard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v18",
           "ko": "성실하다",
           "en": "diligent",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v19",
           "ko": "스스로",
           "en": "on one's own",
-          "sourcePage": 125
+          "sourcePage": 125,
+          "difficulty": "hard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v20",
           "ko": "승진 기회가 많다",
           "en": "have many promotion opportunities",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v21",
           "ko": "시급",
           "en": "hourly wage",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v22",
           "ko": "신입 사원",
           "en": "new employee",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v23",
           "ko": "업무",
           "en": "work;duties",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v24",
           "ko": "업무 능력이 뛰어나다",
           "en": "have excellent work skills",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v25",
           "ko": "연구",
           "en": "research",
-          "sourcePage": 127
+          "sourcePage": 127,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v26",
           "ko": "연령",
           "en": "age",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v27",
           "ko": "연봉이 높다",
           "en": "have a high annual salary",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v28",
           "ko": "열정",
           "en": "passion",
-          "sourcePage": 127
+          "sourcePage": 127,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v29",
           "ko": "이력서를 내다",
           "en": "submit a resume",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v30",
           "ko": "이직",
           "en": "job change",
-          "sourcePage": 128
+          "sourcePage": 128,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v31",
           "ko": "이해가 빠르다",
           "en": "quick to understand",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v32",
           "ko": "일자리를 구하다",
           "en": "look for a job",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v33",
           "ko": "작성하다",
           "en": "fill out;write",
-          "sourcePage": 127
+          "sourcePage": 127,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v34",
           "ko": "재택근무",
           "en": "working from home",
-          "sourcePage": 129
+          "sourcePage": 129,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v35",
           "ko": "전자",
           "en": "electronics",
-          "sourcePage": 127
+          "sourcePage": 127,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v36",
           "ko": "제출하다",
           "en": "submit",
-          "sourcePage": 124
+          "sourcePage": 124,
+          "difficulty": "hard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v37",
           "ko": "중소기업",
           "en": "small or medium-sized company",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v38",
           "ko": "지급",
           "en": "payment",
-          "sourcePage": 123
+          "sourcePage": 123,
+          "difficulty": "hard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v39",
           "ko": "지원서",
           "en": "application form",
-          "sourcePage": 127
+          "sourcePage": 127,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v40",
           "ko": "직장 상사",
           "en": "supervisor at work",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v41",
           "ko": "차",
           "en": "round;stage",
-          "sourcePage": 127
+          "sourcePage": 127,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v42",
           "ko": "최선을 다하다",
           "en": "do one's best",
-          "sourcePage": 120
+          "sourcePage": 120,
+          "difficulty": "standard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v43",
           "ko": "출퇴근 시간이 자유롭다",
           "en": "have flexible working hours",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v44",
           "ko": "클릭",
           "en": "click",
-          "sourcePage": 124
+          "sourcePage": 124,
+          "difficulty": "hard",
+          "subchapter": "16-1"
         },
         {
           "id": "3b-u16-v45",
           "ko": "휴가가 길다",
           "en": "have long vacations",
-          "sourcePage": 126
+          "sourcePage": 126,
+          "difficulty": "standard",
+          "subchapter": "16-2"
         },
         {
           "id": "3b-u16-v46",
           "ko": "휴가를 쓰다",
           "en": "take vacation leave",
-          "sourcePage": 127
+          "sourcePage": 127,
+          "difficulty": "hard",
+          "subchapter": "16-2"
         }
       ],
       "grammar": [
@@ -2824,319 +3534,425 @@
           "id": "3b-u17-v1",
           "ko": "개천절",
           "en": "National Foundation Day",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v2",
           "ko": "겨루다",
           "en": "compete",
-          "sourcePage": 149
+          "sourcePage": 149,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v3",
           "ko": "격려하다",
           "en": "encourage",
-          "sourcePage": 142
+          "sourcePage": 142,
+          "difficulty": "standard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v4",
           "ko": "공휴일",
           "en": "public holiday",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v5",
           "ko": "광복절",
           "en": "National Liberation Day",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v6",
           "ko": "교내",
           "en": "on campus",
-          "sourcePage": 140
+          "sourcePage": 140,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v7",
           "ko": "국기를 달다",
           "en": "hang the national flag",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v8",
           "ko": "국내외",
           "en": "home and abroad",
-          "sourcePage": 149
+          "sourcePage": 149,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v9",
           "ko": "글짓기",
           "en": "writing;composition",
-          "sourcePage": 141
+          "sourcePage": 141,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v10",
           "ko": "기념일",
           "en": "anniversary",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v11",
           "ko": "기념하다",
           "en": "commemorate",
-          "sourcePage": 142
+          "sourcePage": 142,
+          "difficulty": "standard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v12",
           "ko": "꽃을 달아 드리다",
           "en": "pin a flower on someone",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v13",
           "ko": "나무를 심다",
           "en": "plant a tree",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v14",
           "ko": "덕분에",
           "en": "thanks to",
-          "sourcePage": 145
+          "sourcePage": 145,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v15",
           "ko": "마음을 표현하다",
           "en": "express one's feelings",
-          "sourcePage": 142
+          "sourcePage": 142,
+          "difficulty": "standard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v16",
           "ko": "메모리얼 데이",
           "en": "Memorial Day",
-          "sourcePage": 141
+          "sourcePage": 141,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v17",
           "ko": "묵념을 하다",
           "en": "observe a moment of silence",
-          "sourcePage": 141
+          "sourcePage": 141,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v18",
           "ko": "바라다",
           "en": "wish;hope",
-          "sourcePage": 142
+          "sourcePage": 142,
+          "difficulty": "standard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v19",
           "ko": "배려하다",
           "en": "be considerate",
-          "sourcePage": 144
+          "sourcePage": 144,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v20",
           "ko": "비행기가 뜨다",
           "en": "a plane takes off",
-          "sourcePage": 144
+          "sourcePage": 144,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v21",
           "ko": "생생하다",
           "en": "vivid",
-          "sourcePage": 143
+          "sourcePage": 143,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v22",
           "ko": "소감을 말하다",
           "en": "share one's impressions",
-          "sourcePage": 142
+          "sourcePage": 142,
+          "difficulty": "standard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v23",
           "ko": "수상을 축하하다",
           "en": "congratulate someone on an award",
-          "sourcePage": 142
+          "sourcePage": 142,
+          "difficulty": "standard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v24",
           "ko": "수험생",
           "en": "examinee",
-          "sourcePage": 144
+          "sourcePage": 144,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v25",
           "ko": "스승의 날",
           "en": "Teachers' Day",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v26",
           "ko": "시험에 붙다",
           "en": "pass an exam",
-          "sourcePage": 144
+          "sourcePage": 144,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v27",
           "ko": "식목일",
           "en": "Arbor Day",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v28",
           "ko": "어린이날",
           "en": "Children's Day",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v29",
           "ko": "어버이날",
           "en": "Parents' Day",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v30",
           "ko": "얼굴이 떠오르다",
           "en": "someone's face comes to mind",
-          "sourcePage": 145
+          "sourcePage": 145,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v31",
           "ko": "엊그제",
           "en": "a few days ago",
-          "sourcePage": 143
+          "sourcePage": 143,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v32",
           "ko": "엿",
           "en": "Korean taffy",
-          "sourcePage": 144
+          "sourcePage": 144,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v33",
           "ko": "영원히",
           "en": "forever",
-          "sourcePage": 145
+          "sourcePage": 145,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v34",
           "ko": "우수성",
           "en": "excellence",
-          "sourcePage": 141
+          "sourcePage": 141,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v35",
           "ko": "운항",
           "en": "flight operation",
-          "sourcePage": 144
+          "sourcePage": 144,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v36",
           "ko": "위로하다",
           "en": "comfort;console",
-          "sourcePage": 142
+          "sourcePage": 142,
+          "difficulty": "standard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v37",
           "ko": "은혜에 보답하다",
           "en": "return a favor",
-          "sourcePage": 145
+          "sourcePage": 145,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v38",
           "ko": "응원하다",
           "en": "cheer;support",
-          "sourcePage": 142
+          "sourcePage": 142,
+          "difficulty": "standard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v39",
           "ko": "일상",
           "en": "everyday life",
-          "sourcePage": 144
+          "sourcePage": 144,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v40",
           "ko": "정답을 찍다",
           "en": "guess the correct answer",
-          "sourcePage": 144
+          "sourcePage": 144,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v41",
           "ko": "좋은 추억으로 남다",
           "en": "remain a good memory",
-          "sourcePage": 142
+          "sourcePage": 142,
+          "difficulty": "standard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v42",
           "ko": "주제",
           "en": "theme;topic",
-          "sourcePage": 141
+          "sourcePage": 141,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v43",
           "ko": "집집마다",
           "en": "every household",
-          "sourcePage": 141
+          "sourcePage": 141,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v44",
           "ko": "차리다",
           "en": "prepare;set out",
-          "sourcePage": 138
+          "sourcePage": 138,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v45",
           "ko": "찹쌀떡",
           "en": "glutinous rice cake",
-          "sourcePage": 144
+          "sourcePage": 144,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         },
         {
           "id": "3b-u17-v46",
           "ko": "찾아뵙다",
           "en": "visit someone respectfully",
-          "sourcePage": 138
+          "sourcePage": 138,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v47",
           "ko": "카네이션",
           "en": "carnation",
-          "sourcePage": 138
+          "sourcePage": 138,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v48",
           "ko": "특강",
           "en": "special lecture",
-          "sourcePage": 140
+          "sourcePage": 140,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v49",
           "ko": "퍼레이드",
           "en": "parade",
-          "sourcePage": 141
+          "sourcePage": 141,
+          "difficulty": "hard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v50",
           "ko": "한글날",
           "en": "Hangeul Day",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v51",
           "ko": "행사를 하다",
           "en": "hold an event",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v52",
           "ko": "현충일",
           "en": "Memorial Day in Korea",
-          "sourcePage": 136
+          "sourcePage": 136,
+          "difficulty": "standard",
+          "subchapter": "17-1"
         },
         {
           "id": "3b-u17-v53",
           "ko": "훈민정음",
           "en": "Hunminjeongeum",
-          "sourcePage": 149
+          "sourcePage": 149,
+          "difficulty": "hard",
+          "subchapter": "17-2"
         }
       ],
       "grammar": [
@@ -3258,301 +4074,401 @@
           "id": "3b-u18-v1",
           "ko": "가난하다",
           "en": "poor",
-          "sourcePage": 155
+          "sourcePage": 155,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v2",
           "ko": "가장",
           "en": "breadwinner",
-          "sourcePage": 158
+          "sourcePage": 158,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v3",
           "ko": "건강을 되찾다",
           "en": "regain health",
-          "sourcePage": 157
+          "sourcePage": 157,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v4",
           "ko": "관객",
           "en": "audience",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v5",
           "ko": "기와집",
           "en": "tile-roofed house",
-          "sourcePage": 158
+          "sourcePage": 158,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v6",
           "ko": "끊임없이",
           "en": "endlessly",
-          "sourcePage": 158
+          "sourcePage": 158,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v7",
           "ko": "다급하다",
           "en": "urgent",
-          "sourcePage": 156
+          "sourcePage": 156,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v8",
           "ko": "다리를 부러뜨리다",
           "en": "break a leg",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v9",
           "ko": "다행히",
           "en": "fortunately",
-          "sourcePage": 156
+          "sourcePage": 156,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v10",
           "ko": "대본",
           "en": "script",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v11",
           "ko": "대사",
           "en": "line of dialogue",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v12",
           "ko": "도깨비",
           "en": "goblin",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v13",
           "ko": "도둑질",
           "en": "stealing",
-          "sourcePage": 154
+          "sourcePage": 154,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v14",
           "ko": "동생을 내쫓다",
           "en": "kick out one's younger sibling",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v15",
           "ko": "때리다",
           "en": "hit",
-          "sourcePage": 155
+          "sourcePage": 155,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v16",
           "ko": "막차",
           "en": "last bus;last train",
-          "sourcePage": 153
+          "sourcePage": 153,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v17",
           "ko": "말다툼",
           "en": "argument",
-          "sourcePage": 153
+          "sourcePage": 153,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v18",
           "ko": "모기",
           "en": "mosquito",
-          "sourcePage": 161
+          "sourcePage": 161,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v19",
           "ko": "무대",
           "en": "stage",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v20",
           "ko": "박",
           "en": "gourd",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v21",
           "ko": "박속",
           "en": "gourd flesh",
-          "sourcePage": 157
+          "sourcePage": 157,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v22",
           "ko": "박씨",
           "en": "gourd seed",
-          "sourcePage": 157
+          "sourcePage": 157,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v23",
           "ko": "박이 열리다",
           "en": "gourds grow",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v24",
           "ko": "밥풀",
           "en": "grain of cooked rice",
-          "sourcePage": 155
+          "sourcePage": 155,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v25",
           "ko": "뱀",
           "en": "snake",
-          "sourcePage": 156
+          "sourcePage": 156,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v26",
           "ko": "보물",
           "en": "treasure",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v27",
           "ko": "보물이 쏟아지다",
           "en": "treasure pours out",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v28",
           "ko": "복을 받다",
           "en": "receive good fortune",
-          "sourcePage": 158
+          "sourcePage": 158,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v29",
           "ko": "비단",
           "en": "silk",
-          "sourcePage": 158
+          "sourcePage": 158,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v30",
           "ko": "뺨",
           "en": "cheek",
-          "sourcePage": 155
+          "sourcePage": 155,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v31",
           "ko": "슬근슬근",
           "en": "gently;slowly",
-          "sourcePage": 154
+          "sourcePage": 154,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v32",
           "ko": "실컷",
           "en": "to one's heart's content",
-          "sourcePage": 158
+          "sourcePage": 158,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v33",
           "ko": "오두막집",
           "en": "hut",
-          "sourcePage": 155
+          "sourcePage": 155,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v34",
           "ko": "욕심이 많다",
           "en": "greedy",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v35",
           "ko": "은혜를 갚다",
           "en": "repay a kindness",
-          "sourcePage": 158
+          "sourcePage": 158,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v36",
           "ko": "잡아먹다",
           "en": "catch and eat",
-          "sourcePage": 161
+          "sourcePage": 161,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v37",
           "ko": "저녁거리",
           "en": "ingredients for dinner",
-          "sourcePage": 155
+          "sourcePage": 155,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v38",
           "ko": "정성껏",
           "en": "wholeheartedly",
-          "sourcePage": 156
+          "sourcePage": 156,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v39",
           "ko": "제비",
           "en": "swallow",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v40",
           "ko": "지지배배",
           "en": "chirp",
-          "sourcePage": 154
+          "sourcePage": 154,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v41",
           "ko": "톱",
           "en": "saw",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v42",
           "ko": "톱질을 하다",
           "en": "saw wood",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v43",
           "ko": "파리",
           "en": "fly",
-          "sourcePage": 161
+          "sourcePage": 161,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v44",
           "ko": "펑",
           "en": "pop;bang",
-          "sourcePage": 154
+          "sourcePage": 154,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v45",
           "ko": "하루아침",
           "en": "overnight",
-          "sourcePage": 158
+          "sourcePage": 158,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v46",
           "ko": "해충",
           "en": "pest",
-          "sourcePage": 161
+          "sourcePage": 161,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v47",
           "ko": "향하다",
           "en": "head toward",
-          "sourcePage": 155
+          "sourcePage": 155,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v48",
           "ko": "헝겊으로 묶다",
           "en": "tie with a cloth",
-          "sourcePage": 152
+          "sourcePage": 152,
+          "difficulty": "standard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v49",
           "ko": "형님",
           "en": "older brother (respectful)",
-          "sourcePage": 155
+          "sourcePage": 155,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         },
         {
           "id": "3b-u18-v50",
           "ko": "형수",
           "en": "older brother's wife",
-          "sourcePage": 155
+          "sourcePage": 155,
+          "difficulty": "hard",
+          "subchapter": "18-1"
         }
       ],
       "grammar": [
