@@ -161,3 +161,20 @@ td,th {text-align:left;padding:10px;border-bottom:1px solid var(--line)}
  .chapter-actions button {flex:1}
 }
 @media(prefers-reduced-motion:reduce) {*{transition:none!important}}
+
+.admin-filters {display:grid;grid-template-columns:minmax(180px,1fr) 100px auto auto;gap:12px;align-items:end}
+.admin-filters label {margin:0;min-width:0}
+.admin-filters label span {display:block;margin-bottom:6px}
+.student-card h2 {overflow-wrap:anywhere;margin-bottom:8px}
+.student-metrics {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:22px 0}
+.student-metric>div {display:flex;justify-content:space-between;gap:10px}
+.student-metric progress {display:block;margin:10px 0}
+.student-card summary {cursor:pointer;color:var(--accent);font-weight:600}
+.student-chapters section {border-top:1px solid var(--line);margin-top:20px;padding-top:8px}
+@media(max-width:650px){.admin-filters {grid-template-columns:1fr 100px}.student-metrics {grid-template-columns:1fr}.student-card h2 {font-size:1.1rem}}
+
+/* Decorative canvas sits beneath content and never captures pointer events. */
+body {isolation:isolate}
+.site-header,body>main,body>footer,body>#warning,body>.study-progress {position:relative;z-index:1}
+#toggle-leaves {margin-top:16px;padding:6px 12px;font-size:.8rem}
+@media(prefers-reduced-motion:reduce){canvas[data-falling-leaves]{display:none!important}}

@@ -16,6 +16,18 @@ async function refreshAdmin(){
 export async function requireAdmin(){
  if(!await refreshAdmin()){onChange();throw Error('Import and backup are available only to the administrator.');}
 }
+export async function fetchStudentProgress({search='',offset=0,limit=25}={}){
+ await requireAdmin();
+ const owner=user?.id;
+ const {data,error}=await client.rpc('admin_student_progress',{p_search:search,p_offset:offset,p_limit:limit});
+ if(error)throw Error(error.code==='42501'?'Administrator access required.':'Could not load students. Please try again.');
+ if(user?.id!==owner||!verifiedAdmin)throw Error('Administrator access required.');
+ if(!data||!Array.isArray(data.students)||!Number.isInteger(data.total)||data.total<0)throw Error('Invalid student progress response.');
+ return {...data,students:data.students.map(student=>{
+  try{validStats(student.stats);return student;}
+  catch{return {...student,stats:{},progressUnavailable:true};}
+ })};
+}
 const clone=x=>structuredClone(x);
 export const accountsEnabled=()=>!!(accountConfig.enabled&&accountConfig.url&&accountConfig.publishableKey);
 const emit=()=>document.dispatchEvent(new Event('account-status'));
@@ -95,7 +107,7 @@ export function accountView(app,esc){
   app.innerHTML=`<h1>${signingUp?'Sign up':'Sign in'}</h1><div class="panel"><p>Account sign-in is being set up. You can study as a guest now.</p>${guestButton}</div>`;wireGuest(app);return;
  }
  if(user){
-  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>Your progress, wherever you study.</h1><section class="panel"><p>${esc(user.email)}</p><p id="account-status" role="status">${esc(message)}</p><div class="actions"><button id="sync-now">Sync now</button><button id="sign-out" class="secondary">Sign out</button></div><div id="sync-conflict" ${conflict?'':'hidden'}><p>Both copies are kept on this device before resolving a conflict.</p><div class="actions"><button id="use-cloud">Use cloud progress</button><button id="use-device" class="secondary">Use this device’s progress</button></div></div><details><summary>Bring your guest progress into this account</summary><p>This replaces this account’s current progress with the guest progress saved in this browser. A local recovery copy is kept.</p><button id="copy-guest" class="secondary">Copy guest progress</button></details><p><small>Word and grammar statistics and flags sync. Imported books, settings and unfinished sessions stay on each device. Import and backup tools are available to the administrator.</small></p></section>`;
+  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>Your progress, wherever you study.</h1><section class="panel"><p>${esc(user.email)}</p><p id="account-status" role="status">${esc(message)}</p><div class="actions"><button id="sync-now">Sync now</button><button id="sign-out" class="secondary">Sign out</button></div><div id="sync-conflict" ${conflict?'':'hidden'}><p>Both copies are kept on this device before resolving a conflict.</p><div class="actions"><button id="use-cloud">Use cloud progress</button><button id="use-device" class="secondary">Use this device’s progress</button></div></div><details><summary>Bring your guest progress into this account</summary><p>This replaces this account’s current progress with the guest progress saved in this browser. A local recovery copy is kept.</p><button id="copy-guest" class="secondary">Copy guest progress</button></details><p><small>Word and grammar statistics and flags sync. Imported books, settings and unfinished sessions stay on each device. Import and backup tools are available to the administrator. Your administrator can view your synced study progress.</small></p></section>`;
   app.querySelector('#sync-now').onclick=()=>sync();
   app.querySelector('#sign-out').onclick=async()=>{
    try{await sync();const {error}=await client.auth.signOut({scope:'local'});if(error)throw error;await activate(null);accountView(app,esc);}catch(e){status(e.message);}
@@ -115,7 +127,7 @@ export function accountView(app,esc){
    state.stats=clone(guest);state.session=null;save();onChange();sync();
   };
  }else{
-  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>${signingUp?'Create your study account.':'Welcome back.'}</h1><div class="actions"><a class="button" href="#signin">Sign in</a><a class="button" href="#signup">Sign up</a></div><div class="panel">${accountConfig.emailLimited?'<p class="banner">Email sign-in is currently limited to project team members while email delivery is being set up. Everyone can continue as a guest.</p>':''}<p>Sign in with an email link to save your progress across devices. You can also keep studying as a guest.</p><form id="sign-in"><label>Email<input type="email" id="account-email" autocomplete="email" required></label><button ${client?'':'disabled'}>Email me a sign-in link</button></form><p id="account-status" role="status">${esc(message)}</p>${guestButton}</div>`;
+  app.innerHTML=`<p class="eyebrow">Your study account</p><h1>${signingUp?'Create your study account.':'Welcome back.'}</h1><div class="actions"><a class="button" href="#signin">Sign in</a><a class="button" href="#signup">Sign up</a></div><div class="panel">${accountConfig.emailLimited?'<p class="banner">Email sign-in is currently limited to project team members while email delivery is being set up. Everyone can continue as a guest.</p>':''}<p>Sign in with an email link to save your progress across devices. You can also keep studying as a guest.</p><p><small>Your administrator can view your synced study progress.</small></p><form id="sign-in"><label>Email<input type="email" id="account-email" autocomplete="email" required></label><button ${client?'':'disabled'}>Email me a sign-in link</button></form><p id="account-status" role="status">${esc(message)}</p>${guestButton}</div>`;
   wireGuest(app);
   app.querySelector('#sign-in').onsubmit=async e=>{
    e.preventDefault();const button=e.target.querySelector('button');button.disabled=true;
@@ -125,6 +137,7 @@ export function accountView(app,esc){
 }
 document.addEventListener('account-status',()=>{
  const adminLink=document.querySelector('#admin-import-link');if(adminLink)adminLink.hidden=!verifiedAdmin;
+ const studentsLink=document.querySelector('#admin-students-link');if(studentsLink)studentsLink.hidden=!verifiedAdmin;
  const node=document.querySelector('#account-status');if(node)node.textContent=message;
  const box=document.querySelector('#sync-conflict');if(box)box.hidden=!conflict;
  const link=document.querySelector('#account-link');if(link){link.textContent=signedIn?(conflict?'Account · sync needed':'Account'):'Sign in';link.href=signedIn?'#account':'#signin';}

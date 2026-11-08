@@ -122,11 +122,11 @@ Green is the default palette and always uses the original forest-green backgroun
 
 Account integration is configured with optional email-link sign-in. See ACCOUNT_SETUP.md for the private database schema, email-link authentication, progress sync, account separation and deployment requirements.
 
-The current update passes 63 Node tests. Browser checks covered chapter shortcuts, live progress updates, all four theme choices, the Korean → English default, disabled unavailable books, and phone layout at a 375 px content width in English and Russian. Database policies have since passed live transactional isolation checks; real email-link sign-in is verified; cross-device sync remains to be verified.
+The current update passes 66 Node tests. Browser checks covered chapter shortcuts, live progress updates, all four theme choices, the Korean → English default, disabled unavailable books, and phone layout at a 375 px content width in English and Russian. Database policies have since passed live transactional isolation checks; real email-link sign-in is verified; cross-device sync remains to be verified.
 
 ## Account rollout status
 
-Sign in, Sign up and Continue as guest are available. Supabase progress storage and account isolation have passed transactional database tests; no test accounts were retained. Production redirects are configured, and Gmail custom SMTP has been saved in Supabase. This development update removes the outdated team-member-only email notice. Email delivery and complete sign-in have been verified with the owner’s real account.
+Sign in, Sign up and Continue as guest are available. Supabase progress storage and account isolation have passed transactional database tests; no test accounts were retained. Production redirects are configured, and Gmail custom SMTP has been saved in Supabase. The outdated team-member-only email notice has been removed. Email delivery and complete sign-in have been verified with the owner’s real account.
 
 Guest access displays an alert that browser-local progress is not saved to an account or synced across devices. Development previews currently share the Supabase project and need their exact callback URL allowlisted before email-link testing; see ACCOUNT_SETUP.md. Gmail credentials stay in Supabase and are never committed to this repository.
 
@@ -134,6 +134,21 @@ Guest access displays an alert that browser-local progress is not saved to an ac
 
 The Import & backup link, direct route, JSON/CSV imports, backup restore and export require a server-verified, email-confirmed Supabase account matching `shivamj8866@gmail.com`. Guests and other accounts see an access-denied page at `#import`. Each import/export action rechecks the account through `auth.getUser()` and fails closed when verification is unavailable. Local user metadata cannot grant admin access.
 
-These tools manage browser-local data; they do not publish book changes to every student. Since this is a static app, users still control their own browser storage and can inspect public textbook JSON. This UI restriction is not a server-side content security boundary. Cloud progress remains protected separately by database RLS. This change is staged on `development` only.
+These tools manage browser-local data; they do not publish book changes to every student. Since this is a static app, users still control their own browser storage and can inspect public textbook JSON. This UI restriction is not a server-side content security boundary. Cloud progress remains protected separately by database RLS. Admin-only import access is already released to production.
 
 Progress saves locally after every answer. Signed-in accounts upload changed statistics every 30 seconds and verify the upload with a server read-back. Unsynced work remains in account-specific localStorage if the tab closes and reconciles when that account signs in again. Offline or unverified batches remain pending and retry on the next interval. Background browser throttling may delay a tick; Sync now remains available. Guests continue saving only on their device. Closing a tab does not require a last-second network request. Clearing browser storage or unavailable storage prevents this recovery, and the app displays a storage warning when it cannot save locally.
+
+
+## Admin student dashboard
+
+The Students navigation link and `#students` route are available only to the verified, confirmed owner account `shivamj8866@gmail.com`. The database independently checks that exact current account record on every request. Other authenticated users and guests cannot call the reporting endpoint, even by bypassing the UI or spoofing user metadata. The dashboard is read-only and does not expand any student table-write permissions.
+
+Run `supabase/admin-dashboard.sql` after `supabase/schema.sql` when setting up a new project. The migration is already applied to the shared Supabase project. Its guarded implementation lives in the private `study_admin` schema, with a narrow invoker RPC in `public`. Do not add `study_admin` to the exposed API schemas. `tests/admin-dashboard.sql` verifies admin reads, blocked student/anonymous access, spoofed metadata, pagination and owner-only updates, then rolls back its test users.
+
+Search confirmed students by email, browse pages of 25, choose a published book, and expand chapter details. The dashboard shows latest cloud-synced progress, accuracy and last sync time. It does not include anonymous guests, unconfirmed users, local imports or answers awaiting upload. The admin account itself is excluded. Percentages use a consistent one-correct-answer-after-the-last-miss benchmark because each student's streak setting stays on their device. Student records are kept in page memory only, not localStorage or backups. Refresh retrieves the latest snapshot. Students are informed on the account page that the administrator can view synced progress.
+
+## Autumn leaves
+
+Autumn mode uses `falling-leaves@0.1.0`, installed with npm and pinned in package-lock.json. Its MIT-licensed vanilla ESM files are bundled in `js/vendor/falling-leaves`, so the site needs no build or npm install to run or deploy. Green, Black and White have no leaf animation. Leaves are decorative, behind the interface, and never intercept clicks. Reduced motion disables the animation; inactive tabs stop it. Pause/Resume leaves in the footer saves your preference locally.
+
+These dashboard and Autumn animation changes are staged on `development`; the database addition is shared by development and production. The production website remains on the previously released version until the next release.
