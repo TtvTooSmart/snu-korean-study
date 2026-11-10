@@ -13,12 +13,12 @@ export function initBookNotice() {
   dialog.innerHTML = `<button type="button" class="secondary book-notice-x" aria-label="Close book update notice" autofocus>×</button>
     <p class="eyebrow">Library update</p>
     <h2 id="book-update-title">More books are on the way</h2>
-    <p id="book-update-description">Other SNU Korean books are being added. We’re working on 4B first, followed by 5B, with vocabulary and grammar organised to match each book.</p>
+    <p id="book-update-description">More SNU Korean books are being added to the study collection. 4B and 5B are now available, with vocabulary and grammar organised to match each book.</p>
     <p class="muted">You can keep studying the books already available.</p>
     <div class="book-notice-actions"><button type="button" data-dismiss="visit">Close</button><button type="button" class="secondary" data-dismiss="week">Hide for a week</button></div>`;
   const dismiss = week => {
-    write('sessionStorage', KEY, 'closed');
     if (week) write('localStorage', KEY, String(Date.now() + WEEK));
+    else write('sessionStorage', KEY, 'closed');
     dialog.close();
   };
   dialog.querySelector('.book-notice-x').onclick = () => dismiss(false);

@@ -38,5 +38,15 @@
     "id": "4b",
     "title": "Korean 4B",
     "available": true
+  },
+  {
+    "id": "5a",
+    "title": "Korean 5A",
+    "available": false
+  },
+  {
+    "id": "5b",
+    "title": "Korean 5B",
+    "available": true
   }
 ]

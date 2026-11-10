@@ -97,3 +97,16 @@ lookups now use the same book/difficulty scope as distractor selection.
 The subsequent sync repair replaces order-sensitive JSON equality with semantic
 comparison, preventing false conflicts after database serialization. All **102
 automated tests pass**, including real-conflict and in-flight answer safeguards.
+
+
+## November 2026: newer 4B and 5B uploads
+
+Source: the November 8 Google Drive uploads of the Seoul National University Korean Plus student books and workbooks. These imports preserve each edition’s unit structure.
+
+- 4B: units 10–18, 231 core vocabulary cards, 412 additional vocabulary cards, 36 grammar patterns and 72 original practice questions. Core uses both subchapter opening vocabulary boxes; additional words come from student-book and workbook footnotes, including reviews. Slash-separated alternatives are separate cards.
+- 5B: units 9–16, 288 core vocabulary cards, 352 additional vocabulary cards, 32 grammar patterns and 64 original practice questions. Core follows the chapter glossaries’ 주제 어휘 sections. Additional vocabulary follows their listening, reading, speaking and writing sections. References use printed glossary page numbers; 363 matching workbook vocabulary/review occurrences are also recorded. This edition does not use the earlier books’ bilingual bottom-box layout.
+- English meanings are available for the new books. Vietnamese, Chinese and Russian use the app’s explicit English fallback until translations are added.
+- Existing 2B/3B IDs, progress and content remain unchanged. New books use deterministic IDs based on book, unit, difficulty and Korean headword. Repeated same-meaning entries retain their source references.
+- The site announcement offers Close for the current tab session, an × button, Escape, and Hide for a week on the current browser. Dismissal storage is separate from study progress.
+
+Validation: both book schemas; all 2,566 vocabulary direction/card combinations produce four distinct choices including the correct answer; 137 existing regression checks pass. Notice dismissal and seven-day expiry were checked separately.
