@@ -1,0 +1,15 @@
+#book-update-notice {
+  position: fixed; inset: 0; margin: auto; box-sizing: border-box;
+  width: min(32rem, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem);
+  overflow: auto; padding: 2rem; border: 1px solid var(--line, #6b7984);
+  border-radius: 1.25rem; background: var(--panel, #fff); color: var(--ink, #172b3a);
+  box-shadow: 0 24px 80px #0006;
+}
+#book-update-notice::backdrop { background: #09152199; backdrop-filter: blur(3px); }
+#book-update-notice .book-notice-x { position: absolute; top: .6rem; right: .6rem; min-width: 44px; min-height: 44px; padding: .3rem; font-size: 1.5rem; }
+#book-update-notice h2 { margin: .5rem 0 1rem; padding-right: 1rem; }
+#book-update-notice p { line-height: 1.6; }
+#book-update-notice .eyebrow { padding-right: 2rem; }
+.book-notice-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+.book-notice-actions button { flex: 1 1 10rem; min-height: 44px; }
+@media (max-width: 480px) { #book-update-notice { padding: 1.5rem; } }
