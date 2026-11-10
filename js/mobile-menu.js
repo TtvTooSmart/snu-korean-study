@@ -4,7 +4,7 @@ export function initMobileMenu() {
  const button=document.querySelector('#mobile-menu-toggle');
  if(!button)return;
  const root=document.documentElement;
- const mobile=window.matchMedia('(max-width:560px)');
+ const mobile=window.matchMedia('(max-width:760px)');
  const setOpen=(open,restoreFocus=false)=>{
   root.dataset.mobileMenuOpen=String(open);
   button.setAttribute('aria-expanded',String(open));

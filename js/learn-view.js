@@ -19,7 +19,7 @@ function reviewButton(card,stats,esc) {
 function wordCards(cards,esc,language,stats) {
  return `<div class="learn-grid">${cards.map(card=>{
   const translated=meaning(card,language);
-  return `<article class="learn-word"><div data-vocab-localized><h2 class="learn-ko" lang="ko">${esc(card.ko)}</h2><p class="learn-en" lang="en">${esc(card.en)}</p>${language!=='en'&&translated!==card.en?`<p class="learn-translation" lang="${esc(language)}">${esc(translated)}</p>`:''}${card.example?`<div class="learn-example"><p lang="ko">${esc(card.example)}</p></div>`:''}</div><div class="learn-actions">${reviewButton(card,stats,esc)}</div></article>`;
+  return `<article class="learn-word"><div data-vocab-localized><h2 class="learn-ko" lang="ko">${esc(card.ko)}</h2><p class="learn-en" lang="en">${esc(card.en)}</p>${language!=='en'&&translated!==card.en?`<p class="learn-translation" lang="${esc(language)}">${esc(translated)}</p>`:''}${card.example?`<details class="learn-example"><summary>Example</summary><p lang="ko">${esc(card.example)}</p></details>`:''}</div><div class="learn-actions">${reviewButton(card,stats,esc)}</div></article>`;
  }).join('')}</div>`;
 }
 
