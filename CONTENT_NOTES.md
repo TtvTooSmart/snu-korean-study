@@ -361,10 +361,10 @@ The card follows the verified note location; running text on p30 is excluded.
 2A is available for units 1–9 with **574 vocabulary cards** (122 Standard,
 452 Hard), **36 indexed grammar patterns**, and **72 original practice questions**.
 
-- November SB `1IOapfFRZFPo 2rGYi 7arAsxbZiDcEa 1hQ` (227 pages, 30,160,289 bytes)
-  and WB `1pzREQnpYEGrkV 98gD 1qml 6m_RW 3t_vfs` (204 pages, 21,375,094 bytes) are
-  byte-identical to October SB `1zrMIhLDd 7_GJXCOq 5fr 2KcdJwNggOeQ 5` and
-  WB `1s 6YWvB 6XA 7t_P 9vktLCuxrYtPZFMygsJ`. Source hashes are in the book JSON.
+- November SB `1IOapfFRZFPo2rGYi7arAsxbZiDcEa1hQ` (227 pages, 30,160,289 bytes)
+  and WB `1pzREQnpYEGrkV98gD1qml6m_RW3t_vfs` (204 pages, 21,375,094 bytes) are
+  byte-identical to October SB `1zrMIhLDd7_GJXCOq5fr2KcdJwNggOeQ5` and
+  WB `1s6YWvB6XA7t_P9vktLCuxrYtPZFMygsJ`. Source hashes are in the book JSON.
   Both first printed 2022-12-28; ebook release and last update 2023-09-10.
 - Covers, contents, lesson continuity, glossary, grammar index and colophons were
   checked. No duplicate scans were found; SB 164/165 is an appendix divider spread.
