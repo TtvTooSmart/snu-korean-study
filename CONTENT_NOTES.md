@@ -248,3 +248,68 @@ original grammar questions. Isolated Chrome checks cover 66 study states across
 six phone/tablet/desktop sizes, nine chapters, 35 patterns, 3B availability,
 navigation and announcement dismissal/expiry. Live account sync is not covered
 by these isolated fixtures. Notice key: `snu-book-3a-added-2026-11`.
+
+## 2026-11-25 — audited 5A import
+
+5A is available for all eight chapters with **854 vocabulary cards** (319 Standard,
+535 Hard) and **32 indexed grammar patterns / 64 original practice questions**.
+This follows the separately completed 4A and 3A releases.
+
+Sources and completeness:
+- November Student's Book `1R0R17RYLUZnM19SoS-ZwHxc9MmcwE6ke`: 295 pages,
+  35,288,893 bytes, SHA256
+  `2cd3f6efe4c04f7a90db558360608bed789b9c5243e83d6a426f9f26abea1705`.
+  October `1lCXLlFVuBbkumExU5d_9vzPS5IA0U_ID` has 296 pages: old PDF indices
+  94 and 95 are duplicate scans of printed p94. The newer clean scan removes that
+  duplicate and the watermark, with corresponding coverage for every other page.
+  First print/ebook release: 2023-10-10; student ebook update: 2024-10-30
+  (older copy: 2024-09-20). This is matching coverage, not identical file content.
+- November Workbook `1bknqTESOTX6lc-qeUxAkd84PP9_B1Yjz`: 188 pages,
+  39,302,921 bytes, SHA256
+  `9cd9d2501edad7aa1cb0853bb238b98d0b9b31eab04998d0dfe95517917ceec0`.
+  October `1Kwr-uVDIUSMmNUqVJwqZNKtklzpjZAcj` matches all 188 pages in rendered
+  RGB pixels, embedded image streams, dimensions and extracted text. Both retain
+  the same watermark. WB first print/release/update all 2023-10-10.
+- New SB/WB zero-based PDF indices equal printed main-book pages. Appended grammar
+  booklet pp4–19 use PDF index = printed page +275. Old SB after its duplicate has
+  a +1 offset. Repeated empty writing grids in the SB are intentional layouts.
+
+Vocabulary policy and audit:
+- All **706 SB glossary entries** across 49 pages:38–44,66–70,94–99,122–126,
+  150–156,178–185,206–210,234–239. Standard is the glossary's 주제 어휘 section
+  (319). Other sections contribute387 Hard entries: listening143, reading184,
+  speaking38, writing22. SB lesson pages18–233 contain exercise banks and grammar
+  reference boxes, without separate vocabulary footnotes outside these glossaries.
+- All **148 WB bottom notes**, on89 pages within14–171, are Hard. These notes
+  have Korean definitions; the literal definitions are retained as `gloss` with
+  `glossLanguage: ko`, and the app-authored English translation as `studyGloss`.
+  Running text, exercise word banks, and incidental captions are not harvested.
+- Reviews1/2/3/4 contain9/9/9/11 notes for units1–2/3–4/5–6/7–8. Each is owned by
+  the last unit, with both units retained in `relatedUnits` and source units.
+- No same-meaning duplicate occurs within a unit/difficulty in this source set;
+  all854 occurrences yield separate cards. Cross-chapter and difficulty repeats
+  remain. WB118/165 잔잔하다 retain different sound/demeanor meanings.
+- Independent page-image review restored ten missed headwords and removed four
+  false OCR records. Korean spelling/Hanja/pronunciation parsing was proofread.
+  Separate English OCR and image checks covered all712 English lines. Literal
+  English glosses remain in provenance;40 display meanings are clarified, including
+  여 (over/more than a number), 비정규직/정규직 (employment status), and proverbs.
+- English-only meanings with explicit English fallback for vi/zh/ru. Images and
+  part-of-speech metadata remain pending; this release does not claim them.
+
+Verification:
+- 153 Node tests pass. The new book checks all1,708 card/direction combinations and
+  6,832 language views, four distinct MCQ choices, source totals/classification,
+  every review scope, all32 grammar patterns, stable unique IDs and isolated progress.
+- Deliberately disabling5A makes its availability test fail; restored suite passes.
+- Independent grammar review corrected -(으)라면 and the discovery meaning of
+  -고 보다 before release. Each pattern has one original MCQ and one original fill.
+- Isolated Chrome passed66 study states at320×568,360×640,390×844,412×915,
+  760×800,1280×900, including wrong-answer feedback, long Learn cards, menu/Escape,
+  eight chapters,32 pattern options,5B availability, notice dismissal and expiry.
+  All64 grammar questions also passed128 hint-open/closed states at320×568.
+  These fixtures use local test state; authenticated production sync is not exercised.
+- Seven prior book files and IDs are unchanged. No app/CSS behavior change needed.
+  The announcement key is `snu-book-5a-added-2026-11`.
+- Raw PDFs, scans, OCR, verified inventories and import scripts stay private in
+  local `tmp/pdfs`; browser audit artifacts stay in `tmp/mobile-qa`.
