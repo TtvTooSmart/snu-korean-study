@@ -202,3 +202,49 @@ At short phone heights, answered Learn practice hides the redundant words-remain
 line while retaining the set progress and feedback, fixing a reproduced 14px
 overflow at 320×568. Study fixtures use isolated in-memory account state; live
 authenticated progress sync was not exercised.
+
+## Book 3A — November 25, 2026
+
+Added SNU Korean Plus 3A, units 1–9: **729 vocabulary cards (212 Standard,
+517 Hard), 35 grammar patterns and 70 original practice questions**.
+Unit 4 has three indexed patterns; each other unit has four.
+
+The November student book (`1jpqBC-v8onmJdliFGBmgDmu1FQYQqrhZ`, 232 PDF
+pages) is byte-identical to the October copy. Both workbook uploads have 198
+pages. Two independent page-image comparisons found five changed pages in the
+November workbook (`1GM3F9McoSXu6g6Kyu9XUX2CuNxUXRssl`): printed pp55,64,
+104,105,107 remove blue handwriting while preserving printed content. The newer
+clean workbook supplies all notes. Both scans duplicate printed p21; that extra
+scan is excluded. WB PDF index equals printed page through p21, then equals
+printed page +1 from p22 onward. Student lesson/glossary indices equal printed
+pages. Appended grammar booklet index = printed booklet page +189.
+
+The student colophon records first print May 10, 2023, ebook release September 10,
+2023, and last ebook update September 30, 2024. The workbook records the same
+first-print and ebook-release dates, with its last update September 10,2023.
+All lesson notes on SB pp24–165 and WB pp14–179 were visually audited, with
+the SB glossary pp179–186 and grammar index cross-checked. Raw scans stay local.
+
+Standard comes only from opening boxes at 24/30,40/46,56/62,72/78,88/94,
+104/110,120/126,136/142,152/158. All remaining SB notes and all WB notes are Hard.
+The cards preserve **577 SB +156 WB occurrences**. Four same-meaning repeats
+merge within unit/Hard: 엠티, 숙이다, 반대쪽, 수리 기사. Eight printed slash pairs
+become separate cards and retain combined sourceHeadword/sourceGloss metadata.
+Literal source glosses remain in provenance, including 정이 들다's printed
+“to grow attach to someone”; study English is corrected where needed.
+
+Reviews 1/2/3 cover units1–3/4–6/7–9 respectively, with 12/14/13 occurrences.
+Cards belong to the last unit and remain selectable from every covered unit.
+IDs use a 3A-specific book/unit/difficulty/headword prefix. All six prior book
+files and IDs remain unchanged. English-only content uses explicit English
+fallback for vi/zh/ru. Images and part-of-speech metadata remain pending.
+
+Validation: all 149 Node tests pass, covering schema, first-page boundaries,
+source counts, duplicate exclusion/merging, review scopes, progress isolation,
+1,458 card/direction combinations and 5,832 language renderings. A temporary
+availability mutation failed the new test as expected and was restored.
+Independent review checked vocabulary coverage, source tuples and all 70
+original grammar questions. Isolated Chrome checks cover 66 study states across
+six phone/tablet/desktop sizes, nine chapters, 35 patterns, 3B availability,
+navigation and announcement dismissal/expiry. Live account sync is not covered
+by these isolated fixtures. Notice key: `snu-book-3a-added-2026-11`.
