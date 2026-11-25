@@ -103,4 +103,6 @@
  body[data-study-screen] #app>.panel {padding:8px}
  body[data-study-screen] .panel>h2 {font-size:1rem;margin:4px 0}
  body[data-study-screen] .feedback {padding:6px 8px;margin-top:6px}
+ /* Keep chapter progress visible and make room for answer feedback. */
+ body[data-study-screen="learn-practice"] .panel:has(#learn-feedback)>h2+p {display:none}
 }

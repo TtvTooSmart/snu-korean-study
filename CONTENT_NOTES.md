@@ -156,3 +156,49 @@ typed/flashcard modes and grammar at five phone/tablet sizes plus desktop.
 The study tests use local isolated account fixtures; they do not exercise live
 account sync. A separate content review compared every occurrence against the
 verified page lists and checked all 64 original grammar questions.
+
+## Book 4A — November 25, 2026
+
+Added **SNU Korean Plus 4A**, units 1–9: **790 vocabulary cards (238 Standard,
+552 Hard), 36 grammar patterns and 72 original practice questions**. The 2023
+student book and matching workbook are the November 8 uploads
+`1ODSTCCt7gE2zoiL5hp8QgUbk7Oah5g_8` (237 PDF pages) and
+`1iwighAoVkd0MwiCHEocJh9eriyQPnQGf` (198 PDF pages). The older student book
+is byte-identical. The older workbook has only 28 PDF pages, ending at printed
+p27; the newer workbook contains all nine units and three reviews. File hashes,
+source selection and printed-page mappings are retained in `data/4a.json`.
+
+Student-book bottom boxes/notes on pp.24–165 and workbook bottom notes on
+pp.14–181 were visually audited. The student glossary pp.181–189 and all 36
+grammar index entries were cross-checked. Main lesson PDF indices equal printed
+pages; grammar booklet indices equal printed pages plus 192. The grammar booklet
+covers pp.4–44, with some entries spanning two pages. Page images in the checked
+lesson ranges contain no exact duplicates; indexed units and reviews are present.
+
+Only subchapter opening pages 24/30, 40/46, 56/62, 72/78, 88/94, 104/110,
+120/126, 136/142 and 152/158 are Standard. All other student notes and all workbook
+notes are Hard. The 790 cards preserve **601 student + 191 workbook occurrences**.
+Two matching Unit 1 Hard pairs, 책임지다 and 이끌다, merge while retaining both
+sources. Korean slash alternatives are separate cards. Review 1 words match units
+1–3, review 2 units 4–6 and review 3 units 7–9, with one owning card per review word.
+
+Original glosses remain in provenance when study English is clarified, including
+소비 (source “consume”, displayed “consumption”), 도전적, 엉망이다, 공개하다,
+아무래도 and the mood sense of 가라앉다. Printed `1/3` is displayed as 삼분의 일
+and retained as `sourceHeadword`. WB p81 really prints 기술품, “tech product”.
+Incidental text and exercise word banks are excluded. Raw source scans remain private.
+
+English is available; vi/zh/ru retain explicit English fallback. Translations,
+illustrations and part-of-speech metadata remain pending. Existing five books
+and their IDs are unchanged. The announcement names 4A with a separate dismissal key.
+
+Validation: **145 Node tests pass**, including 1,580 card/direction combinations,
+6,320 language renderings, source/classification checks, review selection and
+progress isolation. Independent review compared every source tuple and all 72
+grammar questions. Three prompts were corrected to clarify simultaneous action
+and tense. Chrome checked 66 study states over six viewport sizes, all nine
+chapters and 36 patterns, book selection, menu and notice dismissal/expiry.
+At short phone heights, answered Learn practice hides the redundant words-remaining
+line while retaining the set progress and feedback, fixing a reproduced 14px
+overflow at 320×568. Study fixtures use isolated in-memory account state; live
+authenticated progress sync was not exercised.
