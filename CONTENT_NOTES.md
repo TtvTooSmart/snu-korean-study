@@ -448,3 +448,50 @@ metadata disclose that limitation. No page-42 content was guessed or reconstruct
 - All ten earlier book JSON files are unchanged. PDFs/OCR/audit images stay private.
   Vietnamese, Chinese and Russian use explicit English fallback. Vocabulary images
   and part-of-speech metadata remain pending.
+
+## 2026-11-25 — audited 6B import, completing A/B coverage
+
+6B contains **971 vocabulary cards** (292 Standard, 679 Hard), **32 indexed
+grammar patterns**, and **64 original questions** for chapters 9–16. All twelve
+books are now available: 8,411 vocabulary cards, 403 patterns and 806 questions.
+The new announcement retains the user-approved 6A missing-workbook-page-42 notice.
+
+- November SB `1HbMO9toBgeZVEhAZOv23RNInuSzLuZi7` has 304 pages and 80,747,375
+  bytes; WB `1n3he13_Vw72omm6UxeTN6ZH-uS8SuzXk` has 188 pages and 39,860,424
+  bytes. October copies are byte-identical: student
+  `1nYlRnOrHcyglfr_wFX_XyrS7lAChPaR1` and workbook
+  `13b0kMHaFY9zy_OWHa7SA0oRTugVPl0yH`. The October filenames swap SB and WB;
+  covers establish their actual identity. SHA-256 hashes are in the book JSON.
+  First print/ebook date is 2023-12-30; student ebook updated 2024-07-25.
+- Covers, contents, colophons, every lesson/review page and duplicate scans were
+  audited. No missing 6B lesson or note pages were found. Main SB and WB printed
+  numbers equal zero-based PDF indexes. Grammar booklet pp4–19 use page+284.
+- All eight chapter glossaries were checked: pp36–41,64–69,94–103,126–129,
+  152–157,180–187,212–217,240–245. Standard includes both subchapters' 주제 어휘
+  sections; other glossary sections and WB notes are Hard. Consolidated index
+  pp268–278 and lesson footers revealed no additional glossary sections.
+- The independent audit verified 747 printed glossary entries. Two slash pairs
+  produce four cards while preserving their combined source headword/gloss:
+  공공의 이익/공익을 우선시하다 and 가상 융합 세계/메타버스. This yields 749 SB
+  references. Korean OCR omissions 배를 곯다 and 설움 were restored from scans.
+  Printed 뾰쪽한 생각 is retained as written. Source English was separately checked;
+  literal awkward/incorrect glosses remain in provenance with clearer study meanings,
+  including 이산가족 상봉, 난치병, 뇌 질환, and 생체 인식 기술.
+- All 222 workbook notes across 88 pages retain literal Korean definitions and
+  independently reviewed English study meanings. Reviews5–8 contribute16/25/8/7
+  notes for chapter pairs9–10/11–12/13–14/15–16. Each is stored under the last
+  chapter with both related units retained. No same-unit/difficulty duplicates remain.
+- All 32 grammar index entries have an original four-choice question and fill
+  question. Every answer grades correctly through the application matcher. One long
+  hint was shortened to fit 320×568 while preserving its meaning and target cues.
+- Verification:169 automated tests pass, including source/classification checks,
+  review scope, progress isolation, all 971 cards in both directions and four language
+  settings. Availability mutation fails as expected and is restored. Isolated Chrome
+  passes66 study states across six viewport sizes and128 grammar hint states at
+  320×568. Home shows eight chapters/32 patterns, both6A/6B enabled; actual level
+  selector, menu, notice dismissal/session/week expiry and screenshots checked.
+- The independent final review matched every SB/WB reference to the verified
+  inventories and checked all64 questions. All eleven prior book JSON files are
+  unchanged. Source PDFs/OCR/audit images stay private. Vietnamese, Chinese and
+  Russian use explicit English fallback. Images and part-of-speech metadata remain
+  pending; authenticated cloud-sync behavior was not exercised in this import audit.

@@ -34,7 +34,7 @@ Keyboard: Enter submits/advances; 1–4 select MCQ options; Space flips; J/Left 
 2. Set the corresponding entry in `data/books.json` to `available: true`.
 3. Reload. No JavaScript changes are needed.
 
-Registry entries contain `id`, `title`, `available`. IDs must match filenames. 1A through 6B are listed. Books 1A–5B have verified published content. 6A contains eight chapters, 1,165 vocabulary cards and 64 original grammar questions; workbook page 42 is missing from both source copies. The user explicitly accepted release with a visible missing-page notice. 6B remains unavailable. Imported content can also activate a listed unavailable book.
+Registry entries contain `id`, `title`, `available`. IDs must match filenames. All twelve books, 1A through 6B, are available, with 8,411 vocabulary cards and 806 grammar questions across 403 patterns. 6B adds chapters 9–16, 971 vocabulary cards and 64 original grammar questions. 6A workbook page 42 is missing from both source copies; the user explicitly accepted release with a visible missing-page notice. No content for that page was invented. See CONTENT_NOTES.md for source coverage and language fallback details.
 
 ```json
 {
