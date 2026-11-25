@@ -34,7 +34,7 @@ Keyboard: Enter submits/advances; 1–4 select MCQ options; Space flips; J/Left 
 2. Set the corresponding entry in `data/books.json` to `available: true`.
 3. Reload. No JavaScript changes are needed.
 
-Registry entries contain `id`, `title`, `available`. IDs must match filenames. 1A through 4B are listed; 2B and 3B ship with content. Imported content can also activate a listed unavailable book.
+Registry entries contain `id`, `title`, `available`. IDs must match filenames. 1A through 5B are listed; 1A, 2B, 3B, 4B and 5B ship with content. Imported content can also activate a listed unavailable book.
 
 ```json
 {
@@ -81,7 +81,7 @@ Calm green/cream palette, responsive book cards and a large central study card. 
 - `data-loader.js`: validation, registry loading, merging, CSV and backup parsing
 - `tests/queue.test.js`: plain Node tests
 
-The latest request superseded placeholder sample content: 2B and 3B use the supplied books’ vocabulary boxes, footnotes and grammar indexes, with original practice questions. See data source metadata and CONTENT_NOTES.md for coverage and limitations. The source textbook PDF is not included.
+Published books use the supplied editions’ vocabulary boxes, glossaries, footnotes and grammar indexes, with original practice questions. See data source metadata and CONTENT_NOTES.md for each edition’s coverage and limitations. Source textbook PDFs are not included.
 
 ## Deploy on Vercel
 

@@ -1,4 +1,4 @@
-const KEY = 'snu-levels-4-5-added-2026-11';
+const KEY = 'snu-book-1a-added-2026-11';
 const WEEK = 7 * 24 * 60 * 60 * 1000;
 function read(storage, key) { try { return window[storage].getItem(key); } catch { return null; } }
 function write(storage, key, value) { try { window[storage].setItem(key, value); } catch {} }
@@ -12,9 +12,9 @@ export function initBookNotice() {
   dialog.setAttribute('aria-describedby', 'book-update-description');
   dialog.innerHTML = `<button type="button" class="secondary book-notice-x" aria-label="Close book update notice" autofocus>×</button>
     <p class="eyebrow">Library update</p>
-    <h2 id="book-update-title">Levels 4 and 5 are now available!</h2>
-    <p id="book-update-description">SNU Korean 4B and 5B have been added! Practise vocabulary and grammar chapter by chapter, with content organised to match each book.</p>
-    <p class="muted">Choose Level 4 or Level 5, select book B, and start learning.</p>
+    <h2 id="book-update-title">SNU Korean 1A is now available!</h2>
+    <p id="book-update-description">Study all eight chapters with 447 vocabulary cards and 64 grammar practice questions. Standard and Hard vocabulary follow the student-book and workbook page notes.</p>
+    <p class="muted">Choose Level 1, select book A, and start learning.</p>
     <div class="book-notice-actions"><button type="button" data-dismiss="visit">Close</button><button type="button" class="secondary" data-dismiss="week">Hide for a week</button></div>`;
   const dismiss = week => {
     if (week) write('localStorage', KEY, String(Date.now() + WEEK));

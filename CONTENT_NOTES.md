@@ -110,3 +110,49 @@ Source: the November 8 Google Drive uploads of the Seoul National University Kor
 - The site announcement offers Close for the current tab session, an × button, Escape, and Hide for a week on the current browser. Dismissal storage is separate from study progress.
 
 Validation: both book schemas; all 2,566 vocabulary direction/card combinations produce four distinct choices including the correct answer; 137 existing regression checks pass. Notice dismissal and seven-day expiry were checked separately.
+
+## Book 1A — November 25, 2026
+
+Imported only **SNU Korean Plus 1A**, units 1–8: **447 vocabulary cards
+(124 Standard, 323 Hard), 32 grammar patterns and 64 original questions**.
+The November 8 student-book upload is Drive file
+`1rX2zgeZUCKoarKS_ayUR8KEXbp1Hob0T` (263 PDF pages); the matching workbook is
+`1_f9eq9dOE_RnL8DmT9Hrt9ZdVD_rrJMM` (196 PDF pages). Hashes and page mappings
+are recorded in `data/1a.json`. The workbook needed a 180-degree render correction.
+
+All student-book bottom boxes/notes on printed pp.22–147 and workbook bottom
+notes on pp.14–179 were visually audited, including workbook reviews 1–4.
+The student glossary pp.160–164 and the 32-entry grammar booklet index were
+cross-checked. Reviews contain no bilingual bottom vocabulary notes in this
+edition. Hangul practice examples, exercise word banks and incidental running
+text are outside this chapter-vocabulary import. No source scans are published.
+
+Standard opening pages are 22/28, 38/44, 54/60, 70/76, 86/92, 102/108,
+118/124 and 134/140. Continuation-page boxes and every workbook note are Hard.
+The cards retain **368 student-book and 132 workbook occurrences** with printed
+pages and source English glosses. Matching meanings are merged only within a
+unit/difficulty scope. Below/under synonyms 아래 and 밑 are separate headwords;
+the workbook greeting 만나서 반가워요 shares the student card (만나서) 반가워요.
+Source glosses include 점심 as “afternoon” (SB p103) and “lunch” (WB p121);
+these remain separate senses. Bare-headword typed practice is context-limited
+for such homographs: its accepted answer is the current card's source meaning.
+
+Source limitation: no alternate 1A upload was found in the connected Drive
+search. After the final lesson p147 the scan has an unnumbered appendix divider
+before p150; no scan can be identified as p148. All eight indexed units,
+sixteen subchapters, glossary pages and grammar booklet pp.4–35 are present.
+This verifies the requested lesson vocabulary/grammar coverage, not every
+physical page of the printed volume.
+
+English meanings are available. Vietnamese, Chinese and Russian use the app's
+explicit English fallback; translations and generated vocabulary images remain
+pending. Existing 2B/3B/4B/5B data and IDs are unchanged. Only 1A is activated;
+the announcement names that book and has a new dismissal key.
+
+Validation: 141 Node tests pass, including all 894 card/direction combinations
+and 3,576 language renderings, source counts, chapter/difficulty isolation and
+separate progress. Chrome checks cover Learn, set practice, vocabulary MCQ,
+typed/flashcard modes and grammar at five phone/tablet sizes plus desktop.
+The study tests use local isolated account fixtures; they do not exercise live
+account sync. A separate content review compared every occurrence against the
+verified page lists and checked all 64 original grammar questions.
