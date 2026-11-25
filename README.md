@@ -34,7 +34,7 @@ Keyboard: Enter submits/advances; 1–4 select MCQ options; Space flips; J/Left 
 2. Set the corresponding entry in `data/books.json` to `available: true`.
 3. Reload. No JavaScript changes are needed.
 
-Registry entries contain `id`, `title`, `available`. IDs must match filenames. 1A through 5B are listed; 1A, 1B, 2B, 3A, 3B, 4A, 4B, 5A and 5B ship with content. Imported content can also activate a listed unavailable book.
+Registry entries contain `id`, `title`, `available`. IDs must match filenames. 1A through 5B are listed; 1A, 1B, 2A, 2B, 3A, 3B, 4A, 4B, 5A and 5B ship with content. Imported content can also activate a listed unavailable book.
 
 ```json
 {

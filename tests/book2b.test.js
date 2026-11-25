@@ -15,7 +15,6 @@ const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceA
 test('2B is available with nine original-numbered chapters and 35 complete patterns',()=>{
  validateBook(book);assert.equal(book.placeholder,false);
  assert.equal(read('books').find(b=>b.id==='2b').available,true);
- assert.equal(read('books').find(b=>b.id==='2a').available,false);
  assert.deepEqual(book.units.map(u=>u.unit),[10,11,12,13,14,15,16,17,18]);
  assert.equal(cards.length,628);
  for(const u of book.units){

@@ -355,3 +355,46 @@ Verification:
 
 The SB glossary references 주다 at p30, but the actual vocabulary note is p31.
 The card follows the verified note location; running text on p30 is excluded.
+
+## 2026-11-25 — audited 2A import
+
+2A is available for units 1–9 with **574 vocabulary cards** (122 Standard,
+452 Hard), **36 indexed grammar patterns**, and **72 original practice questions**.
+
+- November SB `1IOapfFRZFPo 2rGYi 7arAsxbZiDcEa 1hQ` (227 pages, 30,160,289 bytes)
+  and WB `1pzREQnpYEGrkV 98gD 1qml 6m_RW 3t_vfs` (204 pages, 21,375,094 bytes) are
+  byte-identical to October SB `1zrMIhLDd 7_GJXCOq 5fr 2KcdJwNggOeQ 5` and
+  WB `1s 6YWvB 6XA 7t_P 9vktLCuxrYtPZFMygsJ`. Source hashes are in the book JSON.
+  Both first printed 2022-12-28; ebook release and last update 2023-09-10.
+- Covers, contents, lesson continuity, glossary, grammar index and colophons were
+  checked. No duplicate scans were found; SB 164/165 is an appendix divider spread.
+  Main SB/WB PDF indexes equal printed pages. Grammar booklet pages 4–43 use
+  index = page +183, with continuation pages 14,18,23,34.
+- SB bottom vocabulary notes were checked across 22–163 and against glossary 174–179.
+  Only the first bottom box of each subchapter is Standard: pages 22,28,38,44,54,60,
+  70,76,86,92,102,108,118,124,134,140,150,156. Other SB notes and all WB notes are
+  Hard. Exercise banks and running text are excluded. The glossary's 시간 reference
+  to p 135 points to lesson-task language rather than a vocabulary note and is excluded.
+- All WB vocabulary notes across 14–185 are included:165 occurrences on 79 pages.
+  Review 1 at 54–69 contributes 16 notes, Review 2 at 112–127 contributes 22, and Review 3
+  at 170–185 contributes 5. Their note bands sit higher than ordinary lesson footers.
+  They belong to units 1–3/4–6/7–9 respectively, stored under the last unit with every
+  covered unit in relatedUnits.
+- Fifteen SB slash pairs split into 30 cards/source references, preserving the printed
+  combined headword and gloss. The 399 raw SB groups become 414 study occurrences.
+  Together with 165 WB notes,579 occurrences yield 574 cards after five same-meaning
+  merges: 시간이 나다, 홈페이지, 이제, 자꾸 and 피가 나다 in their respective units.
+- Awkward source glosses remain literal in provenance with clearer study meanings,
+  such as 미술관 (art museum/gallery), 피부과 (dermatology/skin clinic) and 치과
+  (dentistry/dental clinic). English fallback for Vietnamese, Chinese and Russian is
+  explicit. Vocabulary illustrations and part-of-speech metadata remain pending.
+- All 36 index patterns have an original four-option MCQ and a fill question. Present,
+  future and past inference and the prediction use of -(으)ㄹ까요 remain distinct.
+- Verification:161 automated tests pass. All 574 cards have four distinct choices in
+  both directions across four language settings. Review chapter membership, difficulty
+  and progress isolation are checked. Disabling 2A fails its availability test; the
+  restored suite passes. Removed the superseded 2B test assertion that 2A is unavailable.
+- Isolated Chrome checks pass 66 study states across six viewport sizes and 144 grammar
+  hint states at 320×568. Home shows nine chapters and 36 patterns;2B remains available.
+  Menu, notice dismissal/session/week expiry and mobile/desktop screenshots checked.
+  All nine earlier book JSON files are unchanged. PDFs and intermediate audits stay private.
