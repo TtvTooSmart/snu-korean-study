@@ -304,12 +304,54 @@ Verification:
 - Deliberately disabling5A makes its availability test fail; restored suite passes.
 - Independent grammar review corrected -(으)라면 and the discovery meaning of
   -고 보다 before release. Each pattern has one original MCQ and one original fill.
-- Isolated Chrome passed66 study states at320×568,360×640,390×844,412×915,
+- Isolated Chrome passed66 study states at 320×568,360×640,390×844,412×915,
   760×800,1280×900, including wrong-answer feedback, long Learn cards, menu/Escape,
   eight chapters,32 pattern options,5B availability, notice dismissal and expiry.
-  All64 grammar questions also passed128 hint-open/closed states at320×568.
+  All64 grammar questions also passed128 hint-open/closed states at 320×568.
   These fixtures use local test state; authenticated production sync is not exercised.
 - Seven prior book files and IDs are unchanged. No app/CSS behavior change needed.
   The announcement key is `snu-book-5a-added-2026-11`.
 - Raw PDFs, scans, OCR, verified inventories and import scripts stay private in
   local `tmp/pdfs`; browser audit artifacts stay in `tmp/mobile-qa`.
+
+## 2026-11-25 — audited 1B import
+
+1B is available for original units 9–16 with **406 vocabulary cards** (107 Standard,
+299 Hard), **32 indexed grammar patterns**, and **64 original practice questions**.
+
+- Source: the November student book (`1_3JzTVdiBDY6ikrPJ7iSwAgw9fbiLL_M`,
+  207 PDF pages) and workbook (`1baHbwoLJv6LulAy_KFACp15JQ-QEk9C3`,
+  200 pages). No alternate 1B upload was found. Covers, contents, lesson continuity,
+  glossary, grammar index and colophons were checked. File hashes are in the JSON.
+- Student edition: first print 2022-09-22, ebook release 2023-09-15, updated
+  2024-02-20. Workbook: first print 2022-10-10, ebook release 2023-09-15,
+  updated 2023-10-18.
+- Student lessons pp22–147 and glossary pp162–166 use PDF index = printed page.
+  Appended grammar pp4–37 use PDF index = booklet page +169; pp17 and19
+  continue the preceding patterns. Workbook pp14–90 use index = printed page;
+  PDF index91 repeats printed p90 and is excluded. Thereafter index = page +1.
+- Standard uses only the opening-page bottom boxes at22,28,38,44,54,60,70,76,
+  86,92,102,108,118,124,134,140. Continuations and other student notes are Hard,
+  as are every workbook note. Exercise panels and running text are excluded.
+- Workbook reviews5–8 (pp40–53,82–95,124–137,166–179) have no dedicated bottom
+  vocabulary notes. Their exercise word banks are not imported.
+- The nine ordinary/honorific pairs on student pp124–125 become individual cards,
+  retaining the combined printed headword in source metadata. The two meanings of
+  드시다 (eat/drink) remain distinct. 이분 and 한번 merge their same-meaning
+  student/workbook occurrences within the same unit and difficulty.
+- All 425 study-source occurrences (338 student, including split pairs, and 87
+  workbook) are preserved in 406 cards. English source errors such as `to don't
+  know` and `grad(udate) school` remain literal in provenance, with corrected
+  study meanings. Vietnamese, Chinese and Russian use explicit English fallback.
+- All 32 indexed grammar entries have an original MCQ and fill question each.
+  The causal and sequential uses of -아서/어서 remain separate patterns.
+- Validation: 157 automated tests; all 406 cards in both directions and four
+  language settings; chapter/difficulty/progress isolation; availability mutation
+  fails as expected. Isolated Chrome checks cover 66 study states at six viewports
+  plus 128 grammar hint states at 320×568, menu and notice dismissal/expiry.
+  Mobile Learn and desktop selection screenshots were inspected. Existing book
+  JSON remains unchanged. PDFs, OCR and audit images remain private.
+- Vocabulary images and part-of-speech labels remain pending.
+
+The SB glossary references 주다 at p30, but the actual vocabulary note is p31.
+The card follows the verified note location; running text on p30 is excluded.

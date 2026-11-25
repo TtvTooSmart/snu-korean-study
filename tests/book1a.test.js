@@ -17,7 +17,6 @@ test('1A activates eight chapters and all 32 indexed grammar patterns',()=>{
   validateBook(book);
   assert.equal(book.placeholder,false);
   assert.equal(read('books').find(b=>b.id==='1a').available,true);
-  assert.equal(read('books').find(b=>b.id==='1b').available,false);
   assert.deepEqual(book.units.map(u=>u.unit),[1,2,3,4,5,6,7,8]);
   assert.equal(cards.length,447);
   const grammar=book.units.flatMap(u=>u.grammar);
