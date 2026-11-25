@@ -1,4 +1,4 @@
-const KEY = 'snu-book-2a-added-2026-11';
+const KEY = 'snu-book-6a-added-2026-11';
 const WEEK = 7 * 24 * 60 * 60 * 1000;
 function read(storage, key) { try { return window[storage].getItem(key); } catch { return null; } }
 function write(storage, key, value) { try { window[storage].setItem(key, value); } catch {} }
@@ -12,9 +12,9 @@ export function initBookNotice() {
   dialog.setAttribute('aria-describedby', 'book-update-description');
   dialog.innerHTML = `<button type="button" class="secondary book-notice-x" aria-label="Close book update notice" autofocus>×</button>
     <p class="eyebrow">Library update</p>
-    <h2 id="book-update-title">SNU Korean 2A is now available!</h2>
-    <p id="book-update-description">Study all nine chapters with 574 vocabulary cards and 72 grammar practice questions. Standard vocabulary comes from each subchapter’s opening-page box. Hard vocabulary includes continuation boxes and other student-book and workbook notes, including all three reviews.</p>
-    <p class="muted">Choose Level 2, select book A, and start learning.</p>
+    <h2 id="book-update-title">SNU Korean 6A is now available!</h2>
+    <p id="book-update-description">Study eight chapters with 1,165 vocabulary cards and 64 grammar practice questions. Standard covers the chapter topic glossaries; Hard covers additional glossary entries and workbook notes. Workbook page 42 is missing from both source copies, so any notes on that page are not included.</p>
+    <p class="muted">Choose Level 6, select book A, and start learning.</p>
     <div class="book-notice-actions"><button type="button" data-dismiss="visit">Close</button><button type="button" class="secondary" data-dismiss="week">Hide for a week</button></div>`;
   const dismiss = week => {
     if (week) write('localStorage', KEY, String(Date.now() + WEEK));

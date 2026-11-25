@@ -398,3 +398,53 @@ The card follows the verified note location; running text on p30 is excluded.
   hint states at 320×568. Home shows nine chapters and 36 patterns;2B remains available.
   Menu, notice dismissal/session/week expiry and mobile/desktop screenshots checked.
   All nine earlier book JSON files are unchanged. PDFs and intermediate audits stay private.
+
+
+## 2026-11-25 — audited 6A import with disclosed source gap
+
+6A contains **1,165 vocabulary cards** (351 Standard, 814 Hard),
+**32 indexed grammar patterns**, and **64 original practice questions** for units 1–8.
+The user explicitly approved publishing with a visible missing-page notice on
+2026-11-25. Workbook printed page 42 is absent from both available
+copies; its possible vocabulary notes remain unknown. The announcement and source
+metadata disclose that limitation. No page-42 content was guessed or reconstructed.
+
+- November SB `1-9Z_QKAmlI-sVwwe2AoZfDQkX9KlKtQN` (329 pages, 89,027,202 bytes)
+  and WB `1IlGRBWsuP4V162w7hL-ClkTbGj6_Rdo2` (189 pages, 41,554,922 bytes) are
+  byte-identical to October SB `1392ctOYujJq3SuK47zrvZKzCKKBxdBDA` and
+  WB `1fYdmfysCMPlgWehz26EEH5X0HHf_xTYw`. Hashes are recorded in the book JSON.
+  Both first printed/released 2023-12-30; student ebook updated 2024-07-25.
+- Covers, contents, colophons, continuity and duplicates checked. SB PDF indexes
+  equal printed lesson/glossary pages; grammar booklet pp4–19 use index = page+309.
+  WB printed14–41 use index = page−1; printed43–173 use index = page−2.
+  The jump from p41 questions1–5 to p43 questions11–13 confirms the missing p42.
+- All eight SB glossaries were read: pp40–49,74–81,102–108,136–143,168–175,
+  198–205,230–235,260–269. Standard is 주제 어휘; other sections are Hard.
+  All other lesson-page footers and consolidated index292–304 were checked;
+  no additional vocabulary-note sections were found outside the glossaries.
+- Independent headword audit verified 959 printed entries. The 앱/애플리케이션을
+  활용하다 pair is split into two cards, preserving the combined printed headword
+  and gloss. This gives 960 SB occurrences:351 topic,227 listening,35 speaking,
+  279 reading and68 writing. English glosses were separately proofread from scans.
+  Printed awkward glosses stay literal in sources; clearer study meanings include
+  mimetic words, lexical tones, plain consonants and political/business collusion.
+- All 205 WB notes on 85 extant pages are translated from their Korean definitions.
+  Reviews1–4 contribute26/7/17/7 notes for units1–2/3–4/5–6/7–8. Each note is
+  stored under the last covered unit and retains both related units. Page42 is excluded
+  as unknown. Printed p129 typo 분포내다 is normalized to 분포되다 with sourceHeadword
+  retained. The printed omission in the p97 빗대다 definition remains literal.
+  The p43 and p119 거칠다 definitions retain distinct land/temperament meanings.
+- Every indexed grammar entry has a four-option MCQ and fill question. Review fixed
+  an ungradeable slash-separated particle tuple and a past-assumption example.
+  Tests verify that selecting each exact MCQ answer grades correctly through matches().
+- Verification:165 automated tests pass, including all cards in both directions and
+  four language settings, source counts/classification, review scope, stable IDs and
+  progress isolation. Availability mutation fails as expected; registry restored.
+  Isolated Chrome passes66 study states at six sizes and128 grammar hint states at
+  320×568. Actual Level selector function exposes Level6 and rerenders on change.
+  Home shows eight chapters/32 patterns;6B remains unavailable. Menu, notice
+  dismissal/session/week expiry and mobile/desktop screenshots checked. Three long
+  grammar prompts were shortened while retaining the target and grammatical cues.
+- All ten earlier book JSON files are unchanged. PDFs/OCR/audit images stay private.
+  Vietnamese, Chinese and Russian use explicit English fallback. Vocabulary images
+  and part-of-speech metadata remain pending.
